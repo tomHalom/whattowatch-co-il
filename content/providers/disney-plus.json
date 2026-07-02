@@ -1,0 +1,11 @@
+{
+  "slug": "disney-plus",
+  "name": "דיזני פלוס",
+  "logo": "/logos/disney-plus.svg",
+  "colorPrimary": "#113CCF",
+  "colorSecondary": "#14131C",
+  "countries": ["IL"],
+  "seoTitle": "דיזני פלוס — מדריך הסדרות המומלצות | WhatToWatch.co.il",
+  "seoDescription": "מדריך הסדרות והסרטים המומלצים בדיזני פלוס — בקרוב עם עדכון חודשי אוטומטי, בדיוק כמו במדריך הנטפליקס.",
+  "affiliateEnabled": false
+}

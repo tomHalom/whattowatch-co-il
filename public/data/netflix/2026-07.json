@@ -1,0 +1,185 @@
+{
+  "provider": "netflix",
+  "slug": "2026-07",
+  "monthLabel": "יולי",
+  "year": 2026,
+  "series": [
+    {
+      "rank": 1,
+      "tmdbId": 0,
+      "name": "Stranger Things",
+      "overview": "Stranger Things — אחת הסדרות הפופולריות בנטפליקס. תוכן זה הוא תוכן דמו (fallback), יוחלף בנתונים אמיתיים מ-TMDB בהרצה הראשונה עם TMDB_API_KEY מוגדר.",
+      "posterPath": null,
+      "backdropPath": null,
+      "voteAverage": 8,
+      "genres": [
+        "מתח",
+        "מדע בדיוני",
+        "דרמה"
+      ],
+      "firstAirDate": null,
+      "trailerYoutubeId": null
+    },
+    {
+      "rank": 2,
+      "tmdbId": 0,
+      "name": "Wednesday",
+      "overview": "Wednesday — אחת הסדרות הפופולריות בנטפליקס. תוכן זה הוא תוכן דמו (fallback), יוחלף בנתונים אמיתיים מ-TMDB בהרצה הראשונה עם TMDB_API_KEY מוגדר.",
+      "posterPath": null,
+      "backdropPath": null,
+      "voteAverage": 8,
+      "genres": [
+        "קומדיה",
+        "פנטזיה",
+        "מתח"
+      ],
+      "firstAirDate": null,
+      "trailerYoutubeId": null
+    },
+    {
+      "rank": 3,
+      "tmdbId": 0,
+      "name": "The Crown",
+      "overview": "The Crown — אחת הסדרות הפופולריות בנטפליקס. תוכן זה הוא תוכן דמו (fallback), יוחלף בנתונים אמיתיים מ-TMDB בהרצה הראשונה עם TMDB_API_KEY מוגדר.",
+      "posterPath": null,
+      "backdropPath": null,
+      "voteAverage": 8,
+      "genres": [
+        "דרמה",
+        "היסטוריה"
+      ],
+      "firstAirDate": null,
+      "trailerYoutubeId": null
+    },
+    {
+      "rank": 4,
+      "tmdbId": 0,
+      "name": "Squid Game",
+      "overview": "Squid Game — אחת הסדרות הפופולריות בנטפליקס. תוכן זה הוא תוכן דמו (fallback), יוחלף בנתונים אמיתיים מ-TMDB בהרצה הראשונה עם TMDB_API_KEY מוגדר.",
+      "posterPath": null,
+      "backdropPath": null,
+      "voteAverage": 8,
+      "genres": [
+        "מתח",
+        "דרמה",
+        "אקשן"
+      ],
+      "firstAirDate": null,
+      "trailerYoutubeId": null
+    },
+    {
+      "rank": 5,
+      "tmdbId": 0,
+      "name": "Bridgerton",
+      "overview": "Bridgerton — אחת הסדרות הפופולריות בנטפליקס. תוכן זה הוא תוכן דמו (fallback), יוחלף בנתונים אמיתיים מ-TMDB בהרצה הראשונה עם TMDB_API_KEY מוגדר.",
+      "posterPath": null,
+      "backdropPath": null,
+      "voteAverage": 8,
+      "genres": [
+        "רומנטי",
+        "דרמה"
+      ],
+      "firstAirDate": null,
+      "trailerYoutubeId": null
+    },
+    {
+      "rank": 6,
+      "tmdbId": 0,
+      "name": "Fauda",
+      "overview": "Fauda — אחת הסדרות הפופולריות בנטפליקס. תוכן זה הוא תוכן דמו (fallback), יוחלף בנתונים אמיתיים מ-TMDB בהרצה הראשונה עם TMDB_API_KEY מוגדר.",
+      "posterPath": null,
+      "backdropPath": null,
+      "voteAverage": 8,
+      "genres": [
+        "מתח",
+        "דרמה",
+        "אקשן"
+      ],
+      "firstAirDate": null,
+      "trailerYoutubeId": null
+    },
+    {
+      "rank": 7,
+      "tmdbId": 0,
+      "name": "The Witcher",
+      "overview": "The Witcher — אחת הסדרות הפופולריות בנטפליקס. תוכן זה הוא תוכן דמו (fallback), יוחלף בנתונים אמיתיים מ-TMDB בהרצה הראשונה עם TMDB_API_KEY מוגדר.",
+      "posterPath": null,
+      "backdropPath": null,
+      "voteAverage": 8,
+      "genres": [
+        "פנטזיה",
+        "אקשן",
+        "דרמה"
+      ],
+      "firstAirDate": null,
+      "trailerYoutubeId": null
+    },
+    {
+      "rank": 8,
+      "tmdbId": 0,
+      "name": "Money Heist",
+      "overview": "Money Heist — אחת הסדרות הפופולריות בנטפליקס. תוכן זה הוא תוכן דמו (fallback), יוחלף בנתונים אמיתיים מ-TMDB בהרצה הראשונה עם TMDB_API_KEY מוגדר.",
+      "posterPath": null,
+      "backdropPath": null,
+      "voteAverage": 8,
+      "genres": [
+        "מתח",
+        "פשע",
+        "דרמה"
+      ],
+      "firstAirDate": null,
+      "trailerYoutubeId": null
+    },
+    {
+      "rank": 9,
+      "tmdbId": 0,
+      "name": "Ozark",
+      "overview": "Ozark — אחת הסדרות הפופולריות בנטפליקס. תוכן זה הוא תוכן דמו (fallback), יוחלף בנתונים אמיתיים מ-TMDB בהרצה הראשונה עם TMDB_API_KEY מוגדר.",
+      "posterPath": null,
+      "backdropPath": null,
+      "voteAverage": 8,
+      "genres": [
+        "דרמה",
+        "פשע",
+        "מתח"
+      ],
+      "firstAirDate": null,
+      "trailerYoutubeId": null
+    },
+    {
+      "rank": 10,
+      "tmdbId": 0,
+      "name": "Dark",
+      "overview": "Dark — אחת הסדרות הפופולריות בנטפליקס. תוכן זה הוא תוכן דמו (fallback), יוחלף בנתונים אמיתיים מ-TMDB בהרצה הראשונה עם TMDB_API_KEY מוגדר.",
+      "posterPath": null,
+      "backdropPath": null,
+      "voteAverage": 8,
+      "genres": [
+        "מדע בדיוני",
+        "מתח",
+        "דרמה"
+      ],
+      "firstAirDate": null,
+      "trailerYoutubeId": null
+    }
+  ],
+  "faq": [
+    {
+      "question": "מה הסדרה הטובה ביותר בנטפליקס ביולי 2026?",
+      "answer": "הסדרה שבמקום הראשון ברשימה שלנו החודש — ראו את הפירוט המלא ואת הטריילר בכתבה למעלה."
+    },
+    {
+      "question": "איך נבחרות הסדרות לרשימה החודשית?",
+      "answer": "הרשימה מתעדכנת אוטומטית כל חודש לפי פופולריות בנטפליקס, דירוגים, וכיסוי ז'אנרים מגוון."
+    },
+    {
+      "question": "האם יש סדרות ישראליות ברשימה?",
+      "answer": "כאשר סדרה ישראלית (כמו Fauda) נכנסת לטופ 10 הפופולרי, היא מסומנת ומקבלת דגש מיוחד בכתבה."
+    },
+    {
+      "question": "איפה אפשר לראות את הטריילרים?",
+      "answer": "לכל סדרה ברשימה מוטמע טריילר וידאו שניתן לנגן ישירות מהכרטיסייה שלה בעמוד."
+    }
+  ],
+  "isFallback": true
+}

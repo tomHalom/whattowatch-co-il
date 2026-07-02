@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+
+  /* Cinematic Editorial Zine — design tokens */
+  --clr-bg:       #14131C;
+  --clr-surface:  #1C1B27;
+  --clr-line:     #2C2A3A;
+  --clr-gold:     #E8A33D;
+  --clr-ember:    #D64545;
+  --clr-text:     #F2EEE4;
+  --clr-muted:    #9C97A8;
+
+  --font-display:  'Frank Ruhl Libre', serif;
+  --font-body:     'IBM Plex Sans Hebrew', system-ui, sans-serif;
+  --font-mono:     'IBM Plex Mono', monospace;
+
+  --radius-card:   0.75rem;
+  --grain-opacity: 0.045;
+}
+
+html {
+  direction: rtl;
+}
+
+body {
+  @apply bg-charcoal-night text-milk-parchment font-body antialiased;
+  position: relative;
+}
+
+/* ─── Grain / noise overlay ───────────────────────────────────────── */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  opacity: var(--grain-opacity);
+  mix-blend-mode: overlay;
+}
+
+h1, h2, h3, h4 {
+  @apply font-display;
+}
+
+/* ─── Rank badge — the signature visual mark ──────────────────────── */
+.rank-badge {
+  @apply font-display text-4xl md:text-5xl text-sunset-gold;
+  transform: rotate(-6deg);
+  text-shadow: 0 2px 12px rgba(232, 163, 61, 0.35);
+  line-height: 1;
+}
+
+/* Oversized background rank numeral (editorial zine aesthetic) */
+.rank-bg {
+  font-family: var(--font-display);
+  font-size: clamp(5rem, 14vw, 10rem);
+  font-weight: 900;
+  color: var(--clr-gold);
+  opacity: 0.06;
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+  position: absolute;
+  top: -0.15em;
+  right: -0.1em;
+  z-index: 0;
+}
+
+a.link-quiet {
+  @apply text-mist-grey underline decoration-charcoal-line underline-offset-4 hover:text-sunset-gold transition-colors;
+}
+
+/* ─── Card stagger entrance ───────────────────────────────────────── */
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(1.2rem); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.card-enter {
+  animation: fadeSlideUp 0.45s ease both;
+}
+.card-enter:nth-child(2)  { animation-delay: 0.06s; }
+.card-enter:nth-child(3)  { animation-delay: 0.12s; }
+.card-enter:nth-child(4)  { animation-delay: 0.18s; }
+.card-enter:nth-child(5)  { animation-delay: 0.24s; }
+.card-enter:nth-child(6)  { animation-delay: 0.30s; }
+.card-enter:nth-child(7)  { animation-delay: 0.36s; }
+.card-enter:nth-child(8)  { animation-delay: 0.42s; }
+.card-enter:nth-child(9)  { animation-delay: 0.48s; }
+.card-enter:nth-child(10) { animation-delay: 0.54s; }
+
+/* ─── Focus ring — designed, not browser-default ─────────────────── */
+:focus-visible {
+  outline: 2px solid var(--clr-gold);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+/* ─── Reduced motion ──────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

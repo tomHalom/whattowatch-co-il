@@ -1,0 +1,63 @@
+import { defineCollection, defineContentConfig, z } from '@nuxt/content'
+
+// Structured schema for a single recommended title inside a monthly
+// guide. Shared shape across providers so the SEO engine and the
+// SeriesCard component stay provider-agnostic.
+const seriesEntry = z.object({
+  rank: z.number(),
+  tmdbId: z.number(),
+  name: z.string(),
+  overview: z.string(),
+  posterPath: z.string().nullable(),
+  backdropPath: z.string().nullable(),
+  voteAverage: z.number(),
+  genres: z.array(z.string()),
+  firstAirDate: z.string().nullable(),
+  trailerYoutubeId: z.string().nullable(),
+})
+
+const faqEntry = z.object({
+  question: z.string(),
+  answer: z.string(),
+})
+
+export default defineContentConfig({
+  collections: {
+    // Provider configuration — logo, colors, SEO metadata, affiliate
+    // settings, supported countries. Adding a new provider is a new
+    // JSON file here, zero code changes.
+    providers: defineCollection({
+      type: 'data',
+      source: 'providers/*.json',
+      schema: z.object({
+        slug: z.string(),
+        name: z.string(),
+        logo: z.string(),
+        colorPrimary: z.string(),
+        colorSecondary: z.string(),
+        countries: z.array(z.string()),
+        seoTitle: z.string(),
+        seoDescription: z.string(),
+        affiliateEnabled: z.boolean().default(false),
+      }),
+    }),
+
+    // Monthly "Top 10" guides, one per provider per month. MVP ships
+    // Netflix only (content/netflix/*.he.md); other providers reuse
+    // the exact same schema (content/disney-plus/*.he.md, etc.).
+    netflixMonthly: defineCollection({
+      type: 'page',
+      source: 'netflix/*.he.md',
+      schema: z.object({
+        provider: z.string(),
+        slug: z.string(),
+        monthLabel: z.string(),
+        year: z.number(),
+        aiSummary: z.string(),
+        series: z.array(seriesEntry),
+        faq: z.array(faqEntry),
+        isFallback: z.boolean().default(false),
+      }),
+    }),
+  },
+})

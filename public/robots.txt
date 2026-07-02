@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://whattowatch.co.il/sitemap.xml

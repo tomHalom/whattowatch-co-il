@@ -1,0 +1,35 @@
+{
+  "nav": {
+    "home": "בית",
+    "netflixArchive": "ארכיון חודשי",
+    "categories": "קטגוריות נוספות",
+    "search": "חיפוש"
+  },
+  "home": {
+    "heroPrefix": "10 הסדרות הכי מומלצות בנטפליקס",
+    "heroCta": "לצפייה בטריילרים ובמדריך המלא",
+    "archiveTitle": "חודשים קודמים",
+    "categoriesTitle": "קטגוריות נוספות",
+    "categoriesSoon": "בקרוב: פלטפורמות סטרימינג נוספות, מוצרים חודשיים ואירועי ספורט"
+  },
+  "series": {
+    "watchTrailer": "נגן טריילר",
+    "genres": "ז'אנרים",
+    "rating": "דירוג",
+    "position": "מקום"
+  },
+  "faq": {
+    "title": "שאלות נפוצות"
+  },
+  "aiSummary": {
+    "title": "תקציר 30 שניות"
+  },
+  "footer": {
+    "privacy": "מדיניות פרטיות",
+    "terms": "תנאי שימוש",
+    "rights": "כל הזכויות שמורות"
+  },
+  "affiliate": {
+    "sponsored": "קישור ממומן"
+  }
+}

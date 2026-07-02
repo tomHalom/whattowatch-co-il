@@ -1,0 +1,48 @@
+name: Monthly Netflix update
+
+on:
+  schedule:
+    - cron: '0 3 1 * *' # 1 לכל חודש, 03:00 UTC
+  workflow_dispatch: {} # מאפשר הרצה ידנית מ-GitHub UI לצורך בדיקה
+
+jobs:
+  update-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Fetch top 10 + regenerate SEO/AEO artifacts
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+          NUXT_PUBLIC_SITE_URL: ${{ vars.SITE_URL }}
+        run: npm run monthly:update
+
+      - name: Commit generated content
+        run: |
+          git config user.name "whattowatch-bot"
+          git config user.email "bot@whattowatch.co.il"
+          git add content public/data public/sitemap.xml public/feed.xml public/llms.txt
+          git commit -m "Monthly update $(date +'%Y-%m')" || echo "No changes"
+          git push
+
+      - run: npm run generate
+
+      - name: Deploy to Vercel
+        if: ${{ vars.DEPLOY_ON_UPDATE == 'true' }}
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+        run: |
+          npx vercel pull --yes --environment=production --token=$VERCEL_TOKEN
+          npx vercel build --prod --token=$VERCEL_TOKEN
+          npx vercel deploy --prebuilt --prod --token=$VERCEL_TOKEN

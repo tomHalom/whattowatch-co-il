@@ -1,0 +1,11 @@
+{
+  "slug": "netflix",
+  "name": "נטפליקס",
+  "logo": "/logos/netflix.svg",
+  "colorPrimary": "#D64545",
+  "colorSecondary": "#14131C",
+  "countries": ["IL"],
+  "seoTitle": "נטפליקס — מדריך הסדרות המומלצות | WhatToWatch.co.il",
+  "seoDescription": "טופ 10 הסדרות המומלצות בנטפליקס מתעדכן כל חודש, לפי ז'אנר, מצב רוח ופופולריות — עם טריילרים, דירוגים ותקציר AI לכל סדרה.",
+  "affiliateEnabled": true
+}
