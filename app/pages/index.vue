@@ -8,6 +8,16 @@ const { data: months } = await useAsyncData('home-months', () =>
 const current = computed(() => months.value?.[0])
 const archive = computed(() => months.value?.slice(1) ?? [])
 
+// ─── Modal state ────────────────────────────────────────────────
+const selectedSeries = ref<null | (typeof current.value extends null | undefined ? never : (typeof current.value)['series'][number])>(null)
+
+function openModal(item: NonNullable<typeof selectedSeries.value>) {
+  selectedSeries.value = item
+}
+function closeModal() {
+  selectedSeries.value = null
+}
+
 const genres = [
   { slug: 'drama',       label: 'דרמה',       icon: '🎭' },
   { slug: 'thriller',    label: 'מתח',         icon: '😱' },
@@ -25,7 +35,7 @@ useHead({
   meta: [
     {
       name: 'description',
-      content: `גלה את הסדרות הכי מומלצות בנטפליקס לחודש ${current.value?.monthLabel ?? ''} — טופ 10 מעודכן, טריילרים, דירוגים וז'אנרים. מה לצפות הערב בנטפליקס.`,
+      content: `גלה את הסדרות הכי מומלצות בנטפליקס לחודש ${current.value?.monthLabel ?? ''} — טופ 10 מעודכן, טריילרים, דירוגים וז'אנרים. נבחר בקפידה על ידי צוות הבינג'יונרים שלנו.`,
     },
     { property: 'og:title', content: 'מה לצפות בנטפליקס — נטפליקס טופ 10 החודש' },
     { property: 'og:type', content: 'website' },
@@ -52,12 +62,22 @@ if (current.value) {
 
 <template>
   <div>
+    <!-- ── Modal ──────────────────────────────────────────────────────── -->
+    <SeriesModal
+      :series="selectedSeries"
+      @close="closeModal"
+    />
+
     <!-- ── Hero ──────────────────────────────────────────────────────── -->
     <section v-if="current" class="relative overflow-hidden border-b border-charcoal-line bg-charcoal-deep">
       <div class="mx-auto max-w-5xl px-4 py-12 md:py-16">
-        <p class="font-utility text-xs tracking-widest text-sunset-gold uppercase">
-          {{ $t('home.heroPrefix') }} — {{ current.monthLabel }} {{ current.year }}
-        </p>
+        <div class="flex items-center gap-2 mb-1">
+          <span class="font-utility text-xs tracking-widest text-sunset-gold uppercase">
+            {{ $t('home.heroPrefix') }} — {{ current.monthLabel }} {{ current.year }}
+          </span>
+          <span class="text-xs text-mist-grey/50">|</span>
+          <span class="text-xs text-mist-grey/60">נבחר בקפידה על ידי צוות הבינג'יונרים שלנו</span>
+        </div>
         <h1 class="mt-3 font-display text-3xl font-black leading-tight text-milk-parchment md:text-5xl max-w-2xl">
           מה לצפות בנטפליקס — הסדרות הכי מומלצות לחודש {{ current.monthLabel }}
         </h1>
@@ -87,10 +107,18 @@ if (current.value) {
       >TOP10</span>
     </section>
 
-    <!-- ── SEO intro block ──────────────────────────────────────────── -->
-    <div v-if="current" class="mx-auto max-w-5xl px-4 pt-10">
+    <!-- ── Editorial badge + AI summary ─────────────────────────────── -->
+    <div v-if="current" class="mx-auto max-w-5xl px-4 pt-8">
+      <div class="editorial-banner">
+        <span class="editorial-icon">✍️</span>
+        <div>
+          <p class="editorial-title">נבחר על ידי צוות הבינג'יונרים המוסמכים שלנו</p>
+          <p class="editorial-sub">הרשימה מתעדכנת ב-1 לכל חודש · לוחצים על כרטיסייה לפרטים מלאים + טריילר</p>
+        </div>
+      </div>
       <AiSummaryBlock
         :text="`נטפליקס טופ 10 — ${current.monthLabel} ${current.year}: ${current.aiSummary}`"
+        class="mt-4"
       />
     </div>
 
@@ -102,12 +130,14 @@ if (current.value) {
           :key="item.tmdbId + item.name"
           :rank="item.rank"
           :name="item.name"
+          :name-he="item.nameHe"
           :overview="item.overview"
           :poster-path="item.posterPath"
           :vote-average="item.voteAverage"
           :genres="item.genres"
           :trailer-youtube-id="item.trailerYoutubeId"
-          :to="`/providers/netflix/series/${slugify(item.name, item.tmdbId)}`"
+          :editor-review="item.editorReview"
+          @open-modal="openModal(item)"
         />
       </div>
     </div>
@@ -149,3 +179,32 @@ if (current.value) {
     </section>
   </div>
 </template>
+
+<style scoped>
+.editorial-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.875rem 1.25rem;
+  background: linear-gradient(135deg, rgba(230,60,40,0.06), rgba(255,140,0,0.04));
+  border: 1px solid rgba(230,60,40,0.18);
+  border-radius: 0.75rem;
+}
+.editorial-icon {
+  font-size: 1.25rem;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+.editorial-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: rgba(245,240,232,0.9);
+  margin: 0;
+}
+.editorial-sub {
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.4);
+  margin: 0.2rem 0 0;
+  font-family: monospace;
+}
+</style>

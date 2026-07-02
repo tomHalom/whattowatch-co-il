@@ -7,13 +7,16 @@ const seriesEntry = z.object({
   rank: z.number(),
   tmdbId: z.number(),
   name: z.string(),
+  nameHe: z.string().optional(),
   overview: z.string(),
   posterPath: z.string().nullable(),
   backdropPath: z.string().nullable(),
   voteAverage: z.number(),
   genres: z.array(z.string()),
-  firstAirDate: z.string().nullable(),
+  firstAirDate: z.string().nullable().optional(),
+  seasons: z.number().optional(),
   trailerYoutubeId: z.string().nullable(),
+  editorReview: z.string().optional(),
 })
 
 const faqEntry = z.object({

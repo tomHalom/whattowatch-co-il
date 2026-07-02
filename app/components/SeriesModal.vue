@@ -1,0 +1,385 @@
+<template>
+  <Teleport to="body">
+    <Transition name="modal-fade">
+      <div
+        v-if="series"
+        class="modal-overlay"
+        role="dialog"
+        aria-modal="true"
+        :aria-label="series.nameHe || series.name"
+        @click.self="emit('close')"
+      >
+        <div class="modal-panel" dir="rtl">
+          <!-- Close button -->
+          <button
+            class="modal-close"
+            aria-label="סגור"
+            @click="emit('close')"
+          >
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M15 5L5 15M5 5l10 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+
+          <!-- Backdrop image blur -->
+          <div
+            v-if="series.backdropPath"
+            class="modal-backdrop-img"
+            :style="{ backgroundImage: `url(${series.backdropPath})` }"
+          />
+
+          <div class="modal-content">
+            <!-- Left: Poster -->
+            <div class="modal-poster-col">
+              <div class="modal-poster-wrap">
+                <img
+                  v-if="series.posterPath"
+                  :src="series.posterPath"
+                  :alt="series.nameHe || series.name"
+                  class="modal-poster"
+                  loading="lazy"
+                />
+                <div v-else class="modal-poster-placeholder">
+                  <span>🎬</span>
+                </div>
+                <!-- Medal rank badge -->
+                <div class="modal-rank-badge" :class="rankClass">
+                  <span v-if="series.rank === 1">🥇</span>
+                  <span v-else-if="series.rank === 2">🥈</span>
+                  <span v-else-if="series.rank === 3">🥉</span>
+                  <span v-else>{{ series.rank }}</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Details -->
+            <div class="modal-details-col">
+              <div class="modal-meta-row">
+                <span v-for="g in (series.genres || [])" :key="g" class="modal-genre-tag">{{ g }}</span>
+                <span v-if="series.firstAirDate" class="modal-year">
+                  {{ new Date(series.firstAirDate).getFullYear() }}
+                </span>
+                <span v-if="series.seasons" class="modal-seasons">
+                  {{ series.seasons }} עונות
+                </span>
+              </div>
+
+              <h2 class="modal-title">{{ series.nameHe || series.name }}</h2>
+              <p class="modal-title-en">{{ series.name }}</p>
+
+              <!-- Star rating -->
+              <div class="modal-rating">
+                <div class="modal-stars">
+                  <template v-for="i in 5" :key="i">
+                    <span class="modal-star" :class="starClass(i, series.voteAverage)">★</span>
+                  </template>
+                </div>
+                <span class="modal-score">{{ series.voteAverage?.toFixed(1) }}/10</span>
+              </div>
+
+              <!-- Overview -->
+              <p class="modal-overview">{{ series.overview }}</p>
+
+              <!-- Editor review -->
+              <div v-if="series.editorReview" class="modal-editor-review">
+                <div class="editor-review-header">
+                  <span class="editor-icon">✍️</span>
+                  <span class="editor-label">ביקורת הבינג'יונרים</span>
+                </div>
+                <blockquote class="editor-quote">{{ series.editorReview }}</blockquote>
+              </div>
+
+              <!-- Trailer -->
+              <div v-if="series.trailerYoutubeId" class="modal-trailer-section">
+                <div class="trailer-label">
+                  <span class="trailer-icon">▶</span> טריילר רשמי
+                </div>
+                <div v-if="showTrailer" class="trailer-frame-wrap">
+                  <iframe
+                    :src="`https://www.youtube.com/embed/${series.trailerYoutubeId}?autoplay=1&rel=0`"
+                    :title="`טריילר ${series.nameHe || series.name}`"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    class="trailer-iframe"
+                  />
+                </div>
+                <button v-else class="trailer-play-btn" @click="showTrailer = true">
+                  <span class="play-circle">▶</span>
+                  <span>צפה בטריילר</span>
+                </button>
+              </div>
+
+              <!-- Netflix link -->
+              <a
+                :href="`https://www.netflix.com/search?q=${encodeURIComponent(series.name)}`"
+                target="_blank"
+                rel="noopener noreferrer sponsored"
+                class="modal-netflix-btn"
+              >
+                צפה בנטפליקס →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Transition>
+  </Teleport>
+</template>
+
+<script setup lang="ts">
+interface Series {
+  rank: number
+  name: string
+  nameHe?: string
+  overview?: string
+  posterPath?: string | null
+  backdropPath?: string | null
+  voteAverage?: number
+  genres?: string[]
+  firstAirDate?: string | null
+  seasons?: number
+  trailerYoutubeId?: string | null
+  editorReview?: string
+}
+
+const props = defineProps<{ series: Series | null }>()
+const emit = defineEmits<{ close: [] }>()
+
+const showTrailer = ref(false)
+
+watch(() => props.series, (val) => {
+  showTrailer.value = false
+  if (import.meta.client) {
+    document.body.style.overflow = val ? 'hidden' : ''
+  }
+})
+
+onUnmounted(() => {
+  if (import.meta.client) {
+    document.body.style.overflow = ''
+  }
+})
+
+onMounted(() => {
+  const onKey = (e: KeyboardEvent) => {
+    if (e.key === 'Escape') emit('close')
+  }
+  window.addEventListener('keydown', onKey)
+  onUnmounted(() => window.removeEventListener('keydown', onKey))
+})
+
+const rankClass = computed(() => {
+  const r = props.series?.rank
+  if (r === 1) return 'rank-gold'
+  if (r === 2) return 'rank-silver'
+  if (r === 3) return 'rank-bronze'
+  return 'rank-plain'
+})
+
+function starClass(i: number, score?: number) {
+  if (!score) return 'star-empty'
+  const normalized = score / 2
+  if (i <= Math.floor(normalized)) return 'star-full'
+  if (i === Math.ceil(normalized) && normalized % 1 >= 0.4) return 'star-half'
+  return 'star-empty'
+}
+</script>
+
+<style scoped>
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9000;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  backdrop-filter: blur(4px);
+}
+
+.modal-panel {
+  position: relative;
+  background: #141414;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 1.25rem;
+  max-width: 900px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-shadow: 0 32px 80px rgba(0,0,0,0.8);
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255,0.1) transparent;
+}
+
+.modal-backdrop-img {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center top;
+  opacity: 0.07;
+  filter: blur(2px);
+  pointer-events: none;
+}
+
+.modal-close {
+  position: sticky;
+  float: left;
+  top: 1rem;
+  left: 1rem;
+  z-index: 10;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(20,20,20,0.9);
+  color: rgba(255,255,255,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 1rem;
+  transition: all 0.15s;
+}
+.modal-close:hover {
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  border-color: rgba(255,255,255,0.3);
+}
+
+.modal-content {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 2rem;
+  padding: 1.5rem 2rem 2rem;
+  position: relative;
+}
+
+@media (max-width: 600px) {
+  .modal-content { grid-template-columns: 1fr; padding: 1rem; }
+}
+
+.modal-poster-col { position: relative; }
+.modal-poster-wrap { position: relative; }
+.modal-poster {
+  width: 100%;
+  border-radius: 0.75rem;
+  aspect-ratio: 2/3;
+  object-fit: cover;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.6);
+}
+.modal-poster-placeholder {
+  aspect-ratio: 2/3;
+  background: rgba(255,255,255,0.05);
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+.modal-rank-badge {
+  position: absolute;
+  top: -0.75rem;
+  right: -0.75rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 1.3rem;
+  border: 3px solid;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+}
+.rank-gold   { background: linear-gradient(135deg, #FFD700, #B8860B); border-color: #FFD700; color: #3a2700; }
+.rank-silver { background: linear-gradient(135deg, #E8E8E8, #9E9E9E); border-color: #C0C0C0; color: #222; }
+.rank-bronze { background: linear-gradient(135deg, #CD7F32, #8B4513); border-color: #CD7F32; color: #fff; }
+.rank-plain  { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.15); color: rgba(255,255,255,0.6); font-size: 1rem; }
+
+.modal-details-col { display: flex; flex-direction: column; gap: 1rem; }
+
+.modal-meta-row { display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; }
+.modal-genre-tag {
+  padding: 0.2rem 0.6rem;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 0.3rem;
+  font-size: 0.7rem;
+  color: rgba(255,255,255,0.6);
+  font-family: monospace;
+}
+.modal-year, .modal-seasons { font-size: 0.7rem; color: rgba(255,255,255,0.4); font-family: monospace; }
+
+.modal-title { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 900; color: #F5F0E8; line-height: 1.2; margin: 0; }
+.modal-title-en { font-size: 0.85rem; color: rgba(255,255,255,0.3); font-family: monospace; margin: 0; }
+
+.modal-rating { display: flex; align-items: center; gap: 0.75rem; }
+.modal-stars { display: flex; gap: 0.1rem; }
+.modal-star { font-size: 1.5rem; line-height: 1; }
+.star-full  { color: #FFD700; text-shadow: 0 0 8px rgba(255,215,0,0.5); }
+.star-half  { color: #FFD700; opacity: 0.6; }
+.star-empty { color: rgba(255,255,255,0.15); }
+.modal-score { font-size: 0.9rem; color: rgba(255,255,255,0.5); font-family: monospace; }
+
+.modal-overview { font-size: 0.95rem; line-height: 1.7; color: rgba(255,255,255,0.7); margin: 0; }
+
+.modal-editor-review {
+  background: linear-gradient(135deg, rgba(230,60,40,0.06), rgba(255,140,0,0.04));
+  border: 1px solid rgba(230,60,40,0.2);
+  border-right: 3px solid #E63C28;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+.editor-review-header { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.6rem; }
+.editor-icon { font-size: 1rem; }
+.editor-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: #E63C28; font-weight: 700; font-family: monospace; }
+.editor-quote { margin: 0; font-size: 0.9rem; line-height: 1.6; color: rgba(255,255,255,0.75); font-style: italic; }
+
+.modal-trailer-section { display: flex; flex-direction: column; gap: 0.75rem; }
+.trailer-label { display: flex; align-items: center; gap: 0.4rem; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.4); font-family: monospace; }
+.trailer-icon { color: #E63C28; }
+.trailer-play-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.25rem;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 0.5rem;
+  color: rgba(255,255,255,0.8);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  width: fit-content;
+}
+.trailer-play-btn:hover { background: rgba(230,60,40,0.15); border-color: rgba(230,60,40,0.4); color: #fff; }
+.play-circle {
+  width: 2rem; height: 2rem; border-radius: 50%; background: #E63C28;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.7rem; color: #fff; flex-shrink: 0;
+}
+.trailer-frame-wrap { position: relative; width: 100%; aspect-ratio: 16/9; border-radius: 0.5rem; overflow: hidden; background: #000; }
+.trailer-iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: none; }
+
+.modal-netflix-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: #E50914;
+  color: #fff;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.2s;
+  width: fit-content;
+}
+.modal-netflix-btn:hover { background: #b81c2d; transform: translateY(-1px); box-shadow: 0 4px 16px rgba(229,9,20,0.4); }
+
+.modal-fade-enter-active, .modal-fade-leave-active { transition: all 0.25s ease; }
+.modal-fade-enter-from, .modal-fade-leave-to { opacity: 0; }
+</style>
