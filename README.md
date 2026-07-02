@@ -27,8 +27,9 @@ npm run dev              # http://localhost:3000
 הפרויקט **רץ ועובד מקומית עכשיו** בלי אף אחד מהפריטים הבאים. הם
 נדרשים רק לתוכן אמיתי / דיפלוי בפועל / הכנסה ממונטיזציה:
 
-- [ ] **TMDB_API_KEY** — מפתח חינמי ב-https://www.themoviedb.org/settings/api,
-      להוסיף ל-`.env` (מקומי) ול-GitHub Secrets (לאוטומציה החודשית).
+- [ ] **TMDB_READ_ACCESS_TOKEN** — Read Access Token (JWT) מ-https://www.themoviedb.org/settings/api
+      (לשונית "API Read Access Token" — הטוקן הארוך שמתחיל ב-`eyJ`).
+      להוסיף ל-`.env` מקומית + ל-GitHub Secrets (שם: `TMDB_READ_ACCESS_TOKEN`) לאוטומציה.
 - [ ] **רכישת הדומיין** `whattowatch.co.il` בפועל אצל רשם מוסמך (ISOC.org.il).
 - [ ] **חיבור הדומיין ב-Vercel** (Project Settings → Domains) + הגדרת
       `NUXT_PUBLIC_SITE_URL=https://whattowatch.co.il`.

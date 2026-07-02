@@ -22,7 +22,7 @@ jobs:
 
       - name: Fetch top 10 + regenerate SEO/AEO artifacts
         env:
-          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+          TMDB_READ_ACCESS_TOKEN: ${{ secrets.TMDB_READ_ACCESS_TOKEN }}
           NUXT_PUBLIC_SITE_URL: ${{ vars.SITE_URL }}
         run: npm run monthly:update
 

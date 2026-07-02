@@ -14,9 +14,9 @@ import { mkdir, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import { stringify as toYaml } from 'yaml'
 
-const TMDB_API_KEY = process.env.TMDB_API_KEY || ''
 const TMDB_BASE = 'https://api.themoviedb.org/3'
 const NETFLIX_NETWORK_ID = 213
+const HAS_TMDB_AUTH = !!(process.env.TMDB_READ_ACCESS_TOKEN || process.env.TMDB_API_KEY)
 
 const HEBREW_MONTHS = [
   'ינואר', 'פברואר', 'מרץ', 'אפריל', 'מאי', 'יוני',
@@ -27,10 +27,20 @@ const ROOT = path.resolve(new URL('.', import.meta.url).pathname, '..')
 
 async function tmdbGet(endpoint, params = {}) {
   const url = new URL(`${TMDB_BASE}${endpoint}`)
-  url.searchParams.set('api_key', TMDB_API_KEY)
   url.searchParams.set('language', 'he-IL')
   for (const [k, v] of Object.entries(params)) url.searchParams.set(k, v)
-  const res = await fetch(url)
+
+  // Bearer token (Read Access Token) — מועדף
+  // API key ישן (v3) — חלופה
+  const readToken = process.env.TMDB_READ_ACCESS_TOKEN || ''
+  const apiKey    = process.env.TMDB_API_KEY || ''
+
+  const headers = readToken
+    ? { Authorization: `Bearer ${readToken}`, 'Content-Type': 'application/json' }
+    : {}
+  if (!readToken && apiKey) url.searchParams.set('api_key', apiKey)
+
+  const res = await fetch(url, { headers })
   if (!res.ok) throw new Error(`TMDB ${endpoint} failed: ${res.status}`)
   return res.json()
 }
@@ -165,11 +175,11 @@ async function main() {
   const monthLabel = HEBREW_MONTHS[monthIndex]
   const slug = `${year}-${String(monthIndex + 1).padStart(2, '0')}`
 
-  const usingFallback = !TMDB_API_KEY
+  const usingFallback = !HAS_TMDB_AUTH
   if (usingFallback) {
     console.warn(
-      '[fetchTopSeries] TMDB_API_KEY לא מוגדר — נוצר תוכן דמו (fallback). ' +
-        'הגדר TMDB_API_KEY ב-.env והרץ שוב לנתונים אמיתיים.',
+      '[fetchTopSeries] TMDB_READ_ACCESS_TOKEN (או TMDB_API_KEY) לא מוגדר — נוצר תוכן דמו (fallback). ' +
+        'הגדר TMDB_READ_ACCESS_TOKEN ב-.env והרץ שוב לנתונים אמיתיים.',
     )
   }
 
