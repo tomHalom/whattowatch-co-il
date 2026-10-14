@@ -5,6 +5,20 @@ import { slugify } from './app/utils/slugify'
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url))
 
+function resolveSiteUrl(): string {
+  // generateHostFiles writes this before `nuxt generate`. Prefer it so a
+  // later dotenv load cannot put the canonical host back on the unregistered domain.
+  try {
+    const fromFile = readFileSync(path.join(ROOT, 'public', '.site-url'), 'utf-8').trim()
+    if (fromFile) return fromFile.replace(/\/$/, '')
+  } catch {
+    // fresh checkout before the first generate
+  }
+  return (process.env.NUXT_PUBLIC_SITE_URL || 'https://whattowatch.co.il').replace(/\/$/, '')
+}
+
+const siteUrl = resolveSiteUrl()
+
 // Cards no longer <a href> to series-detail pages (they open a modal
 // instead), so Nitro's link-crawler can no longer *discover*
 // /providers/{provider}/series/{slug} or /providers/{provider}(/top-10)
@@ -70,7 +84,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: ['/', ...collectDynamicRoutes()],
+      routes: ['/', '/search', ...collectDynamicRoutes()],
     },
   },
 
@@ -82,7 +96,7 @@ export default defineNuxtConfig({
 
   i18n: {
     bundle: { optimizeTranslationDirective: false },
-    baseUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://whattowatch.co.il',
+    baseUrl: siteUrl,
     locales: [
       { code: 'he', language: 'he-IL', dir: 'rtl', name: 'עברית', file: 'he.json' },
       // אנגלית מוכנה להפעלה עתידית — לא פעילה ב-MVP.
@@ -96,7 +110,7 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://whattowatch.co.il',
+      siteUrl,
       siteName: 'WhatToWatch.co.il',
       adsensePublisherId: process.env.NUXT_PUBLIC_ADSENSE_PUBLISHER_ID || '',
       adsenseEnabled: process.env.NUXT_PUBLIC_ADSENSE_ENABLED === 'true',
@@ -127,4 +141,11 @@ export default defineNuxtConfig({
   },
 
   devtools: { enabled: true },
+
+  hooks: {
+    ready(nuxt) {
+      const fromEnv = (process.env.NUXT_PUBLIC_SITE_URL || '').replace(/\/$/, '')
+      if (fromEnv) nuxt.options.runtimeConfig.public.siteUrl = fromEnv
+    },
+  },
 })

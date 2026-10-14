@@ -1,0 +1,12 @@
+.env
+.env.*
+!.env.example
+public/.site-url
+graphify-out
+_workspace
+.claude
+Claude outputs
+video
+public/video
+public/logo-preview.html
+public/logos/spinning-eye-candidate.png
