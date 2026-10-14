@@ -19,6 +19,14 @@ function resolveSiteUrl(): string {
 
 const siteUrl = resolveSiteUrl()
 
+// Google's site check reads the raw HTML and does not run the client bundle.
+// Accept either `pub-…` or `ca-pub-…`; the script client must be `ca-pub-…`.
+const adsenseEnabled = process.env.NUXT_PUBLIC_ADSENSE_ENABLED === 'true'
+const adsenseClientMatch = (process.env.NUXT_PUBLIC_ADSENSE_PUBLISHER_ID || '')
+  .trim()
+  .match(/^(?:ca-)?(pub-\d+)$/)
+const adsenseClientId = adsenseClientMatch ? `ca-${adsenseClientMatch[1]}` : ''
+
 // Cards no longer <a href> to series-detail pages (they open a modal
 // instead), so Nitro's link-crawler can no longer *discover*
 // /providers/{provider}/series/{slug} or /providers/{provider}(/top-10)
@@ -91,6 +99,14 @@ export default defineNuxtConfig({
   app: {
     head: {
       htmlAttrs: { lang: 'he', dir: 'rtl' },
+      script: adsenseEnabled && adsenseClientId
+        ? [{
+            key: 'adsbygoogle-lib',
+            src: `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseClientId}`,
+            async: true,
+            crossorigin: 'anonymous',
+          }]
+        : [],
     },
   },
 
@@ -112,8 +128,8 @@ export default defineNuxtConfig({
     public: {
       siteUrl,
       siteName: 'WhatToWatch.co.il',
-      adsensePublisherId: process.env.NUXT_PUBLIC_ADSENSE_PUBLISHER_ID || '',
-      adsenseEnabled: process.env.NUXT_PUBLIC_ADSENSE_ENABLED === 'true',
+      adsensePublisherId: adsenseClientId,
+      adsenseEnabled,
       adsenseSlotHome: process.env.NUXT_PUBLIC_ADSENSE_SLOT_HOME || '',
       adsenseSlotProvider: process.env.NUXT_PUBLIC_ADSENSE_SLOT_PROVIDER || '',
       adsenseSlotMonthly: process.env.NUXT_PUBLIC_ADSENSE_SLOT_MONTHLY || '',
