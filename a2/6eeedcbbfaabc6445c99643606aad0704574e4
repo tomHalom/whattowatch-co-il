@@ -1,0 +1,21 @@
+nuxt.config.ts
+  s_1b751da0fce7db::t_7f50044ec728cd 22-29
+  s_1b751da0fce7db::t_97b95732d3f200 131-132
+  s_1b751da0fce7db::t_226e8cb2267147 102-109
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "a26eeedcbbfaabc6445c99643606aad0704574e4",
+  "prompts": {},
+  "sessions": {
+    "s_1b751da0fce7db": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "cc1a1264-88e0-4c72-9410-f45f8cb72e01",
+        "model": "grok-4.7"
+      },
+      "human_author": "toms <toms@spiralsolutions.com>"
+    }
+  }
+}
