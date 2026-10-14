@@ -2,6 +2,7 @@
 const route = useRoute()
 const genre = route.params.genre as string
 const { public: pub } = useRuntimeConfig()
+const { selected, open, close } = useSeriesModal()
 
 interface GenreMeta {
   label: string
@@ -19,41 +20,30 @@ const GENRE_META: Record<string, GenreMeta> = {
   documentary: { label: 'דוקומנטרי',        labelEn: 'Documentary', description: 'הדוקומנטריים הכי מרתקים בנטפליקס — טבע, פשע ואנשים.',                        keywords: 'דוקומנטרי בנטפליקס, סרטי תיעוד נטפליקס' },
   kids:        { label: 'ילדים',            labelEn: 'Kids',        description: 'הסדרות הכי טובות לילדים בנטפליקס — אנימציות והרפתקאות.',                       keywords: 'סדרות ילדים בנטפליקס, אנימציה ילדים' },
   anime:       { label: 'אנימה',            labelEn: 'Anime',       description: 'הסדרות אנימה הכי טובות בנטפליקס — מיפן ומהעולם.',                            keywords: 'אנימה נטפליקס, anime netflix ישראל' },
-  israeli:     { label: 'סדרות ישראליות',  labelEn: 'Israeli',     description: 'סדרות ישראליות בנטפליקס — פאודה, שטיסל, בני ערובה ועוד.',                    keywords: 'סדרות ישראליות בנטפליקס, פאודה נטפליקס, שטיסל נטפליקס' },
+  israeli:     { label: 'סדרות ישראליות',  labelEn: 'Israeli',     description: 'סדרות ישראליות בנטפליקס — פאודה, שטיסל ועוד.',                              keywords: 'סדרות ישראליות בנטפליקס, פאודה נטפליקס, שטיסל נטפליקס' },
 }
 
 const FALLBACK_META: GenreMeta = { label: genre, labelEn: genre, description: `סדרות ${genre} בנטפליקס.`, keywords: `${genre} נטפליקס` }
 const meta = computed(() => GENRE_META[genre] ?? FALLBACK_META)
 
-const { data: months } = await useAsyncData(`genre-${genre}-months`, () =>
-  queryCollection('netflixMonthly').order('slug', 'DESC').all(),
+// תוכן ייעודי לכל ז'אנר (content/genres/{slug}.json) — לא נגזר
+// מהרשימות החודשיות, כי לא לכל ז'אנר יש genre ID תואם ב-TMDB ל-TV
+// (אין "Thriller"/"Romance" נפרדים), ולא כל ז'אנר בהכרח מופיע בטופ 10
+// של חודש נתון. ראה scripts/fetchGenreShowcases.mjs.
+const { data: showcase } = await useAsyncData(`genre-${genre}-showcase`, () =>
+  queryCollection('genreShowcases').where('slug', '=', genre).first(),
 )
 
-const ISRAELI_TITLES = new Set(['Fauda', 'Shtisel', 'Hostages', 'Tehran', 'On the Spectrum', 'Our Boys'])
+const series = computed(() => showcase.value?.series ?? [])
 
-const matchingSeries = computed(() => {
-  if (!months.value) return []
-  const seen = new Set<string>()
-  const result: Array<{
-    rank: number; name: string; overview: string; posterPath: string | null
-    voteAverage: number; genres: string[]; trailerYoutubeId: string | null; tmdbId: number
-  }> = []
-  for (const month of months.value) {
-    for (const s of month.series) {
-      const matches = genre === 'israeli'
-        ? ISRAELI_TITLES.has(s.name)
-        : (s.genres ?? []).some((g: string) =>
-            g.toLowerCase().includes(meta.value.labelEn.toLowerCase()) ||
-            g.includes(meta.value.label),
-          )
-      if (matches && !seen.has(s.name)) {
-        seen.add(s.name)
-        result.push(s)
-      }
-    }
-  }
-  return result
-})
+// לא כל סדרה שמוצגת בעמוד ז'אנר בהכרח הופיעה גם בטופ 10 חודשי
+// (fetchGenreShowcases.mjs שולף מבריכת מועמדים רחבה יותר) — אז לפני
+// שמקשרים לעמוד הפרטים שלה (/providers/netflix/series/...) צריך
+// לאמת שהיא קיימת שם בכלל, אחרת מקבלים 404.
+const { data: allMonths } = await useAsyncData('genre-all-months-index', () =>
+  queryCollection('netflixMonthly').all(),
+)
+const validTmdbIds = computed(() => new Set((allMonths.value ?? []).flatMap((m) => m.series.map((s) => s.tmdbId))))
 
 const pageTitle = computed(() =>
   genre === 'israeli'
@@ -70,30 +60,71 @@ useHead({
     { property: 'og:description', content: meta.value.description },
     { property: 'og:type',        content: 'website' },
   ],
-  link: [{ rel: 'canonical', href: `${pub.siteUrl}/netflix/zanre/${genre}` }],
+  link: [{ rel: 'canonical', href: `${pub.siteUrl}/netflix/genre/${genre}` }],
 })
 
-const faqItems = computed<Array<{ question: string; answer: string }>>(() =>
-  genre === 'israeli'
-    ? [
-        { question: 'מה הסדרה הישראלית הטובה ביותר בנטפליקס?',  answer: 'פאודה, שטיסל ובני ערובה הן המצליחות ביותר.' },
-        { question: 'האם פאודה עדיין בנטפליקס?',               answer: 'פאודה זמינה בנטפליקס.' },
-        { question: 'כמה עונות יש לשטיסל?',                    answer: 'לשטיסל יש 3 עונות בנטפליקס.' },
-        { question: 'מה הסדרה הישראלית החדשה בנטפליקס?',        answer: 'עקוב אחר הרשימה שלנו לגלות את החדשות.' },
-      ]
-    : [
-        { question: `מה סדרת ${meta.value.label} הטובה ביותר בנטפליקס?`, answer: `הרשימה שלנו מציגה את סדרות ${meta.value.label} הפופולריות ביותר.` },
-        { question: `מה לצפות בנטפליקס בז'אנר ${meta.value.label}?`,     answer: 'ראו את הרשימה המלאה למעלה עם דירוגים וטריילרים.' },
-        { question: "איך מוצאים סדרות לפי ז'אנר בנטפליקס?",              answer: "האתר שלנו מאפשר סינון לפי ז'אנר." },
-      ],
-)
+// תשובות שמתבססות על הנתונים האמיתיים של העמוד — לא הפניה כללית
+// ל"ראו למעלה". אם אין תוכן (showcase לא נוצר), חוזרים לתשובה כללית
+// אבל עדיין לא שקרית.
+const top = computed(() => series.value[0])
+const topLink = computed(() => {
+  if (!top.value || !validTmdbIds.value.has(top.value.tmdbId)) return undefined
+  return { to: `/providers/netflix/series/${slugify(top.value.name, top.value.tmdbId)}`, label: `לכל הפרטים על "${top.value.nameHe || top.value.name}"` }
+})
+const faqItems = computed<Array<{ question: string; answer: string; link?: { to: string; label: string } }>>(() => {
+  const topLabel = top.value ? (top.value.nameHe || top.value.name) : null
+  const count = series.value.length
+
+  if (genre === 'israeli') {
+    return [
+      {
+        question: 'מה הסדרה הישראלית הטובה ביותר בנטפליקס?',
+        answer: topLabel
+          ? `לפי הדירוגים שלנו כרגע, "${topLabel}" מככבת במקום הראשון — אבל שטיסל ופאודה קרובות מאוד.`
+          : 'פאודה ושטיסל הן מבין הסדרות הישראליות המצליחות ביותר בנטפליקס.',
+        link: topLink.value,
+      },
+      {
+        question: 'האם פאודה ושטיסל עדיין בנטפליקס?',
+        answer: 'שתיהן זמינות בנטפליקס נכון לעדכון האחרון של הרשימה שלנו — אימות אוטומטי מול נתוני נטפליקס האמיתיים, לא רק הנחה.',
+      },
+      {
+        question: `כמה סדרות ישראליות מופיעות ברשימה שלנו?`,
+        answer: `${count || 'מספר'} סדרות ישראליות שאימתנו כזמינות בנטפליקס בפועל, לא רק סדרות ישראליות באופן כללי.`,
+      },
+      {
+        question: 'איך בוחרים אילו סדרות ישראליות להציג?',
+        answer: 'אנחנו מאמתים זמינות אמיתית בנטפליקס (לא רק שהסדרה ישראלית) ומדרגים לפי פופולריות — כך שלא תמצאו כאן סדרה שירדה מהשירות.',
+      },
+    ]
+  }
+
+  return [
+    {
+      question: `מה סדרת ה${meta.value.label} הטובה ביותר בנטפליקס כרגע?`,
+      answer: topLabel
+        ? `לפי הרשימה שלנו, "${topLabel}" היא הסדרה המובילה בז'אנר ${meta.value.label} בנטפליקס כרגע.`
+        : `אנחנו מעדכנים את רשימת ${meta.value.label} הטובות ביותר בנטפליקס באופן שוטף.`,
+      link: topLink.value,
+    },
+    {
+      question: `כמה סדרות ${meta.value.label} מופיעות ברשימה?`,
+      answer: `${count || 'מספר'} סדרות ${meta.value.label} שאימתנו כזמינות בנטפליקס, מדורגות לפי פופולריות ודירוג.`,
+    },
+    {
+      question: "איך מוצאים סדרות לפי ז'אנר בנטפליקס?",
+      answer: `בדף הזה תמצאו רשימה מדורגת של סדרות ${meta.value.label} שזמינות בנטפליקס בפועל — לחצו על כרטיסייה לפרטים מלאים וטריילר.`,
+      link: { to: '/#genres', label: "לכל הז'אנרים בעמוד הבית" },
+    },
+  ]
+})
 
 useJsonLd(() => ({
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   name: pageTitle.value,
   description: meta.value.description,
-  url: `${pub.siteUrl}/netflix/zanre/${genre}`,
+  url: `${pub.siteUrl}/netflix/genre/${genre}`,
   inLanguage: 'he-IL',
 }), `genre-${genre}-collection`)
 
@@ -123,6 +154,8 @@ const otherGenres = computed(() => OTHER_GENRES.filter((g) => g.slug !== genre))
 
 <template>
   <div>
+    <SeriesModal :series="selected" @close="close" />
+
     <section class="relative overflow-hidden border-b border-charcoal-line bg-charcoal-deep">
       <div class="mx-auto max-w-5xl px-4 py-12">
         <Breadcrumbs
@@ -146,7 +179,7 @@ const otherGenres = computed(() => OTHER_GENRES.filter((g) => g.slug !== genre))
           class="mt-4 rounded-lg border border-sunset-gold/20 bg-sunset-gold/5 px-4 py-3 text-sm text-mist-grey"
         >
           <strong class="text-sunset-gold">נישת תוכן ישראלי:</strong>
-          פאודה, שטיסל, בני ערובה ועוד — התוכן הישראלי שכובש את העולם דרך נטפליקס.
+          פאודה, שטיסל ועוד — התוכן הישראלי שכובש את העולם דרך נטפליקס.
         </div>
       </div>
       <span
@@ -155,29 +188,28 @@ const otherGenres = computed(() => OTHER_GENRES.filter((g) => g.slug !== genre))
       >{{ meta.labelEn }}</span>
     </section>
 
-    <div class="mx-auto max-w-5xl px-4 pt-8">
-      <AiSummaryBlock :text="meta.description" />
-    </div>
-
     <div class="mx-auto max-w-5xl px-4 py-8">
-      <div v-if="matchingSeries.length" class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <div v-if="series.length" class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         <SeriesCard
-          v-for="(item, i) in matchingSeries"
-          :key="item.name"
-          :rank="i + 1"
+          v-for="item in series"
+          :key="item.tmdbId + item.name"
+          :rank="item.rank"
           :name="item.name"
+          :name-he="item.nameHe"
           :overview="item.overview"
           :poster-path="item.posterPath"
           :vote-average="item.voteAverage"
           :genres="item.genres"
           :trailer-youtube-id="item.trailerYoutubeId"
-          :to="`/providers/netflix/series/${slugify(item.name, item.tmdbId)}`"
+          :editor-review="item.editorReview"
+          @open-modal="open(item)"
         />
       </div>
       <div v-else class="rounded-xl border border-charcoal-line bg-charcoal-deep px-6 py-12 text-center">
         <p class="font-display text-2xl font-bold text-milk-parchment">עדיין לא הגיעו</p>
         <p class="mt-2 text-mist-grey">
-          בקר ב<NuxtLink to="/providers/netflix" class="link-quiet">נטפליקס</NuxtLink> לגלות את כל הסדרות.
+          הרץ <code class="text-sunset-gold">npm run fetch:genres</code> כדי לייצר את הרשימה, או בקר
+          ב<NuxtLink to="/providers/netflix" class="link-quiet">נטפליקס</NuxtLink> לגלות את כל הסדרות.
         </p>
       </div>
     </div>
@@ -192,7 +224,7 @@ const otherGenres = computed(() => OTHER_GENRES.filter((g) => g.slug !== genre))
         <NuxtLink
           v-for="g in otherGenres"
           :key="g.slug"
-          :to="`/netflix/zanre/${g.slug}`"
+          :to="`/netflix/genre/${g.slug}`"
           class="rounded-full border border-charcoal-line px-4 py-1.5 text-sm text-mist-grey hover:border-sunset-gold hover:text-sunset-gold transition-colors"
         >{{ g.label }}</NuxtLink>
       </div>

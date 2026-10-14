@@ -42,12 +42,9 @@
                 <div v-else class="modal-poster-placeholder">
                   <span>🎬</span>
                 </div>
-                <!-- Medal rank badge -->
+                <!-- Rank badge — special color per top-3 position, plain numeral -->
                 <div class="modal-rank-badge" :class="rankClass">
-                  <span v-if="series.rank === 1">🥇</span>
-                  <span v-else-if="series.rank === 2">🥈</span>
-                  <span v-else-if="series.rank === 3">🥉</span>
-                  <span v-else>{{ series.rank }}</span>
+                  {{ series.rank }}
                 </div>
               </div>
             </div>
@@ -60,12 +57,12 @@
                   {{ new Date(series.firstAirDate).getFullYear() }}
                 </span>
                 <span v-if="series.seasons" class="modal-seasons">
-                  {{ series.seasons }} עונות
+                  {{ series.seasons === 1 ? 'עונה אחת' : `${series.seasons} עונות` }}
                 </span>
               </div>
 
               <h2 class="modal-title">{{ series.nameHe || series.name }}</h2>
-              <p class="modal-title-en">{{ series.name }}</p>
+              <p class="modal-title-en" dir="ltr">{{ series.name }}</p>
 
               <!-- Star rating -->
               <div class="modal-rating">
@@ -89,36 +86,47 @@
                 <blockquote class="editor-quote">{{ series.editorReview }}</blockquote>
               </div>
 
-              <!-- Trailer -->
-              <div v-if="series.trailerYoutubeId" class="modal-trailer-section">
-                <div class="trailer-label">
-                  <span class="trailer-icon">▶</span> טריילר רשמי
-                </div>
-                <div v-if="showTrailer" class="trailer-frame-wrap">
-                  <iframe
-                    :src="`https://www.youtube.com/embed/${series.trailerYoutubeId}?autoplay=1&rel=0`"
-                    :title="`טריילר ${series.nameHe || series.name}`"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                    class="trailer-iframe"
-                  />
-                </div>
-                <button v-else class="trailer-play-btn" @click="showTrailer = true">
+              <!-- Trailer + Netflix CTAs — side by side. Once the trailer
+                   starts playing, the play button gives way to the full
+                   iframe below the row instead of squeezing beside it. -->
+              <div class="modal-cta-row">
+                <button
+                  v-if="series.trailerYoutubeId && !showTrailer"
+                  class="trailer-play-btn"
+                  @click="showTrailer = true"
+                >
                   <span class="play-circle">▶</span>
                   <span>צפה בטריילר</span>
                 </button>
+
+                <!-- קישור עומק רגיל לנטפליקס — לא מונטיזציה. Netflix אין
+                     לה תוכנית affiliate פתוחה/self-serve, אז אין כאן שום
+                     מזהה שותפים אמיתי; rel="sponsored" הושמט בכוונה כדי
+                     לא לתייג קישור לא-ממומן כממומן. אם/כשתאושר שותפות
+                     Netflix Partner Program (Impact/Partnerize), מחליפים
+                     את ה-href הזה בקישור עם מזהה השותפים ומחזירים
+                     rel="sponsored". תשתית affiliate אמיתית (מוגדרת
+                     כבר) נמצאת ב-AffiliateLink.vue (NordVPN/Amazon). -->
+                <a
+                  :href="`https://www.netflix.com/search?q=${encodeURIComponent(series.name)}`"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="modal-netflix-btn"
+                >
+                  צפה בנטפליקס →
+                </a>
               </div>
 
-              <!-- Netflix link -->
-              <a
-                :href="`https://www.netflix.com/search?q=${encodeURIComponent(series.name)}`"
-                target="_blank"
-                rel="noopener noreferrer sponsored"
-                class="modal-netflix-btn"
-              >
-                צפה בנטפליקס →
-              </a>
+              <div v-if="series.trailerYoutubeId && showTrailer" class="trailer-frame-wrap">
+                <iframe
+                  :src="`https://www.youtube.com/embed/${series.trailerYoutubeId}?autoplay=1&rel=0`"
+                  :title="`טריילר ${series.nameHe || series.name}`"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  class="trailer-iframe"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -225,11 +233,10 @@ function starClass(i: number, score?: number) {
 }
 
 .modal-close {
-  position: sticky;
-  float: left;
-  top: 1rem;
-  left: 1rem;
-  z-index: 10;
+  position: absolute;
+  top: 0.7rem;
+  inset-inline-end: 0.7rem;
+  z-index: 20;
   width: 2.25rem;
   height: 2.25rem;
   border-radius: 50%;
@@ -240,7 +247,7 @@ function starClass(i: number, score?: number) {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  margin: 1rem;
+  margin: 0;
   transition: all 0.15s;
 }
 .modal-close:hover {
@@ -251,14 +258,15 @@ function starClass(i: number, score?: number) {
 
 .modal-content {
   display: grid;
-  grid-template-columns: 200px 1fr;
-  gap: 2rem;
-  padding: 1.5rem 2rem 2rem;
+  grid-template-columns: minmax(140px, 200px) minmax(0, 1fr);
+  gap: 1.25rem;
+  padding: 3.25rem 1.15rem 1.35rem;
   position: relative;
 }
 
-@media (max-width: 600px) {
-  .modal-content { grid-template-columns: 1fr; padding: 1rem; }
+@media (max-width: 700px) {
+  .modal-content { grid-template-columns: 1fr; gap: 1rem; }
+  .modal-poster { width: min(220px, 100%); margin-inline: auto; display: block; }
 }
 
 .modal-poster-col { position: relative; }
@@ -281,10 +289,10 @@ function starClass(i: number, score?: number) {
 }
 .modal-rank-badge {
   position: absolute;
-  top: -0.75rem;
-  right: -0.75rem;
-  width: 3rem;
-  height: 3rem;
+  top: 0.55rem;
+  right: 0.55rem;
+  width: 2.75rem;
+  height: 2.75rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -311,10 +319,15 @@ function starClass(i: number, score?: number) {
   color: rgba(255,255,255,0.6);
   font-family: monospace;
 }
-.modal-year, .modal-seasons { font-size: 0.7rem; color: rgba(255,255,255,0.4); font-family: monospace; }
+.modal-year, .modal-seasons {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: rgba(255,255,255,0.85);
+  font-family: monospace;
+}
 
 .modal-title { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 900; color: #F5F0E8; line-height: 1.2; margin: 0; }
-.modal-title-en { font-size: 0.85rem; color: rgba(255,255,255,0.3); font-family: monospace; margin: 0; }
+.modal-title-en { font-size: 0.85rem; color: rgba(255,255,255,0.3); font-family: monospace; margin: 0; text-align: right; width: 100%; }
 
 .modal-rating { display: flex; align-items: center; gap: 0.75rem; }
 .modal-stars { display: flex; gap: 0.1rem; }
@@ -329,18 +342,16 @@ function starClass(i: number, score?: number) {
 .modal-editor-review {
   background: linear-gradient(135deg, rgba(230,60,40,0.06), rgba(255,140,0,0.04));
   border: 1px solid rgba(230,60,40,0.2);
-  border-right: 3px solid #E63C28;
+  border-inline-start: 3px solid #E63C28;
   border-radius: 0.5rem;
   padding: 1rem;
 }
 .editor-review-header { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.6rem; }
 .editor-icon { font-size: 1rem; }
-.editor-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: #E63C28; font-weight: 700; font-family: monospace; }
+.editor-label { font-size: 0.75rem; letter-spacing: 0; color: #E63C28; font-weight: 700; }
 .editor-quote { margin: 0; font-size: 0.9rem; line-height: 1.6; color: rgba(255,255,255,0.75); font-style: italic; }
 
-.modal-trailer-section { display: flex; flex-direction: column; gap: 0.75rem; }
-.trailer-label { display: flex; align-items: center; gap: 0.4rem; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.4); font-family: monospace; }
-.trailer-icon { color: #E63C28; }
+.modal-cta-row { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; }
 .trailer-play-btn {
   display: flex;
   align-items: center;

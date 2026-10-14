@@ -1,0 +1,192 @@
+{
+  "slug": "drama",
+  "series": [
+    {
+      "rank": 1,
+      "tmdbId": 82452,
+      "name": "Avatar: The Last Airbender",
+      "nameHe": "אווטאר: כשף האוויר האחרון",
+      "overview": "ילד שידוע כאווטאר צריך ללמוד לשלוט בכוחותיהם של ארבעת היסודות כדי להציל עולם במלחמה – ולהילחם באויב אכזרי שנחוש לעצור אותו.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/uvcUM02UIkgCIcndAKYsqLzxISM.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/xUB3xFMgsHgPmdWnUWkHTJ03vHa.jpg",
+      "voteAverage": 7.8,
+      "genres": [
+        "אקשן והרפתקאות",
+        "מדע בדיוני ופנטזיה",
+        "דרמה",
+        "משפחה"
+      ],
+      "firstAirDate": "2024-02-22",
+      "seasons": 2,
+      "trailerYoutubeId": "xEmlE9Ianuo",
+      "editorReview": "אווטאר: כשף האוויר האחרון — נהנינו בטירוף מהסדרה הזו! היא פשוט כיפית לצפייה מהרגע הראשון, ואנחנו כבר לא יכולים לחכות להמשך."
+    },
+    {
+      "rank": 2,
+      "tmdbId": 276161,
+      "name": "참교육",
+      "nameHe": "סדרת חינוך",
+      "overview": "הגבולות והכבוד בבתי הספר קורסים, וצוות פקחים לא קונבנציונלי נשלח לתקן את המצב – בעזרת שיעורים קשוחים וענייניים שאי אפשר למצוא בספרי הלימוד.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/3QSe1ezSC1ZQ7qQUXFwI7OHHRhY.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/vyG93jhmPL7tBIhRtCLa5mdBKob.jpg",
+      "voteAverage": 9.5,
+      "genres": [
+        "אקשן והרפתקאות",
+        "דרמה",
+        "קומדיה"
+      ],
+      "firstAirDate": "2026-06-05",
+      "seasons": 1,
+      "trailerYoutubeId": "LdezlX84py0",
+      "editorReview": "סדרת חינוך — התמכרנו ל\"סדרת חינוך\" מהרגע הראשון – זו פשוט דרמה עוצמתית שמשלבת אקשן מותח עם מסרים חשובים על צדק, ולא יכולנו להפסיק לצפות בה עד הסוף!"
+    },
+    {
+      "rank": 3,
+      "tmdbId": 278178,
+      "name": "I Will Find You",
+      "nameHe": "אני אמצא אותך",
+      "overview": "אב שנשפט ונכלא על לא עוול בכפו בגין רצח בנו מגלה שהוא כנראה עדיין בחיים, ויוצא למבצע חילוץ נואש.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/urcY2TrcxKznKmIAuP6xnhececv.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/z0R6ToCsMMkLwuQXjzzdd1QCdJv.jpg",
+      "voteAverage": 8.2,
+      "genres": [
+        "דרמה",
+        "מסתורין",
+        "פשע"
+      ],
+      "firstAirDate": "2026-06-18",
+      "seasons": 1,
+      "trailerYoutubeId": "mObRUsA7dPY",
+      "editorReview": "אני אמצא אותך — מהדרמות שגורמות לשלוח הודעה לחבר בשעה מוזרה רק כדי לדבר עליה."
+    },
+    {
+      "rank": 4,
+      "tmdbId": 91239,
+      "name": "Bridgerton",
+      "nameHe": "ברידג'רטון",
+      "overview": "שמיניית בני ברידג'רטון המלוכדת מחפשת אהבה ואושר בחברה הגבוהה של לונדון.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/75nzsvJ6hpJeT9GRcr0zt0qLTH5.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/6umsRLI7t0ydFwCl0JNEIO0q2LH.jpg",
+      "voteAverage": 8.1,
+      "genres": [
+        "דרמה"
+      ],
+      "firstAirDate": "2020-12-25",
+      "seasons": 5,
+      "trailerYoutubeId": "gpv7ayf_tyE",
+      "editorReview": "ברידג'רטון — נהנינו מאוד מהשילוב המפתיע של התקופה ההיסטורית עם המוזיקה המודרנית והליהוק המגוון, למרות שקצת הצטערנו שהסיפור של הזוג הראשי רץ מהר מדי לסוף. בכל מקרה, זו הייתה חוויה סוחפת ומהנה שסגרה עונה בצורה מושלמת עם טוויסט שפשוט השאיר אותנו פעורי פה."
+    },
+    {
+      "rank": 5,
+      "tmdbId": 200709,
+      "name": "약한영웅",
+      "nameHe": "גיבור חלש",
+      "overview": "תלמיד מוכשר ומופנם מתעמת עם בריונים ואויבים אלימים בעזרתם של חברים בלתי צפויים – אך אינו מודע לגודלה של הסכנה האורבת לו.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/jXd83QZhBDAFno4OGqHcMMDs56i.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/q5mJ4oKfGc6Cr9reIHFzD0pQzre.jpg",
+      "voteAverage": 8.7,
+      "genres": [
+        "אקשן והרפתקאות",
+        "דרמה"
+      ],
+      "firstAirDate": "2022-11-18",
+      "seasons": 2,
+      "trailerYoutubeId": "GDTz8sLK3_Q",
+      "editorReview": "גיבור חלש — הצוות התערב על מי ישרוד לסוף העונה. יש כאלה שהפסידו כסף."
+    },
+    {
+      "rank": 6,
+      "tmdbId": 42009,
+      "name": "Black Mirror",
+      "nameHe": "מראה שחורה",
+      "overview": "אנתולוגיה מרתקת של סיפורים מצמררים, החושפת את תכונותיו המעוותות ביותר של המין האנושי לצד חידושיו הגדולים ביותר, ועוד.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/vYGqegw5sDtVNLuW6EU8bSyKprL.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/dg3OindVAGZBjlT3xYKqIAdukPL.jpg",
+      "voteAverage": 8.3,
+      "genres": [
+        "מדע בדיוני ופנטזיה",
+        "דרמה",
+        "מסתורין"
+      ],
+      "firstAirDate": "2011-12-04",
+      "seasons": 7,
+      "trailerYoutubeId": "1iqra1ojEvM",
+      "editorReview": "מראה שחורה — התאהבנו בחדשנות ובאפלה של העונות הראשונות, אבל נראה שהקסם הלך לאיבוד מזמן והסדרה הפכה לצפויה ומשעממת מדי עבורנו. חבל לראות איך יצירה כל כך גאונית איבדה את העוקץ שלה בדרך."
+    },
+    {
+      "rank": 7,
+      "tmdbId": 78191,
+      "name": "You",
+      "nameHe": "את",
+      "overview": "בחור מקסים להחריד ומסוכן בטירוף לא בוחל באמצעים כדי להיכנס לחייהן של הנשים שהוא אובססיבי כלפיהן.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/25tJvflLhPYbC4zLrNCRcx6rTfc.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/gzOIymABxmetAECXtazEYCpMmfb.jpg",
+      "voteAverage": 8,
+      "genres": [
+        "מסתורין",
+        "פשע",
+        "דרמה"
+      ],
+      "firstAirDate": "2018-09-09",
+      "seasons": 5,
+      "trailerYoutubeId": "v99ooSjCVhg",
+      "editorReview": "את — מהתעלומות שבאמת משתלמות לפענוח בסוף, לא רק \"טוויסט בשביל טוויסט\"."
+    },
+    {
+      "rank": 8,
+      "tmdbId": 76669,
+      "name": "Élite",
+      "nameHe": "אליטה",
+      "overview": "שלושה בני נוער ממעמד הפועלים נרשמים לבית הספר הפרטי האקסקלוסיבי ביותר בספרד. ההתנגשות בינם לבין התלמידים העשירים מובילה לרצח.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/oJq8RSxa2e9aOu2IcGjx4IFeKXV.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/1qOA3kMtQO8bjnW8M2smjA8tp10.jpg",
+      "voteAverage": 8,
+      "genres": [
+        "פשע",
+        "מסתורין",
+        "דרמה"
+      ],
+      "firstAirDate": "2018-10-05",
+      "seasons": 8,
+      "trailerYoutubeId": "QNwhAdrdwp0",
+      "editorReview": "אליטה — המתח לא נעלם אפילו כשכבר יודעים \"מי עשה את זה\"."
+    },
+    {
+      "rank": 9,
+      "tmdbId": 93405,
+      "name": "오징어 게임",
+      "nameHe": "משחק הדיונון",
+      "overview": "מאות אנשים שנקלעו לקשיים כלכליים מקבלים הזמנה מוזרה לשחק בטורניר של משחקי ילדים. הפרס אומנם מפתה, אבל הסיכונים מצמררים.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/uFKp7WzuGXqdToQsn0sUs0WgAhh.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/2meX1nMdScFOoV4370rqHWKmXhY.jpg",
+      "voteAverage": 7.9,
+      "genres": [
+        "אקשן והרפתקאות",
+        "מסתורין",
+        "דרמה"
+      ],
+      "firstAirDate": "2021-09-17",
+      "seasons": 3,
+      "trailerYoutubeId": "oqxAJKy0ii4",
+      "editorReview": "משחק הדיונון — פשוט עפנו על הסדרה הזאת; היא מותחת ומרגשת בטירוף, ואי אפשר היה להפסיק לצפות בה עד הפרק האחרון. למרות כמה טוויסטים צפויים, החוויה כולה הייתה עוצמתית ופשוט בלתי נשכחת."
+    },
+    {
+      "rank": 10,
+      "tmdbId": 71912,
+      "name": "The Witcher",
+      "nameHe": "המכשף",
+      "overview": "גראלט מריוויה, צייד מפלצות שעבר מוטציה, יוצא למסע בעקבות גורלו, בעולם מסוכסך שבו בני האדם הם לא פעם מרושעים יותר ממפלצות.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/lwWteiaop5Q4waZpd4w0SHTZtFx.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/foGkPxpw9h8zln81j63mix5B7m8.jpg",
+      "voteAverage": 7.9,
+      "genres": [
+        "דרמה",
+        "אקשן והרפתקאות"
+      ],
+      "firstAirDate": "2019-12-20",
+      "seasons": 4,
+      "trailerYoutubeId": "eb90gqGYP9c",
+      "editorReview": "המכשף — נהנינו מאוד מהאקשן והליהוק המצוין של הנרי קאביל, ולמרות שהתבלבלנו קצת עם קווי הזמן בהתחלה, הסוף המרהיב לגמרי השאיר אותנו עם טעם של עוד לעונה הבאה!"
+    }
+  ]
+}

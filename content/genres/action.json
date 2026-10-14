@@ -1,0 +1,194 @@
+{
+  "slug": "action",
+  "series": [
+    {
+      "rank": 1,
+      "tmdbId": 82452,
+      "name": "Avatar: The Last Airbender",
+      "nameHe": "אווטאר: כשף האוויר האחרון",
+      "overview": "ילד שידוע כאווטאר צריך ללמוד לשלוט בכוחותיהם של ארבעת היסודות כדי להציל עולם במלחמה – ולהילחם באויב אכזרי שנחוש לעצור אותו.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/uvcUM02UIkgCIcndAKYsqLzxISM.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/xUB3xFMgsHgPmdWnUWkHTJ03vHa.jpg",
+      "voteAverage": 7.8,
+      "genres": [
+        "אקשן והרפתקאות",
+        "מדע בדיוני ופנטזיה",
+        "דרמה",
+        "משפחה"
+      ],
+      "firstAirDate": "2024-02-22",
+      "seasons": 2,
+      "trailerYoutubeId": "xEmlE9Ianuo",
+      "editorReview": "אווטאר: כשף האוויר האחרון — בדיוק מה שצריך כשמחפשים משהו שלא מבקש מחשבה, רק ריקושטים."
+    },
+    {
+      "rank": 2,
+      "tmdbId": 276161,
+      "name": "참교육",
+      "nameHe": "סדרת חינוך",
+      "overview": "הגבולות והכבוד בבתי הספר קורסים, וצוות פקחים לא קונבנציונלי נשלח לתקן את המצב – בעזרת שיעורים קשוחים וענייניים שאי אפשר למצוא בספרי הלימוד.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/3QSe1ezSC1ZQ7qQUXFwI7OHHRhY.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/vyG93jhmPL7tBIhRtCLa5mdBKob.jpg",
+      "voteAverage": 9.5,
+      "genres": [
+        "אקשן והרפתקאות",
+        "דרמה",
+        "קומדיה"
+      ],
+      "firstAirDate": "2026-06-05",
+      "seasons": 1,
+      "trailerYoutubeId": "LdezlX84py0",
+      "editorReview": "סדרת חינוך — בדיוק מה שצריך כשמחפשים משהו שלא מבקש מחשבה, רק ריקושטים."
+    },
+    {
+      "rank": 3,
+      "tmdbId": 66732,
+      "name": "Stranger Things",
+      "nameHe": "דברים מוזרים",
+      "overview": "כשילד נעלם, עיירה קטנה מוצאת את עצמה מול תעלומה הקשורה לניסויים סודיים, לכוחות על-טבעיים מבעיתים ולילדה מיוחדת ומוזרה.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/x1hM8kj3oNkGLjnhajxWQdEtKoe.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/56v2KjBlU4XaOv9rVYEQypROD7P.jpg",
+      "voteAverage": 8.6,
+      "genres": [
+        "אקשן והרפתקאות",
+        "מסתורין",
+        "מדע בדיוני ופנטזיה"
+      ],
+      "firstAirDate": "2016-07-15",
+      "seasons": 5,
+      "trailerYoutubeId": "b9EkMc79ZSU",
+      "editorReview": "דברים מוזרים — הסטאנטים כאן גורמים לשכוח שיש בכלל תקציב הפקה מוגבל."
+    },
+    {
+      "rank": 4,
+      "tmdbId": 200709,
+      "name": "약한영웅",
+      "nameHe": "גיבור חלש",
+      "overview": "תלמיד מוכשר ומופנם מתעמת עם בריונים ואויבים אלימים בעזרתם של חברים בלתי צפויים – אך אינו מודע לגודלה של הסכנה האורבת לו.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/jXd83QZhBDAFno4OGqHcMMDs56i.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/q5mJ4oKfGc6Cr9reIHFzD0pQzre.jpg",
+      "voteAverage": 8.7,
+      "genres": [
+        "אקשן והרפתקאות",
+        "דרמה"
+      ],
+      "firstAirDate": "2022-11-18",
+      "seasons": 2,
+      "trailerYoutubeId": "GDTz8sLK3_Q",
+      "editorReview": "גיבור חלש — בדיוק מה שצריך כשמחפשים משהו שלא מבקש מחשבה, רק ריקושטים."
+    },
+    {
+      "rank": 5,
+      "tmdbId": 93405,
+      "name": "오징어 게임",
+      "nameHe": "משחק הדיונון",
+      "overview": "מאות אנשים שנקלעו לקשיים כלכליים מקבלים הזמנה מוזרה לשחק בטורניר של משחקי ילדים. הפרס אומנם מפתה, אבל הסיכונים מצמררים.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/uFKp7WzuGXqdToQsn0sUs0WgAhh.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/2meX1nMdScFOoV4370rqHWKmXhY.jpg",
+      "voteAverage": 7.9,
+      "genres": [
+        "אקשן והרפתקאות",
+        "מסתורין",
+        "דרמה"
+      ],
+      "firstAirDate": "2021-09-17",
+      "seasons": 3,
+      "trailerYoutubeId": "oqxAJKy0ii4",
+      "editorReview": "משחק הדיונון — הצוות התערב על מי ישרוד לסוף העונה. יש כאלה שהפסידו כסף."
+    },
+    {
+      "rank": 6,
+      "tmdbId": 71912,
+      "name": "The Witcher",
+      "nameHe": "המכשף",
+      "overview": "גראלט מריוויה, צייד מפלצות שעבר מוטציה, יוצא למסע בעקבות גורלו, בעולם מסוכסך שבו בני האדם הם לא פעם מרושעים יותר ממפלצות.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/lwWteiaop5Q4waZpd4w0SHTZtFx.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/foGkPxpw9h8zln81j63mix5B7m8.jpg",
+      "voteAverage": 7.9,
+      "genres": [
+        "דרמה",
+        "אקשן והרפתקאות"
+      ],
+      "firstAirDate": "2019-12-20",
+      "seasons": 4,
+      "trailerYoutubeId": "eb90gqGYP9c",
+      "editorReview": "המכשף — משהו באמת קרה לנו בפרק החמישי. לא נגלה מה, רק תגיעו לשם."
+    },
+    {
+      "rank": 7,
+      "tmdbId": 45790,
+      "name": "ジョジョの奇妙な冒険",
+      "nameHe": "ההרפתקה המוזרה של ג'וג'ו",
+      "overview": "באנגליה של מאה ה-19, אציל בשם ג'ונתן ג'וסטאר מוצא את עצמו ביריבות מרה עם דיו בראנדו, אדם שאביו לקח תחת חסותו. תשוקתו האין סופית של דיו להשיג שליטה מובילה אותו אל מסכת אבן אצטקית הנמצאת ברשותו של ג'ונתן – מה שישנה לעד את חיי השניים וצאציהם. 50 שנה לאחר מכן, בניו-יורק של שנת 1938, נכדו של ג'ונתן, ג'וזף ג'וסטאר, מתחייב לסיים את משימת סבו ולהתמחות ביכולות הדרושות להשמדת מסכת האבן ואת יוצריה רבי העוצמה שמאיימים על קיום האנושות.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/7wQ1eVvhm3f7lXqEDEpal7KWz5x.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/mLKN1dsimKPiXCZ48KED0X8a02t.jpg",
+      "voteAverage": 8.6,
+      "genres": [
+        "אנימציה",
+        "אקשן והרפתקאות",
+        "מדע בדיוני ופנטזיה"
+      ],
+      "firstAirDate": "2012-10-06",
+      "seasons": 6,
+      "trailerYoutubeId": "fOvrr5izejw",
+      "editorReview": "ההרפתקה המוזרה של ג'וג'ו — הומור לכל הגילאים בלי שאף רגע מרגיש מיותר."
+    },
+    {
+      "rank": 8,
+      "tmdbId": 127529,
+      "name": "사냥개들",
+      "nameHe": "כלבי ציד",
+      "overview": "שני מתאגרפים צעירים חוברים למלווה כספים טוב לב, ויחד הם מחליטים להפיל כריש הלוואות חסר רחמים שמנצל אנשים נואשים כלכלית.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/aAO5623u08KdfiAQPbR3l5cEh13.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/zhsEnDNCQX5dlI2wbKzV90pV0B9.jpg",
+      "voteAverage": 8.5,
+      "genres": [
+        "דרמה",
+        "אקשן והרפתקאות",
+        "פשע"
+      ],
+      "firstAirDate": "2023-06-09",
+      "seasons": 2,
+      "trailerYoutubeId": "eyiR8pO50JE",
+      "editorReview": "כלבי ציד — לא הכי \"קלילה\", אבל בהחלט הכי מדויקת שראינו הרבה זמן."
+    },
+    {
+      "rank": 9,
+      "tmdbId": 63333,
+      "name": "The Last Kingdom",
+      "nameHe": "הממלכה האחרונה",
+      "overview": "במאה ה-9 לספירה, המדינה שאנו מכירים כיום כאנגליה הייתה מורכבת מממלכות נפרדות, וסבלה מפלישות של הויקינגים מדנמרק. הסדרה עוקבת אחר אות'רד, יורש עצר אנגלי לעיר \"בבנבורג\" שבהיותו ילד, נלקח בשבי עם הדנים וגדל בקרבם. דודו של אות'רד תבע בעלות על העיר והכריז על נאמנותו לדנים. בבגרותו, אות'רד חוזר על מנת לכבוש את העיר שנלקחה ממנו שלא כחוק, ואולי אף לאחד את כל ממלכות אנגליה תוך כדי שהוא נקרע בנאמנותו בין הדנים שגידלו אותו לאנגלים בני עמו.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/8eJf0hxgIhE6QSxbtuNCekTddy1.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/QbtctI8EzlhsyFDMUMyG3fli8B.jpg",
+      "voteAverage": 8.3,
+      "genres": [
+        "אקשן והרפתקאות",
+        "דרמה",
+        "מלחמה ופוליטיקה"
+      ],
+      "firstAirDate": "2015-10-10",
+      "seasons": 5,
+      "trailerYoutubeId": "WxPApTGWwas",
+      "editorReview": "הממלכה האחרונה — האדרנלין פה אמיתי — קשה להשהות באמצע קרב."
+    },
+    {
+      "rank": 10,
+      "tmdbId": 4194,
+      "name": "Star Wars: The Clone Wars",
+      "nameHe": "מלחמת הכוכבים: מלחמות המשובטים",
+      "overview": "מלחמת המשובטים סוחפת את הגלקסיה ואבירי הג'די נאבקים כדי להשליט סדר ולהחזיר את השקט. אנקין וחבורתו יוצאים למלחמה נגד כוחות השחור ומשתפי הפעולה אבל הרוזן דוקו יעשה הכול כדי שהם יכשלו במשימתם.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/pTIqhZuTwoEA5OOIzw58yhmi1ug.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/m6eRgkR1KC6Mr6gKx6gKCzSn6vD.jpg",
+      "voteAverage": 8.5,
+      "genres": [
+        "אקשן והרפתקאות",
+        "מדע בדיוני ופנטזיה",
+        "אנימציה"
+      ],
+      "firstAirDate": "2008-10-03",
+      "seasons": 7,
+      "trailerYoutubeId": "ZLW2jkd6E7g",
+      "editorReview": "מלחמת הכוכבים: מלחמות המשובטים — הפרק האחרון גרם לאחד מאיתנו לזרוק פופקורן על הקיר. שווה."
+    }
+  ]
+}

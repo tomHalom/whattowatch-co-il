@@ -3,183 +3,225 @@
   "slug": "2026-07",
   "monthLabel": "יולי",
   "year": 2026,
+  "editorsNote": {
+    "label": "המלצת העורך לחודש יולי:",
+    "body": "כולם ידברו לכם על מקום 1, אבל אנחנו כצוות התאהבנו הכי הרבה ב\"המסע של באקי: הסמוראי הבלתי מנוצח\" — מהמקום 5 ברשימה. לא הכי מדוברת החודש, אבל זו שאנחנו ממליצים עליה בלי לחשוב פעמיים. — תום, ראש צוות הבינג'יונרים המוסמכים 🌙"
+  },
   "series": [
     {
       "rank": 1,
-      "tmdbId": 0,
-      "name": "Stranger Things",
-      "overview": "Stranger Things — אחת הסדרות הפופולריות בנטפליקס. תוכן זה הוא תוכן דמו (fallback), יוחלף בנתונים אמיתיים מ-TMDB בהרצה הראשונה עם TMDB_API_KEY מוגדר.",
-      "posterPath": null,
-      "backdropPath": null,
-      "voteAverage": 8,
+      "tmdbId": 82452,
+      "name": "Avatar: The Last Airbender",
+      "nameHe": "אווטאר: כשף האוויר האחרון",
+      "overview": "ילד שידוע כאווטאר צריך ללמוד לשלוט בכוחותיהם של ארבעת היסודות כדי להציל עולם במלחמה – ולהילחם באויב אכזרי שנחוש לעצור אותו.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/uvcUM02UIkgCIcndAKYsqLzxISM.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/aVvRQJ2Ckhlym4uh0YGc166CUoP.jpg",
+      "voteAverage": 7.8,
       "genres": [
-        "מתח",
-        "מדע בדיוני",
-        "דרמה"
+        "אקשן והרפתקאות",
+        "מדע בדיוני ופנטזיה",
+        "דרמה",
+        "משפחה"
       ],
-      "firstAirDate": null,
-      "trailerYoutubeId": null
+      "firstAirDate": "2024-02-22",
+      "seasons": 2,
+      "trailerYoutubeId": "xEmlE9Ianuo",
+      "editorReview": "אווטאר: כשף האוויר האחרון — צפינו בסדרה החדשה והתאהבנו בה לגמרי, והיא פשוט מספקת חוויית צפייה מהנה וסוחפת שלא יכולנו להפסיק לראות. אנחנו כבר מחכים בקוצר רוח לעונות הבאות!"
     },
     {
       "rank": 2,
-      "tmdbId": 0,
-      "name": "Wednesday",
-      "overview": "Wednesday — אחת הסדרות הפופולריות בנטפליקס. תוכן זה הוא תוכן דמו (fallback), יוחלף בנתונים אמיתיים מ-TMDB בהרצה הראשונה עם TMDB_API_KEY מוגדר.",
-      "posterPath": null,
-      "backdropPath": null,
-      "voteAverage": 8,
+      "tmdbId": 278178,
+      "name": "I Will Find You",
+      "nameHe": "אני אמצא אותך",
+      "overview": "אב שנשפט ונכלא על לא עוול בכפו בגין רצח בנו מגלה שהוא כנראה עדיין בחיים, ויוצא למבצע חילוץ נואש.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/urcY2TrcxKznKmIAuP6xnhececv.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/yOna5ZGXrvWO2HdOCKcahx2sCDN.jpg",
+      "voteAverage": 8.2,
       "genres": [
-        "קומדיה",
-        "פנטזיה",
-        "מתח"
+        "דרמה",
+        "מסתורין",
+        "פשע"
       ],
-      "firstAirDate": null,
-      "trailerYoutubeId": null
+      "firstAirDate": "2026-06-18",
+      "seasons": 1,
+      "trailerYoutubeId": "mObRUsA7dPY",
+      "editorReview": "אני אמצא אותך — משהו באמת קרה לנו בפרק החמישי. לא נגלה מה, רק תגיעו לשם."
     },
     {
       "rank": 3,
-      "tmdbId": 0,
-      "name": "The Crown",
-      "overview": "The Crown — אחת הסדרות הפופולריות בנטפליקס. תוכן זה הוא תוכן דמו (fallback), יוחלף בנתונים אמיתיים מ-TMDB בהרצה הראשונה עם TMDB_API_KEY מוגדר.",
-      "posterPath": null,
-      "backdropPath": null,
-      "voteAverage": 8,
+      "tmdbId": 261145,
+      "name": "The Amazing Digital Circus",
+      "nameHe": "הקרקס הדיגיטלי המדהים",
+      "overview": "תקציר יתעדכן בקרוב.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/lpfrgfomX8uNFxv4VaEzvJGs9TK.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/vPVdWiLUNQyaGMazyZGVAyRcYBG.jpg",
+      "voteAverage": 8.7,
       "genres": [
+        "אנימציה",
+        "קומדיה",
         "דרמה",
-        "היסטוריה"
+        "מדע בדיוני ופנטזיה"
       ],
-      "firstAirDate": null,
-      "trailerYoutubeId": null
+      "firstAirDate": "2023-10-13",
+      "seasons": 1,
+      "trailerYoutubeId": "iuaRQ5NQFq8",
+      "editorReview": "הקרקס הדיגיטלי המדהים — מהסוג שצופים בו \"בשביל הילדים\" ונשארים בשביל עצמכם."
     },
     {
       "rank": 4,
-      "tmdbId": 0,
-      "name": "Squid Game",
-      "overview": "Squid Game — אחת הסדרות הפופולריות בנטפליקס. תוכן זה הוא תוכן דמו (fallback), יוחלף בנתונים אמיתיים מ-TMDB בהרצה הראשונה עם TMDB_API_KEY מוגדר.",
-      "posterPath": null,
-      "backdropPath": null,
-      "voteAverage": 8,
+      "tmdbId": 253960,
+      "name": "ガス人間",
+      "nameHe": "הקיטור האנושי",
+      "overview": "מוות בשידור חי. פושע שהופך לגז. פרויקט חשאי שניצל אנשים פגיעים ואז נפטר מהם. בלש אחד מנסה לחשוף את האמת האפלה.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/9WuNAFEhULqVB6uSNpmpA6mLmXS.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/tDjLCYMaJK27PEZHiAtCYujXdRo.jpg",
+      "voteAverage": 7.4,
       "genres": [
-        "מתח",
-        "דרמה",
-        "אקשן"
+        "מדע בדיוני ופנטזיה",
+        "פשע"
       ],
-      "firstAirDate": null,
-      "trailerYoutubeId": null
+      "firstAirDate": "2026-07-02",
+      "seasons": 1,
+      "trailerYoutubeId": "7xe6dRKVAb8",
+      "editorReview": "הקיטור האנושי — מהסוג שגורם לך לפתוח טאב נוסף ולחפש \"מה זה אומר בעונה 2\"."
     },
     {
       "rank": 5,
-      "tmdbId": 0,
-      "name": "Bridgerton",
-      "overview": "Bridgerton — אחת הסדרות הפופולריות בנטפליקס. תוכן זה הוא תוכן דמו (fallback), יוחלף בנתונים אמיתיים מ-TMDB בהרצה הראשונה עם TMDB_API_KEY מוגדר.",
-      "posterPath": null,
-      "backdropPath": null,
-      "voteAverage": 8,
+      "tmdbId": 300054,
+      "name": "刃牙道",
+      "nameHe": "המסע של באקי: הסמוראי הבלתי מנוצח",
+      "overview": "באקי והלוחמים החזקים ביותר מזירת המחתרת עומדים בפני איום בממדי ענק: הסמוראי הגדול ביותר בהיסטוריה של יפן, מוסאשי מיאמוטו.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/14myRltf1z3ev4l1TXxJLQrDuLl.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/1M8uW8o6fdDaa3zqmBD2UUKu0VZ.jpg",
+      "voteAverage": 9.1,
       "genres": [
-        "רומנטי",
-        "דרמה"
+        "אנימציה",
+        "אקשן והרפתקאות"
       ],
-      "firstAirDate": null,
-      "trailerYoutubeId": null
+      "firstAirDate": "2026-02-26",
+      "seasons": 1,
+      "trailerYoutubeId": "zE7h_WizFlk",
+      "editorReview": "המסע של באקי: הסמוראי הבלתי מנוצח — הומור לכל הגילאים בלי שאף רגע מרגיש מיותר."
     },
     {
       "rank": 6,
-      "tmdbId": 0,
-      "name": "Fauda",
-      "overview": "Fauda — אחת הסדרות הפופולריות בנטפליקס. תוכן זה הוא תוכן דמו (fallback), יוחלף בנתונים אמיתיים מ-TMDB בהרצה הראשונה עם TMDB_API_KEY מוגדר.",
-      "posterPath": null,
-      "backdropPath": null,
-      "voteAverage": 8,
+      "tmdbId": 74428,
+      "name": "Rosario Tijeras",
+      "overview": "תקציר יתעדכן בקרוב.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/zY7jshpbPNs5U677HxRZUltb7gm.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/hsSw3DuG2ah2wgaZeDTwyv5FPh3.jpg",
+      "voteAverage": 7.8,
       "genres": [
-        "מתח",
         "דרמה",
-        "אקשן"
+        "פשע"
       ],
-      "firstAirDate": null,
-      "trailerYoutubeId": null
+      "firstAirDate": "2016-10-30",
+      "seasons": 5,
+      "trailerYoutubeId": null,
+      "editorReview": "Rosario Tijeras — לא ממהרת לשום מקום, ודווקא זו הסיבה שקשה לעזוב אותה."
     },
     {
       "rank": 7,
-      "tmdbId": 0,
-      "name": "The Witcher",
-      "overview": "The Witcher — אחת הסדרות הפופולריות בנטפליקס. תוכן זה הוא תוכן דמו (fallback), יוחלף בנתונים אמיתיים מ-TMDB בהרצה הראשונה עם TMDB_API_KEY מוגדר.",
-      "posterPath": null,
-      "backdropPath": null,
-      "voteAverage": 8,
+      "tmdbId": 283304,
+      "name": "Little House on the Prairie",
+      "nameHe": "בית קטן בערבה",
+      "overview": "משפחת אינגלס המלוכדת בונה חיים חדשים בסְפָר המערבי, שבו ההנאה מהטבע והמאבק להישרדות שזורים זה בזה לבלי הפרד.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/wwxBt4axvtyhmZweSiWziHHcisH.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/fBieUo3SdItUrXZE16YxbpjwXIe.jpg",
+      "voteAverage": 6.7,
       "genres": [
-        "פנטזיה",
-        "אקשן",
-        "דרמה"
+        "דרמה",
+        "מערבון",
+        "משפחה"
       ],
-      "firstAirDate": null,
-      "trailerYoutubeId": null
+      "firstAirDate": "2026-07-09",
+      "seasons": 1,
+      "trailerYoutubeId": "jSds4Oi83Eg",
+      "editorReview": "בית קטן בערבה — צפינו בבית קטן בערבה וגילינו סדרה חביבה ונעימה להעברת הזמן, גם אם היא מרגישה קצת מיושנת ולא נקייה מחסרונות. היא לגמרי שווה צפייה לערב רגוע, כל עוד לא מחפשים בה יצירת מופת מושלמת."
     },
     {
       "rank": 8,
-      "tmdbId": 0,
-      "name": "Money Heist",
-      "overview": "Money Heist — אחת הסדרות הפופולריות בנטפליקס. תוכן זה הוא תוכן דמו (fallback), יוחלף בנתונים אמיתיים מ-TMDB בהרצה הראשונה עם TMDB_API_KEY מוגדר.",
-      "posterPath": null,
-      "backdropPath": null,
-      "voteAverage": 8,
+      "tmdbId": 296285,
+      "name": "Oasis",
+      "nameHe": "אואזיס",
+      "overview": "דרמת מיסתורין בספרדית. צעירה נעלמת באורח מסתורי מאתר נופש יוקרתי, וכל חברי הצוות והאורחים הופכים לחשודים, ולא יכולים לצאת ממנו עד שהאמת תצא לאור.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/glzWYDTXALHQ8Vuwp86qyGDXuxw.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/n4B2dVVScH4L4Scvy7mTboYcfGQ.jpg",
+      "voteAverage": 6.8,
       "genres": [
-        "מתח",
         "פשע",
+        "מסתורין",
         "דרמה"
       ],
-      "firstAirDate": null,
-      "trailerYoutubeId": null
+      "firstAirDate": "2026-06-19",
+      "seasons": 1,
+      "trailerYoutubeId": "PQ0DS3oyWUE",
+      "editorReview": "אואזיס — ניסינו לפצח את התוכנית לפני הדמויות. הפסדנו."
     },
     {
       "rank": 9,
-      "tmdbId": 0,
-      "name": "Ozark",
-      "overview": "Ozark — אחת הסדרות הפופולריות בנטפליקס. תוכן זה הוא תוכן דמו (fallback), יוחלף בנתונים אמיתיים מ-TMDB בהרצה הראשונה עם TMDB_API_KEY מוגדר.",
-      "posterPath": null,
-      "backdropPath": null,
-      "voteAverage": 8,
+      "tmdbId": 279323,
+      "name": "동궁",
+      "nameHe": "הארמון המזרחי",
+      "overview": "גבר שמסוגל להלך בעולם הרוחות ואשת חצר ששומעת את המתים נכנסים לארמון המזרחי בהוראת המלך — האם הם יצליחו לחשוף את סודותיו האפלים של הארמון?",
+      "posterPath": "https://image.tmdb.org/t/p/w500/1s4CWl5oa8iex4xXx0sq35qeiVg.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/8PHBAdPyfIwS5W6cfKLhItEb875.jpg",
+      "voteAverage": 8.1,
       "genres": [
-        "דרמה",
-        "פשע",
-        "מתח"
+        "מסתורין",
+        "אקשן והרפתקאות",
+        "מדע בדיוני ופנטזיה",
+        "דרמה"
       ],
-      "firstAirDate": null,
-      "trailerYoutubeId": null
+      "firstAirDate": "2026-07-17",
+      "seasons": 1,
+      "trailerYoutubeId": "wBUkNE1l9DU",
+      "editorReview": "הארמון המזרחי — צפינו ב\"הארמון המזרחי\" והתאהבנו מיד בשילוב הממכר של אימה אפלה וסודות מלכותיים, פשוט סדרה ששומרת עלינו במתח מרתק לאורך כל הדרך!"
     },
     {
       "rank": 10,
-      "tmdbId": 0,
-      "name": "Dark",
-      "overview": "Dark — אחת הסדרות הפופולריות בנטפליקס. תוכן זה הוא תוכן דמו (fallback), יוחלף בנתונים אמיתיים מ-TMDB בהרצה הראשונה עם TMDB_API_KEY מוגדר.",
-      "posterPath": null,
-      "backdropPath": null,
-      "voteAverage": 8,
+      "tmdbId": 286360,
+      "name": "맨 끝줄 소년",
+      "nameHe": "רשימות מהשורה האחרונה",
+      "overview": "מרצה לספרות נפעם מכישרון הכתיבה של סטודנט שלו ומציע לו שיעורים פרטיים, אבל בהדרגה הוא שוקע בסיפור, והשיעורים מתחילים לצאת משליטה.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/iRtOQYrhpGen4WYoAG7YQCjL9Ko.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/oBJ6dZ6A1tY1O94RmWnJkkQVbLz.jpg",
+      "voteAverage": 7.9,
       "genres": [
-        "מדע בדיוני",
-        "מתח",
+        "מסתורין",
         "דרמה"
       ],
-      "firstAirDate": null,
-      "trailerYoutubeId": null
+      "firstAirDate": "2026-06-26",
+      "seasons": 1,
+      "trailerYoutubeId": "yEMHh3mRjv4",
+      "editorReview": "רשימות מהשורה האחרונה — מהתעלומות שבאמת משתלמות לפענוח בסוף, לא רק \"טוויסט בשביל טוויסט\"."
     }
   ],
   "faq": [
     {
       "question": "מה הסדרה הטובה ביותר בנטפליקס ביולי 2026?",
-      "answer": "הסדרה שבמקום הראשון ברשימה שלנו החודש — ראו את הפירוט המלא ואת הטריילר בכתבה למעלה."
+      "answer": "\"אווטאר: כשף האוויר האחרון\" — היא במקום הראשון ברשימה שלנו לחודש יולי 2026. ראו את הפירוט המלא והטריילר בכתבה למעלה.",
+      "link": {
+        "to": "/providers/netflix/series/avatar-the-last-airbender-82452",
+        "label": "לכל הפרטים על \"אווטאר: כשף האוויר האחרון\""
+      }
     },
     {
       "question": "איך נבחרות הסדרות לרשימה החודשית?",
-      "answer": "הרשימה מתעדכנת אוטומטית כל חודש לפי פופולריות בנטפליקס, דירוגים, וכיסוי ז'אנרים מגוון."
+      "answer": "צוות הבינג'יונרים המוסמכים שלנו סוקר, צופה ובוחר בקפידה כל חודש מבין הסדרות שיצאו בנטפליקס באותו חודש, לפי פופולריות, דירוגים וגיוון ז'אנרים — לא רשימה שנוצרת מעצמה."
     },
     {
       "question": "האם יש סדרות ישראליות ברשימה?",
-      "answer": "כאשר סדרה ישראלית (כמו Fauda) נכנסת לטופ 10 הפופולרי, היא מסומנת ומקבלת דגש מיוחד בכתבה."
+      "answer": "לא נכנסה סדרה ישראלית לטופ 10 החודש, אבל יש לנו מדריך ייעודי לסדרות ישראליות בנטפליקס.",
+      "link": {
+        "to": "/netflix/genre/israeli",
+        "label": "לכל הסדרות הישראליות בנטפליקס"
+      }
     },
     {
       "question": "איפה אפשר לראות את הטריילרים?",
       "answer": "לכל סדרה ברשימה מוטמע טריילר וידאו שניתן לנגן ישירות מהכרטיסייה שלה בעמוד."
     }
   ],
-  "isFallback": true
+  "isFallback": false
 }

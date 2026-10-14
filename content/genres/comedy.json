@@ -1,0 +1,191 @@
+{
+  "slug": "comedy",
+  "series": [
+    {
+      "rank": 1,
+      "tmdbId": 502,
+      "name": "Sesame Street",
+      "nameHe": "רחוב סומסום",
+      "overview": "רחוב סומסום היא תוכנית ילדים המשודרת בארצות הברית מעל 40 שנה. התוכנית מופקת על ידי חברת \"ססמי וורקשופ\".",
+      "posterPath": "https://image.tmdb.org/t/p/w500/14k9BfZ2p4rQBMeJ5crKTfUZVwD.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/tNi2aJPdCKfielGYzIi3IKxStz9.jpg",
+      "voteAverage": 7.1,
+      "genres": [
+        "ילדים",
+        "קומדיה"
+      ],
+      "firstAirDate": "1969-11-10",
+      "seasons": 56,
+      "trailerYoutubeId": null,
+      "editorReview": "רחוב סומסום — מהסדרות שילדים מבקשים לצפות בהן שוב — וזה עובר את הבדיקה האמיתית."
+    },
+    {
+      "rank": 2,
+      "tmdbId": 276161,
+      "name": "참교육",
+      "nameHe": "סדרת חינוך",
+      "overview": "הגבולות והכבוד בבתי הספר קורסים, וצוות פקחים לא קונבנציונלי נשלח לתקן את המצב – בעזרת שיעורים קשוחים וענייניים שאי אפשר למצוא בספרי הלימוד.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/3QSe1ezSC1ZQ7qQUXFwI7OHHRhY.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/vyG93jhmPL7tBIhRtCLa5mdBKob.jpg",
+      "voteAverage": 9.5,
+      "genres": [
+        "אקשן והרפתקאות",
+        "דרמה",
+        "קומדיה"
+      ],
+      "firstAirDate": "2026-06-05",
+      "seasons": 1,
+      "trailerYoutubeId": "LdezlX84py0",
+      "editorReview": "סדרת חינוך — בדיוק מה שצריך כשמחפשים משהו שלא מבקש מחשבה, רק ריקושטים."
+    },
+    {
+      "rank": 3,
+      "tmdbId": 119051,
+      "name": "Wednesday",
+      "nameHe": "ונסדיי",
+      "overview": "ונסדיי אדמס היא ילדה חכמה, סרקסטית וקצת מתה מבפנים, שחוקרת תעלומות סבוכות ומתוודעת אל חברים ואויבים חדשים באקדמיית נוורמור.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/8oxQRPhAxaoV8ovzGGfB7VpzfCn.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/iHSwvRVsRyxpX7FE7GbviaDvgGZ.jpg",
+      "voteAverage": 8.3,
+      "genres": [
+        "מדע בדיוני ופנטזיה",
+        "מסתורין",
+        "קומדיה"
+      ],
+      "firstAirDate": "2022-11-23",
+      "seasons": 3,
+      "trailerYoutubeId": "Qa5kFRxBkNw",
+      "editorReview": "ונסדיי — מהסוג שגורם לך לפתוח טאב נוסף ולחפש \"מה זה אומר בעונה 2\"."
+    },
+    {
+      "rank": 4,
+      "tmdbId": 195670,
+      "name": "XO, Kitty",
+      "nameHe": "באהבה, קיטי",
+      "overview": "השדכנית הצעירה קיטי מגשימה חלום ומתחילה ללמוד בבית ספר יוקרתי בסיאול. מהר מאוד היא מגלה שהחיים, האהבה והמשפחה מורכבים יותר מכפי שחשבה.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/qKQegmUvl0k2eFSaEj3LQmgGHfK.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/h0CQ36rm9cSLznve5ocCDtYlnwN.jpg",
+      "voteAverage": 8.1,
+      "genres": [
+        "קומדיה",
+        "דרמה"
+      ],
+      "firstAirDate": "2023-05-18",
+      "seasons": 3,
+      "trailerYoutubeId": "vP9C33H6G3E",
+      "editorReview": "באהבה, קיטי — ציטטנו משפטים ממנה בקבוצת הצוות במשך שבוע שלם."
+    },
+    {
+      "rank": 5,
+      "tmdbId": 1424,
+      "name": "Orange Is the New Black",
+      "nameHe": "כתום זה השחור החדש",
+      "overview": "פייפר צ'פמן, אישה לבנה מהמעמד הבינוני-גבוה נשלחת לכלא למשך 15 חודשים בגלל פשע שביצעה לפני עשר שנים - הברחת מזוודה שמלאה בכסף מעסקאות סמים. המזוודה שייכת לאלכס - מבריחת סמים בינלאומית ובנוסף לכך בת זוגה לשעבר של פייפר. העלילה עוקבת אחר הדמויות השונות בכלא והתמודדות של פייפר מולן.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/5zrjW4jB69Y4bdemOnnYXHBVWCi.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/zJiWhsEYCy5BkFCBONoMnUunyZQ.jpg",
+      "voteAverage": 7.6,
+      "genres": [
+        "דרמה",
+        "קומדיה",
+        "פשע"
+      ],
+      "firstAirDate": "2013-07-11",
+      "seasons": 7,
+      "trailerYoutubeId": "vY0qzXi5oJg",
+      "editorReview": "כתום זה השחור החדש — לא הכי \"קלילה\", אבל בהחלט הכי מדויקת שראינו הרבה זמן."
+    },
+    {
+      "rank": 6,
+      "tmdbId": 61222,
+      "name": "BoJack Horseman",
+      "nameHe": "בוג'ק הורסמן",
+      "overview": "בוג'ק הורסמן הוא כוכב עבר שכיכב בסיטקום טלוויזיוני בהיסטוריה חלופית של שנות ה-90, בה בני אדם חיים לצד גרסאות מואנשות של בעלי חיים. בוג'ק מחליט לחזור לתודעה הציבורית באמצעות ספר אוטוביוגרפי. בנוסף לכך, נאלץ בוג'ק להתמודד עם דרישותיה של סוכנתו וחברתו לשעבר פרינסס קרולין, התנהגותו הילדותית של שותפו לבית טוד, וכן עם יריבו הידידותי מיסטר פינאטבאטר, החבר של דיאן. הסדרה מהווה סאטירה על הוליווד, ידוענים, התמכרויות לסמים, חרדה ועל תעשיית הקולנוע והטלוויזיה האמריקאית.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/tJTgPVEYpbjFA4eSUMHP6pvanjV.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/qFYDJUIFh8zgEDy3EvnHwhgOl0S.jpg",
+      "voteAverage": 8.5,
+      "genres": [
+        "אנימציה",
+        "קומדיה",
+        "דרמה"
+      ],
+      "firstAirDate": "2014-08-22",
+      "seasons": 6,
+      "trailerYoutubeId": "i1eJMig5Ik4",
+      "editorReview": "בוג'ק הורסמן — מהסוג שצופים בו \"בשביל הילדים\" ונשארים בשביל עצמכם."
+    },
+    {
+      "rank": 7,
+      "tmdbId": 77169,
+      "name": "Cobra Kai",
+      "nameHe": "קוברה קאי",
+      "overview": "אויבים מרים. דוג'ואים מסוכסכים. דם חדש. דניאל וג'וני מציתים מחדש יריבויות ישנות מתיכון ווסט ואלי בסדרת המשך לסרטי \"קראטה קיד\".",
+      "posterPath": "https://image.tmdb.org/t/p/w500/395Ned9lIJ5chO5a8TWNe9mZyUP.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/5NrSIzfcBOFI9HRGV4nRYgMGhDU.jpg",
+      "voteAverage": 8.2,
+      "genres": [
+        "אקשן והרפתקאות",
+        "דרמה",
+        "קומדיה"
+      ],
+      "firstAirDate": "2018-05-02",
+      "seasons": 6,
+      "trailerYoutubeId": "xCwwxNbtK6Y",
+      "editorReview": "קוברה קאי — הפרק האחרון גרם לאחד מאיתנו לזרוק פופקורן על הקיר. שווה."
+    },
+    {
+      "rank": 8,
+      "tmdbId": 81356,
+      "name": "Sex Education",
+      "nameHe": "חינוך מיני",
+      "overview": "אימא של אוטיס חסר הביטחון היא מטפלת מינית, כך שיש לו ידע רב בכל מה שנוגע לייעוץ מיני. ידידתו המרדנית מייב מציעה שיפתחו ביחד מרפאה לטיפול מיני בבית הספר.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/lZrj6fRLPnOEMbrewWfhqPUOMqx.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/u23G9KZregWHs1use6ir1fX27gl.jpg",
+      "voteAverage": 8.2,
+      "genres": [
+        "קומדיה",
+        "דרמה"
+      ],
+      "firstAirDate": "2019-01-11",
+      "seasons": 4,
+      "trailerYoutubeId": "Hd2ldTR-WpI",
+      "editorReview": "חינוך מיני — לא כל בדיחה נוחתת, אבל אלה שכן — נוחתות חזק."
+    },
+    {
+      "rank": 9,
+      "tmdbId": 261145,
+      "name": "The Amazing Digital Circus",
+      "nameHe": "הקרקס הדיגיטלי המדהים",
+      "overview": "תקציר יתעדכן בקרוב.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/lpfrgfomX8uNFxv4VaEzvJGs9TK.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/vPVdWiLUNQyaGMazyZGVAyRcYBG.jpg",
+      "voteAverage": 8.7,
+      "genres": [
+        "אנימציה",
+        "קומדיה",
+        "דרמה",
+        "מדע בדיוני ופנטזיה"
+      ],
+      "firstAirDate": "2023-10-13",
+      "seasons": 1,
+      "trailerYoutubeId": "iuaRQ5NQFq8",
+      "editorReview": "הקרקס הדיגיטלי המדהים — מהסוג שצופים בו \"בשביל הילדים\" ונשארים בשביל עצמכם."
+    },
+    {
+      "rank": 10,
+      "tmdbId": 4589,
+      "name": "Arrested Development",
+      "nameHe": "משפחה בהפרעה",
+      "overview": "עקב מאסרו של אביו, אלמן שמגדל את בנו הצעיר נאלץ לנהל בעל כורחו את משפחתו הלא מתפקדת. זה כולל גם את אמו חסרת האחריות, שלא ממש מבינה את הסטטוס החדש שלה כאשת עבריין שירדה מנכסיה.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/oVYNpDLu6KYZDsIjzDnatFMC9qR.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/qCXY93t7QnKp6aWT1WKaQo0Qt5r.jpg",
+      "voteAverage": 7.9,
+      "genres": [
+        "קומדיה"
+      ],
+      "firstAirDate": "2003-11-02",
+      "seasons": 5,
+      "trailerYoutubeId": "4oIk04OQ1Ec",
+      "editorReview": "משפחה בהפרעה — מהקומדיות שמצליחות להיות חכמות בלי להרגיש כמו שיעור."
+    }
+  ]
+}

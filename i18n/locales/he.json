@@ -16,13 +16,11 @@
     "watchTrailer": "נגן טריילר",
     "genres": "ז'אנרים",
     "rating": "דירוג",
-    "position": "מקום"
+    "position": "מקום",
+    "newThisMonth": "חדש החודש"
   },
   "faq": {
     "title": "שאלות נפוצות"
-  },
-  "aiSummary": {
-    "title": "תקציר 30 שניות"
   },
   "footer": {
     "privacy": "מדיניות פרטיות",

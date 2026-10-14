@@ -1,0 +1,222 @@
+{
+  "provider": "netflix",
+  "slug": "2025-11",
+  "monthLabel": "נובמבר",
+  "year": 2025,
+  "editorsNote": {
+    "label": "המלצת העורך לחודש נובמבר:",
+    "body": "כולם ידברו לכם על מקום 1, אבל אנחנו כצוות התאהבנו הכי הרבה ב\"אל המלחמה: הסמוראי השורד\" — מהמקום 5 ברשימה. לא הכי מדוברת החודש, אבל זו שאנחנו ממליצים עליה בלי לחשוב פעמיים. — תום, ראש צוות הבינג'יונרים המוסמכים 🌙"
+  },
+  "series": [
+    {
+      "rank": 1,
+      "tmdbId": 66732,
+      "name": "Stranger Things",
+      "nameHe": "דברים מוזרים",
+      "overview": "כשילד נעלם, עיירה קטנה מוצאת את עצמה מול תעלומה הקשורה לניסויים סודיים, לכוחות על-טבעיים מבעיתים ולילדה מיוחדת ומוזרה.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/x1hM8kj3oNkGLjnhajxWQdEtKoe.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/9P4IIMYY3HifqeruZq0ZZ9g7YUi.jpg",
+      "voteAverage": 8.5,
+      "genres": [
+        "אקשן והרפתקאות",
+        "מסתורין",
+        "מדע בדיוני ופנטזיה"
+      ],
+      "firstAirDate": "2016-07-15",
+      "seasons": 5,
+      "trailerYoutubeId": "b9EkMc79ZSU",
+      "editorReview": "דברים מוזרים — בדיוק מה שצריך כשמחפשים משהו שלא מבקש מחשבה, רק ריקושטים."
+    },
+    {
+      "rank": 2,
+      "tmdbId": 302540,
+      "name": "The Bad Guys: The Series",
+      "nameHe": "לא רעים בכלל: הסדרה",
+      "overview": "איך בכלל נכנסו החבר'ה הרעים לעסקי הפשע? עכשיו אפשר לגלות. סדרת פריקוול מצחיקה שמתרחשת לפני הסרטים המצליחים.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/vOwgDRFf25RmhsS2OZOyhqZ3Bnu.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/pXdkJvhBcPf8oEj831ASMkLPXKT.jpg",
+      "voteAverage": 7,
+      "genres": [
+        "אנימציה",
+        "פשע",
+        "קומדיה",
+        "משפחה"
+      ],
+      "firstAirDate": "2025-11-06",
+      "seasons": 2,
+      "trailerYoutubeId": "o6HXxD6CcLg",
+      "editorReview": "לא רעים בכלל: הסדרה — מהסוג שצופים בו \"בשביל הילדים\" ונשארים בשביל עצמכם."
+    },
+    {
+      "rank": 3,
+      "tmdbId": 261615,
+      "name": "Envidiosa",
+      "nameHe": "כולי קנאה",
+      "overview": "אחרי פרידה קשה, ויקי, שנושקת ל-40, יוצאת לחפש אהבה חדשה ונשאבת לתהליך של גילוי עצמי מעמיק ומשעשע.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/jx9j67VSSQA8ng3cbNrQPlZWbjS.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/raxf7xkf1ZwddzQSIl4hdakr8YR.jpg",
+      "voteAverage": 8.2,
+      "genres": [
+        "קומדיה",
+        "דרמה"
+      ],
+      "firstAirDate": "2024-09-18",
+      "seasons": 4,
+      "trailerYoutubeId": null,
+      "editorReview": "כולי קנאה — הצחקנו בקול רם, בלילה, לבד — ואין לנו שום בעיה להודות בזה."
+    },
+    {
+      "rank": 4,
+      "tmdbId": 271885,
+      "name": "당신이 죽였다",
+      "nameHe": "העומדים מנגד",
+      "overview": "שתי נשים שנישאו לגברים מתעללים זוממות לחמוק מהם באמצעות רצח – אבל ביקור בלתי צפוי עלול לשבש להן את התוכנית.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/cAx7vFmy7gBCqGKU1v8lvrvpDBF.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/7uVNWsjnmkvqpeqWHq5qpLBv3wd.jpg",
+      "voteAverage": 8.3,
+      "genres": [
+        "פשע",
+        "דרמה",
+        "מסתורין"
+      ],
+      "firstAirDate": "2025-11-07",
+      "seasons": 1,
+      "trailerYoutubeId": "ZYflvue1yIE",
+      "editorReview": "העומדים מנגד — סוף כל פרק הוא בדיוק המקום הלא-נכון לעצור — ועצרנו בו כל פעם."
+    },
+    {
+      "rank": 5,
+      "tmdbId": 252193,
+      "name": "イクサガミ",
+      "nameHe": "אל המלחמה: הסמוראי השורד",
+      "overview": "תחילת תקופת מייג'י. שוג'ירו, שנודע בעבר כסמוראי בלתי מנוצח, מחליט להשתתף במשחק הישרדות קטלני כדי להציל את משפחתו ואת אנשי כפרו.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/aAGkxXKPJsw5sxTbfLodVZyecEf.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/vcU8hIHXuADItJSzEmt2F8IMq5l.jpg",
+      "voteAverage": 7.8,
+      "genres": [
+        "אקשן והרפתקאות",
+        "דרמה"
+      ],
+      "firstAirDate": "2025-11-13",
+      "seasons": 1,
+      "trailerYoutubeId": "eLfE-WiHAWU",
+      "editorReview": "אל המלחמה: הסמוראי השורד — האדרנלין פה אמיתי — קשה להשהות באמצע קרב."
+    },
+    {
+      "rank": 6,
+      "tmdbId": 245312,
+      "name": "A Man on the Inside",
+      "nameHe": "האיש שלי בפנים",
+      "overview": "מרצה חטטן שיצא לפנסיה מוצא טעם חדש לחייו כשחוקרת פרטית מגייסת אותו למשימה סמויה כדי לפצח תיק.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/c09XdTLpLku2tqHt158NZBgC4hi.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/6EObfIe4akZGvCLXwXLJw3kPitQ.jpg",
+      "voteAverage": 7.4,
+      "genres": [
+        "קומדיה",
+        "פשע"
+      ],
+      "firstAirDate": "2024-11-21",
+      "seasons": 2,
+      "trailerYoutubeId": "xhsVj_4ONoA",
+      "editorReview": "האיש שלי בפנים — ציטטנו משפטים ממנה בקבוצת הצוות במשך שבוע שלם."
+    },
+    {
+      "rank": 7,
+      "tmdbId": 250504,
+      "name": "The Beast in Me",
+      "nameHe": "החיה שבתוכי",
+      "overview": "סופרת מפורסמת נשאבת למשחק פסיכולוגי מעוות עם השכן החדש והעשיר שלה – שאולי הוא גם רוצח.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/e9XRvJu9xWUtwLyJ5tSMRQKOBpV.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/ylW0m5UztyyL4YFu8EC6usUHLF.jpg",
+      "voteAverage": 7.1,
+      "genres": [
+        "דרמה",
+        "מסתורין"
+      ],
+      "firstAirDate": "2025-11-13",
+      "seasons": 1,
+      "trailerYoutubeId": "8iNHGKcP0cM",
+      "editorReview": "החיה שבתוכי — הכימיה בין הדמויות כאן היא הסיפור בעצמו."
+    },
+    {
+      "rank": 8,
+      "tmdbId": 301001,
+      "name": "Mrs Playmen",
+      "nameHe": "גברת פליימן",
+      "overview": "אישה שבעלה בגד בה נאלצת לתפוס פיקוד על מגזין ארוטי שהופך לסמל של העצמה ברומא של שנות ה-70. בהשראת אירועים אמיתיים.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/yK20WKZXyYiv8bbzL7PKURjNvjQ.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/rk93UkcE9kw6cHiaYFcWQvNUuuq.jpg",
+      "voteAverage": 7.2,
+      "genres": [
+        "דרמה"
+      ],
+      "firstAirDate": "2025-11-12",
+      "seasons": 1,
+      "trailerYoutubeId": "EilQgosN7L4",
+      "editorReview": "גברת פליימן — לא הכי \"קלילה\", אבל בהחלט הכי מדויקת שראינו הרבה זמן."
+    },
+    {
+      "rank": 9,
+      "tmdbId": 241576,
+      "name": "如果我不曾見過太陽",
+      "nameHe": "אלמלא ראיתי את השמש",
+      "overview": "צעירה מראיינת רוצח סדרתי ידוע לשמצה לצורך סרט, ומגלה רשת נרחבת של טראומה ושברון לב הקשורים לאהבתו הראשונה.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/rq3Zj093CdVXT47JeDfhGb6ogxQ.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/b9nrdh1VaspBckmaDwftW4mcOyC.jpg",
+      "voteAverage": 8.3,
+      "genres": [
+        "פשע",
+        "דרמה",
+        "מסתורין"
+      ],
+      "firstAirDate": "2025-11-13",
+      "seasons": 2,
+      "trailerYoutubeId": null,
+      "editorReview": "אלמלא ראיתי את השמש — ניסינו לפצח את התוכנית לפני הדמויות. הפסדנו."
+    },
+    {
+      "rank": 10,
+      "tmdbId": 87508,
+      "name": "दिल्ली क्राइम",
+      "nameHe": "פשע בדלהי",
+      "overview": "סדרה העוקבת אחר כוחות משטרה שחוקרים מקרי פשע בולטים בדלהי. פרקי הסדרה נכתבו בהשראת אירועים אמיתיים ובדיוניים כאחד.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/xkpkTj6KGsjSaet0VQaq0aTn31D.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/j6djmR4hi8ULL0xUPQN4ZVyzgVN.jpg",
+      "voteAverage": 7.8,
+      "genres": [
+        "פשע"
+      ],
+      "firstAirDate": "2019-03-22",
+      "seasons": 3,
+      "trailerYoutubeId": "jNuKwlKJx2E",
+      "editorReview": "פשע בדלהי — מהסוג שגורם לדבר בלחישה גם כשצופים לבד בבית."
+    }
+  ],
+  "faq": [
+    {
+      "question": "מה הסדרה הטובה ביותר בנטפליקס בנובמבר 2025?",
+      "answer": "\"דברים מוזרים\" — היא במקום הראשון ברשימה שלנו לחודש נובמבר 2025. ראו את הפירוט המלא והטריילר בכתבה למעלה.",
+      "link": {
+        "to": "/providers/netflix/series/stranger-things-66732",
+        "label": "לכל הפרטים על \"דברים מוזרים\""
+      }
+    },
+    {
+      "question": "איך נבחרות הסדרות לרשימה החודשית?",
+      "answer": "צוות הבינג'יונרים המוסמכים שלנו סוקר, צופה ובוחר בקפידה כל חודש מבין הסדרות שיצאו בנטפליקס באותו חודש, לפי פופולריות, דירוגים וגיוון ז'אנרים — לא רשימה שנוצרת מעצמה."
+    },
+    {
+      "question": "האם יש סדרות ישראליות ברשימה?",
+      "answer": "לא נכנסה סדרה ישראלית לטופ 10 החודש, אבל יש לנו מדריך ייעודי לסדרות ישראליות בנטפליקס.",
+      "link": {
+        "to": "/netflix/genre/israeli",
+        "label": "לכל הסדרות הישראליות בנטפליקס"
+      }
+    },
+    {
+      "question": "איפה אפשר לראות את הטריילרים?",
+      "answer": "לכל סדרה ברשימה מוטמע טריילר וידאו שניתן לנגן ישירות מהכרטיסייה שלה בעמוד."
+    }
+  ],
+  "isFallback": false
+}

@@ -3,6 +3,7 @@ const route = useRoute()
 const providerSlug = route.params.provider as string
 const seriesSlug = route.params.slug as string
 const { public: pub } = useRuntimeConfig()
+const { selected, open, close } = useSeriesModal()
 
 const { data: provider } = await useAsyncData(`provider-${providerSlug}-meta-series`, () =>
   queryCollection('providers').where('slug', '=', providerSlug).first(),
@@ -65,6 +66,8 @@ useJsonLd(
 
 <template>
   <div v-if="series" class="mx-auto max-w-3xl px-4 py-10">
+    <SeriesModal :series="selected" @close="close" />
+
     <Breadcrumbs
       :items="[
         { label: 'בית', to: '/' },
@@ -85,7 +88,7 @@ useJsonLd(
         allowfullscreen
         loading="lazy"
       />
-      <NuxtImg
+      <img
         v-else-if="series.posterPath"
         :src="series.posterPath"
         :alt="`פוסטר ${series.name}`"
@@ -116,12 +119,14 @@ useJsonLd(
           :key="item.tmdbId + item.name"
           :rank="item.rank"
           :name="item.name"
+          :name-he="item.nameHe"
           :overview="item.overview"
           :poster-path="item.posterPath"
           :vote-average="item.voteAverage"
           :genres="item.genres"
           :trailer-youtube-id="item.trailerYoutubeId"
-          :to="`/providers/${providerSlug}/series/${slugify(item.name, item.tmdbId)}`"
+          :editor-review="item.editorReview"
+          @open-modal="open(item)"
         />
       </div>
     </section>

@@ -1,0 +1,203 @@
+{
+  "slug": "kids",
+  "series": [
+    {
+      "rank": 1,
+      "tmdbId": 502,
+      "name": "Sesame Street",
+      "nameHe": "רחוב סומסום",
+      "overview": "רחוב סומסום היא תוכנית ילדים המשודרת בארצות הברית מעל 40 שנה. התוכנית מופקת על ידי חברת \"ססמי וורקשופ\".",
+      "posterPath": "https://image.tmdb.org/t/p/w500/14k9BfZ2p4rQBMeJ5crKTfUZVwD.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/tNi2aJPdCKfielGYzIi3IKxStz9.jpg",
+      "voteAverage": 7.1,
+      "genres": [
+        "ילדים",
+        "קומדיה"
+      ],
+      "firstAirDate": "1969-11-10",
+      "seasons": 56,
+      "trailerYoutubeId": null,
+      "editorReview": "רחוב סומסום — מהסדרות שילדים מבקשים לצפות בהן שוב — וזה עובר את הבדיקה האמיתית."
+    },
+    {
+      "rank": 2,
+      "tmdbId": 93741,
+      "name": "Jurassic World Camp Cretaceous",
+      "nameHe": "עולם היורה: מחנה הקרטיקון",
+      "overview": "שישה בני נוער הוזמנו למחנה הרפתקאות חדשני באיסלה נובלר. כשהדינוזאורים משתחררים מהכלובים, הם חייבים לשתף פעולה כדי להישאר בחיים.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/7pwP5MeGKxR0HBCJ7Ge9Dc6ujQg.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/4WIglfr4lDFVjCEcXzCeu6cJsOh.jpg",
+      "voteAverage": 8,
+      "genres": [
+        "אנימציה",
+        "ילדים",
+        "אקשן והרפתקאות",
+        "משפחה"
+      ],
+      "firstAirDate": "2020-09-18",
+      "seasons": 5,
+      "trailerYoutubeId": "CRTIrK3Kku8",
+      "editorReview": "עולם היורה: מחנה הקרטיקון — הומור לכל הגילאים בלי שאף רגע מרגיש מיותר."
+    },
+    {
+      "rank": 3,
+      "tmdbId": 2328,
+      "name": "Power Rangers",
+      "nameHe": "פאוור ריינג'רס",
+      "overview": "חבורת נערים מתבגרים רגילים נבחרים כדי להפוך להיות הפאוור ריינג'רס. עליהם להשתמש בכוחות החדשים שלהם כדי להילחם בכוחות הרשע ולהציל את העולם מחורבן.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/qx3SJlAp2RK656TusqKx1qEqVMW.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/i01wnWz0Z3rMATqbkAVLHEaGbNP.jpg",
+      "voteAverage": 7.1,
+      "genres": [
+        "אקשן והרפתקאות",
+        "מדע בדיוני ופנטזיה",
+        "ילדים"
+      ],
+      "firstAirDate": "1993-08-28",
+      "seasons": 30,
+      "trailerYoutubeId": "igDQns34c3s",
+      "editorReview": "פאוור ריינג'רס — הסטאנטים כאן גורמים לשכוח שיש בכלל תקציב הפקה מוגבל."
+    },
+    {
+      "rank": 4,
+      "tmdbId": 237512,
+      "name": "Jurassic World: Chaos Theory",
+      "nameHe": "עולם היורה: תאוריית הכאוס",
+      "overview": "חבורת מחנה הקרטיקון מתאחדת כדי לפתור תעלומה וחושפת קנוניה עולמית שמעמידה בסכנה את הדינוזאורים – וגם את חבריה עצמם.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/c2Od0cY2IeayDj5osUxZSAD1QK.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/qjPC0KYEhdWAIPmCtAkg0j1iJXC.jpg",
+      "voteAverage": 8.3,
+      "genres": [
+        "אנימציה",
+        "אקשן והרפתקאות",
+        "מדע בדיוני ופנטזיה",
+        "ילדים",
+        "משפחה"
+      ],
+      "firstAirDate": "2024-05-24",
+      "seasons": 4,
+      "trailerYoutubeId": "ftbjh-3OsuA",
+      "editorReview": "עולם היורה: תאוריית הכאוס — קסם שעובד גם למי שחושב שאנימציה זו רק לילדים."
+    },
+    {
+      "rank": 5,
+      "tmdbId": 129959,
+      "name": "Kung Fu Panda: The Dragon Knight",
+      "nameHe": "קונג פו פנדה: אביר הדרקון",
+      "overview": "אחרי ששני סמורים מסתוריים מצליחים לגזול ארבעה כלי נשק עוצמתיים, פו יוצא למסע ברחבי העולם כדי להשיב את כבודו האבוד ולהשיג צדק. הוא משתף פעולה עם להב הנדודים, אבירה קשוחה וחדורת מטרה מאנגליה. יחד, שני הלוחמים השונים בתכלית יוצאים להרפתקה בלתי נשכחת כדי למצוא את כלי הנשק הקסומים ולהציל את העולם מפני חורבן.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/wUgWGX3o6M0dTqGsBKvMxUGcoXh.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/j7FL6KfjEjrGSXt6peQw7U3VL0R.jpg",
+      "voteAverage": 7.5,
+      "genres": [
+        "אנימציה",
+        "אקשן והרפתקאות",
+        "קומדיה",
+        "ילדים",
+        "מדע בדיוני ופנטזיה"
+      ],
+      "firstAirDate": "2022-07-14",
+      "seasons": 3,
+      "trailerYoutubeId": "KBB34OWS7P4",
+      "editorReview": "קונג פו פנדה: אביר הדרקון — מהסוג שצופים בו \"בשביל הילדים\" ונשארים בשביל עצמכם."
+    },
+    {
+      "rank": 6,
+      "tmdbId": 115577,
+      "name": "Sonic Prime",
+      "nameHe": "סוניק פריים",
+      "overview": "קרב הרסני נגד ד\"ר אגמן מנפץ את היקום, וסוניק מתרוצץ בין ממדים מקבילים כדי לחדש את הקשר עם חבריו ולהציל את העולם.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/hiXgdA6iIb9kgsh3IWbw4D7ijwV.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/pYiIcenKt7L2cMrhn67xAxCGgzR.jpg",
+      "voteAverage": 8.3,
+      "genres": [
+        "אנימציה",
+        "אקשן והרפתקאות",
+        "מדע בדיוני ופנטזיה",
+        "ילדים"
+      ],
+      "firstAirDate": "2022-12-15",
+      "seasons": 3,
+      "trailerYoutubeId": "2rShZls4Ffw",
+      "editorReview": "סוניק פריים — הומור לכל הגילאים בלי שאף רגע מרגיש מיותר."
+    },
+    {
+      "rank": 7,
+      "tmdbId": 95594,
+      "name": "Fast & Furious Spy Racers",
+      "nameHe": "מהיר ועצבני: מרגלים על הכביש",
+      "overview": "סוכנות ממשלתית מגייסת את הנהג הצעיר טוני טורטו וחבריו חובבי הריגושים כדי לרגל אחרי ארגון מחתרתי של מרוצי רחוב.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/sufsZEbrX9QJxTRUgd0Wlk86rYQ.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/9aWSpBqMrlrr8yaydSEgNJjIruG.jpg",
+      "voteAverage": 7,
+      "genres": [
+        "אנימציה",
+        "אקשן והרפתקאות",
+        "ילדים",
+        "משפחה"
+      ],
+      "firstAirDate": "2019-12-26",
+      "seasons": 6,
+      "trailerYoutubeId": "Dtwx1rvd-eA",
+      "editorReview": "מהיר ועצבני: מרגלים על הכביש — עצרנו את הפרק כמה פעמים רק כדי להעריך פריים בודד."
+    },
+    {
+      "rank": 8,
+      "tmdbId": 77606,
+      "name": "The Boss Baby: Back in Business",
+      "nameHe": "בייבי בוס: גדול בעסקים",
+      "overview": "סדרת אנימציה שנולדה בעקבות הסרט המצליח. בייבי בוס מביא את אחיו הגדול טים למשרד כדי להעביר לו שיעורים באומנות העסקים.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/oQRehZIwmA14voQ7HXYasJOUtCU.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/ry3j5NEF72tMezdEomGrVXb6pFB.jpg",
+      "voteAverage": 7.1,
+      "genres": [
+        "אנימציה",
+        "אקשן והרפתקאות",
+        "קומדיה",
+        "ילדים",
+        "מדע בדיוני ופנטזיה"
+      ],
+      "firstAirDate": "2018-04-06",
+      "seasons": 4,
+      "trailerYoutubeId": "WGNwOoWnOMw",
+      "editorReview": "בייבי בוס: גדול בעסקים — מהסוג שצופים בו \"בשביל הילדים\" ונשארים בשביל עצמכם."
+    },
+    {
+      "rank": 9,
+      "tmdbId": 106393,
+      "name": "Star Trek: Prodigy",
+      "nameHe": "מסע בין כוכבים: פרודיג'י",
+      "overview": "שישה שבויים חייזרים מרביע דלתא מוצאים חללית נטושה, בעזרתה נמלטים ממושבת כרייה ממנה איש לא הצליח להימלט ויוצאים בה להרפתקאות ברחבי הגלקסיה.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/Aqub3PSzLm2F398vitkbkxjopjO.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/nmT2Tgk9TZlYDCciQdQ4HI5rytl.jpg",
+      "voteAverage": 7.2,
+      "genres": [
+        "אנימציה",
+        "מדע בדיוני ופנטזיה",
+        "ילדים"
+      ],
+      "firstAirDate": "2021-10-28",
+      "seasons": 2,
+      "trailerYoutubeId": "dyTSDDR_1Dk",
+      "editorReview": "מסע בין כוכבים: פרודיג'י — מהסוג שצופים בו \"בשביל הילדים\" ונשארים בשביל עצמכם."
+    },
+    {
+      "rank": 10,
+      "tmdbId": 72462,
+      "name": "Free Rein",
+      "nameHe": "זואי ורייבן",
+      "overview": "נערה בת 15 מלוס אנג'לס מבלה את הקיץ בבית ילדותה של אמה, באחד מאיי החוף של אנגליה, ויוצרת קשר מיוחד עם סוס מסתורי.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/dcxs0AyJyvV2N7UrTafs3UJYBOW.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/nxin1UEwN0WqYQOmUwMaLnzmYY0.jpg",
+      "voteAverage": 7.9,
+      "genres": [
+        "משפחה",
+        "ילדים",
+        "דרמה"
+      ],
+      "firstAirDate": "2017-06-22",
+      "seasons": 3,
+      "trailerYoutubeId": "0eCjI-gJRgM",
+      "editorReview": "זואי ורייבן — צחקנו ביחד, זה כבר סימן טוב לסדרה משפחתית."
+    }
+  ]
+}

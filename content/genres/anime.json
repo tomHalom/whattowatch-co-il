@@ -1,0 +1,198 @@
+{
+  "slug": "anime",
+  "series": [
+    {
+      "rank": 1,
+      "tmdbId": 45790,
+      "name": "ジョジョの奇妙な冒険",
+      "nameHe": "ההרפתקה המוזרה של ג'וג'ו",
+      "overview": "באנגליה של מאה ה-19, אציל בשם ג'ונתן ג'וסטאר מוצא את עצמו ביריבות מרה עם דיו בראנדו, אדם שאביו לקח תחת חסותו. תשוקתו האין סופית של דיו להשיג שליטה מובילה אותו אל מסכת אבן אצטקית הנמצאת ברשותו של ג'ונתן – מה שישנה לעד את חיי השניים וצאציהם. 50 שנה לאחר מכן, בניו-יורק של שנת 1938, נכדו של ג'ונתן, ג'וזף ג'וסטאר, מתחייב לסיים את משימת סבו ולהתמחות ביכולות הדרושות להשמדת מסכת האבן ואת יוצריה רבי העוצמה שמאיימים על קיום האנושות.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/7wQ1eVvhm3f7lXqEDEpal7KWz5x.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/mLKN1dsimKPiXCZ48KED0X8a02t.jpg",
+      "voteAverage": 8.6,
+      "genres": [
+        "אנימציה",
+        "אקשן והרפתקאות",
+        "מדע בדיוני ופנטזיה"
+      ],
+      "firstAirDate": "2012-10-06",
+      "seasons": 6,
+      "trailerYoutubeId": "fOvrr5izejw",
+      "editorReview": "ההרפתקה המוזרה של ג'וג'ו — הומור לכל הגילאים בלי שאף רגע מרגיש מיותר."
+    },
+    {
+      "rank": 2,
+      "tmdbId": 90937,
+      "name": "BEASTARS",
+      "nameHe": "חייתיים",
+      "overview": "בעולם שבו בעלי חיים שונים חיים אלה עם אלה בשלום, מקרה רצח בבית ספר מצליח לעורר את הדחפים החייתיים של זאב בעל נפש עדינה.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/pJVJNJU4k35JDwsY08faEvGuAjp.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/oU6akWOEEvdoaaK9Sdpzowmi2gR.jpg",
+      "voteAverage": 8.4,
+      "genres": [
+        "אנימציה",
+        "דרמה",
+        "מסתורין",
+        "פשע"
+      ],
+      "firstAirDate": "2019-10-10",
+      "seasons": 3,
+      "trailerYoutubeId": "TArSVUJ9XsU",
+      "editorReview": "חייתיים — עצרנו את הפרק כמה פעמים רק כדי להעריך פריים בודד."
+    },
+    {
+      "rank": 3,
+      "tmdbId": 68854,
+      "name": "君に届け",
+      "nameHe": "ממני אליך",
+      "overview": "תלמידת התיכון סאוואקו מכונה \"סאדאקו\" בגלל החזות המפחידה שלה. כשהיא מתיידדת עם קזהאיה הפופולרי, היא מתחילה להתגבר אט‑אט על ביישנותה.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/fqsCWDDfm1Gu0ecGsQKPsI0CZbR.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/nh0BS0sLXozmkTpOe1Ve33MyxlK.jpg",
+      "voteAverage": 8.4,
+      "genres": [
+        "אנימציה",
+        "דרמה"
+      ],
+      "firstAirDate": "2009-10-07",
+      "seasons": 3,
+      "trailerYoutubeId": "_gJR6gfRYEQ",
+      "editorReview": "ממני אליך — צבעונית, חכמה, ומצליחה להגיד משהו אמיתי בלי להתנשא."
+    },
+    {
+      "rank": 4,
+      "tmdbId": 207784,
+      "name": "ダンジョン飯",
+      "nameHe": "מבוכים ומטעמים",
+      "overview": "מבוכים, דרקונים... ונזיד מפלצות טעים?! הרפקתנים מפלסים את דרכם בממלכה קבורה ומקוללת כדי להציל את חברם, ובדרך גם רוקחים סערה לא קטנה.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/elPbHDrlZWrWQCO4vMpI9VY8Mim.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/xC5GyeIzLsSRizJE5LedGShNgBa.jpg",
+      "voteAverage": 8.4,
+      "genres": [
+        "אנימציה",
+        "קומדיה",
+        "אקשן והרפתקאות",
+        "מדע בדיוני ופנטזיה"
+      ],
+      "firstAirDate": "2024-01-04",
+      "seasons": 2,
+      "trailerYoutubeId": "aXfVHMILKJg",
+      "editorReview": "מבוכים ומטעמים — האנימציה כאן עושה דברים שצילום רגיל פשוט לא יכול."
+    },
+    {
+      "rank": 5,
+      "tmdbId": 91997,
+      "name": "PLUTO",
+      "overview": "שבעת הרובוטים המתוחכמים ביותר בעולם ובעלי בריתם האנושיים נרצחים בזה אחר זה. הפקח גסיכט מגלה מהר מאוד שגם הוא נמצא בסכנה.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/z4FfPlZ5qyuNzc86yJCJY17l2Ur.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/oz3LT9glLNWpSQACnWlIYoSZA5M.jpg",
+      "voteAverage": 7.8,
+      "genres": [
+        "אנימציה",
+        "מדע בדיוני ופנטזיה",
+        "מסתורין",
+        "פשע"
+      ],
+      "firstAirDate": "2023-10-26",
+      "seasons": 1,
+      "trailerYoutubeId": "9ez8lm9I26Y",
+      "editorReview": "PLUTO — מהסוג שצופים בו \"בשביל הילדים\" ונשארים בשביל עצמכם."
+    },
+    {
+      "rank": 6,
+      "tmdbId": 94404,
+      "name": "ドロヘドロ",
+      "nameHe": "דורוהדורו",
+      "overview": "קיימן סובל מאובדן זיכרון ומבקש להסיר מעליו את קללת ראש הלטאה. בעזרת חברתו ניקאידו, הוא יוצא להרוג את המכשף שהטיל את הקללה – וברחובות \"הבור\" זה אִיום גדול.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/mmpGV6laOLyNeo21aOFM9oB9HYw.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/sASxGVO6wioRG6jNM2LHOjBAgWu.jpg",
+      "voteAverage": 8.4,
+      "genres": [
+        "אנימציה",
+        "אקשן והרפתקאות",
+        "קומדיה",
+        "מדע בדיוני ופנטזיה"
+      ],
+      "firstAirDate": "2020-01-13",
+      "seasons": 2,
+      "trailerYoutubeId": "ZB1ACrzVDRM",
+      "editorReview": "דורוהדורו — קסם שעובד גם למי שחושב שאנימציה זו רק לילדים."
+    },
+    {
+      "rank": 7,
+      "tmdbId": 75208,
+      "name": "DEVILMAN crybaby",
+      "nameHe": "דווילמן: בכיין",
+      "overview": "כשהשדים מתעוררים והמין האנושי חסר אונים, ילד-שד רגיש נדחף על ידי חברו המסתורי ריו לקחת חלק במלחמה העקובה מדם בכוחות הרוע.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/vFIk26CGrhDrWgYkTdVqp6dZc48.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/wuUZxHcyQdx3EurPX0CjD8FgbHG.jpg",
+      "voteAverage": 7.8,
+      "genres": [
+        "אנימציה",
+        "אקשן והרפתקאות",
+        "מדע בדיוני ופנטזיה"
+      ],
+      "firstAirDate": "2018-01-05",
+      "seasons": 1,
+      "trailerYoutubeId": "ww06yGPM7Kc",
+      "editorReview": "דווילמן: בכיין — הומור לכל הגילאים בלי שאף רגע מרגיש מיותר."
+    },
+    {
+      "rank": 8,
+      "tmdbId": 129600,
+      "name": "範馬刃牙",
+      "nameHe": "‏באקי הנמה",
+      "overview": "העלילה ממשיכה ממקום בו הסדרה \"באקי\" הפסיקה, ‏כדי לרכוש את היכולת לגבור על אביו החזק, באקי נכנס לכלא של אריזונה כדי להתמודד מול אסיר ידוע לשמצה שידוע בשם \"מר חסר מעצורים\".",
+      "posterPath": "https://image.tmdb.org/t/p/w500/qjfAG3NAOK2wPLMqz1Z81SBTJfB.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/7Scw0BdXGWzbDY3tDjKu8WervN2.jpg",
+      "voteAverage": 8.1,
+      "genres": [
+        "אנימציה",
+        "אקשן והרפתקאות",
+        "מדע בדיוני ופנטזיה"
+      ],
+      "firstAirDate": "2021-09-30",
+      "seasons": 2,
+      "trailerYoutubeId": "SDOdIjgevrk",
+      "editorReview": "‏באקי הנמה — האנימציה כאן עושה דברים שצילום רגיל פשוט לא יכול."
+    },
+    {
+      "rank": 9,
+      "tmdbId": 80623,
+      "name": "バキ",
+      "nameHe": "באקי",
+      "overview": "יוג'ירו האנמה מוכר בתור הלוחם החזק ביותר בעולם. ליוג'ירו בן אחד בשם באקי. לבאקי שאיפה אחת בחיים - להיות מומחה בכל אומנויות הלחימה ולהתעלות על אביו, יוג'ירו. השמועות על באקי נושאות כנפיים ומעודדות לוחמים בלתי מנוצחים לרצות ולאתגר את באקי. במשבר ההאבקות הנמצא על סף פריצה, עומדים לצד באקי ארבעה לוחמים אחרים וכוח הרצון שלו.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/diySGgcj1xikHU7ACEugcvW88WQ.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/qbxoEhlxNcyr7GjG2SXTShWn32m.jpg",
+      "voteAverage": 8.1,
+      "genres": [
+        "אנימציה",
+        "אקשן והרפתקאות",
+        "פשע",
+        "דרמה"
+      ],
+      "firstAirDate": "2018-06-26",
+      "seasons": 2,
+      "trailerYoutubeId": "1fSp8NJEw34",
+      "editorReview": "באקי — מהסוג שצופים בו \"בשביל הילדים\" ונשארים בשביל עצמכם."
+    },
+    {
+      "rank": 10,
+      "tmdbId": 114868,
+      "name": "終末のワルキューレ",
+      "nameHe": "יומני ראגנארוק",
+      "overview": "לפני שהם משמידים את האנושות, האלים נותנים לבני האדם סיכוי אחרון להוכיח שהם ראויים להינצל. הקרבות של ראגנארוק יוצאים לדרך!",
+      "posterPath": "https://image.tmdb.org/t/p/w500/ij0su26jQqSygtUzgMtD2THxMBs.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/6pSkqecoNsxSA467Z28uhVDrjXo.jpg",
+      "voteAverage": 8.4,
+      "genres": [
+        "אקשן והרפתקאות",
+        "אנימציה",
+        "מדע בדיוני ופנטזיה"
+      ],
+      "firstAirDate": "2021-06-17",
+      "seasons": 3,
+      "trailerYoutubeId": "epbjLd6dqDY",
+      "editorReview": "יומני ראגנארוק — הצוות התערב על מי ישרוד לסוף העונה. יש כאלה שהפסידו כסף."
+    }
+  ]
+}

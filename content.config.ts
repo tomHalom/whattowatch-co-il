@@ -22,6 +22,7 @@ const seriesEntry = z.object({
 const faqEntry = z.object({
   question: z.string(),
   answer: z.string(),
+  link: z.object({ to: z.string(), label: z.string() }).optional(),
 })
 
 export default defineContentConfig({
@@ -57,9 +58,23 @@ export default defineContentConfig({
         monthLabel: z.string(),
         year: z.number(),
         aiSummary: z.string(),
+        editorsNote: z.object({ label: z.string(), body: z.string() }).optional(),
         series: z.array(seriesEntry),
         faq: z.array(faqEntry),
         isFallback: z.boolean().default(false),
+      }),
+    }),
+
+    // תוכן ייעודי לכל עמוד ז'אנר (content/genres/{slug}.json) — לא
+    // נגזר מהרשימות החודשיות, כי לא כל ז'אנר בהכרח מופיע בטופ 10 של
+    // חודש נתון (ולז'אנרים כמו "מתח"/"רומנטי" אין בכלל genre ID תואם
+    // ב-TMDB ל-TV). ראה scripts/fetchGenreShowcases.mjs.
+    genreShowcases: defineCollection({
+      type: 'data',
+      source: 'genres/*.json',
+      schema: z.object({
+        slug: z.string(),
+        series: z.array(seriesEntry),
       }),
     }),
   },

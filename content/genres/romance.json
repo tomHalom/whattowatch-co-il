@@ -1,0 +1,166 @@
+{
+  "slug": "romance",
+  "series": [
+    {
+      "rank": 1,
+      "tmdbId": 91239,
+      "name": "Bridgerton",
+      "nameHe": "ברידג'רטון",
+      "overview": "שמיניית בני ברידג'רטון המלוכדת מחפשת אהבה ואושר בחברה הגבוהה של לונדון.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/75nzsvJ6hpJeT9GRcr0zt0qLTH5.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/6umsRLI7t0ydFwCl0JNEIO0q2LH.jpg",
+      "voteAverage": 8.1,
+      "genres": [
+        "דרמה"
+      ],
+      "firstAirDate": "2020-12-25",
+      "seasons": 5,
+      "trailerYoutubeId": "gpv7ayf_tyE",
+      "editorReview": "ברידג'רטון — לא ממהרת לשום מקום, ודווקא זו הסיבה שקשה לעזוב אותה."
+    },
+    {
+      "rank": 2,
+      "tmdbId": 82596,
+      "name": "Emily in Paris",
+      "nameHe": "אמילי בפריז",
+      "overview": "תשוקות חדשות. אופנה חדשה. אמילי חדשה? אשפית שיווק אמיצה מארה\"ב מתקבלת לעבודת חלומותיה בפריז – ופורשת כנפיים בחיים ובאהבה.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/hV9X5W0xdJCV7Rwp7o7Wql2pFqg.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/jXTZaHarR9TZiMoQwiQWsGYXqnS.jpg",
+      "voteAverage": 7.6,
+      "genres": [
+        "דרמה",
+        "קומדיה"
+      ],
+      "firstAirDate": "2020-10-02",
+      "seasons": 6,
+      "trailerYoutubeId": "lptctjAT-Mk",
+      "editorReview": "אמילי בפריז — משהו באמת קרה לנו בפרק החמישי. לא נגלה מה, רק תגיעו לשם."
+    },
+    {
+      "rank": 3,
+      "tmdbId": 88324,
+      "name": "Virgin River",
+      "nameHe": "וירג'ין ריבר",
+      "overview": "סדרת דרמה רומנטית של נטפליקס עם אלכסנדרה ברקנרידג' (\"החיים עצמם\"), מרטין הנדרסון (\"האנטומיה של גריי\") וטים מת'יסון (\"חשיפה לדרום\"), המבוססת על סדרת הספרים הפופולרית של רובין קאר.\n\nאחות מומחית שמחפשת התחלה חדשה עוברת מלוס אנג'לס לעיירה נידחת בצפון קליפורניה, ומופתעת ממה (וממי) שהיא מוצאת שם.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/oHEqfmSWR4Ex4V4AJyUn8HGHHnt.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/m1nuMHBCiNy6pMGzRAdH5frNesN.jpg",
+      "voteAverage": 7.9,
+      "genres": [
+        "דרמה"
+      ],
+      "firstAirDate": "2019-12-06",
+      "seasons": 7,
+      "trailerYoutubeId": "DMNjH5MlQXc",
+      "editorReview": "וירג'ין ריבר — לא הכי \"קלילה\", אבל בהחלט הכי מדויקת שראינו הרבה זמן."
+    },
+    {
+      "rank": 4,
+      "tmdbId": 100757,
+      "name": "Outer Banks",
+      "nameHe": "חופים של סודות",
+      "overview": "באי שבו גרים עשירים מופלגים לצד חסרי כול, הנער ג'ון ב' רותם את שלושת חבריו הטובים לחיפוש אחר אוצר אגדי שקשור להיעלמות של אביו.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/17mMbemzIMDbmHUB7XPwsRzD21u.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/vHuoq8HAmBFge8aiiyhHVVtmQr3.jpg",
+      "voteAverage": 8.3,
+      "genres": [
+        "אקשן והרפתקאות",
+        "דרמה",
+        "מסתורין"
+      ],
+      "firstAirDate": "2020-04-15",
+      "seasons": 5,
+      "trailerYoutubeId": "pfY3j-3uQhk",
+      "editorReview": "חופים של סודות — הסטאנטים כאן גורמים לשכוח שיש בכלל תקציב הפקה מוגבל."
+    },
+    {
+      "rank": 5,
+      "tmdbId": 100883,
+      "name": "Never Have I Ever",
+      "nameHe": "אמת או חובה",
+      "overview": "אחרי שנה קשה, נערה אמריקאית ממוצא הודי רק רוצה לשפר את מעמדה החברתי – אבל החברים, המשפחה והרגשות שלה לא ממש עוזרים לה.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/derCRP0i3l9mFJENDf17j03gJPA.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/umVYLVZ7T85TkIHudxK799lPnLQ.jpg",
+      "voteAverage": 8.1,
+      "genres": [
+        "קומדיה",
+        "דרמה"
+      ],
+      "firstAirDate": "2020-04-27",
+      "seasons": 4,
+      "trailerYoutubeId": "HyOCCCbxwMQ",
+      "editorReview": "אמת או חובה — לא כל בדיחה נוחתת, אבל אלה שכן — נוחתות חזק."
+    },
+    {
+      "rank": 6,
+      "tmdbId": 78191,
+      "name": "You",
+      "nameHe": "את",
+      "overview": "בחור מקסים להחריד ומסוכן בטירוף לא בוחל באמצעים כדי להיכנס לחייהן של הנשים שהוא אובססיבי כלפיהן.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/25tJvflLhPYbC4zLrNCRcx6rTfc.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/gzOIymABxmetAECXtazEYCpMmfb.jpg",
+      "voteAverage": 8,
+      "genres": [
+        "מסתורין",
+        "פשע",
+        "דרמה"
+      ],
+      "firstAirDate": "2018-09-09",
+      "seasons": 5,
+      "trailerYoutubeId": "v99ooSjCVhg",
+      "editorReview": "את — ניחשנו לא נכון בכל תחנה. מרגיש נורא, אבל בכיף."
+    },
+    {
+      "rank": 7,
+      "tmdbId": 195670,
+      "name": "XO, Kitty",
+      "nameHe": "באהבה, קיטי",
+      "overview": "השדכנית הצעירה קיטי מגשימה חלום ומתחילה ללמוד בבית ספר יוקרתי בסיאול. מהר מאוד היא מגלה שהחיים, האהבה והמשפחה מורכבים יותר מכפי שחשבה.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/qKQegmUvl0k2eFSaEj3LQmgGHfK.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/h0CQ36rm9cSLznve5ocCDtYlnwN.jpg",
+      "voteAverage": 8.1,
+      "genres": [
+        "קומדיה",
+        "דרמה"
+      ],
+      "firstAirDate": "2023-05-18",
+      "seasons": 3,
+      "trailerYoutubeId": "vP9C33H6G3E",
+      "editorReview": "באהבה, קיטי — הדמות המשנית כאן טובה יותר מרוב הדמויות הראשיות בסדרות אחרות."
+    },
+    {
+      "rank": 8,
+      "tmdbId": 250923,
+      "name": "Nobody Wants This",
+      "nameHe": "רק לא זה",
+      "overview": "מנחת פודקאסט אתאיסטית ורב שבדיוק נפרד מבת זוגו מתאהבים. האם הקשר ביניהם יחזיק מעמד למרות הפערים הרבים ביניהם והמשפחות שלהם, שלא מפסיקות לדחוף את האף?",
+      "posterPath": "https://image.tmdb.org/t/p/w500/52gLcnMhp7KDd1GLHsxcKgeaavZ.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/q8BwtVM3t0SOtB1nZsXpOKZp8IM.jpg",
+      "voteAverage": 7.3,
+      "genres": [
+        "קומדיה",
+        "דרמה"
+      ],
+      "firstAirDate": "2024-09-26",
+      "seasons": 2,
+      "trailerYoutubeId": "Xn2PsXD8m4A",
+      "editorReview": "רק לא זה — הדמות המשנית כאן טובה יותר מרוב הדמויות הראשיות בסדרות אחרות."
+    },
+    {
+      "rank": 9,
+      "tmdbId": 124834,
+      "name": "Heartstopper",
+      "nameHe": "עוצר נשימה",
+      "overview": "סדרת התבגרות על צ'ארלי וניק, שני נערים שמחפשים את דרכם בבית הספר, מתנסים באהבות ראשונות, ומגלים שהקשר הבלתי צפוי ביניהם עשוי להיות יותר מסתם חברות.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/dQc0QbDiHjGmWxTfKtBgYtS4bj5.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/eGYnmsEs5cutoPQKf2QUlT4RgCH.jpg",
+      "voteAverage": 8.6,
+      "genres": [
+        "דרמה"
+      ],
+      "firstAirDate": "2022-04-22",
+      "seasons": 3,
+      "trailerYoutubeId": "FrK4xPy4ahg",
+      "editorReview": "עוצר נשימה — לא הכי \"קלילה\", אבל בהחלט הכי מדויקת שראינו הרבה זמן."
+    }
+  ]
+}

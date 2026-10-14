@@ -1,0 +1,192 @@
+{
+  "slug": "thriller",
+  "series": [
+    {
+      "rank": 1,
+      "tmdbId": 66732,
+      "name": "Stranger Things",
+      "nameHe": "דברים מוזרים",
+      "overview": "כשילד נעלם, עיירה קטנה מוצאת את עצמה מול תעלומה הקשורה לניסויים סודיים, לכוחות על-טבעיים מבעיתים ולילדה מיוחדת ומוזרה.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/x1hM8kj3oNkGLjnhajxWQdEtKoe.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/56v2KjBlU4XaOv9rVYEQypROD7P.jpg",
+      "voteAverage": 8.6,
+      "genres": [
+        "אקשן והרפתקאות",
+        "מסתורין",
+        "מדע בדיוני ופנטזיה"
+      ],
+      "firstAirDate": "2016-07-15",
+      "seasons": 5,
+      "trailerYoutubeId": "b9EkMc79ZSU",
+      "editorReview": "דברים מוזרים — בדיוק מה שצריך כשמחפשים משהו שלא מבקש מחשבה, רק ריקושטים."
+    },
+    {
+      "rank": 2,
+      "tmdbId": 63174,
+      "name": "Lucifer",
+      "nameHe": "לוציפר",
+      "overview": "לוציפר כוכב השחר הוא שליט הגיהנום המקורי, הכריזמתי, החתיך והמקסים. השיעמום וחוסר שביעות הרצון שלו מהגיהנום מובילים אותו לנטוש את תפקידו ולעבור ללוס אנג'לס, שם הוא משתמש בכשרונו על מנת להעניש עבריינים אך ככל שעובר הזמן בו הוא רחוק מהגיהנום ישנו סיכוי גדול יותר שהגרועים שבאנושות יוכלו לברוח.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/2p0akhLwpjkW6bEn6a1gHBFZkSD.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/mAXOCbZzvmDa6PCh5dcIPOB51Qc.jpg",
+      "voteAverage": 8.4,
+      "genres": [
+        "פשע",
+        "מדע בדיוני ופנטזיה"
+      ],
+      "firstAirDate": "2016-01-25",
+      "seasons": 6,
+      "trailerYoutubeId": "X4bF_quwNtw",
+      "editorReview": "לוציפר — מהסוג שגורם לדבר בלחישה גם כשצופים לבד בבית."
+    },
+    {
+      "rank": 3,
+      "tmdbId": 278178,
+      "name": "I Will Find You",
+      "nameHe": "אני אמצא אותך",
+      "overview": "אב שנשפט ונכלא על לא עוול בכפו בגין רצח בנו מגלה שהוא כנראה עדיין בחיים, ויוצא למבצע חילוץ נואש.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/urcY2TrcxKznKmIAuP6xnhececv.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/z0R6ToCsMMkLwuQXjzzdd1QCdJv.jpg",
+      "voteAverage": 8.2,
+      "genres": [
+        "דרמה",
+        "מסתורין",
+        "פשע"
+      ],
+      "firstAirDate": "2026-06-18",
+      "seasons": 1,
+      "trailerYoutubeId": "mObRUsA7dPY",
+      "editorReview": "אני אמצא אותך — מהדרמות שגורמות לשלוח הודעה לחבר בשעה מוזרה רק כדי לדבר עליה."
+    },
+    {
+      "rank": 4,
+      "tmdbId": 42009,
+      "name": "Black Mirror",
+      "nameHe": "מראה שחורה",
+      "overview": "אנתולוגיה מרתקת של סיפורים מצמררים, החושפת את תכונותיו המעוותות ביותר של המין האנושי לצד חידושיו הגדולים ביותר, ועוד.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/vYGqegw5sDtVNLuW6EU8bSyKprL.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/dg3OindVAGZBjlT3xYKqIAdukPL.jpg",
+      "voteAverage": 8.3,
+      "genres": [
+        "מדע בדיוני ופנטזיה",
+        "דרמה",
+        "מסתורין"
+      ],
+      "firstAirDate": "2011-12-04",
+      "seasons": 7,
+      "trailerYoutubeId": "1iqra1ojEvM",
+      "editorReview": "מראה שחורה — ההשקעה בעולם ניכרת בכל פינה — עצרנו כמה פעמים רק להסתכל."
+    },
+    {
+      "rank": 5,
+      "tmdbId": 78191,
+      "name": "You",
+      "nameHe": "את",
+      "overview": "בחור מקסים להחריד ומסוכן בטירוף לא בוחל באמצעים כדי להיכנס לחייהן של הנשים שהוא אובססיבי כלפיהן.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/25tJvflLhPYbC4zLrNCRcx6rTfc.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/gzOIymABxmetAECXtazEYCpMmfb.jpg",
+      "voteAverage": 8,
+      "genres": [
+        "מסתורין",
+        "פשע",
+        "דרמה"
+      ],
+      "firstAirDate": "2018-09-09",
+      "seasons": 5,
+      "trailerYoutubeId": "v99ooSjCVhg",
+      "editorReview": "את — כל פרק מוסיף שאלה אחת חדשה על כל תשובה שהוא נותן."
+    },
+    {
+      "rank": 6,
+      "tmdbId": 76669,
+      "name": "Élite",
+      "nameHe": "אליטה",
+      "overview": "שלושה בני נוער ממעמד הפועלים נרשמים לבית הספר הפרטי האקסקלוסיבי ביותר בספרד. ההתנגשות בינם לבין התלמידים העשירים מובילה לרצח.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/oJq8RSxa2e9aOu2IcGjx4IFeKXV.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/1qOA3kMtQO8bjnW8M2smjA8tp10.jpg",
+      "voteAverage": 8,
+      "genres": [
+        "פשע",
+        "מסתורין",
+        "דרמה"
+      ],
+      "firstAirDate": "2018-10-05",
+      "seasons": 8,
+      "trailerYoutubeId": "QNwhAdrdwp0",
+      "editorReview": "אליטה — ניסינו לפצח את התוכנית לפני הדמויות. הפסדנו."
+    },
+    {
+      "rank": 7,
+      "tmdbId": 93405,
+      "name": "오징어 게임",
+      "nameHe": "משחק הדיונון",
+      "overview": "מאות אנשים שנקלעו לקשיים כלכליים מקבלים הזמנה מוזרה לשחק בטורניר של משחקי ילדים. הפרס אומנם מפתה, אבל הסיכונים מצמררים.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/uFKp7WzuGXqdToQsn0sUs0WgAhh.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/2meX1nMdScFOoV4370rqHWKmXhY.jpg",
+      "voteAverage": 7.9,
+      "genres": [
+        "אקשן והרפתקאות",
+        "מסתורין",
+        "דרמה"
+      ],
+      "firstAirDate": "2021-09-17",
+      "seasons": 3,
+      "trailerYoutubeId": "oqxAJKy0ii4",
+      "editorReview": "משחק הדיונון — הפרק האחרון גרם לאחד מאיתנו לזרוק פופקורן על הקיר. שווה."
+    },
+    {
+      "rank": 8,
+      "tmdbId": 119051,
+      "name": "Wednesday",
+      "nameHe": "ונסדיי",
+      "overview": "ונסדיי אדמס היא ילדה חכמה, סרקסטית וקצת מתה מבפנים, שחוקרת תעלומות סבוכות ומתוודעת אל חברים ואויבים חדשים באקדמיית נוורמור.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/8oxQRPhAxaoV8ovzGGfB7VpzfCn.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/iHSwvRVsRyxpX7FE7GbviaDvgGZ.jpg",
+      "voteAverage": 8.3,
+      "genres": [
+        "מדע בדיוני ופנטזיה",
+        "מסתורין",
+        "קומדיה"
+      ],
+      "firstAirDate": "2022-11-23",
+      "seasons": 3,
+      "trailerYoutubeId": "Qa5kFRxBkNw",
+      "editorReview": "ונסדיי — ההשקעה בעולם ניכרת בכל פינה — עצרנו כמה פעמים רק להסתכל."
+    },
+    {
+      "rank": 9,
+      "tmdbId": 127529,
+      "name": "사냥개들",
+      "nameHe": "כלבי ציד",
+      "overview": "שני מתאגרפים צעירים חוברים למלווה כספים טוב לב, ויחד הם מחליטים להפיל כריש הלוואות חסר רחמים שמנצל אנשים נואשים כלכלית.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/aAO5623u08KdfiAQPbR3l5cEh13.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/zhsEnDNCQX5dlI2wbKzV90pV0B9.jpg",
+      "voteAverage": 8.5,
+      "genres": [
+        "דרמה",
+        "אקשן והרפתקאות",
+        "פשע"
+      ],
+      "firstAirDate": "2023-06-09",
+      "seasons": 2,
+      "trailerYoutubeId": "eyiR8pO50JE",
+      "editorReview": "כלבי ציד — משהו באמת קרה לנו בפרק החמישי. לא נגלה מה, רק תגיעו לשם."
+    },
+    {
+      "rank": 10,
+      "tmdbId": 74428,
+      "name": "Rosario Tijeras",
+      "overview": "תקציר יתעדכן בקרוב.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/zY7jshpbPNs5U677HxRZUltb7gm.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/hsSw3DuG2ah2wgaZeDTwyv5FPh3.jpg",
+      "voteAverage": 7.8,
+      "genres": [
+        "דרמה",
+        "פשע"
+      ],
+      "firstAirDate": "2016-10-30",
+      "seasons": 5,
+      "trailerYoutubeId": null,
+      "editorReview": "Rosario Tijeras — משהו באמת קרה לנו בפרק החמישי. לא נגלה מה, רק תגיעו לשם."
+    }
+  ]
+}

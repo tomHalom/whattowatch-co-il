@@ -1,0 +1,222 @@
+{
+  "provider": "netflix",
+  "slug": "2026-01",
+  "monthLabel": "ינואר",
+  "year": 2026,
+  "editorsNote": {
+    "label": "המלצת העורך לחודש ינואר:",
+    "body": "כולם ידברו לכם על מקום 1, אבל אנחנו כצוות התאהבנו הכי הרבה ב\"איך מתרגמים אהבה?\" — מהמקום 5 ברשימה. לא הכי מדוברת החודש, אבל זו שאנחנו ממליצים עליה בלי לחשוב פעמיים. — תום, ראש צוות הבינג'יונרים המוסמכים 🌙"
+  },
+  "series": [
+    {
+      "rank": 1,
+      "tmdbId": 66732,
+      "name": "Stranger Things",
+      "nameHe": "דברים מוזרים",
+      "overview": "כשילד נעלם, עיירה קטנה מוצאת את עצמה מול תעלומה הקשורה לניסויים סודיים, לכוחות על-טבעיים מבעיתים ולילדה מיוחדת ומוזרה.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/x1hM8kj3oNkGLjnhajxWQdEtKoe.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/9P4IIMYY3HifqeruZq0ZZ9g7YUi.jpg",
+      "voteAverage": 8.5,
+      "genres": [
+        "אקשן והרפתקאות",
+        "מסתורין",
+        "מדע בדיוני ופנטזיה"
+      ],
+      "firstAirDate": "2016-07-15",
+      "seasons": 5,
+      "trailerYoutubeId": "b9EkMc79ZSU",
+      "editorReview": "דברים מוזרים — התאהבנו מחדש בקסם של שנות ה-80 יחד עם חבורת הילדים המדהימה הזו, וצפינו בהתרגשות בכל רגע מהופנט ומלא צמרמורת שהסדרה המופתית הזו סיפקה לנו מתחילתה ועד סופה."
+    },
+    {
+      "rank": 2,
+      "tmdbId": 91239,
+      "name": "Bridgerton",
+      "nameHe": "ברידג'רטון",
+      "overview": "שמיניית בני ברידג'רטון המלוכדת מחפשת אהבה ואושר בחברה הגבוהה של לונדון.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/75nzsvJ6hpJeT9GRcr0zt0qLTH5.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/6umsRLI7t0ydFwCl0JNEIO0q2LH.jpg",
+      "voteAverage": 8,
+      "genres": [
+        "דרמה"
+      ],
+      "firstAirDate": "2020-12-25",
+      "seasons": 4,
+      "trailerYoutubeId": "gpv7ayf_tyE",
+      "editorReview": "ברידג'רטון — צפינו בעונה המהממת הזו והתאהבנו מיד בקסם התקופתי, בטוויסטים המפתיעים ובפסקול המודרני המעלף שהפך כל רגע לחגיגה ממכרת."
+    },
+    {
+      "rank": 3,
+      "tmdbId": 82596,
+      "name": "Emily in Paris",
+      "nameHe": "אמילי בפריז",
+      "overview": "תשוקות חדשות. אופנה חדשה. אמילי חדשה? אשפית שיווק אמיצה מארה\"ב מתקבלת לעבודת חלומותיה בפריז – ופורשת כנפיים בחיים ובאהבה.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/hV9X5W0xdJCV7Rwp7o7Wql2pFqg.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/jXTZaHarR9TZiMoQwiQWsGYXqnS.jpg",
+      "voteAverage": 7.5,
+      "genres": [
+        "דרמה",
+        "קומדיה"
+      ],
+      "firstAirDate": "2020-10-02",
+      "seasons": 5,
+      "trailerYoutubeId": "lptctjAT-Mk",
+      "editorReview": "אמילי בפריז — התאהבנו לחלוטין במסע הקסום של אמילי בפריז ובדרך המופלאה שבה היא כובשת את העיר, ופשוט נהנינו מכל רגע רומנטי וסוחף על המסך!"
+    },
+    {
+      "rank": 4,
+      "tmdbId": 261145,
+      "name": "The Amazing Digital Circus",
+      "nameHe": "הקרקס הדיגיטלי המדהים",
+      "overview": "תקציר יתעדכן בקרוב.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/lpfrgfomX8uNFxv4VaEzvJGs9TK.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/vPVdWiLUNQyaGMazyZGVAyRcYBG.jpg",
+      "voteAverage": 8.7,
+      "genres": [
+        "אנימציה",
+        "קומדיה",
+        "דרמה",
+        "מדע בדיוני ופנטזיה"
+      ],
+      "firstAirDate": "2023-10-13",
+      "seasons": 1,
+      "trailerYoutubeId": "iuaRQ5NQFq8",
+      "editorReview": "הקרקס הדיגיטלי המדהים — הומור לכל הגילאים בלי שאף רגע מרגיש מיותר."
+    },
+    {
+      "rank": 5,
+      "tmdbId": 229891,
+      "name": "이 사랑 통역 되나요?",
+      "nameHe": "איך מתרגמים אהבה?",
+      "overview": "שחקנית מפורסמת והמתורגמן שלה נוסעים ברחבי העולם במסגרת צילומים לסדרת טלוויזיה – אבל עולם הרגשות ביניהם אובד בתרגום. האם הם יצליחו ללמוד ביחד את שפת האהבה?",
+      "posterPath": "https://image.tmdb.org/t/p/w500/3U3kAkbAnpDFjCGeroykN2sY1rq.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/svnZYhAboLrwHEtkKRm2mIdjocB.jpg",
+      "voteAverage": 8.4,
+      "genres": [
+        "דרמה",
+        "קומדיה"
+      ],
+      "firstAirDate": "2026-01-16",
+      "seasons": 1,
+      "trailerYoutubeId": "tNZG1aLBATY",
+      "editorReview": "איך מתרגמים אהבה? — צפינו באינטראקציות הכל כך טבעיות בין הגיבורים והתאהבנו מהרגע הראשון, ומבחינתנו מדובר ביצירת מופת מושלמת של 10/10!"
+    },
+    {
+      "rank": 6,
+      "tmdbId": 306762,
+      "name": "プリズム輪舞曲",
+      "nameHe": "פריזמה של אהבה",
+      "overview": "לונדון, תחילת המאה ה-20. צעירה יפנית נרשמת לבית ספר מפורסם לאומנות, ויריבות עם בן כיתתה המוכשר הופכת להפתעתה לסיפור אהבה.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/mmKReC9gxE2q3lyrfHHZDM9Zch1.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/7mfU2mO1t4d43mBsm4Z3Q2grGy6.jpg",
+      "voteAverage": 8.9,
+      "genres": [
+        "אנימציה",
+        "דרמה"
+      ],
+      "firstAirDate": "2026-01-15",
+      "seasons": 1,
+      "trailerYoutubeId": "oLXSfFqTnXg",
+      "editorReview": "פריזמה של אהבה — קסם שעובד גם למי שחושב שאנימציה זו רק לילדים."
+    },
+    {
+      "rank": 7,
+      "tmdbId": 215092,
+      "name": "Machos alfa",
+      "nameHe": "זכרי אלפא",
+      "overview": "החברים הטובים פדרו, לואיס, ראול וסנטי מרגישים קצת אבודים בעולם החדש של העצמה נשית ומנסים להסתגל למצב החדש – כל אחד בדרכו הכושלת.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/fH1ezEIDo2YznbqwIu5z1HETde1.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/judTMRynbo4oiBCHeS7bXrsTitJ.jpg",
+      "voteAverage": 7.6,
+      "genres": [
+        "קומדיה"
+      ],
+      "firstAirDate": "2022-12-30",
+      "seasons": 5,
+      "trailerYoutubeId": "NpimczviUHA",
+      "editorReview": "זכרי אלפא — הדמות המשנית כאן טובה יותר מרוב הדמויות הראשיות בסדרות אחרות."
+    },
+    {
+      "rank": 8,
+      "tmdbId": 121509,
+      "name": "The Upshaws",
+      "nameHe": "איך עושים את זה?",
+      "overview": "סדרת סיטקום אמריקנית על משפחה שחורה ממעמד הפועלים באינדיאנה, שמנסה לבנות חיים טובים ומאושרים יותר בינות לאתגרים שהחיים מזמנים לה.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/bgtpwAsKNfqJmgp3zBxuSHMBAaW.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/2etWIt4JMD4wHzJIZVi7YeI5UZa.jpg",
+      "voteAverage": 7.6,
+      "genres": [
+        "קומדיה",
+        "משפחה",
+        "דרמה"
+      ],
+      "firstAirDate": "2021-05-12",
+      "seasons": 5,
+      "trailerYoutubeId": "H172Id0Kz-c",
+      "editorReview": "איך עושים את זה? — התאהבנו מיד בקומדיה המשפחתית והמטורללת הזו, שפשוט מחזירה את הכיף למסך עם הברקות קורעות מצחוק שמתאימות לכולם."
+    },
+    {
+      "rank": 9,
+      "tmdbId": 238458,
+      "name": "캐셔로",
+      "nameHe": "קשהירו",
+      "overview": "איש רגיל שיורש כוח-על מגלה רוע גדול עוד יותר שמנסה לגנוב ממנו את כוחו. העניין הוא שכל שימוש בכוח שואב כסף מהארנק שלו.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/jC4RdLIKEGqJU3V9Wd0DJ9EnUbl.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/lr0h0OBj7QOEvkaX5g3JWoaKZsI.jpg",
+      "voteAverage": 7.3,
+      "genres": [
+        "אקשן והרפתקאות",
+        "דרמה"
+      ],
+      "firstAirDate": "2025-12-26",
+      "seasons": 1,
+      "trailerYoutubeId": "cI-iJmZbBXw",
+      "editorReview": "קשהירו — התאהבנו בקונספט המבריק והסופר-מקורי של קשהירו שמחבר בין גיבורי-על לחרדה הכלכלית של כולנו, ואמנם העלילה דורשת לפעמים קצת איזון בין חיי היומיום לאקשן, אבל לגמרי נהנינו מכל רגע."
+    },
+    {
+      "rank": 10,
+      "tmdbId": 308482,
+      "name": "तस्करी: द स्मगलर्स वेब",
+      "nameHe": "אשפי ההברחות",
+      "overview": "קצין מכס מסור וצוותו נאבקים במבריח ידוע שעומד בראש סינדיקט רב-עוצמה, אבל מכשולים בלתי צפויים משבשים את המשימה.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/25fKRXvQLBq4nXu9vjOVJcvCiiD.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/5WOikKpCZ5H0zEzVDeE6eJwA8BH.jpg",
+      "voteAverage": 6.8,
+      "genres": [
+        "פשע",
+        "מסתורין",
+        "דרמה"
+      ],
+      "firstAirDate": "2026-01-14",
+      "seasons": 1,
+      "trailerYoutubeId": "u4it6ymhrLA",
+      "editorReview": "אשפי ההברחות — מהסוג שגורם לדבר בלחישה גם כשצופים לבד בבית."
+    }
+  ],
+  "faq": [
+    {
+      "question": "מה הסדרה הטובה ביותר בנטפליקס בינואר 2026?",
+      "answer": "\"דברים מוזרים\" — היא במקום הראשון ברשימה שלנו לחודש ינואר 2026. ראו את הפירוט המלא והטריילר בכתבה למעלה.",
+      "link": {
+        "to": "/providers/netflix/series/stranger-things-66732",
+        "label": "לכל הפרטים על \"דברים מוזרים\""
+      }
+    },
+    {
+      "question": "איך נבחרות הסדרות לרשימה החודשית?",
+      "answer": "צוות הבינג'יונרים המוסמכים שלנו סוקר, צופה ובוחר בקפידה כל חודש מבין הסדרות שיצאו בנטפליקס באותו חודש, לפי פופולריות, דירוגים וגיוון ז'אנרים — לא רשימה שנוצרת מעצמה."
+    },
+    {
+      "question": "האם יש סדרות ישראליות ברשימה?",
+      "answer": "לא נכנסה סדרה ישראלית לטופ 10 החודש, אבל יש לנו מדריך ייעודי לסדרות ישראליות בנטפליקס.",
+      "link": {
+        "to": "/netflix/genre/israeli",
+        "label": "לכל הסדרות הישראליות בנטפליקס"
+      }
+    },
+    {
+      "question": "איפה אפשר לראות את הטריילרים?",
+      "answer": "לכל סדרה ברשימה מוטמע טריילר וידאו שניתן לנגן ישירות מהכרטיסייה שלה בעמוד."
+    }
+  ],
+  "isFallback": false
+}

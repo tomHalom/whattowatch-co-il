@@ -1,0 +1,220 @@
+{
+  "provider": "netflix",
+  "slug": "2026-10",
+  "monthLabel": "אוקטובר",
+  "year": 2026,
+  "editorsNote": {
+    "label": "המלצת העורך לחודש אוקטובר:",
+    "body": "כולם ידברו לכם על מקום 1, אבל אנחנו כצוות התאהבנו הכי הרבה ב\"קדמת עדן\" — מהמקום 5 ברשימה. לא הכי מדוברת החודש, אבל זו שאנחנו ממליצים עליה בלי לחשוב פעמיים. — תום, ראש צוות הבינג'יונרים המוסמכים 🌙"
+  },
+  "series": [
+    {
+      "rank": 1,
+      "tmdbId": 236235,
+      "name": "The Gentlemen",
+      "nameHe": "הג'נטלמנים",
+      "overview": "אדי האריסטוקרט יורש אחוזה משפחתית ומגלה שהיא כוללת גם אימפריית קנאביס ענקית – שבעליה לא מתכוונים ללכת לשום מקום.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/qp5mNLAevWW2KNb9pURNlOyzxEG.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/yG1wltFmkX5c5ocACKfpX0tp3SY.jpg",
+      "voteAverage": 7.9,
+      "genres": [
+        "קומדיה",
+        "דרמה",
+        "פשע"
+      ],
+      "firstAirDate": "2024-03-07",
+      "seasons": 2,
+      "trailerYoutubeId": "wyEOwHrpZH4",
+      "editorReview": "הג'נטלמנים — מושלמת. קומדיית פשע בריטית שנונה, מלוטשת ומלאת קסם, מהסדרות שאנחנו ממליצים עליהן בלי לחשוב פעמיים."
+    },
+    {
+      "rank": 2,
+      "tmdbId": 45790,
+      "name": "ジョジョの奇妙な冒険",
+      "nameHe": "ההרפתקה המוזרה של ג'וג'ו",
+      "overview": "באנגליה של מאה ה-19, אציל בשם ג'ונתן ג'וסטאר מוצא את עצמו ביריבות מרה עם דיו בראנדו, אדם שאביו לקח תחת חסותו. תשוקתו האין סופית של דיו להשיג שליטה מובילה אותו אל מסכת אבן אצטקית הנמצאת ברשותו של ג'ונתן – מה שישנה לעד את חיי השניים וצאציהם. 50 שנה לאחר מכן, בניו-יורק של שנת 1938, נכדו של ג'ונתן, ג'וזף ג'וסטאר, מתחייב לסיים את משימת סבו ולהתמחות ביכולות הדרושות להשמדת מסכת האבן ואת יוצריה רבי העוצמה שמאיימים על קיום האנושות.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/7wQ1eVvhm3f7lXqEDEpal7KWz5x.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/5mUYDoFjDlPmDvnUWSknhYjGBBh.jpg",
+      "voteAverage": 8.5,
+      "genres": [
+        "אנימציה",
+        "אקשן והרפתקאות",
+        "מדע בדיוני ופנטזיה"
+      ],
+      "firstAirDate": "2012-10-06",
+      "seasons": 6,
+      "trailerYoutubeId": "fOvrr5izejw",
+      "editorReview": "ההרפתקה המוזרה של ג'וג'ו — קסם שעובד גם למי שחושב שאנימציה זו רק לילדים."
+    },
+    {
+      "rank": 3,
+      "tmdbId": 285322,
+      "name": "Below",
+      "nameHe": "במעמקים",
+      "overview": "יצור ימי מסתורי מטיל אימה על עיירה קטנה בניופאונדלנד. דייג קשוח ומשפחתו נלחמים להגן על קהילתם המגובשת.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/vgLqqhMUbljp585qPp1EFCyJtcz.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/cn0feYcDvVzVjUDoXa1O8sRgzz.jpg",
+      "voteAverage": 7.2,
+      "genres": [
+        "דרמה",
+        "מסתורין"
+      ],
+      "firstAirDate": "2026-10-08",
+      "seasons": 1,
+      "trailerYoutubeId": "U57CNxSgoss",
+      "editorReview": "במעמקים — לא הכי \"קלילה\", אבל בהחלט הכי מדויקת שראינו הרבה זמן."
+    },
+    {
+      "rank": 4,
+      "tmdbId": 275102,
+      "name": "스캔들",
+      "nameHe": "הסקנדל",
+      "overview": "הצעה סודית בג'וסון מציתה תשוקות חבויות בין אצילה מחוננת, מאהב מפורסם וגברת תמימה שנקלעה למשחק המסוכן שלהם.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/dCnKX2MFFhAfMXWJketaRaPbUXe.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/uc1p1PEbEMpdIHqnU9TESNC6Jhp.jpg",
+      "voteAverage": 6.8,
+      "genres": [
+        "דרמה"
+      ],
+      "firstAirDate": "2026-09-18",
+      "seasons": 1,
+      "trailerYoutubeId": "FeISX5E1uJc",
+      "editorReview": "הסקנדל — נשארנו קצת רעבים לעומק הרגשי ולמשחקי הכוח שהובטחו לנו, אבל בסך הכל נהנינו מדרמה זדונית וחושנית שמספקת בדיוק את מה שצריך לבינג' סוחף."
+    },
+    {
+      "rank": 5,
+      "tmdbId": 258165,
+      "name": "East of Eden",
+      "nameHe": "קדמת עדן",
+      "overview": "בראשית המאה ה-20, אישה עצמאית ודעתנית גורמת לקרע בין שני אחים. כך מתחילה סאגה שתלווה את המשפחה במשך שני דורות.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/onAK2jDjHmAEpe5LS9leK5WLytH.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/70RZX7kNjA0Qjn6HigB1oMvFJ8R.jpg",
+      "voteAverage": 8.1,
+      "genres": [
+        "דרמה"
+      ],
+      "firstAirDate": "2026-10-01",
+      "seasons": 1,
+      "trailerYoutubeId": "M9NWvGZViCg",
+      "editorReview": "קדמת עדן — משהו באמת קרה לנו בפרק החמישי. לא נגלה מה, רק תגיעו לשם."
+    },
+    {
+      "rank": 6,
+      "tmdbId": 255752,
+      "name": "Haunted Hotel",
+      "nameHe": "מלון הרוחות",
+      "overview": "אם יחידנית שירשה מלון מאחיה המנוח עוברת אליו וחיה לצד רוח הרפאים טובת המזג שלו – ועוד אורחים תובעניים שלא יעזבו אף פעם.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/yNSEsEhLbqAoivJAyzovwZbh1qe.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/lqsufP0yMhQ04SZx3ZlXTay4whw.jpg",
+      "voteAverage": 8.2,
+      "genres": [
+        "אנימציה",
+        "קומדיה"
+      ],
+      "firstAirDate": "2025-09-19",
+      "seasons": 2,
+      "trailerYoutubeId": "UxEza8wLcS0",
+      "editorReview": "מלון הרוחות — האנימציה כאן עושה דברים שצילום רגיל פשוט לא יכול."
+    },
+    {
+      "rank": 7,
+      "tmdbId": 224263,
+      "name": "Stranger Things: Tales from '85",
+      "nameHe": "דברים מוזרים: סיפורים מ-1985",
+      "overview": "חורף. הוקינס. 1985. ברוכים השבים לעיירה שורצת סודות, שבה הגיבורים האהובים מתמודדים עם תעלומות חדשות – ועם זן חדש של מוזרוּת.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/tppSZQueDvgJ7AiDOuVTlHD8bDR.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/ulBGaxq9GmJexyEOi4Xci74g6Vt.jpg",
+      "voteAverage": 7.7,
+      "genres": [
+        "אנימציה",
+        "מדע בדיוני ופנטזיה",
+        "מסתורין",
+        "אקשן והרפתקאות"
+      ],
+      "firstAirDate": "2026-04-23",
+      "seasons": 2,
+      "trailerYoutubeId": "kajCUhg36R0",
+      "editorReview": "דברים מוזרים: סיפורים מ-1985 — האנימציה כאן עושה דברים שצילום רגיל פשוט לא יכול."
+    },
+    {
+      "rank": 8,
+      "tmdbId": 305357,
+      "name": "A Different World",
+      "nameHe": "עולם אחר",
+      "overview": "נשף סוף השנה מביא איתו החלטות גדולות, דרמה גדולה ופרק חדש בסיפור של הילמן.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/mmE4RNbsPOwwRo5rnVRd1IXzgcZ.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/1lVbKPOVjTV02FtLqiPk9F9z1Fh.jpg",
+      "voteAverage": 7.6,
+      "genres": [
+        "קומדיה",
+        "דרמה"
+      ],
+      "firstAirDate": "2026-09-24",
+      "seasons": 1,
+      "trailerYoutubeId": "W8jMEXwErvk",
+      "editorReview": "עולם אחר — התרופה המושלמת לערב שדורש כלום מלבד לצחוק."
+    },
+    {
+      "rank": 9,
+      "tmdbId": 290720,
+      "name": "El problema final",
+      "nameHe": "הבעיה הסופית",
+      "overview": "השחקן בנג'מין בסיל, שהיה פעם הבלש האיקוני ביותר בספרד, נשאב לחקירת רצח אמיתית במלון שבו אי אפשר לסמוך על אף אחד.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/jVHx7Yxh41Xf1txD5AsX5MZ4E1e.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/m9QKL9smb61v1XSYJoHdl7p5yUd.jpg",
+      "voteAverage": 7.1,
+      "genres": [
+        "פשע",
+        "מסתורין"
+      ],
+      "firstAirDate": "2026-09-25",
+      "seasons": 1,
+      "trailerYoutubeId": "yLeja7kWgmU",
+      "editorReview": "הבעיה הסופית — סוף כל פרק הוא בדיוק המקום הלא-נכון לעצור — ועצרנו בו כל פעם."
+    },
+    {
+      "rank": 10,
+      "tmdbId": 255650,
+      "name": "Maschi veri",
+      "nameHe": "גברים אמיתיים",
+      "overview": "ארבעה חברים ותיקים – מאסימו, מטיה, לואיג'י וריקרדו – מנסים לתמרן בין קשרים, קריירות ודייטינג בעולם מודרני שלא עושה לגברים חיים קלים.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/4exzw8qEqw7kYXjPdeXrTp1Emz1.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/y70oo98ILJfDP5SStaaByel7qnc.jpg",
+      "voteAverage": 6.6,
+      "genres": [
+        "קומדיה"
+      ],
+      "firstAirDate": "2025-05-21",
+      "seasons": 2,
+      "trailerYoutubeId": "-YEzdvgDeJY",
+      "editorReview": "גברים אמיתיים — הצחקנו בקול רם, בלילה, לבד — ואין לנו שום בעיה להודות בזה."
+    }
+  ],
+  "faq": [
+    {
+      "question": "מה הסדרה הטובה ביותר בנטפליקס באוקטובר 2026?",
+      "answer": "\"הג'נטלמנים\" — היא במקום הראשון ברשימה שלנו לחודש אוקטובר 2026. ראו את הפירוט המלא והטריילר בכתבה למעלה.",
+      "link": {
+        "to": "/providers/netflix/series/the-gentlemen-236235",
+        "label": "לכל הפרטים על \"הג'נטלמנים\""
+      }
+    },
+    {
+      "question": "איך נבחרות הסדרות לרשימה החודשית?",
+      "answer": "צוות הבינג'יונרים המוסמכים שלנו סוקר, צופה ובוחר בקפידה כל חודש מבין הסדרות שיצאו בנטפליקס באותו חודש, לפי פופולריות, דירוגים וגיוון ז'אנרים — לא רשימה שנוצרת מעצמה."
+    },
+    {
+      "question": "האם יש סדרות ישראליות ברשימה?",
+      "answer": "לא נכנסה סדרה ישראלית לטופ 10 החודש, אבל יש לנו מדריך ייעודי לסדרות ישראליות בנטפליקס.",
+      "link": {
+        "to": "/netflix/genre/israeli",
+        "label": "לכל הסדרות הישראליות בנטפליקס"
+      }
+    },
+    {
+      "question": "איפה אפשר לראות את הטריילרים?",
+      "answer": "לכל סדרה ברשימה מוטמע טריילר וידאו שניתן לנגן ישירות מהכרטיסייה שלה בעמוד."
+    }
+  ],
+  "isFallback": false
+}

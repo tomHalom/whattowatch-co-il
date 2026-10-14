@@ -4,6 +4,7 @@ import { writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import { ROOT, readNetflixMonths, readProviders } from './lib/readContent.mjs'
 import { slugify } from './lib/slugify.mjs'
+import { GENRE_DEFS } from './fetchTopSeries.mjs'
 
 const SITE_URL = process.env.NUXT_PUBLIC_SITE_URL || 'https://whattowatch.co.il'
 
@@ -24,8 +25,11 @@ async function main() {
   ]
 
   for (const provider of providers) {
-    urls.push(urlEntry(`/providers/${provider.slug}`, { changefreq: 'weekly', priority: '0.7' }))
-    urls.push(urlEntry(`/providers/${provider.slug}/top-10`, { changefreq: 'weekly', priority: '0.8' }))
+    urls.push(urlEntry(`/providers/${provider.slug}`, { changefreq: 'weekly', priority: '0.8' }))
+  }
+
+  for (const slug of Object.keys(GENRE_DEFS)) {
+    urls.push(urlEntry(`/netflix/genre/${slug}`, { changefreq: 'weekly', priority: '0.7' }))
   }
 
   const seenSeries = new Set()

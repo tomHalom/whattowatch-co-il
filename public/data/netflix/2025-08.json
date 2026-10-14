@@ -1,0 +1,223 @@
+{
+  "provider": "netflix",
+  "slug": "2025-08",
+  "monthLabel": "אוגוסט",
+  "year": 2025,
+  "editorsNote": {
+    "label": "המלצת העורך לחודש אוגוסט:",
+    "body": "כולם ידברו לכם על מקום 1, אבל אנחנו כצוות התאהבנו הכי הרבה ב\"עמוק בבוץ\" — מהמקום 5 ברשימה. לא הכי מדוברת החודש, אבל זו שאנחנו ממליצים עליה בלי לחשוב פעמיים. — תום, ראש צוות הבינג'יונרים המוסמכים 🌙"
+  },
+  "series": [
+    {
+      "rank": 1,
+      "tmdbId": 119051,
+      "name": "Wednesday",
+      "nameHe": "ונסדיי",
+      "overview": "ונסדיי אדמס היא ילדה חכמה, סרקסטית וקצת מתה מבפנים, שחוקרת תעלומות סבוכות ומתוודעת אל חברים ואויבים חדשים באקדמיית נוורמור.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/8oxQRPhAxaoV8ovzGGfB7VpzfCn.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/iHSwvRVsRyxpX7FE7GbviaDvgGZ.jpg",
+      "voteAverage": 8.3,
+      "genres": [
+        "מדע בדיוני ופנטזיה",
+        "מסתורין",
+        "קומדיה"
+      ],
+      "firstAirDate": "2022-11-23",
+      "seasons": 2,
+      "trailerYoutubeId": "Qa5kFRxBkNw",
+      "editorReview": "ונסדיי — עולם שלם שנבנה כך שתרצו לחיות בו, גם כשהוא מפחיד."
+    },
+    {
+      "rank": 2,
+      "tmdbId": 261145,
+      "name": "The Amazing Digital Circus",
+      "nameHe": "הקרקס הדיגיטלי המדהים",
+      "overview": "תקציר יתעדכן בקרוב.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/lpfrgfomX8uNFxv4VaEzvJGs9TK.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/vPVdWiLUNQyaGMazyZGVAyRcYBG.jpg",
+      "voteAverage": 8.7,
+      "genres": [
+        "אנימציה",
+        "קומדיה",
+        "דרמה",
+        "מדע בדיוני ופנטזיה"
+      ],
+      "firstAirDate": "2023-10-13",
+      "seasons": 1,
+      "trailerYoutubeId": "iuaRQ5NQFq8",
+      "editorReview": "הקרקס הדיגיטלי המדהים — עצרנו את הפרק כמה פעמים רק כדי להעריך פריים בודד."
+    },
+    {
+      "rank": 3,
+      "tmdbId": 199001,
+      "name": "My Life with the Walter Boys",
+      "nameHe": "חיי עם משפחת וולטר",
+      "overview": "בעקבות טרגדיה, נערה עוברת לגור עם המשפחה הגדולה של האפוטרופסית שלה בעיירה קטנה, ולומדת על אהבה, תקווה וחברוּת.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/gAOdOddXGSEcGIo58bUHRRRQ2ay.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/ntsEP1jUbLxz62MZqxmVfM5TNfX.jpg",
+      "voteAverage": 7.8,
+      "genres": [
+        "דרמה"
+      ],
+      "firstAirDate": "2023-12-07",
+      "seasons": 3,
+      "trailerYoutubeId": "pHIXtOrHF80",
+      "editorReview": "חיי עם משפחת וולטר — משהו באמת קרה לנו בפרק החמישי. לא נגלה מה, רק תגיעו לשם."
+    },
+    {
+      "rank": 4,
+      "tmdbId": 284445,
+      "name": "タコピーの原罪",
+      "nameHe": "החטא הקדמון של טקופי",
+      "overview": "חייזר שמח בשם טאקופי נוחת על כדור הארץ עם משימה אחת: להפיץ אושר! כשהוא פוגש את שיזוקה, תלמידת כיתה ד' בודדה, הוא נשבע להחזיר לה את החיוך בעזרת גאדג'טים קסומים. אך כשמתגלה לו הכאב בחייה, טאקופי לומד שאושר אמיתי דורש יותר מסתם גאדג'טים.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/aIZldplw1isQQSjaLS0o3SEob9H.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/6omimfVty4JD3LXzI5LHEGhXjwn.jpg",
+      "voteAverage": 8.8,
+      "genres": [
+        "אנימציה",
+        "דרמה",
+        "מדע בדיוני ופנטזיה"
+      ],
+      "firstAirDate": "2025-06-28",
+      "seasons": 1,
+      "trailerYoutubeId": "j7dxZjwIhu0",
+      "editorReview": "החטא הקדמון של טקופי — צבעונית, חכמה, ומצליחה להגיד משהו אמיתי בלי להתנשא."
+    },
+    {
+      "rank": 5,
+      "tmdbId": 258462,
+      "name": "En el barro",
+      "nameHe": "עמוק בבוץ",
+      "overview": "חמש אסירות שעברו תאונה קטלנית רוקמות קשר מיוחד, אבל שחיתות ומלחמות בין כנופיות בסביבה האכזרית של הכלא עלולות להרוס הכול.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/f5FK5BnK2ZFbxzWcP6FxhNZwVJ8.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/bxPELhUZNgbFUN31EZTBC99wOHD.jpg",
+      "voteAverage": 7.6,
+      "genres": [
+        "פשע",
+        "דרמה"
+      ],
+      "firstAirDate": "2025-08-14",
+      "seasons": 2,
+      "trailerYoutubeId": null,
+      "editorReview": "עמוק בבוץ — סוף כל פרק הוא בדיוק המקום הלא-נכון לעצור — ועצרנו בו כל פעם."
+    },
+    {
+      "rank": 6,
+      "tmdbId": 262375,
+      "name": "Long Story Short",
+      "nameHe": "אז בקיצור",
+      "overview": "סדרת אנימציה קומית מבית היוצר של \"בוג'ק הורסמן\", המגוללת סיפור של משפחה לאורך זמן ומלווה חמישה אחים מילדות לבגרות ובחזרה.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/22nh2kTuFpitrqTxxixhWjxEqFa.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/eqZjZGHa1mZYBPHUHOX2LSzzCsS.jpg",
+      "voteAverage": 7.5,
+      "genres": [
+        "קומדיה",
+        "אנימציה"
+      ],
+      "firstAirDate": "2025-08-22",
+      "seasons": 1,
+      "trailerYoutubeId": "wWziW_vQ_L4",
+      "editorReview": "אז בקיצור — התרופה המושלמת לערב שדורש כלום מלבד לצחוק."
+    },
+    {
+      "rank": 7,
+      "tmdbId": 227975,
+      "name": "Fatal Seduction",
+      "nameHe": "פיתוי גורלי",
+      "overview": "מרצה נשואה נשאבת לרומן סוער עם גבר צעיר ממנה, ומגלה טרגדיה ובגידה מצד האנשים שקרובים אליה.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/qV9DjDIMUu7ieCQTQkEe9R83Ooa.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/138GLKdHorsdiG2pqHrIMw05Nc8.jpg",
+      "voteAverage": 6.5,
+      "genres": [
+        "פשע",
+        "מסתורין",
+        "דרמה"
+      ],
+      "firstAirDate": "2023-07-07",
+      "seasons": 3,
+      "trailerYoutubeId": "6Dpi7CZHY84",
+      "editorReview": "פיתוי גורלי — תכנון של תסריט פשע שבאמת מצליח להפתיע, לא רק \"לטוויסט טוויסט\"."
+    },
+    {
+      "rank": 8,
+      "tmdbId": 280888,
+      "name": "Dos tumbas",
+      "nameHe": "שני קברים",
+      "overview": "שתי נערות נעלמות באורח מסתורי מעיירת חוף שלווה. סבתה האבֵלה של אחת מהן מסכנת הכול כדי לגלות את כל האמת ולמצוא נקמה.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/hPegZcS8TBW8lYDjfnCiIXIvuTf.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/50ycQZGBRwVjVk0ZrERJRls2Wto.jpg",
+      "voteAverage": 6.5,
+      "genres": [
+        "מסתורין",
+        "פשע",
+        "דרמה"
+      ],
+      "firstAirDate": "2025-08-29",
+      "seasons": 1,
+      "trailerYoutubeId": "Bna-KqjxIWY",
+      "editorReview": "שני קברים — כל פרק מוסיף שאלה אחת חדשה על כל תשובה שהוא נותן."
+    },
+    {
+      "rank": 9,
+      "tmdbId": 283354,
+      "name": "Katrina: Come Hell and High Water",
+      "nameHe": "קתרינה: 20 שנה אחרי",
+      "overview": "עשרים שנה אחרי הוריקן קתרינה, השורדים מספרים על הסופה ההרסנית ששינתה את חייהם לתמיד ועל חוסר השוויון המובנה שהיא חשפה.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/f16yvVS9QJf1x0dxx1bPE7cnKKR.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/fHfHUP0kwV6wFWsnDe6jL7V9M5X.jpg",
+      "voteAverage": 6.6,
+      "genres": [
+        "דוקומנטרי"
+      ],
+      "firstAirDate": "2025-08-27",
+      "seasons": 1,
+      "trailerYoutubeId": "2gyBK3UMT34",
+      "editorReview": "קתרינה: 20 שנה אחרי — עוד אחת שנכנסה לרשימה שלנו בלי שהתכוונו, ונשארה בה."
+    },
+    {
+      "rank": 10,
+      "tmdbId": 229958,
+      "name": "애마",
+      "nameHe": "מדאם אמה",
+      "overview": "שנות השמונים. כוכבת קולנוע וכוכבנית עולה מנסות לקרוא תיגר על שחיתויות מאחורי הקלעים ועל חוקי תעשיית הקולנוע שנשלטה בידי גברים על הסט של \"מדאם אמה\".",
+      "posterPath": "https://image.tmdb.org/t/p/w500/8nqMjX3d0oVEnXWrpqsgEhxqen5.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/Kl07j8DsHfAwkODBblg81mjcGc.jpg",
+      "voteAverage": 7.4,
+      "genres": [
+        "דרמה",
+        "קומדיה"
+      ],
+      "firstAirDate": "2025-08-22",
+      "seasons": 1,
+      "trailerYoutubeId": "pHTADS1Ve9I",
+      "editorReview": "מדאם אמה — מהסוג שממשיכה איתך גם למחרת בבוקר, בין כוס קפה לכוס קפה."
+    }
+  ],
+  "faq": [
+    {
+      "question": "מה הסדרה הטובה ביותר בנטפליקס באוגוסט 2025?",
+      "answer": "\"ונסדיי\" — היא במקום הראשון ברשימה שלנו לחודש אוגוסט 2025. ראו את הפירוט המלא והטריילר בכתבה למעלה.",
+      "link": {
+        "to": "/providers/netflix/series/wednesday-119051",
+        "label": "לכל הפרטים על \"ונסדיי\""
+      }
+    },
+    {
+      "question": "איך נבחרות הסדרות לרשימה החודשית?",
+      "answer": "צוות הבינג'יונרים המוסמכים שלנו סוקר, צופה ובוחר בקפידה כל חודש מבין הסדרות שיצאו בנטפליקס באותו חודש, לפי פופולריות, דירוגים וגיוון ז'אנרים — לא רשימה שנוצרת מעצמה."
+    },
+    {
+      "question": "האם יש סדרות ישראליות ברשימה?",
+      "answer": "לא נכנסה סדרה ישראלית לטופ 10 החודש, אבל יש לנו מדריך ייעודי לסדרות ישראליות בנטפליקס.",
+      "link": {
+        "to": "/netflix/genre/israeli",
+        "label": "לכל הסדרות הישראליות בנטפליקס"
+      }
+    },
+    {
+      "question": "איפה אפשר לראות את הטריילרים?",
+      "answer": "לכל סדרה ברשימה מוטמע טריילר וידאו שניתן לנגן ישירות מהכרטיסייה שלה בעמוד."
+    }
+  ],
+  "isFallback": false
+}

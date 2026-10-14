@@ -6,5 +6,6 @@ dist
 .env
 .env.*
 !.env.example
+public/ads.txt
 .DS_Store
 *.log

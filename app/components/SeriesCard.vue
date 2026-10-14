@@ -5,20 +5,12 @@
     @click="$emit('openModal')"
     tabindex="0"
     role="button"
-    :aria-label="`${nameHe || name} — מקום ${rank}`"
+    :aria-label="`${nameHe || name} — מקום ${rank}${isNew === true ? `, ${$t('series.newThisMonth')}` : ''}`"
     @keydown.enter="$emit('openModal')"
     @keydown.space.prevent="$emit('openModal')"
   >
     <!-- Oversized rank numeral -->
     <span class="rank-bg" aria-hidden="true">{{ rank }}</span>
-
-    <!-- Medal / rank badge -->
-    <div class="medal-badge" :class="medalClass" aria-label="`מקום ${rank}`">
-      <span v-if="rank === 1">🥇</span>
-      <span v-else-if="rank === 2">🥈</span>
-      <span v-else-if="rank === 3">🥉</span>
-      <span v-else class="rank-num">#{{ rank }}</span>
-    </div>
 
     <!-- Poster -->
     <div class="card-poster-wrap">
@@ -32,15 +24,34 @@
       <div v-else class="card-poster-placeholder">
         <span>🎬</span>
       </div>
-      <!-- Trailer overlay button -->
-      <div v-if="trailerYoutubeId" class="trailer-overlay">
-        <span class="play-btn">▶</span>
+
+      <!-- Rank numeral over the poster — echoes the homepage hero's big
+           "TOP10" background text, tinted per medal color, glowing with
+           no background box. This is the only rank indicator on the
+           card now (replaced the small circular badge). Toggle
+           SHOW_POSTER_RANK_ART to false to hide it entirely. -->
+      <span v-if="SHOW_POSTER_RANK_ART" class="poster-rank-art" :class="medalClass" aria-hidden="true">
+        {{ rank }}
+      </span>
+      <!-- Hover overlay — clicking the card opens the details modal, not
+           inline playback, so this is an "expand for details" icon, not
+           a play triangle. -->
+      <div class="trailer-overlay">
+        <span class="expand-btn">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="10.5" cy="10.5" r="6.5" />
+            <path d="M20 20l-4.8-4.8" />
+          </svg>
+        </span>
       </div>
       <!-- Score pill on poster -->
       <div class="poster-score-pill">
         <span class="pill-star">★</span>
         <span class="pill-num">{{ voteAverage?.toFixed(1) }}</span>
       </div>
+      <span v-if="isNew === true" class="poster-new-badge" aria-hidden="true">
+        {{ $t('series.newThisMonth') }}
+      </span>
     </div>
 
     <!-- Card content -->
@@ -83,9 +94,14 @@ const props = defineProps<{
   genres?: string[]
   trailerYoutubeId?: string | null
   editorReview?: string
+  isNew?: boolean
 }>()
 
 defineEmits<{ openModal: [] }>()
+
+// EXPERIMENTAL: flip to false to revert the poster-overlay rank numeral
+// to the plain poster (see template + .poster-rank-art below).
+const SHOW_POSTER_RANK_ART = true
 
 const medalClass = computed(() => {
   if (props.rank === 1) return 'medal-gold'
@@ -121,10 +137,10 @@ function starClass(i: number) {
 .series-card:focus-visible {
   transform: translateY(-6px) scale(1.01);
   box-shadow: 0 20px 60px rgba(0,0,0,0.6);
-  outline: none;
 }
 .series-card:focus-visible {
-  ring: 2px solid #E63C28;
+  outline: 2px solid var(--clr-gold);
+  outline-offset: 3px;
 }
 
 /* Rank-specific accent colors */
@@ -154,48 +170,6 @@ function starClass(i: number) {
 .rank-2 .rank-bg { color: #C0C0C0; opacity: 0.06; }
 .rank-3 .rank-bg { color: #CD7F32; opacity: 0.06; }
 
-/* ─── Medal badge ─────────────────────────────────────────── */
-.medal-badge {
-  position: absolute;
-  top: 0.6rem;
-  right: 0.6rem;
-  z-index: 20;
-  width: 2.4rem;
-  height: 2.4rem;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.3rem;
-  border: 2px solid transparent;
-  box-shadow: 0 3px 12px rgba(0,0,0,0.5);
-}
-.medal-gold   {
-  background: linear-gradient(135deg, #FFD700, #B8860B);
-  border-color: rgba(255,215,0,0.8);
-  box-shadow: 0 0 16px rgba(255,215,0,0.4);
-}
-.medal-silver {
-  background: linear-gradient(135deg, #E8E8E8, #9E9E9E);
-  border-color: rgba(200,200,200,0.8);
-  box-shadow: 0 0 12px rgba(200,200,200,0.25);
-}
-.medal-bronze {
-  background: linear-gradient(135deg, #CD7F32, #8B4513);
-  border-color: rgba(205,127,50,0.8);
-  box-shadow: 0 0 12px rgba(205,127,50,0.3);
-}
-.medal-plain  {
-  background: rgba(20,20,20,0.9);
-  border-color: rgba(255,255,255,0.1);
-}
-.rank-num {
-  font-size: 0.75rem;
-  font-weight: 900;
-  color: rgba(255,255,255,0.6);
-  font-family: monospace;
-}
-
 /* ─── Poster ──────────────────────────────────────────────── */
 .card-poster-wrap {
   position: relative;
@@ -203,6 +177,35 @@ function starClass(i: number) {
   aspect-ratio: 16/10;
   overflow: hidden;
   flex-shrink: 0;
+}
+
+/* ─── Poster rank art — the only rank indicator on the card ───────── */
+.poster-rank-art {
+  position: absolute;
+  top: 0.2rem;
+  right: 0.45rem;
+  z-index: 5;
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: clamp(2.6rem, 11vw, 4.75rem);
+  font-weight: 900;
+  line-height: 0.8;
+  opacity: 0.9;
+  pointer-events: none;
+  user-select: none;
+  color: #F2EEE4;
+  text-shadow: 0 0 10px rgba(242,238,228,0.5), 0 2px 8px rgba(0,0,0,0.8);
+}
+.poster-rank-art.medal-gold {
+  color: #FFD700;
+  text-shadow: 0 0 16px rgba(255,215,0,0.85), 0 0 6px rgba(255,215,0,0.85), 0 2px 8px rgba(0,0,0,0.8);
+}
+.poster-rank-art.medal-silver {
+  color: #E8E8E8;
+  text-shadow: 0 0 16px rgba(232,232,232,0.75), 0 0 6px rgba(232,232,232,0.75), 0 2px 8px rgba(0,0,0,0.8);
+}
+.poster-rank-art.medal-bronze {
+  color: #E5A05C;
+  text-shadow: 0 0 16px rgba(205,127,50,0.85), 0 0 6px rgba(205,127,50,0.85), 0 2px 8px rgba(0,0,0,0.8);
 }
 .card-poster {
   width: 100%;
@@ -236,20 +239,19 @@ function starClass(i: number) {
 .series-card:hover .trailer-overlay {
   opacity: 1;
 }
-.play-btn {
+.expand-btn {
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 50%;
-  background: rgba(229,9,20,0.9);
+  background: rgba(232,163,61,0.9);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
-  font-size: 1.1rem;
-  box-shadow: 0 4px 20px rgba(229,9,20,0.5);
+  color: #14131C;
+  box-shadow: 0 4px 20px rgba(232,163,61,0.5);
   transition: transform 0.2s;
 }
-.series-card:hover .play-btn {
+.series-card:hover .expand-btn {
   transform: scale(1.1);
 }
 .poster-score-pill {
@@ -267,6 +269,43 @@ function starClass(i: number) {
 }
 .pill-star { color: #FFD700; font-size: 0.75rem; }
 .pill-num  { color: #FFD700; font-size: 0.7rem; font-weight: 700; font-family: monospace; }
+
+/* ─── "New this month" ticket stub ────────────────────────── */
+.poster-new-badge {
+  position: absolute;
+  top: 0.625rem;
+  inset-inline-end: 0.625rem;
+  z-index: 6;
+  max-inline-size: calc(100% - 7.5rem);
+  display: inline-flex;
+  align-items: center;
+  padding-block: 0.25rem;
+  padding-inline: 0.625rem 0.5rem;
+  background: var(--clr-gold);
+  color: var(--clr-bg);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 1.2;
+  letter-spacing: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  border-radius: 2px;
+  border-inline-start: 1.5px dashed rgba(20,19,28,0.45);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.55);
+  transform: rotate(-2deg);
+  transform-origin: center;
+  pointer-events: none;
+  user-select: none;
+}
+@media (min-width: 1024px) {
+  .poster-new-badge { font-size: 0.8125rem; padding-block: 0.3rem; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .poster-new-badge { transition: transform 0.3s cubic-bezier(.22,1,.36,1); }
+  .series-card:hover .poster-new-badge,
+  .series-card:focus-visible .poster-new-badge { transform: rotate(0deg); }
+}
 
 /* ─── Card body ───────────────────────────────────────────── */
 .card-body {

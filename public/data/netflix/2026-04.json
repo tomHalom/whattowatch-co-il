@@ -1,0 +1,224 @@
+{
+  "provider": "netflix",
+  "slug": "2026-04",
+  "monthLabel": "אפריל",
+  "year": 2026,
+  "editorsNote": {
+    "label": "המלצת העורך לחודש אפריל:",
+    "body": "כולם ידברו לכם על מקום 1, אבל אנחנו כצוות התאהבנו הכי הרבה ב\"עצבים\" — מהמקום 5 ברשימה. לא הכי מדוברת החודש, אבל זו שאנחנו ממליצים עליה בלי לחשוב פעמיים. — תום, ראש צוות הבינג'יונרים המוסמכים 🌙"
+  },
+  "series": [
+    {
+      "rank": 1,
+      "tmdbId": 127529,
+      "name": "사냥개들",
+      "nameHe": "כלבי ציד",
+      "overview": "שני מתאגרפים צעירים חוברים למלווה כספים טוב לב, ויחד הם מחליטים להפיל כריש הלוואות חסר רחמים שמנצל אנשים נואשים כלכלית.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/aAO5623u08KdfiAQPbR3l5cEh13.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/zhsEnDNCQX5dlI2wbKzV90pV0B9.jpg",
+      "voteAverage": 8.5,
+      "genres": [
+        "דרמה",
+        "אקשן והרפתקאות",
+        "פשע"
+      ],
+      "firstAirDate": "2023-06-09",
+      "seasons": 2,
+      "trailerYoutubeId": "eyiR8pO50JE",
+      "editorReview": "כלבי ציד — מהסוג שממשיכה איתך גם למחרת בבוקר, בין כוס קפה לכוס קפה."
+    },
+    {
+      "rank": 2,
+      "tmdbId": 195670,
+      "name": "XO, Kitty",
+      "nameHe": "באהבה, קיטי",
+      "overview": "השדכנית הצעירה קיטי מגשימה חלום ומתחילה ללמוד בבית ספר יוקרתי בסיאול. מהר מאוד היא מגלה שהחיים, האהבה והמשפחה מורכבים יותר מכפי שחשבה.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/qKQegmUvl0k2eFSaEj3LQmgGHfK.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/h0CQ36rm9cSLznve5ocCDtYlnwN.jpg",
+      "voteAverage": 8.1,
+      "genres": [
+        "קומדיה",
+        "דרמה"
+      ],
+      "firstAirDate": "2023-05-18",
+      "seasons": 3,
+      "trailerYoutubeId": "vP9C33H6G3E",
+      "editorReview": "באהבה, קיטי — הצחקנו בקול רם, בלילה, לבד — ואין לנו שום בעיה להודות בזה."
+    },
+    {
+      "rank": 3,
+      "tmdbId": 94404,
+      "name": "ドロヘドロ",
+      "nameHe": "דורוהדורו",
+      "overview": "קיימן סובל מאובדן זיכרון ומבקש להסיר מעליו את קללת ראש הלטאה. בעזרת חברתו ניקאידו, הוא יוצא להרוג את המכשף שהטיל את הקללה – וברחובות \"הבור\" זה אִיום גדול.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/mmpGV6laOLyNeo21aOFM9oB9HYw.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/sASxGVO6wioRG6jNM2LHOjBAgWu.jpg",
+      "voteAverage": 8.4,
+      "genres": [
+        "אנימציה",
+        "אקשן והרפתקאות",
+        "קומדיה",
+        "מדע בדיוני ופנטזיה"
+      ],
+      "firstAirDate": "2020-01-13",
+      "seasons": 2,
+      "trailerYoutubeId": "ZB1ACrzVDRM",
+      "editorReview": "דורוהדורו — עצרנו את הפרק כמה פעמים רק כדי להעריך פריים בודד."
+    },
+    {
+      "rank": 4,
+      "tmdbId": 285838,
+      "name": "기리고",
+      "nameHe": "משאלות מוות",
+      "overview": "אפליקציה מסתורית מבטיחה להגשים משאלות – ואז מתחילה הספירה לאחור למוות. חבורה של בני נוער מסתבכת בסיפור, ועליהם לקטוע את השרשרת הקטלנית כדי לשרוד.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/udlyLlOwUDjc9TKp5rDNurNA7uo.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/5BzfcAW5ZI2m7QypeJBbYNjBuR0.jpg",
+      "voteAverage": 8,
+      "genres": [
+        "מסתורין",
+        "דרמה"
+      ],
+      "firstAirDate": "2026-04-24",
+      "seasons": 1,
+      "trailerYoutubeId": "OJsERPNI3D0",
+      "editorReview": "משאלות מוות — מהתעלומות שבאמת משתלמות לפענוח בסוף, לא רק \"טוויסט בשביל טוויסט\"."
+    },
+    {
+      "rank": 5,
+      "tmdbId": 154385,
+      "name": "BEEF",
+      "nameHe": "עצבים",
+      "overview": "שני זרים – האחד קבלן שיפוצים כושל, השנייה יזמית עם פוטנציאל לא ממומש – נקלעים לריב בכביש. הסכסוך שמתפתח מוציא מהשניים את הדחפים הכי אפלים שלהם.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/25ih0Xq2zWbxhhKxwhvswKYQyEr.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/2VHbof9yaNhovEnaancBkXEULCT.jpg",
+      "voteAverage": 7.8,
+      "genres": [
+        "קומדיה",
+        "דרמה"
+      ],
+      "firstAirDate": "2023-04-06",
+      "seasons": 2,
+      "trailerYoutubeId": "Gq7zgg0AQSA",
+      "editorReview": "עצבים — לא כל בדיחה נוחתת, אבל אלה שכן — נוחתות חזק."
+    },
+    {
+      "rank": 6,
+      "tmdbId": 302540,
+      "name": "The Bad Guys: The Series",
+      "nameHe": "לא רעים בכלל: הסדרה",
+      "overview": "איך בכלל נכנסו החבר'ה הרעים לעסקי הפשע? עכשיו אפשר לגלות. סדרת פריקוול מצחיקה שמתרחשת לפני הסרטים המצליחים.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/vOwgDRFf25RmhsS2OZOyhqZ3Bnu.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/pXdkJvhBcPf8oEj831ASMkLPXKT.jpg",
+      "voteAverage": 7,
+      "genres": [
+        "אנימציה",
+        "פשע",
+        "קומדיה",
+        "משפחה"
+      ],
+      "firstAirDate": "2025-11-06",
+      "seasons": 2,
+      "trailerYoutubeId": "o6HXxD6CcLg",
+      "editorReview": "לא רעים בכלל: הסדרה — האנימציה כאן עושה דברים שצילום רגיל פשוט לא יכול."
+    },
+    {
+      "rank": 7,
+      "tmdbId": 202577,
+      "name": "Rabo de Peixe",
+      "nameHe": "הגאות והשפל",
+      "overview": "סירה מלאה בקוקאין טובעת לחופי האי שבו גר אדוארדו, והוא רואה בכך הזדמנות מסוכנת ומלהיבה להרוויח כסף ולהגשים חלומות בלתי אפשריים.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/qVctWsGgjvp22khSEM6UpSS3gNx.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/qGAIZAIPcXppI6sGYLyzcAIIsHn.jpg",
+      "voteAverage": 7,
+      "genres": [
+        "דרמה"
+      ],
+      "firstAirDate": "2023-05-26",
+      "seasons": 3,
+      "trailerYoutubeId": "_tHdyD9TGCA",
+      "editorReview": "הגאות והשפל — מהסוג שממשיכה איתך גם למחרת בבוקר, בין כוס קפה לכוס קפה."
+    },
+    {
+      "rank": 8,
+      "tmdbId": 261615,
+      "name": "Envidiosa",
+      "nameHe": "כולי קנאה",
+      "overview": "אחרי פרידה קשה, ויקי, שנושקת ל-40, יוצאת לחפש אהבה חדשה ונשאבת לתהליך של גילוי עצמי מעמיק ומשעשע.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/jx9j67VSSQA8ng3cbNrQPlZWbjS.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/raxf7xkf1ZwddzQSIl4hdakr8YR.jpg",
+      "voteAverage": 8.2,
+      "genres": [
+        "קומדיה",
+        "דרמה"
+      ],
+      "firstAirDate": "2024-09-18",
+      "seasons": 4,
+      "trailerYoutubeId": null,
+      "editorReview": "כולי קנאה — הדמות המשנית כאן טובה יותר מרוב הדמויות הראשיות בסדרות אחרות."
+    },
+    {
+      "rank": 9,
+      "tmdbId": 224263,
+      "name": "Stranger Things: Tales from '85",
+      "nameHe": "דברים מוזרים: סיפורים מ-1985",
+      "overview": "חורף. הוקינס. 1985. ברוכים השבים לעיירה שורצת סודות, שבה הגיבורים האהובים מתמודדים עם תעלומות חדשות – ועם זן חדש של מוזרוּת.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/tppSZQueDvgJ7AiDOuVTlHD8bDR.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/ulBGaxq9GmJexyEOi4Xci74g6Vt.jpg",
+      "voteAverage": 7.7,
+      "genres": [
+        "אנימציה",
+        "מדע בדיוני ופנטזיה",
+        "מסתורין",
+        "אקשן והרפתקאות"
+      ],
+      "firstAirDate": "2026-04-23",
+      "seasons": 2,
+      "trailerYoutubeId": "kajCUhg36R0",
+      "editorReview": "דברים מוזרים: סיפורים מ-1985 — מהסוג שצופים בו \"בשביל הילדים\" ונשארים בשביל עצמכם."
+    },
+    {
+      "rank": 10,
+      "tmdbId": 300529,
+      "name": "地獄に堕ちるわよ",
+      "nameHe": "ישר לגיהינום",
+      "overview": "קזוקו הוסוקי שלטה בטלוויזיה וברשימות רבי-המכר כמגדת עתידות מובילה – אבל מי היא הייתה באמת מאחורי השמועות על הונאות רוחניות וקשרים בעולם התחתון?",
+      "posterPath": "https://image.tmdb.org/t/p/w500/zJU01gO2x5G6JQHeASTr3fY68ja.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/hZvPXP2jtZ7oSu0pSeOB3bB8fhJ.jpg",
+      "voteAverage": 7.8,
+      "genres": [
+        "דרמה"
+      ],
+      "firstAirDate": "2026-04-27",
+      "seasons": 1,
+      "trailerYoutubeId": "_3fBbn3sgLw",
+      "editorReview": "ישר לגיהינום — הכימיה בין הדמויות כאן היא הסיפור בעצמו."
+    }
+  ],
+  "faq": [
+    {
+      "question": "מה הסדרה הטובה ביותר בנטפליקס באפריל 2026?",
+      "answer": "\"כלבי ציד\" — היא במקום הראשון ברשימה שלנו לחודש אפריל 2026. ראו את הפירוט המלא והטריילר בכתבה למעלה.",
+      "link": {
+        "to": "/providers/netflix/series/사냥개들-127529",
+        "label": "לכל הפרטים על \"כלבי ציד\""
+      }
+    },
+    {
+      "question": "איך נבחרות הסדרות לרשימה החודשית?",
+      "answer": "צוות הבינג'יונרים המוסמכים שלנו סוקר, צופה ובוחר בקפידה כל חודש מבין הסדרות שיצאו בנטפליקס באותו חודש, לפי פופולריות, דירוגים וגיוון ז'אנרים — לא רשימה שנוצרת מעצמה."
+    },
+    {
+      "question": "האם יש סדרות ישראליות ברשימה?",
+      "answer": "לא נכנסה סדרה ישראלית לטופ 10 החודש, אבל יש לנו מדריך ייעודי לסדרות ישראליות בנטפליקס.",
+      "link": {
+        "to": "/netflix/genre/israeli",
+        "label": "לכל הסדרות הישראליות בנטפליקס"
+      }
+    },
+    {
+      "question": "איפה אפשר לראות את הטריילרים?",
+      "answer": "לכל סדרה ברשימה מוטמע טריילר וידאו שניתן לנגן ישירות מהכרטיסייה שלה בעמוד."
+    }
+  ],
+  "isFallback": false
+}

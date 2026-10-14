@@ -14,13 +14,16 @@ Nuxt 4 · Vue 3 · TypeScript · Tailwind CSS · @nuxt/content (Collections)
 
 ```bash
 npm install
-npm run fetch:netflix   # יוצר תוכן חודשי — עובד גם בלי TMDB_API_KEY (תוכן דמו)
+npm run fetch:netflix     # יוצר את החודש הנוכחי — עובד גם בלי טוקן (תוכן דמו)
+npm run backfill:months   # אופציונלי: יוצר ארכיון של 12 חודשים אחורה
 npm run generate:sitemap && npm run generate:rss && npm run generate:llms
-npm run dev              # http://localhost:3000
+npm run dev                # http://localhost:3000
 ```
 
-בלי `TMDB_API_KEY`, `fetch:netflix` ייצר תוכן דמו ריאליסטי (10 כותרים
-ידועים, בלי טריילר/דירוג אמיתי) כך שהאתר עולה ועובד מיידית.
+בלי `TMDB_READ_ACCESS_TOKEN`, `fetch:netflix`/`backfill:months` ייצרו
+תוכן דמו ריאליסטי (10 כותרים ידועים, בלי טריילר/פוסטר אמיתיים) כך
+שהאתר עולה ועובד מיידית. עם הטוקן מוגדר — תוכן אמיתי מ-TMDB, כולל
+פוסטרים, טריילרים, מספר עונות וביקורת עורך לכל סדרה.
 
 ## ✅ Checklist — מה נדרש ממך לפני עלייה לפרודקשן
 
@@ -30,6 +33,13 @@ npm run dev              # http://localhost:3000
 - [ ] **TMDB_READ_ACCESS_TOKEN** — Read Access Token (JWT) מ-https://www.themoviedb.org/settings/api
       (לשונית "API Read Access Token" — הטוקן הארוך שמתחיל ב-`eyJ`).
       להוסיף ל-`.env` מקומית + ל-GitHub Secrets (שם: `TMDB_READ_ACCESS_TOKEN`) לאוטומציה.
+- [ ] **GEMINI_API_KEY** (אופציונלי, **חינמי לגמרי**) — מפתח חינמי
+      מ-https://aistudio.google.com/app/apikey, בלי כרטיס אשראי.
+      בלעדיו, "ביקורת הבינג'יונרים" חוזרת לתבניות כלליות. איתו, כל
+      סדרה מקבלת ביקורת אמיתית: שליפת ביקורת משתמשים/מבקרים אמיתית
+      מ-TMDB וסיכומה בעברית בקול האתר (ראה `buildEditorReview` +
+      `summarizeReviewWithGemini` ב-`scripts/fetchTopSeries.mjs`).
+      להוסיף ל-`.env` מקומית + ל-GitHub Secrets לאוטומציה.
 - [ ] **רכישת הדומיין** `whattowatch.co.il` בפועל אצל רשם מוסמך (ISOC.org.il).
 - [ ] **חיבור הדומיין ב-Vercel** (Project Settings → Domains) + הגדרת
       `NUXT_PUBLIC_SITE_URL=https://whattowatch.co.il`.
@@ -37,12 +47,39 @@ npm run dev              # http://localhost:3000
       אוטומטי — ראה "דיפלוי" למטה).
 - [ ] **Google AdSense** — הגשת בקשה לאישור האתר, ואז הגדרת
       `NUXT_PUBLIC_ADSENSE_ENABLED=true` ו-`NUXT_PUBLIC_ADSENSE_PUBLISHER_ID`.
-      עד לאישור, `AdSlot.vue` מרנדר placeholder שקט (CLS-safe).
+      עם מזהה מופעל, נטען Auto ads ו-`ads.txt` נכתב בזמן `npm run generate`.
+      יחידות ידניות (`NUXT_PUBLIC_ADSENSE_SLOT_HOME` / `_PROVIDER` / `_MONTHLY`)
+      אופציונליות ורק אם המזהה מספרי. בלי מזהה אין תיבת מודעה על המסך.
 - [ ] **חשבונות Affiliate** (NordVPN, Amazon) — להוסיף מזהים ל-
       `NUXT_PUBLIC_AFFILIATE_NORDVPN_ID` / `NUXT_PUBLIC_AFFILIATE_AMAZON_TAG`.
       בלי מזהה מוגדר, `AffiliateLink.vue` פשוט לא מרנדר את הכפתור.
 - [ ] **עוסק מורשה / פרטי חברה** בעמודי [privacy](app/pages/privacy.vue)
       ו-[terms](app/pages/terms.vue) (מסומן ב-TODO).
+
+## Affiliate — מה קיים, מה לא, ואיך משלימים את זה
+
+**הקישור "צפה בנטפליקס" במודל (`SeriesModal.vue`) הוא קישור עומק רגיל,
+לא affiliate.** אין בו מזהה שותפים, ואין ממנו הכנסה. `rel="sponsored"`
+הוסר ממנו בכוונה — לתייג קישור לא-ממומן כ"ממומן" הוא הטעיה (גם כלפי
+משתמשים וגם כלפי Google).
+
+**למה אין affiliate לנטפליקס עצמה**: בשונה מ-NordVPN/Amazon, לנטפליקס
+אין תוכנית affiliate פתוחה עם הרשמה עצמאית. יש ל-Netflix "Netflix
+Partner Program" שרץ בפועל דרך רשתות שותפים מוכרות (למשל Impact או
+Partnerize/Rakuten) ודורש **אישור ידני מראש**, בדרך כלל רק לאתרים עם
+תנועה קיימת. כדי לקבל affiliate אמיתי לנטפליקס:
+1. להגיע לתנועה/היסטוריה בסיסית באתר (Netflix לא מאשרת אתרים חדשים ריקים).
+2. להגיש בקשה דרך הרשת השותפים הרלוונטית (חיפוש "Netflix affiliate program" מראה איזו רשת פעילה כרגע — זה משתנה).
+3. לאחר אישור, מחליפים את ה-`href` ב-`SeriesModal.vue` בקישור עם מזהה השותפים שהתקבל, ומחזירים `rel="sponsored"`.
+
+**התשתית ל-affiliate שכן קיימת ועובדת היום**: קומפוננטת
+[`AffiliateLink.vue`](app/components/AffiliateLink.vue) — תומכת כרגע
+ב-NordVPN ו-Amazon, מוגדרת דרך `NUXT_PUBLIC_AFFILIATE_NORDVPN_ID` /
+`NUXT_PUBLIC_AFFILIATE_AMAZON_TAG` ב-`.env` (ראה `.env.example`). היא
+כבר מוטמעת בעמוד סדרה בודדת ([`series/[slug].vue`](app/pages/providers/[provider]/series/[slug].vue)).
+בלי מזהה מוגדר — הכפתור פשוט לא מרנדר (לא שובר UI). כדי להוסיף ספק
+affiliate נוסף: להרחיב את ה-`provider` prop והלוגיקה ב-`AffiliateLink.vue`
+עצמו, ולהוסיף משתנה env תואם — קישורים לעולם לא hardcoded בתבניות.
 
 ## מבנה תוכן — הוספת ספק סטרימינג חדש
 
@@ -62,15 +99,41 @@ npm run dev              # http://localhost:3000
 או ידנית מ-GitHub Actions UI (`workflow_dispatch`):
 
 1. שליפת TMDB → `content/netflix/{YYYY-MM}.he.md` + `public/data/netflix/{YYYY-MM}.json`
+   (כולל ביקורת עורך אמיתית לכל סדרה אם `GEMINI_API_KEY` מוגדר —
+   ראה "ביקורת הבינג'יונרים" למטה)
 2. בניית `public/sitemap.xml`, `public/feed.xml`, `public/llms.txt`
 3. קומיט + push לריפו
 4. `npm run generate` (SSG)
 5. דיפלוי ל-Vercel — **מכובה כברירת מחדל** (ראה "דיפלוי" למטה)
 
 Secrets נדרשים ב-GitHub (Settings → Secrets and variables → Actions):
-`TMDB_API_KEY`, ובמידה ומפעילים את שלב הדיפלוי הידני גם
-`VERCEL_TOKEN`, `VERCEL_ORG_ID`, `VERCEL_PROJECT_ID`. Variable
-`DEPLOY_ON_UPDATE=true` מפעיל את שלב ה-deploy המפורש בוורקפלואו.
+`TMDB_READ_ACCESS_TOKEN`, אופציונלית `GEMINI_API_KEY` (ראה למטה, חינמי),
+ובמידה ומפעילים את שלב הדיפלוי הידני גם `VERCEL_TOKEN`,
+`VERCEL_ORG_ID`, `VERCEL_PROJECT_ID`. Variable `DEPLOY_ON_UPDATE=true`
+מפעיל את שלב ה-deploy המפורש בוורקפלואו.
+
+## ביקורת הבינג'יונרים — איך זה עובד בפועל
+
+לכל סדרה ברשימה החודשית יש שדה `editorReview` — משפט-שניים בעברית
+בקול האתר. יש לזה שני מקורות אפשריים:
+
+1. **ביקורת אמיתית (כש-`GEMINI_API_KEY` מוגדר)**: הסקריפט שולף
+   ביקורת משתמשים/מבקרים אמיתית מ-TMDB (`GET /tv/{id}/reviews`),
+   ומעביר אותה ל-Gemini (`gemini-flash-lite-latest` כברירת מחדל —
+   alias שמתעדכן אוטומטית ולא מתיישן, **tier חינמי לגמרי**, בלי כרטיס
+   אשראי; ניתן לקבע גרסה מפורשת עם `GEMINI_MODEL`)
+   עם הנחיה לסכם את התחושה האמיתית של הביקורת למשפט-שניים בעברית,
+   בגוף ראשון-רבים, בלי לצטט מילה-במילה ובלי לחשוף שזו ביקורת
+   שנשלפה מהאינטרנט. **התוכן מבוסס בפועל על קבלה קריטית אמיתית**, לא
+   מפוברק — אבל מנוסח מחדש בקול האתר, לא מצוטט כפי שהוא.
+2. **תבנית כללית (fallback)**: כשאין `GEMINI_API_KEY`, כשאין
+   ביקורות אמיתיות לכותר הזה ב-TMDB (נפוץ לתוכן לא-אנגלי/פחות מוכר),
+   או שקריאת ה-API נכשלת — נופל בשקט ל-`buildTemplateEditorReview`
+   (מאגר משפטים לפי ז'אנר). זה קורה אוטומטית, בלי לשבור את הבנייה
+   החודשית.
+
+עלות: קריאה אחת ל-TMDB reviews + קריאה אחת ל-Gemini, לכל סדרה שבאמת
+יש לה ביקורת (מקסימום 10 בחודש) — **0 ₪** ב-tier החינמי.
 
 ## דיפלוי ל-Vercel
 
@@ -111,6 +174,6 @@ npm run typecheck
 | פקודה | מה עושה |
 |---|---|
 | `npm run dev` | שרת פיתוח |
-| `npm run generate` | בניית SSG לפרודקשן (`.output/public`) |
+| `npm run generate` | robots/ads.txt + sitemap/rss/llms, ואז בניית SSG (`.output/public`) |
 | `npm run fetch:netflix` | שליפת/רענון התוכן החודשי |
 | `npm run monthly:update` | fetch + sitemap + rss + llms.txt (מה שהוורקפלואו מריץ) |

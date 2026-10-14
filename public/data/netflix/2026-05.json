@@ -1,0 +1,225 @@
+{
+  "provider": "netflix",
+  "slug": "2026-05",
+  "monthLabel": "מאי",
+  "year": 2026,
+  "editorsNote": {
+    "label": "המלצת העורך לחודש מאי:",
+    "body": "כולם ידברו לכם על מקום 1, אבל אנחנו כצוות התאהבנו הכי הרבה ב\"הוונדרפוּלס\" — מהמקום 5 ברשימה. לא הכי מדוברת החודש, אבל זו שאנחנו ממליצים עליה בלי לחשוב פעמיים. — תום, ראש צוות הבינג'יונרים המוסמכים 🌙"
+  },
+  "series": [
+    {
+      "rank": 1,
+      "tmdbId": 94404,
+      "name": "ドロヘドロ",
+      "nameHe": "דורוהדורו",
+      "overview": "קיימן סובל מאובדן זיכרון ומבקש להסיר מעליו את קללת ראש הלטאה. בעזרת חברתו ניקאידו, הוא יוצא להרוג את המכשף שהטיל את הקללה – וברחובות \"הבור\" זה אִיום גדול.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/mmpGV6laOLyNeo21aOFM9oB9HYw.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/sASxGVO6wioRG6jNM2LHOjBAgWu.jpg",
+      "voteAverage": 8.4,
+      "genres": [
+        "אנימציה",
+        "אקשן והרפתקאות",
+        "קומדיה",
+        "מדע בדיוני ופנטזיה"
+      ],
+      "firstAirDate": "2020-01-13",
+      "seasons": 2,
+      "trailerYoutubeId": "ZB1ACrzVDRM",
+      "editorReview": "דורוהדורו — צבעונית, חכמה, ומצליחה להגיד משהו אמיתי בלי להתנשא."
+    },
+    {
+      "rank": 2,
+      "tmdbId": 308014,
+      "name": "Berlín y la dama del armiño",
+      "nameHe": "ברלין והגבירה עם ההרמין",
+      "overview": "ברלין רעב לשוד חדש. הוא מזמן את החבורה לסביליה ומצליח להפוך דוכס חמדן לקורבן של המזימה שלו עצמו: לגנוב יצירת מופת של דה וינצ'י.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/11G6Q0OboqU7jc67Rw2rQ3KfhAE.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/ntPgSYKwPg9xKO4VvLJYfInSyZa.jpg",
+      "voteAverage": 8.1,
+      "genres": [
+        "דרמה",
+        "פשע",
+        "אקשן והרפתקאות"
+      ],
+      "firstAirDate": "2026-05-15",
+      "seasons": 1,
+      "trailerYoutubeId": "Ltrc8z4AXKo",
+      "editorReview": "ברלין והגבירה עם ההרמין — מהסוג שממשיכה איתך גם למחרת בבוקר, בין כוס קפה לכוס קפה."
+    },
+    {
+      "rank": 3,
+      "tmdbId": 127865,
+      "name": "Kastanjemanden",
+      "nameHe": "‏איש הערמונים",
+      "overview": "‏בזירת רצח מחרידה ניצבת בובה קטנה עשויה מערמונים. שני בלשים מסתמכים עליה כרמז קלוש בניסיונם למצוא רוצח שקשור להיעלמות בתה של פוליטיקאית מקומית.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/fJFzzEtdcQd16hEdqSox6rSYcjD.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/fIXTetAsXkPO6UUUw85IU4oactf.jpg",
+      "voteAverage": 7.5,
+      "genres": [
+        "דרמה",
+        "פשע",
+        "מסתורין"
+      ],
+      "firstAirDate": "2021-09-29",
+      "seasons": 2,
+      "trailerYoutubeId": "LE0jZnMuAQE",
+      "editorReview": "‏איש הערמונים — משהו באמת קרה לנו בפרק החמישי. לא נגלה מה, רק תגיעו לשם."
+    },
+    {
+      "rank": 4,
+      "tmdbId": 235930,
+      "name": "Devil May Cry",
+      "overview": "קרב איתנים בין טוב לרע, וקשה להבדיל ביניהם. עכשיו עתידו של העולם נתון בידיו של צייד שדים חתיך להחריד.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/mX9tqfpjqwreONJHhap7SnSSowe.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/zPO7RC0T1kA79cH3zBXPVNUL1Ge.jpg",
+      "voteAverage": 8.2,
+      "genres": [
+        "אנימציה",
+        "אקשן והרפתקאות",
+        "מדע בדיוני ופנטזיה"
+      ],
+      "firstAirDate": "2025-04-03",
+      "seasons": 2,
+      "trailerYoutubeId": "OlEqHXRrcpc",
+      "editorReview": "Devil May Cry — האנימציה כאן עושה דברים שצילום רגיל פשוט לא יכול."
+    },
+    {
+      "rank": 5,
+      "tmdbId": 259837,
+      "name": "원더풀스",
+      "nameHe": "הוונדרפוּלס",
+      "overview": "חבורה מצחיקה של מקומיים מקבלת בטעות כוחות על ונלחמת ברוע, בזמן שהחרדה לקראת יום הדין גוברת. קומדיית אקשן פרועה על תחילת המאה.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/gbCoo5lbkaZBrjCf96OqKHzNBFj.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/810mXC0xkxXVtoKIPGGVgO9PuLh.jpg",
+      "voteAverage": 8.8,
+      "genres": [
+        "אקשן והרפתקאות",
+        "קומדיה",
+        "מדע בדיוני ופנטזיה",
+        "דרמה"
+      ],
+      "firstAirDate": "2026-05-15",
+      "seasons": 1,
+      "trailerYoutubeId": "rVoc4WQVMCc",
+      "editorReview": "הוונדרפוּלס — האדרנלין פה אמיתי — קשה להשהות באמצע קרב."
+    },
+    {
+      "rank": 6,
+      "tmdbId": 243316,
+      "name": "The Four Seasons",
+      "nameHe": "ארבע העונות",
+      "overview": "חברוּת ארוכת שנים בין שלושה זוגות נשואים עומדת למבחן כשאחד הזוגות מחליט להתגרש – ומסבך לשאר הזוגות את החופשה המשותפת המסורתית.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/nvCUDeKbBHVPh5448tKzqbvLv0H.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/xJATsbyFLf4LMtJBOco08RNxqPE.jpg",
+      "voteAverage": 6.9,
+      "genres": [
+        "קומדיה"
+      ],
+      "firstAirDate": "2025-05-01",
+      "seasons": 2,
+      "trailerYoutubeId": "WKTwtIL4xyk",
+      "editorReview": "ארבע העונות — לא כל בדיחה נוחתת, אבל אלה שכן — נוחתות חזק."
+    },
+    {
+      "rank": 7,
+      "tmdbId": 258063,
+      "name": "ソウルメイト",
+      "nameHe": "נפש תאומה",
+      "overview": "רגשות אשם וספקות מייסרים את ריו והוא בורח מיפן לברלין, שם מציל אותו מתאגרף קוריאני בשם יוהאן. המפגש המקרי ביניהם קושר את גורלותיהם.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/8ppPFQJhrc6fD6s2roCL7PTRDzX.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/dW8Gpg3XhumcGUOGC2lVepM9rHy.jpg",
+      "voteAverage": 8.5,
+      "genres": [
+        "דרמה"
+      ],
+      "firstAirDate": "2026-05-14",
+      "seasons": 1,
+      "trailerYoutubeId": "nxTFq_KCVmQ",
+      "editorReview": "נפש תאומה — צפינו ב\"נפש תאומה\" והתאהבנו לחלוטין במסע המרגש והסוחף הזה, יצירת מופת מרתקת שלגמרי מוכיחה את הציון המושלם שלה!"
+    },
+    {
+      "rank": 8,
+      "tmdbId": 285807,
+      "name": "Nemesis",
+      "nameHe": "אויב מושבע",
+      "overview": "שוטר בלתי נלאה ממשטרת לוס אנג'לס נתקף אובססיה בניסיון ללכוד את גנב-העל שעומד מאחורי שורת מעשי שוד נועזים. רק אחד מהם ייצא כשידו על העליונה.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/e1KbbZJ9anuEtXod5urHQ8GaMsS.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/pxnJeLSBdUikUOrWdNgrK1HQy2u.jpg",
+      "voteAverage": 7.7,
+      "genres": [
+        "אקשן והרפתקאות",
+        "דרמה",
+        "פשע"
+      ],
+      "firstAirDate": "2026-05-14",
+      "seasons": 1,
+      "trailerYoutubeId": "M9nc3simqAE",
+      "editorReview": "אויב מושבע — לא הכי מקורית בעולם, אבל מבצעת כל טרופ בביטחון שגורם לזה לא להפריע."
+    },
+    {
+      "rank": 9,
+      "tmdbId": 290295,
+      "name": "Mating Season",
+      "nameHe": "עונת ההזדווגות",
+      "overview": "אנימציה קומית פרועה למבוגרים על אהבה, סקס ויחסים בעולם בעלי החיים, ממוחם הקודח של יוצרי \"פה גדול\".",
+      "posterPath": "https://image.tmdb.org/t/p/w500/yyCyy8yIzGGl3K5VglwWzt9bDli.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/zaDTnGcq3F5LocdmHJLP3Mf0kII.jpg",
+      "voteAverage": 8,
+      "genres": [
+        "אנימציה",
+        "קומדיה",
+        "מדע בדיוני ופנטזיה"
+      ],
+      "firstAirDate": "2026-05-22",
+      "seasons": 1,
+      "trailerYoutubeId": "aqCtC-ytN74",
+      "editorReview": "עונת ההזדווגות — קסם שעובד גם למי שחושב שאנימציה זו רק לילדים."
+    },
+    {
+      "rank": 10,
+      "tmdbId": 224941,
+      "name": "The Boroughs",
+      "nameHe": "הבורוז",
+      "overview": "כוח על-טבעי מאיים על קהילת גמלאים מושלמת לכאורה. קבוצה מפתיעה של גמלאים אמיצים יוצאת להילחם בו כדי שלא יגנוב מהם את המשאב היחיד שחסר להם: זמן.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/7imEyrhkwuUfMcAzLdcYNWgq0B9.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/iftYIh1OjJb99EOTHIrDcx59zWb.jpg",
+      "voteAverage": 7.2,
+      "genres": [
+        "מדע בדיוני ופנטזיה",
+        "מסתורין"
+      ],
+      "firstAirDate": "2026-05-21",
+      "seasons": 1,
+      "trailerYoutubeId": "PsvUvqXoTpE",
+      "editorReview": "הבורוז — התרגשנו לגלות גיבורים מבוגרים שגונבים את ההצגה בסיפור לבבי ומרתק, וגם אם הסוף קצת צפוי, בהחלט נהנינו מכל רגע על המסך."
+    }
+  ],
+  "faq": [
+    {
+      "question": "מה הסדרה הטובה ביותר בנטפליקס במאי 2026?",
+      "answer": "\"דורוהדורו\" — היא במקום הראשון ברשימה שלנו לחודש מאי 2026. ראו את הפירוט המלא והטריילר בכתבה למעלה.",
+      "link": {
+        "to": "/providers/netflix/series/ドロヘドロ-94404",
+        "label": "לכל הפרטים על \"דורוהדורו\""
+      }
+    },
+    {
+      "question": "איך נבחרות הסדרות לרשימה החודשית?",
+      "answer": "צוות הבינג'יונרים המוסמכים שלנו סוקר, צופה ובוחר בקפידה כל חודש מבין הסדרות שיצאו בנטפליקס באותו חודש, לפי פופולריות, דירוגים וגיוון ז'אנרים — לא רשימה שנוצרת מעצמה."
+    },
+    {
+      "question": "האם יש סדרות ישראליות ברשימה?",
+      "answer": "לא נכנסה סדרה ישראלית לטופ 10 החודש, אבל יש לנו מדריך ייעודי לסדרות ישראליות בנטפליקס.",
+      "link": {
+        "to": "/netflix/genre/israeli",
+        "label": "לכל הסדרות הישראליות בנטפליקס"
+      }
+    },
+    {
+      "question": "איפה אפשר לראות את הטריילרים?",
+      "answer": "לכל סדרה ברשימה מוטמע טריילר וידאו שניתן לנגן ישירות מהכרטיסייה שלה בעמוד."
+    }
+  ],
+  "isFallback": false
+}

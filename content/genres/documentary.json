@@ -1,0 +1,182 @@
+{
+  "slug": "documentary",
+  "series": [
+    {
+      "rank": 1,
+      "tmdbId": 87083,
+      "name": "Formula 1: Drive to Survive",
+      "nameHe": "Formula 1: המרוץ לניצחון",
+      "overview": "נהגים, מנהלים ובעלי קבוצות חיים במסלול המהיר – גם מחוץ למסלול המרוצים – במהלך עוד עונה קשוחה של מרוצי פורמולה 1.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/xGOGjJFYYeRSoOpnhN9IHZTXIxj.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/xefmNmSGCApfRPaqhIRTaAjFlpo.jpg",
+      "voteAverage": 8.2,
+      "genres": [
+        "דוקומנטרי"
+      ],
+      "firstAirDate": "2019-03-08",
+      "seasons": 8,
+      "trailerYoutubeId": "wtJPe1ksS6E",
+      "editorReview": "Formula 1: המרוץ לניצחון — לא ציפינו לזה, ובדיוק בשביל זה יש רשימה כזו."
+    },
+    {
+      "rank": 2,
+      "tmdbId": 96481,
+      "name": "Rise of Empires: Ottoman",
+      "nameHe": "העות'מאנים: לידתה של אימפריה",
+      "overview": "הסולטן העות'מאני מהמט השני מנהל מערכה כבירה לכיבושה של בירת האימפריה הביזנטית, קונסטנטינופול. תוצאותיה של המערכה יקבעו את מהלך ההיסטוריה במאות הבאות.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/eVuwzsxV5q5mdJthTWW0QQRoo4J.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/ztruG6mR07igZWchQHiaFkND8Di.jpg",
+      "voteAverage": 7.5,
+      "genres": [
+        "דוקומנטרי",
+        "מלחמה ופוליטיקה",
+        "אקשן והרפתקאות"
+      ],
+      "firstAirDate": "2020-01-24",
+      "seasons": 2,
+      "trailerYoutubeId": "a0mn7clEGqA",
+      "editorReview": "העות'מאנים: לידתה של אימפריה — הסטאנטים כאן גורמים לשכוח שיש בכלל תקציב הפקה מוגבל."
+    },
+    {
+      "rank": 3,
+      "tmdbId": 105177,
+      "name": "Unsolved Mysteries",
+      "nameHe": "תעלומות בלתי פתורות",
+      "overview": "הסדרה התיעודית הוותיקה חוזרת בעיבוד חדש, עם מקרים אמיתיים של היעלמויות לא מוסברות, רציחות מזעזעות ומפגשים מצמררים.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/5Gn9hoJZUiJX5yb4datIcoq3Day.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/xvTMD2R3sVesWPvQN8gVYEeFWDV.jpg",
+      "voteAverage": 7.7,
+      "genres": [
+        "דוקומנטרי",
+        "דרמה",
+        "מסתורין"
+      ],
+      "firstAirDate": "2020-07-01",
+      "seasons": 3,
+      "trailerYoutubeId": "oZ4FrgGILM8",
+      "editorReview": "תעלומות בלתי פתורות — מהסוג שממשיכה איתך גם למחרת בבוקר, בין כוס קפה לכוס קפה."
+    },
+    {
+      "rank": 4,
+      "tmdbId": 213609,
+      "name": "Life on Our Planet",
+      "nameHe": "החיים על פני האדמה",
+      "overview": "סדרת טבע תיעודית פורצת דרך המפיחה חיים במסעם יוצא הדופן של היצורים החיים על פני כדור הארץ, שכובשים טריטוריות, מסתגלים לתנאים משתנים ושורדים כבר מיליארדי שנים.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/jj7OMscyPUROANFvPkrFuHdsHnx.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/o5NFe8iAeYxpwNuN0zuUwp8NIpy.jpg",
+      "voteAverage": 8,
+      "genres": [
+        "דוקומנטרי"
+      ],
+      "firstAirDate": "2023-10-25",
+      "seasons": 1,
+      "trailerYoutubeId": "xy1v0pzMP4g",
+      "editorReview": "החיים על פני האדמה — עוד אחת שנכנסה לרשימה שלנו בלי שהתכוונו, ונשארה בה."
+    },
+    {
+      "rank": 5,
+      "tmdbId": 83880,
+      "name": "Our Planet",
+      "nameHe": "כוכב הלכת המופלא",
+      "overview": "סדרה תיעודית שאפתנית ומרשימה בהיקפה, המציגה את יופיו הטבעי של כדור הארץ ובוחנת את השפעתם של שינויי האקלים על כל היצורים החיים.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/oiyQ0EoGsGqLoIAEVY3qEjnwqs3.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/p8EUX6MPSNLxVwqO3fCYTi896Ro.jpg",
+      "voteAverage": 8.5,
+      "genres": [
+        "דוקומנטרי",
+        "משפחה"
+      ],
+      "firstAirDate": "2019-04-05",
+      "seasons": 2,
+      "trailerYoutubeId": "aETNYyrqNYE",
+      "editorReview": "כוכב הלכת המופלא — מהסוג שכל בני המשפחה מסכימים לגביו, וזה כבר הישג בפני עצמו."
+    },
+    {
+      "rank": 6,
+      "tmdbId": 100698,
+      "name": "Tiger King",
+      "nameHe": "חיות רעות",
+      "overview": "בעליו של גן חיות נכנס לסרטים ויוצא משליטה. סיפור אמיתי על רצח להשכיר בעולם התחתון של גידול חתולים גדולים, השופע דמויות אקסצנטריות.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/dXQCEjVth8P8L47XIsoRt0oL8Gw.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/8GGD7djS6oqTWcKwJb3uT833xeA.jpg",
+      "voteAverage": 6.9,
+      "genres": [
+        "דוקומנטרי",
+        "פשע"
+      ],
+      "firstAirDate": "2020-03-20",
+      "seasons": 2,
+      "trailerYoutubeId": "acTdxsoa428",
+      "editorReview": "חיות רעות — תכנון של תסריט פשע שבאמת מצליח להפתיע, לא רק \"לטוויסט טוויסט\"."
+    },
+    {
+      "rank": 7,
+      "tmdbId": 226135,
+      "name": "Arnold",
+      "nameHe": "ארנולד",
+      "overview": "סדרה תיעודית אינטימית שבוחנת את החיים האישיים והמקצועיים הרבגוניים של ארנולד שוורצנגר – אלוף פיתוח הגוף שהיה לכוכב הוליוודי ופנה לקריירה פוליטית.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/wktn3L6faxTVZMAmbWaGLbntCO4.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/A5ITI2kmvcMpQYEPpToTSdtWZzX.jpg",
+      "voteAverage": 7.9,
+      "genres": [
+        "דוקומנטרי"
+      ],
+      "firstAirDate": "2023-06-07",
+      "seasons": 1,
+      "trailerYoutubeId": "x2AEI26LBpA",
+      "editorReview": "ארנולד — מהסדרות שקשה להסביר למה הן כל כך טובות — פשוט תתחילו לצפות."
+    },
+    {
+      "rank": 8,
+      "tmdbId": 76307,
+      "name": "Dirty Money",
+      "nameHe": "כסף מלוכלך",
+      "overview": "סדרת תחקירים החושפת מעשים של שחיתות תאגידית חסרת בושה, החל בהלוואות קצרות מועד עם ריבית גבוהה וכלה במכוניות שמיוצרות כך שיעברו את מבחני הפליטה במרמה.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/hAnNeIPSzV0a8jxE3nkEdCtYWp8.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/8uqazFt7EOoMHCpqxp6KX3DBTAZ.jpg",
+      "voteAverage": 7.1,
+      "genres": [
+        "פשע",
+        "דוקומנטרי"
+      ],
+      "firstAirDate": "2018-01-26",
+      "seasons": 2,
+      "trailerYoutubeId": "CsplLiZHbj0",
+      "editorReview": "כסף מלוכלך — ניסינו לפצח את התוכנית לפני הדמויות. הפסדנו."
+    },
+    {
+      "rank": 9,
+      "tmdbId": 132719,
+      "name": "La casa de papel: De Tokio a Berlín",
+      "nameHe": "בית הנייר: מטוקיו ועד ברלין",
+      "overview": "יוצרים ושחקנים מאחורי הדמויות ב\"בית הנייר\", כמו טוקיו והפרופסור, מדברים על התהליך הרגשי והאומנותי של צילום הסדרה.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/yLjA7SSkbbOppgwAuS1Jcbq66iZ.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/gk1enrMtCVABqJd4ujVwIIeswTT.jpg",
+      "voteAverage": 8.2,
+      "genres": [
+        "דוקומנטרי"
+      ],
+      "firstAirDate": "2021-09-03",
+      "seasons": 1,
+      "trailerYoutubeId": null,
+      "editorReview": "בית הנייר: מטוקיו ועד ברלין — עוד אחת שנכנסה לרשימה שלנו בלי שהתכוונו, ונשארה בה."
+    },
+    {
+      "rank": 10,
+      "tmdbId": 235345,
+      "name": "Beckham",
+      "nameHe": "בקהאם",
+      "overview": "סדרה תיעודית שמתחקה אחר עלייתו המטאורית של הכדורגלן דייוויד בקהאם, בן למשפחה ממעמד הפועלים, בעזרת קטעי צילום שטרם נחשפו.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/y9d3trMAczZWFqYvGSW6V695vf3.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/aYpkxxsDznjkAsJ7tsSH7I0ZbGT.jpg",
+      "voteAverage": 8,
+      "genres": [
+        "דוקומנטרי"
+      ],
+      "firstAirDate": "2023-10-04",
+      "seasons": 1,
+      "trailerYoutubeId": "nUVNbJMWi_c",
+      "editorReview": "בקהאם — זו מהסדרות שגורמות לנו לפתוח את התגובות רק כדי לראות אם עוד מישהו קם ב-3 בלילה בשבילה."
+    }
+  ]
+}

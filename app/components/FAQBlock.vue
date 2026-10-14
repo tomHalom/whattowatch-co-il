@@ -1,5 +1,7 @@
 <script setup lang="ts">
-defineProps<{ items: { question: string; answer: string }[] }>()
+defineProps<{
+  items: { question: string; answer: string; link?: { to: string; label: string } }[]
+}>()
 </script>
 
 <template>
@@ -11,6 +13,9 @@ defineProps<{ items: { question: string; answer: string }[] }>()
           {{ item.question }}
         </summary>
         <p class="mt-2 text-mist-grey">{{ item.answer }}</p>
+        <NuxtLink v-if="item.link" :to="item.link.to" class="link-quiet mt-2 inline-block text-sm">
+          {{ item.link.label }} ←
+        </NuxtLink>
       </details>
     </div>
   </section>

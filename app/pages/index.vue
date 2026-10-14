@@ -8,6 +8,11 @@ const { data: months } = await useAsyncData('home-months', () =>
 const current = computed(() => months.value?.[0])
 const archive = computed(() => months.value?.slice(1) ?? [])
 
+// דף הבית מציג תמיד את החודש העדכני ביותר — אין "חודש הבא" אפשרי,
+// רק "חודש קודם" שמצביע לחודש הראשון בארכיון (אם קיים).
+const prevMonth = computed(() => archive.value[0] ?? null)
+const nextMonth = computed(() => null)
+
 // ─── Modal state ────────────────────────────────────────────────
 const selectedSeries = ref<null | (typeof current.value extends null | undefined ? never : (typeof current.value)['series'][number])>(null)
 
@@ -39,7 +44,9 @@ useHead({
     },
     { property: 'og:title', content: 'מה לצפות בנטפליקס — נטפליקס טופ 10 החודש' },
     { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: pub.siteUrl },
   ],
+  link: [{ rel: 'canonical', href: pub.siteUrl }],
 })
 
 if (current.value) {
@@ -71,12 +78,12 @@ if (current.value) {
     <!-- ── Hero ──────────────────────────────────────────────────────── -->
     <section v-if="current" class="relative overflow-hidden border-b border-charcoal-line bg-charcoal-deep">
       <div class="mx-auto max-w-5xl px-4 py-12 md:py-16">
-        <div class="flex items-center gap-2 mb-1">
-          <span class="font-utility text-xs tracking-widest text-sunset-gold uppercase">
+        <div class="mb-1 flex flex-wrap items-center gap-x-2 gap-y-1">
+          <span class="font-utility text-xs text-sunset-gold">
             {{ $t('home.heroPrefix') }} — {{ current.monthLabel }} {{ current.year }}
           </span>
           <span class="text-xs text-mist-grey/50">|</span>
-          <span class="text-xs text-mist-grey/60">נבחר בקפידה על ידי צוות הבינג'יונרים שלנו</span>
+          <span class="min-w-0 text-xs text-mist-grey/60">נבחר בקפידה על ידי צוות הבינג'יונרים שלנו</span>
         </div>
         <h1 class="mt-3 font-display text-3xl font-black leading-tight text-milk-parchment md:text-5xl max-w-2xl">
           מה לצפות בנטפליקס — הסדרות הכי מומלצות לחודש {{ current.monthLabel }}
@@ -92,7 +99,13 @@ if (current.value) {
             {{ $t('home.heroCta') }}
           </NuxtLink>
           <NuxtLink
-            to="/netflix/zanre/israeli"
+            to="/#genres"
+            class="inline-block rounded-full border border-charcoal-line px-6 py-2.5 text-sm text-mist-grey hover:border-sunset-gold hover:text-sunset-gold transition-colors"
+          >
+            🎭 חיפוש לפי ז'אנר
+          </NuxtLink>
+          <NuxtLink
+            to="/netflix/genre/israeli"
             class="inline-block rounded-full border border-charcoal-line px-6 py-2.5 text-sm text-mist-grey hover:border-sunset-gold hover:text-sunset-gold transition-colors"
           >
             🇮🇱 סדרות ישראליות
@@ -107,19 +120,24 @@ if (current.value) {
       >TOP10</span>
     </section>
 
-    <!-- ── Editorial badge + AI summary ─────────────────────────────── -->
+    <!-- ── Month navigation ─────────────────────────────────────────── -->
+    <div v-if="current" class="mx-auto max-w-5xl px-4 pt-6">
+      <MonthNav :prev-month="prevMonth" :next-month="nextMonth" />
+    </div>
+
+    <!-- ── Editorial badge + editor's note ────────────────────────────── -->
     <div v-if="current" class="mx-auto max-w-5xl px-4 pt-8">
       <div class="editorial-banner">
         <span class="editorial-icon">✍️</span>
-        <div>
+        <div class="min-w-0">
           <p class="editorial-title">נבחר על ידי צוות הבינג'יונרים המוסמכים שלנו</p>
           <p class="editorial-sub">הרשימה מתעדכנת ב-1 לכל חודש · לוחצים על כרטיסייה לפרטים מלאים + טריילר</p>
         </div>
       </div>
-      <AiSummaryBlock
-        :text="`נטפליקס טופ 10 — ${current.monthLabel} ${current.year}: ${current.aiSummary}`"
-        class="mt-4"
-      />
+      <div v-if="current.editorsNote" class="editor-note mt-4">
+        <span class="editor-note-icon">🌙</span>
+        <p><strong>{{ current.editorsNote.label }}</strong> {{ current.editorsNote.body }}</p>
+      </div>
     </div>
 
     <!-- ── Top 10 grid ─────────────────────────────────────────────── -->
@@ -137,6 +155,7 @@ if (current.value) {
           :genres="item.genres"
           :trailer-youtube-id="item.trailerYoutubeId"
           :editor-review="item.editorReview"
+          :is-new="!current.isFallback && isNewThisMonth(item.firstAirDate, current.slug)"
           @open-modal="openModal(item)"
         />
       </div>
@@ -146,13 +165,33 @@ if (current.value) {
       עדיין לא נוצר תוכן חודשי. הרץ <code class="text-sunset-gold">npm run fetch:netflix</code> כדי לייצר את הרשימה הראשונה.
     </p>
 
+    <!-- ── Archive CTA — this is the whole point of the site: a fresh
+         top-10 every month, not just this one. ─────────────────────── -->
+    <section v-if="archive.length" class="mx-auto max-w-5xl px-4">
+      <NuxtLink to="/netflix" class="archive-cta group">
+        <div class="archive-cta-text">
+          <span class="archive-cta-kicker">📅 לא רק החודש הזה</span>
+          <h2 class="archive-cta-title">לכל חודש יש טופ 10 משלו — גלו את הארכיון המלא</h2>
+          <p class="archive-cta-sub">
+            {{ archive.length + 1 }} מדריכים חודשיים ועוד נוספים כל חודש, כל אחד עם 10 סדרות נבחרות
+          </p>
+        </div>
+        <div class="archive-cta-months">
+          <span v-for="m in archive.slice(0, 4)" :key="m.slug" class="archive-cta-chip">
+            {{ m.monthLabel }}
+          </span>
+        </div>
+        <span class="archive-cta-arrow">→</span>
+      </NuxtLink>
+    </section>
+
     <!-- ── Ad slot ─────────────────────────────────────────────────── -->
     <div class="mx-auto max-w-5xl px-4">
       <AdSlot slot-id="home-mid" />
     </div>
 
     <!-- ── Genre navigation ────────────────────────────────────────── -->
-    <section class="mx-auto max-w-5xl px-4 mt-4 pb-12">
+    <section id="genres" class="mx-auto max-w-5xl px-4 mt-4 pb-12">
       <h2 class="font-display text-2xl font-bold text-milk-parchment">
         חפש לפי ז'אנר
       </h2>
@@ -161,7 +200,7 @@ if (current.value) {
         <NuxtLink
           v-for="g in genres"
           :key="g.slug"
-          :to="`/netflix/zanre/${g.slug}`"
+          :to="`/netflix/genre/${g.slug}`"
           class="flex items-center gap-2 rounded-lg border border-charcoal-line bg-charcoal-deep px-4 py-2.5 text-sm text-mist-grey hover:border-sunset-gold hover:text-sunset-gold transition-all duration-200"
         >
           <span>{{ g.icon }}</span>
@@ -202,9 +241,92 @@ if (current.value) {
   margin: 0;
 }
 .editorial-sub {
-  font-size: 0.72rem;
-  color: rgba(255,255,255,0.4);
-  margin: 0.2rem 0 0;
-  font-family: monospace;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: rgba(255,255,255,0.65);
+  margin: 0.25rem 0 0;
+}
+
+.editor-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+  background: linear-gradient(135deg, rgba(232, 163, 61, 0.08), rgba(214, 69, 69, 0.05));
+  border: 1px solid rgba(232, 163, 61, 0.25);
+  border-radius: 0.75rem;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: rgba(245, 240, 232, 0.9);
+}
+.editor-note-icon {
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+.editor-note p {
+  margin: 0;
+  min-width: 0;
+}
+
+/* ─── Archive CTA banner ───────────────────────────────────────── */
+.archive-cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.5rem 1.75rem;
+  margin: 1rem 0;
+  background: linear-gradient(135deg, rgba(232, 163, 61, 0.1), rgba(28, 27, 39, 0.4));
+  border: 1px solid rgba(232, 163, 61, 0.3);
+  border-radius: 1rem;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.archive-cta:hover {
+  border-color: rgba(232, 163, 61, 0.6);
+  transform: translateY(-2px);
+}
+.archive-cta-text { flex: 1 1 260px; }
+.archive-cta-kicker {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #E8A33D;
+  text-transform: uppercase;
+}
+.archive-cta-title {
+  margin: 0.35rem 0 0;
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 1.35;
+  color: #F2EEE4;
+}
+.archive-cta-sub {
+  margin: 0.35rem 0 0;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.55);
+}
+.archive-cta-months {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.archive-cta-chip {
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(232, 163, 61, 0.12);
+  border: 1px solid rgba(232, 163, 61, 0.25);
+  color: #E8A33D;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.archive-cta-arrow {
+  font-size: 1.5rem;
+  color: #E8A33D;
+  transition: transform 0.2s;
+  flex-shrink: 0;
+}
+.group:hover .archive-cta-arrow {
+  transform: translateX(-4px);
 }
 </style>

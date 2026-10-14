@@ -6,14 +6,16 @@
   "scripts": {
     "dev": "nuxt dev",
     "build": "nuxt build",
-    "generate": "nuxt generate",
+    "generate": "node scripts/generateHostFiles.mjs && npm run generate:sitemap && npm run generate:rss && npm run generate:llms && nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "fetch:netflix": "node scripts/fetchTopSeries.mjs",
+    "fetch:genres": "node scripts/fetchGenreShowcases.mjs",
+    "backfill:months": "node scripts/backfillMonths.mjs",
     "generate:sitemap": "node scripts/generateSitemap.mjs",
     "generate:rss": "node scripts/generateRSS.mjs",
     "generate:llms": "node scripts/generateLlmsTxt.mjs",
-    "monthly:update": "npm run fetch:netflix && npm run generate:sitemap && npm run generate:rss && npm run generate:llms",
+    "monthly:update": "npm run fetch:netflix && npm run fetch:genres && npm run generate:sitemap && npm run generate:rss && npm run generate:llms",
     "test:unit": "vitest run",
     "typecheck": "nuxt typecheck"
   },

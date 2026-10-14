@@ -25,7 +25,7 @@ useJsonLd(
           {{ item.label }}
         </NuxtLink>
         <span v-else>{{ item.label }}</span>
-        <span v-if="index < items.length - 1" aria-hidden="true">‹</span>
+        <span v-if="index < items.length - 1" aria-hidden="true">›</span>
       </li>
     </ol>
   </nav>

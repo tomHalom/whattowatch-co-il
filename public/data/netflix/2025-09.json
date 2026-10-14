@@ -1,0 +1,219 @@
+{
+  "provider": "netflix",
+  "slug": "2025-09",
+  "monthLabel": "ספטמבר",
+  "year": 2025,
+  "editorsNote": {
+    "label": "המלצת העורך לחודש ספטמבר:",
+    "body": "כולם ידברו לכם על מקום 1, אבל אנחנו כצוות התאהבנו הכי הרבה ב\"הקרקס הדיגיטלי המדהים\" — מהמקום 5 ברשימה. לא הכי מדוברת החודש, אבל זו שאנחנו ממליצים עליה בלי לחשוב פעמיים. — תום, ראש צוות הבינג'יונרים המוסמכים 🌙"
+  },
+  "series": [
+    {
+      "rank": 1,
+      "tmdbId": 119051,
+      "name": "Wednesday",
+      "nameHe": "ונסדיי",
+      "overview": "ונסדיי אדמס היא ילדה חכמה, סרקסטית וקצת מתה מבפנים, שחוקרת תעלומות סבוכות ומתוודעת אל חברים ואויבים חדשים באקדמיית נוורמור.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/8oxQRPhAxaoV8ovzGGfB7VpzfCn.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/iHSwvRVsRyxpX7FE7GbviaDvgGZ.jpg",
+      "voteAverage": 8.3,
+      "genres": [
+        "מדע בדיוני ופנטזיה",
+        "מסתורין",
+        "קומדיה"
+      ],
+      "firstAirDate": "2022-11-23",
+      "seasons": 2,
+      "trailerYoutubeId": "Qa5kFRxBkNw",
+      "editorReview": "ונסדיי — עולם שלם שנבנה כך שתרצו לחיות בו, גם כשהוא מפחיד."
+    },
+    {
+      "rank": 2,
+      "tmdbId": 246246,
+      "name": "Beauty in Black",
+      "nameHe": "יפה בשחור",
+      "overview": "תהפוכות הגורל מפגישות בין חשפנית לבין משפחה אמידה ולא מתפקדת העומדת מאחורי שושלת של מוצרי קוסמטיקה – ורשת אפלה של סחר בבני אדם.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/vPcpVF9PdAUmSbUv6zF5dWw6i1e.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/ywJcUIMTCjstPLvvyIiPWP3G3m3.jpg",
+      "voteAverage": 8.4,
+      "genres": [
+        "דרמה"
+      ],
+      "firstAirDate": "2024-10-24",
+      "seasons": 3,
+      "trailerYoutubeId": "0dclNQV71-k",
+      "editorReview": "יפה בשחור — משהו באמת קרה לנו בפרק החמישי. לא נגלה מה, רק תגיעו לשם."
+    },
+    {
+      "rank": 3,
+      "tmdbId": 110316,
+      "name": "今際の国のアリス",
+      "nameHe": "בורדרלנד",
+      "overview": "גיימר חסר מעש ושני חבריו מוצאים את עצמם בממד מקביל של טוקיו שבו עליהם להשלים סדרת משחקים סדיסטיים כדי להישאר בחיים.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/7WGI4vnxUgMSsnkOKmPt1cW4Lvp.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/QZaPkNUvhdcKONuO2fXuqtcQRo.jpg",
+      "voteAverage": 8.1,
+      "genres": [
+        "מסתורין",
+        "דרמה",
+        "אקשן והרפתקאות"
+      ],
+      "firstAirDate": "2020-12-10",
+      "seasons": 3,
+      "trailerYoutubeId": "EEJ7nUvXUYA",
+      "editorReview": "בורדרלנד — הצוות פתח קבוצת וואטסאפ ייעודית רק לתיאוריות על הסדרה הזו."
+    },
+    {
+      "rank": 4,
+      "tmdbId": 255752,
+      "name": "Haunted Hotel",
+      "nameHe": "מלון הרוחות",
+      "overview": "אם יחידנית שירשה מלון מאחיה המנוח עוברת אליו וחיה לצד רוח הרפאים טובת המזג שלו – ועוד אורחים תובעניים שלא יעזבו אף פעם.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/yNSEsEhLbqAoivJAyzovwZbh1qe.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/lqsufP0yMhQ04SZx3ZlXTay4whw.jpg",
+      "voteAverage": 8.2,
+      "genres": [
+        "אנימציה",
+        "קומדיה"
+      ],
+      "firstAirDate": "2025-09-19",
+      "seasons": 2,
+      "trailerYoutubeId": "UxEza8wLcS0",
+      "editorReview": "מלון הרוחות — קסם שעובד גם למי שחושב שאנימציה זו רק לילדים."
+    },
+    {
+      "rank": 5,
+      "tmdbId": 261145,
+      "name": "The Amazing Digital Circus",
+      "nameHe": "הקרקס הדיגיטלי המדהים",
+      "overview": "תקציר יתעדכן בקרוב.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/lpfrgfomX8uNFxv4VaEzvJGs9TK.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/vPVdWiLUNQyaGMazyZGVAyRcYBG.jpg",
+      "voteAverage": 8.7,
+      "genres": [
+        "אנימציה",
+        "קומדיה",
+        "דרמה",
+        "מדע בדיוני ופנטזיה"
+      ],
+      "firstAirDate": "2023-10-13",
+      "seasons": 1,
+      "trailerYoutubeId": "iuaRQ5NQFq8",
+      "editorReview": "הקרקס הדיגיטלי המדהים — קסם שעובד גם למי שחושב שאנימציה זו רק לילדים."
+    },
+    {
+      "rank": 6,
+      "tmdbId": 199001,
+      "name": "My Life with the Walter Boys",
+      "nameHe": "חיי עם משפחת וולטר",
+      "overview": "בעקבות טרגדיה, נערה עוברת לגור עם המשפחה הגדולה של האפוטרופסית שלה בעיירה קטנה, ולומדת על אהבה, תקווה וחברוּת.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/gAOdOddXGSEcGIo58bUHRRRQ2ay.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/ntsEP1jUbLxz62MZqxmVfM5TNfX.jpg",
+      "voteAverage": 7.8,
+      "genres": [
+        "דרמה"
+      ],
+      "firstAirDate": "2023-12-07",
+      "seasons": 3,
+      "trailerYoutubeId": "pHIXtOrHF80",
+      "editorReview": "חיי עם משפחת וולטר — הכימיה בין הדמויות כאן היא הסיפור בעצמו."
+    },
+    {
+      "rank": 7,
+      "tmdbId": 221301,
+      "name": "ポケモンコンシェルジュ",
+      "nameHe": "מארחת הפוקמונים",
+      "overview": "ברוכים הבאים לאתר הנופש לפוקמונים, שבו פוקמונים יכולים ליהנות ולנוח. מיהו האורח החמוד הראשון שהארו, המארחת החדשה במלון, תתיידד איתו ותעזור לו?",
+      "posterPath": "https://image.tmdb.org/t/p/w500/j37YdIPAZRxdvz3paRB4lJXD4s9.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/sk0nsB5oynmwZTFqVIC5uCvRugi.jpg",
+      "voteAverage": 7.5,
+      "genres": [
+        "אנימציה",
+        "משפחה"
+      ],
+      "firstAirDate": "2023-12-28",
+      "seasons": 1,
+      "trailerYoutubeId": "a1zmhHLVrq0",
+      "editorReview": "מארחת הפוקמונים — מהסוג שצופים בו \"בשביל הילדים\" ונשארים בשביל עצמכם."
+    },
+    {
+      "rank": 8,
+      "tmdbId": 249039,
+      "name": "Black Rabbit",
+      "nameHe": "הארנבת השחורה",
+      "overview": "כוכב עולה בשמי המסעדנות בניו יורק נאלץ להתחכך באנשי העולם התחתון כשאחיו הסורר חוזר לעיר – ובעקבותיו כרישי הלוואות קשוחים.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/lvg1SGPbk1fVZaNBt6Bd8NU0636.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/efbDkbMBPcHAfnsvJ9SXCdHgMBw.jpg",
+      "voteAverage": 7,
+      "genres": [
+        "דרמה",
+        "פשע"
+      ],
+      "firstAirDate": "2025-09-18",
+      "seasons": 1,
+      "trailerYoutubeId": "9j_IFlmFRvU",
+      "editorReview": "הארנבת השחורה — הכימיה בין הדמויות כאן היא הסיפור בעצמו."
+    },
+    {
+      "rank": 9,
+      "tmdbId": 262375,
+      "name": "Long Story Short",
+      "nameHe": "אז בקיצור",
+      "overview": "סדרת אנימציה קומית מבית היוצר של \"בוג'ק הורסמן\", המגוללת סיפור של משפחה לאורך זמן ומלווה חמישה אחים מילדות לבגרות ובחזרה.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/22nh2kTuFpitrqTxxixhWjxEqFa.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/eqZjZGHa1mZYBPHUHOX2LSzzCsS.jpg",
+      "voteAverage": 7.5,
+      "genres": [
+        "קומדיה",
+        "אנימציה"
+      ],
+      "firstAirDate": "2025-08-22",
+      "seasons": 1,
+      "trailerYoutubeId": "wWziW_vQ_L4",
+      "editorReview": "אז בקיצור — לא כל בדיחה נוחתת, אבל אלה שכן — נוחתות חזק."
+    },
+    {
+      "rank": 10,
+      "tmdbId": 236450,
+      "name": "1670",
+      "overview": "סדרה קומית בפולנית על אציל מטורלל שמתמודד עם סכסוכים משפחתיים וחיכוכים עם איכרים בניסיון להפוך לאדם המפורסם ביותר בפולין.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/sMPLjSZYJEeeXfxeKQ7Ct7SEYuV.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/4UVd9nuO79sbTdil6ZmAqlC9Rjr.jpg",
+      "voteAverage": 7.5,
+      "genres": [
+        "קומדיה"
+      ],
+      "firstAirDate": "2023-12-13",
+      "seasons": 3,
+      "trailerYoutubeId": "C3DfavV0Et8",
+      "editorReview": "1670 — הצחקנו בקול רם, בלילה, לבד — ואין לנו שום בעיה להודות בזה."
+    }
+  ],
+  "faq": [
+    {
+      "question": "מה הסדרה הטובה ביותר בנטפליקס בספטמבר 2025?",
+      "answer": "\"ונסדיי\" — היא במקום הראשון ברשימה שלנו לחודש ספטמבר 2025. ראו את הפירוט המלא והטריילר בכתבה למעלה.",
+      "link": {
+        "to": "/providers/netflix/series/wednesday-119051",
+        "label": "לכל הפרטים על \"ונסדיי\""
+      }
+    },
+    {
+      "question": "איך נבחרות הסדרות לרשימה החודשית?",
+      "answer": "צוות הבינג'יונרים המוסמכים שלנו סוקר, צופה ובוחר בקפידה כל חודש מבין הסדרות שיצאו בנטפליקס באותו חודש, לפי פופולריות, דירוגים וגיוון ז'אנרים — לא רשימה שנוצרת מעצמה."
+    },
+    {
+      "question": "האם יש סדרות ישראליות ברשימה?",
+      "answer": "לא נכנסה סדרה ישראלית לטופ 10 החודש, אבל יש לנו מדריך ייעודי לסדרות ישראליות בנטפליקס.",
+      "link": {
+        "to": "/netflix/genre/israeli",
+        "label": "לכל הסדרות הישראליות בנטפליקס"
+      }
+    },
+    {
+      "question": "איפה אפשר לראות את הטריילרים?",
+      "answer": "לכל סדרה ברשימה מוטמע טריילר וידאו שניתן לנגן ישירות מהכרטיסייה שלה בעמוד."
+    }
+  ],
+  "isFallback": false
+}
