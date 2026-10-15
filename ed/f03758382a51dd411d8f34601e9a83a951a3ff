@@ -1,0 +1,24 @@
+.github/workflows/monthly-update.yml
+  s_1b751da0fce7db::t_b8401b2cda49f6 33
+app/pages/index.vue
+  s_1b751da0fce7db::t_24c1c46c3c357f 46,49-51
+  s_1b751da0fce7db::t_643f860ba2319f 65
+app/pages/search.vue
+  s_1b751da0fce7db::t_a2d3986f6fa205 36-39
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "edf03758382a51dd411d8f34601e9a83a951a3ff",
+  "prompts": {},
+  "sessions": {
+    "s_1b751da0fce7db": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "cc1a1264-88e0-4c72-9410-f45f8cb72e01",
+        "model": "grok-4.7"
+      },
+      "human_author": "toms <toms@spiralsolutions.com>"
+    }
+  }
+}
