@@ -1,0 +1,35 @@
+app/components/SeriesModal.vue
+  s_1b751da0fce7db::t_9acccf1d15532f 37
+app/pages/providers/[provider]/series/[slug].vue
+  s_1b751da0fce7db::t_a71a185a714ead 93
+app/app.vue
+  s_1b751da0fce7db::t_1ef4740a0f78bd 14-16
+app/components/SeriesCard.vue
+  s_1b751da0fce7db::t_e69da22a799b1d 19
+nuxt.config.ts
+  s_1b751da0fce7db::t_6468a53ef79d3d 75
+app/utils/posterSrc.ts
+  s_1b751da0fce7db::t_9717ad3baf09a0 1-5
+app/components/MonthPicker.vue
+  s_1b751da0fce7db::t_33c94a87ea4395 31-32
+app/assets/css/fonts.css
+  s_1b751da0fce7db::t_80f8447fa75c1f 1-271
+scripts/fetchTopSeries.mjs
+  s_1b751da0fce7db::t_9e8ef3bc3e1b8b 329
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "2b20763f0cadbb7dc9cef3df3eeba475c7f25583",
+  "prompts": {},
+  "sessions": {
+    "s_1b751da0fce7db": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "cc1a1264-88e0-4c72-9410-f45f8cb72e01",
+        "model": "grok-4.7"
+      },
+      "human_author": "toms <toms@spiralsolutions.com>"
+    }
+  }
+}
