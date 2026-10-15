@@ -43,8 +43,12 @@ useHead({
       content: `גלה את הסדרות הכי מומלצות בנטפליקס לחודש ${current.value?.monthLabel ?? ''} — טופ 10 מעודכן, טריילרים, דירוגים וז'אנרים. נבחר בקפידה על ידי צוות הבינג'יונרים שלנו.`,
     },
     { property: 'og:title', content: 'מה לצפות בנטפליקס — נטפליקס טופ 10 החודש' },
+    { property: 'og:description', content: `גלה את הסדרות הכי מומלצות בנטפליקס לחודש ${current.value?.monthLabel ?? ''} — טופ 10 מעודכן, טריילרים, דירוגים וז'אנרים. נבחר בקפידה על ידי צוות הבינג'יונרים שלנו.` },
     { property: 'og:type', content: 'website' },
     { property: 'og:url', content: pub.siteUrl },
+    { property: 'og:image', content: `${pub.siteUrl}/og-cover.png` },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:image', content: `${pub.siteUrl}/og-cover.png` },
   ],
   link: [{ rel: 'canonical', href: pub.siteUrl }],
 })
@@ -58,7 +62,7 @@ if (current.value) {
       itemListElement: current.value!.series.map((s) => ({
         '@type': 'ListItem',
         position: s.rank,
-        name: s.name,
+        name: s.nameHe || s.name,
         url: `${pub.siteUrl}/providers/netflix/series/${slugify(s.name, s.tmdbId)}`,
       })),
     }),

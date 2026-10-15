@@ -19,7 +19,6 @@ async function main() {
   const urls = [
     urlEntry('/', { changefreq: 'daily', priority: '1.0' }),
     urlEntry('/netflix', { changefreq: 'weekly', priority: '0.8' }),
-    urlEntry('/search', { changefreq: 'monthly', priority: '0.3' }),
     urlEntry('/privacy', { changefreq: 'yearly', priority: '0.1' }),
     urlEntry('/terms', { changefreq: 'yearly', priority: '0.1' }),
   ]

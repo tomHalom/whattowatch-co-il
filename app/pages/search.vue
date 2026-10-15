@@ -33,7 +33,10 @@ watch(query, (q) => {
   router.replace({ query: q ? { q } : {} })
 })
 
-useHead({ title: t('nav.search') })
+useHead({
+  title: t('nav.search'),
+  meta: [{ name: 'robots', content: 'noindex, follow' }],
+})
 </script>
 
 <template>

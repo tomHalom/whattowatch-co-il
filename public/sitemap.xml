@@ -11,11 +11,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://whattowatch.co.il/search</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
     <loc>https://whattowatch.co.il/privacy</loc>
     <changefreq>yearly</changefreq>
     <priority>0.1</priority>
