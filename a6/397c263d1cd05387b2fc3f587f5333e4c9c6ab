@@ -1,0 +1,19 @@
+public/google7090adc739eaa2f7.html
+  s_1b751da0fce7db::t_baf4f5eded828d 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "a6397c263d1cd05387b2fc3f587f5333e4c9c6ab",
+  "prompts": {},
+  "sessions": {
+    "s_1b751da0fce7db": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "cc1a1264-88e0-4c72-9410-f45f8cb72e01",
+        "model": "grok-4.7"
+      },
+      "human_author": "toms <toms@spiralsolutions.com>"
+    }
+  }
+}
