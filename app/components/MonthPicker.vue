@@ -28,7 +28,8 @@ function topPick(month: PickableMonth) {
 }
 function tileStyle(month: PickableMonth) {
   const pick = topPick(month)
-  return pick?.posterPath ? { backgroundImage: `url(${pick.posterPath})` } : {}
+  const src = posterSrc(pick?.posterPath)
+  return src ? { backgroundImage: `url(${src})` } : {}
 }
 </script>
 

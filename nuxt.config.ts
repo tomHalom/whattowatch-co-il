@@ -72,7 +72,7 @@ function collectDynamicRoutes(): string[] {
 export default defineNuxtConfig({
   compatibilityDate: '2026-06-01',
 
-  css: ['~/assets/css/main.css'],
+  css: ['~/assets/css/fonts.css', '~/assets/css/main.css'],
 
   modules: [
     '@nuxt/content',

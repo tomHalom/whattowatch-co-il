@@ -11,10 +11,9 @@ useHead({
   link: [
     { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
     ...(localeHead.value.link ?? []),
-    {
-      rel: 'stylesheet',
-      href: 'https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700;900&family=IBM+Plex+Sans+Hebrew:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap&subset=hebrew',
-    },
+    { rel: 'preload', as: 'font', type: 'font/woff2', crossorigin: 'anonymous', href: '/fonts/j8_w6_fAw7jrcalD7oKYNX0QfAnPW7Ll4brkiY-xBg.woff2' },
+    { rel: 'preload', as: 'font', type: 'font/woff2', crossorigin: 'anonymous', href: '/fonts/j8_w6_fAw7jrcalD7oKYNX0QfAnPW7Dl4brkiY8.woff2' },
+    { rel: 'preload', as: 'font', type: 'font/woff2', crossorigin: 'anonymous', href: '/fonts/BCa2qYENg9Kw1mpLpO0bGM5lfHAAZHhDXE2g-lgVrjaNzC4.woff2' },
   ],
   titleTemplate: (title) => (title ? `${title} | ${pub.siteName}` : pub.siteName),
 })

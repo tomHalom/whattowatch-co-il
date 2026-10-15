@@ -34,7 +34,7 @@
               <div class="modal-poster-wrap">
                 <img
                   v-if="series.posterPath"
-                  :src="series.posterPath"
+                  :src="posterSrc(series.posterPath)"
                   :alt="series.nameHe || series.name"
                   class="modal-poster"
                   loading="lazy"

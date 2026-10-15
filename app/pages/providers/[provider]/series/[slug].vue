@@ -90,7 +90,7 @@ useJsonLd(
       />
       <img
         v-else-if="series.posterPath"
-        :src="series.posterPath"
+        :src="posterSrc(series.posterPath)"
         :alt="`פוסטר ${series.name}`"
         class="h-full w-full object-cover"
       />

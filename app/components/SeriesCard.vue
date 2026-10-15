@@ -16,7 +16,7 @@
     <div class="card-poster-wrap">
       <img
         v-if="posterPath"
-        :src="posterPath"
+        :src="posterSrc(posterPath)"
         :alt="`פוסטר ${nameHe || name}`"
         class="card-poster"
         loading="lazy"

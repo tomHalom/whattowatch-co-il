@@ -326,7 +326,7 @@ async function buildSeriesEntryFromTmdbItem(item, rank) {
     name,
     nameHe,
     overview,
-    posterPath: item.poster_path ? `https://image.tmdb.org/t/p/w500${item.poster_path}` : null,
+    posterPath: item.poster_path ? `https://image.tmdb.org/t/p/w342${item.poster_path}` : null,
     backdropPath: item.backdrop_path ? `https://image.tmdb.org/t/p/w1280${item.backdrop_path}` : null,
     voteAverage: Math.round((item.vote_average ?? 0) * 10) / 10,
     genres,
