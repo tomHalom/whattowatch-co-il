@@ -81,6 +81,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt',
     '@vueuse/nuxt',
+    '@vercel/analytics',
   ],
 
   // Static-first: `nuxt generate` prerenders every route reachable by
