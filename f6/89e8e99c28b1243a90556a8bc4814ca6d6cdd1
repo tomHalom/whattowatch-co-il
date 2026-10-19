@@ -1,0 +1,23 @@
+README.md
+  s_02e82d86f8fef7::t_aa45f699c7603d 51-56
+nuxt.config.ts
+  s_02e82d86f8fef7::t_d348b0512ec25c 134-136
+app/components/AdSlot.vue
+  s_02e82d86f8fef7::t_114fdc40081550 34,41,46-62
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "f689e8e99c28b1243a90556a8bc4814ca6d6cdd1",
+  "prompts": {},
+  "sessions": {
+    "s_02e82d86f8fef7": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "4495003c-4f26-4430-a096-c2395e8e37ba",
+        "model": "grok-4.7"
+      },
+      "human_author": "toms <toms@spiralsolutions.com>"
+    }
+  }
+}
