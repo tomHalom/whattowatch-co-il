@@ -150,13 +150,22 @@ const OTHER_GENRES = [
   { slug: 'israeli',     label: '🇮🇱 ישראלי' },
 ]
 const otherGenres = computed(() => OTHER_GENRES.filter((g) => g.slug !== genre))
+
+const watermarkUrl = computed(() => {
+  const label = meta.value.labelEn.replace(/[<>&"']/g, '')
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 140"><text x="0" y="118" font-family="Georgia,serif" font-size="120" font-weight="700" fill="#E8A33D">${label}</text></svg>`
+  return `url("data:image/svg+xml,${encodeURIComponent(svg)}")`
+})
 </script>
 
 <template>
   <div>
     <SeriesModal :series="selected" @close="close" />
 
-    <section class="relative overflow-hidden border-b border-charcoal-line bg-charcoal-deep">
+    <section
+      class="genre-watermark relative overflow-hidden border-b border-charcoal-line bg-charcoal-deep"
+      :style="{ '--genre-watermark': watermarkUrl }"
+    >
       <div class="mx-auto max-w-5xl px-4 py-12">
         <Breadcrumbs
           :items="[
@@ -182,10 +191,6 @@ const otherGenres = computed(() => OTHER_GENRES.filter((g) => g.slug !== genre))
           פאודה, שטיסל ועוד — התוכן הישראלי שכובש את העולם דרך נטפליקס.
         </div>
       </div>
-      <span
-        aria-hidden="true"
-        class="absolute left-4 top-1/2 -translate-y-1/2 font-display font-black text-[clamp(5rem,15vw,11rem)] text-sunset-gold/5 leading-none pointer-events-none select-none"
-      >{{ meta.labelEn }}</span>
     </section>
 
     <div class="mx-auto max-w-5xl px-4 py-8">
@@ -231,3 +236,18 @@ const otherGenres = computed(() => OTHER_GENRES.filter((g) => g.slug !== genre))
     </section>
   </div>
 </template>
+
+<style scoped>
+.genre-watermark::before {
+  content: "";
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  width: min(14rem, 40vw);
+  height: 4rem;
+  transform: translateY(-50%);
+  pointer-events: none;
+  opacity: 0.14;
+  background: var(--genre-watermark) left center / contain no-repeat;
+}
+</style>

@@ -80,14 +80,14 @@ if (current.value) {
     />
 
     <!-- ── Hero ──────────────────────────────────────────────────────── -->
-    <section v-if="current" class="relative overflow-hidden border-b border-charcoal-line bg-charcoal-deep">
+    <section v-if="current" class="hero-watermark relative overflow-hidden border-b border-charcoal-line bg-charcoal-deep">
       <div class="mx-auto max-w-5xl px-4 py-12 md:py-16">
         <div class="mb-1 flex flex-wrap items-center gap-x-2 gap-y-1">
           <span class="font-utility text-xs text-sunset-gold">
             {{ $t('home.heroPrefix') }} — {{ current.monthLabel }} {{ current.year }}
           </span>
-          <span class="text-xs text-mist-grey/50">|</span>
-          <span class="min-w-0 text-xs text-mist-grey/60">נבחר בקפידה על ידי צוות הבינג'יונרים שלנו</span>
+          <span class="text-xs text-mist-grey">|</span>
+          <span class="min-w-0 text-xs text-mist-grey">נבחר בקפידה על ידי צוות הבינג'יונרים שלנו</span>
         </div>
         <h1 class="mt-3 font-display text-3xl font-black leading-tight text-milk-parchment md:text-5xl max-w-2xl">
           מה לצפות בנטפליקס — הסדרות הכי מומלצות לחודש {{ current.monthLabel }}
@@ -116,12 +116,6 @@ if (current.value) {
           </NuxtLink>
         </div>
       </div>
-
-      <!-- Decorative large background text -->
-      <span
-        aria-hidden="true"
-        class="absolute left-4 top-1/2 -translate-y-1/2 font-display font-black text-[clamp(8rem,20vw,16rem)] text-sunset-gold/5 leading-none pointer-events-none select-none"
-      >TOP10</span>
     </section>
 
     <!-- ── Month navigation ─────────────────────────────────────────── -->
@@ -270,6 +264,19 @@ if (current.value) {
 .editor-note p {
   margin: 0;
   min-width: 0;
+}
+
+.hero-watermark::before {
+  content: "";
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  width: min(16rem, 42vw);
+  height: 4.5rem;
+  transform: translateY(-50%);
+  pointer-events: none;
+  opacity: 0.14;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 120'%3E%3Ctext x='0' y='100' font-family='Georgia,serif' font-size='108' font-weight='700' fill='%23E8A33D'%3ETOP10%3C/text%3E%3C/svg%3E") left center / contain no-repeat;
 }
 
 /* ─── Archive CTA banner ───────────────────────────────────────── */
