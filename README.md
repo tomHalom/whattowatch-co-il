@@ -48,11 +48,12 @@ npm run dev                # http://localhost:3000
 - [ ] **Google AdSense** — `NUXT_PUBLIC_ADSENSE_ENABLED=true` ו-
       `NUXT_PUBLIC_ADSENSE_PUBLISHER_ID` טוענים את סקריפט `ca-pub-` (בדיקת האתר
       של Google) וכותבים `ads.txt` ב-`npm run generate`. זה לא מצייר מודעה.
-      מודעה על המסך דורשת יחידה ידנית עם מזהה מספרי בלבד:
-      `NUXT_PUBLIC_ADSENSE_SLOT_HOME` (מתחת לבאנר הארכיון בדף הבית),
-      `NUXT_PUBLIC_ADSENSE_SLOT_PROVIDER` (מתחת לטופ 10 בעמוד ספק),
-      `NUXT_PUBLIC_ADSENSE_SLOT_MONTHLY` (מתחת לטופ 10 בעמוד חודש).
-      בלי מזהה מספרי אין תיבה. Auto ads נשארים כבויים בחשבון AdSense —
+      מודעה על המסך דורשת יחידה ידנית. ברירת המחדל בקוד:
+      `8873679273` בדף הבית (מתחת לבאנר הארכיון),
+      `5293526919` בעמוד ספק (מתחת לטופ 10),
+      `1625744648` בעמוד חודש (מתחת לטופ 10).
+      `NUXT_PUBLIC_ADSENSE_SLOT_HOME` / `_PROVIDER` / `_MONTHLY` דורסים אותן.
+      Auto ads נשארים כבויים בחשבון AdSense —
       התצוגה המקדימה של Google מציגה רק אותם, לא את היחידות האלה.
 - [ ] **חשבונות Affiliate** (NordVPN, Amazon) — להוסיף מזהים ל-
       `NUXT_PUBLIC_AFFILIATE_NORDVPN_ID` / `NUXT_PUBLIC_AFFILIATE_AMAZON_TAG`.

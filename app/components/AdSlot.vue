@@ -31,16 +31,32 @@ onMounted(() => {
 <template>
   <div
     v-if="adUnitId && pub.adsenseEnabled && pub.adsensePublisherId"
-    class="my-6 h-[250px] overflow-hidden"
+    class="ad-slot my-6"
     :data-slot="slotId"
   >
     <ins
       class="adsbygoogle"
-      style="display:block;width:100%;height:250px"
       :data-ad-client="pub.adsensePublisherId"
       :data-ad-slot="adUnitId"
-      data-ad-format="rectangle"
+      data-ad-format="auto"
       data-full-width-responsive="false"
     />
   </div>
 </template>
+
+<style scoped>
+/* Reserved before the ad arrives: a rectangle on a phone, a banner on a desktop. */
+.ad-slot,
+.ad-slot .adsbygoogle {
+  display: block;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .ad-slot,
+  .ad-slot .adsbygoogle {
+    height: 90px;
+  }
+}
+</style>
