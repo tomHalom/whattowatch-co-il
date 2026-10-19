@@ -1,0 +1,67 @@
+app/components/MonthPicker.vue
+  s_02e82d86f8fef7::t_017aa29b1816d0 31
+app/layouts/default.vue
+  s_02e82d86f8fef7::t_e7110adf79e394 137,142,148-150,154
+  s_02e82d86f8fef7::t_47563e99065539 107
+scripts/fetchTopSeries.mjs
+  s_02e82d86f8fef7::t_b4700e61fcc393 582-585
+  s_02e82d86f8fef7::t_bd514e286fa5d7 592
+  s_02e82d86f8fef7::t_6efc1675a1e552 643
+app/pages/index.vue
+  s_02e82d86f8fef7::t_730a2be6d9ef3a 83
+  s_02e82d86f8fef7::t_ffdd6a3fbef473 269-281
+  s_02e82d86f8fef7::t_dcb6843c436674 89-90
+app/components/SeriesCard.vue
+  s_02e82d86f8fef7::t_0d2f4b60936cdf 58
+  s_02e82d86f8fef7::t_f1e52aab95efcf 395-399,401,404-414,416-417
+  s_02e82d86f8fef7::t_eae5ae757165ee 53,59-60
+  s_02e82d86f8fef7::t_3937757d2c6f7c 326
+  s_02e82d86f8fef7::t_1baf3e681d607d 42
+  s_02e82d86f8fef7::t_c62c003cb44181 335-339
+  s_02e82d86f8fef7::t_3a3adba2bc72d7 74-76
+  s_02e82d86f8fef7::t_e13b6961c105b4 133,137
+app/assets/css/fonts.css
+  s_02e82d86f8fef7::t_17d2c4f4b2880d 89,98,107,116,125
+scripts/generateRSS.mjs
+  s_02e82d86f8fef7::t_68e753b585fe26 5
+  s_02e82d86f8fef7::t_37554673aefedb 22
+nuxt.config.ts
+  s_02e82d86f8fef7::t_d2a478ea81b10c 107
+app/pages/netflix/genre/[genre].vue
+  s_02e82d86f8fef7::t_5c68a73ccb89da 153-158
+  s_02e82d86f8fef7::t_b6a57d69e28767 165-168
+  s_02e82d86f8fef7::t_a8293dda9bbdf5 239-253
+scripts/generateLlmsTxt.mjs
+  s_02e82d86f8fef7::t_fa866e4be259d8 15
+  s_02e82d86f8fef7::t_49af42c95ba8af 6
+app/utils/posterSrc.ts
+  s_02e82d86f8fef7::t_1a527f92822f49 1-2,4
+public/feed.xml
+  s_02e82d86f8fef7::t_35af9a2bc07044 12,18,24,30,36,42,48,54,60,66,72,78,84,90,96
+app/components/AdSlot.vue
+  s_02e82d86f8fef7::t_288d7aaae7699f 34
+  s_02e82d86f8fef7::t_55ba97211fdc3c 2-6
+  s_02e82d86f8fef7::t_cde021cd9cd6f1 38-39,42-43
+scripts/lib/readContent.mjs
+  s_02e82d86f8fef7::t_dfc150897ecea7 25-32
+public/llms.txt
+  s_02e82d86f8fef7::t_35af9a2bc07044 11-25
+i18n/locales/he.json
+  s_02e82d86f8fef7::t_7bf8c8114228b2 20-21
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "8f29c5757f8dc1505ed56ea253914a9b93a82d5d",
+  "prompts": {},
+  "sessions": {
+    "s_02e82d86f8fef7": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "4495003c-4f26-4430-a096-c2395e8e37ba",
+        "model": "grok-4.7"
+      },
+      "human_author": "toms <toms@spiralsolutions.com>"
+    }
+  }
+}
