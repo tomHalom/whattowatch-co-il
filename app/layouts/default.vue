@@ -104,7 +104,7 @@ const genres = [
         <NuxtLink to="/netflix" class="block text-sm text-mist-grey py-1" @click="mobileMenuOpen = false">ארכיון נטפליקס</NuxtLink>
         <NuxtLink to="/providers/netflix" class="block text-sm text-mist-grey py-1" @click="mobileMenuOpen = false">נטפליקס</NuxtLink>
         <div class="border-t border-charcoal-line pt-2">
-          <p class="text-xs text-mist-grey/60 mb-1">ז'אנרים</p>
+          <p class="text-xs text-mist-grey mb-1">ז'אנרים</p>
           <div class="flex flex-wrap gap-2">
             <NuxtLink
               v-for="g in genres"
@@ -134,24 +134,24 @@ const genres = [
           </div>
           <div>
             <p class="font-semibold text-milk-parchment/80 mb-2 text-xs uppercase tracking-wider">ז'אנרים</p>
-            <div class="flex flex-wrap gap-x-3 gap-y-1">
+            <div class="flex flex-wrap gap-x-3 gap-y-2">
               <NuxtLink
                 v-for="g in genres"
                 :key="g.slug"
                 :to="`/netflix/genre/${g.slug}`"
-                class="link-quiet text-xs"
+                class="link-quiet inline-flex min-h-6 items-center py-1 text-xs"
               >{{ g.label }}</NuxtLink>
             </div>
           </div>
           <div>
             <p class="font-semibold text-milk-parchment/80 mb-2 text-xs uppercase tracking-wider">מידע</p>
-            <div class="flex flex-col gap-1">
-              <NuxtLink to="/privacy" class="link-quiet text-xs">{{ $t('footer.privacy') }}</NuxtLink>
-              <NuxtLink to="/terms" class="link-quiet text-xs">{{ $t('footer.terms') }}</NuxtLink>
+            <div class="flex flex-col gap-2">
+              <NuxtLink to="/privacy" class="link-quiet inline-flex min-h-6 items-center text-xs">{{ $t('footer.privacy') }}</NuxtLink>
+              <NuxtLink to="/terms" class="link-quiet inline-flex min-h-6 items-center text-xs">{{ $t('footer.terms') }}</NuxtLink>
             </div>
           </div>
         </div>
-        <p class="mt-8 border-t border-charcoal-line pt-4 text-xs text-mist-grey/50">
+        <p class="mt-8 border-t border-charcoal-line pt-4 text-xs text-mist-grey">
           © {{ year }} {{ pub.siteName }} — {{ $t('footer.rights') }}
         </p>
       </div>

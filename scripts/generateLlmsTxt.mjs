@@ -3,7 +3,7 @@
  * AI (ChatGPT, Claude, Perplexity וכו') להבנה מהירה של האתר ותוכנו. */
 import { writeFile } from 'node:fs/promises'
 import path from 'node:path'
-import { ROOT, readNetflixMonths, readProviders } from './lib/readContent.mjs'
+import { ROOT, netflixMonthSummary, readNetflixMonths, readProviders } from './lib/readContent.mjs'
 
 const SITE_URL = process.env.NUXT_PUBLIC_SITE_URL || 'https://whattowatch.co.il'
 
@@ -12,7 +12,7 @@ async function main() {
   const providers = await readProviders()
 
   const monthLinks = months
-    .map((m) => `- [10 הסדרות הכי מומלצות בנטפליקס — ${m.monthLabel} ${m.year}](${SITE_URL}/netflix/${m.slug}): ${m.aiSummary}`)
+    .map((m) => `- [10 הסדרות הכי מומלצות בנטפליקס — ${m.monthLabel} ${m.year}](${SITE_URL}/netflix/${m.slug}): ${netflixMonthSummary(m)}`)
     .join('\n')
 
   const providerLinks = providers

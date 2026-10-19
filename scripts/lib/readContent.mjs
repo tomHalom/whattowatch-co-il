@@ -22,6 +22,14 @@ export async function readNetflixMonths() {
   return months.sort((a, b) => b.slug.localeCompare(a.slug))
 }
 
+/** Monthly JSON often has no aiSummary (it lives on the markdown only).
+ * Agents and the RSS feed need a real sentence either way. */
+export function netflixMonthSummary(month) {
+  const written = typeof month.aiSummary === 'string' ? month.aiSummary.replace(/\s+/g, ' ').trim() : ''
+  if (written) return written
+  return `10 הסדרות שצוות הבינג'יונרים המוסמכים שלנו ממליץ עליהן בנטפליקס לחודש ${month.monthLabel} ${month.year} — עם טריילרים, דירוגים, ביקורת עורך וז'אנרים.`
+}
+
 export async function readProviders() {
   const dir = path.join(ROOT, 'content', 'providers')
   let files = []

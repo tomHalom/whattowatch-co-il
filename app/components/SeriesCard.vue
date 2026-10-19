@@ -2,12 +2,6 @@
   <article
     class="series-card card-enter"
     :class="`rank-${rank <= 3 ? rank : 'other'}`"
-    @click="$emit('openModal')"
-    tabindex="0"
-    role="button"
-    :aria-label="`${nameHe || name} — מקום ${rank}${isNew === true ? `, ${$t('series.newThisMonth')}` : ''}`"
-    @keydown.enter="$emit('openModal')"
-    @keydown.space.prevent="$emit('openModal')"
   >
     <!-- Oversized rank numeral -->
     <span class="rank-bg" aria-hidden="true">{{ rank }}</span>
@@ -45,7 +39,7 @@
         </span>
       </div>
       <!-- Score pill on poster -->
-      <div class="poster-score-pill">
+      <div class="poster-score-pill" aria-hidden="true">
         <span class="pill-star">★</span>
         <span class="pill-num">{{ voteAverage?.toFixed(1) }}</span>
       </div>
@@ -56,14 +50,14 @@
 
     <!-- Card content -->
     <div class="card-body">
-      <h3 class="card-title">{{ nameHe || name }}</h3>
+      <h2 class="card-title">{{ nameHe || name }}</h2>
       <p class="card-title-en">{{ name }}</p>
 
       <!-- Star rating row -->
       <div class="star-row">
-        <template v-for="i in 5" :key="i">
-          <span class="star" :class="starClass(i)">★</span>
-        </template>
+        <span class="star-glyphs" aria-hidden="true">
+          <span v-for="i in 5" :key="i" class="star" :class="starClass(i)">★</span>
+        </span>
         <span class="score-txt">{{ voteAverage?.toFixed(1) }}</span>
       </div>
 
@@ -77,7 +71,9 @@
 
       <!-- Footer CTA -->
       <div class="card-footer">
-        <span class="cta-text">פרטים נוספים →</span>
+        <button type="button" class="card-open" @click="$emit('openModal')">
+          {{ $t('series.moreDetails') }}
+        </button>
       </div>
     </div>
   </article>
@@ -134,11 +130,11 @@ function starClass(i: number) {
   flex-direction: column;
 }
 .series-card:hover,
-.series-card:focus-visible {
+.series-card:focus-within {
   transform: translateY(-6px) scale(1.01);
   box-shadow: 0 20px 60px rgba(0,0,0,0.6);
 }
-.series-card:focus-visible {
+.series-card:focus-within {
   outline: 2px solid var(--clr-gold);
   outline-offset: 3px;
 }
@@ -313,8 +309,6 @@ function starClass(i: number) {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  position: relative;
-  z-index: 1;
   flex: 1;
 }
 
@@ -327,7 +321,7 @@ function starClass(i: number) {
 }
 .card-title-en {
   font-size: 0.7rem;
-  color: rgba(255,255,255,0.3);
+  color: #b7b3c2;
   font-family: monospace;
   margin: 0;
 }
@@ -335,6 +329,11 @@ function starClass(i: number) {
 /* Star row */
 .star-row {
   display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+.star-glyphs {
+  display: inline-flex;
   align-items: center;
   gap: 0.1rem;
 }
@@ -391,14 +390,29 @@ function starClass(i: number) {
   margin-top: auto;
   padding-top: 0.5rem;
 }
-.cta-text {
+.card-open {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
   font-size: 0.72rem;
-  color: rgba(230,60,40,0.7);
+  color: #e89590;
   font-weight: 600;
-  transition: color 0.2s;
   font-family: monospace;
+  cursor: pointer;
+  text-align: inherit;
 }
-.series-card:hover .cta-text {
+.card-open::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 6;
+}
+.card-open:focus {
+  outline: none;
+}
+.series-card:hover .card-open,
+.series-card:focus-within .card-open {
   color: #E63C28;
 }
 

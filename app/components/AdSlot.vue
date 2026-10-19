@@ -1,13 +1,9 @@
 <script setup lang="ts">
-// יחידה ידנית נרנדרת רק כשיש מזהה מספרי מ-AdSense.
-// בלי מזהה, Auto ads (הפלאגין) מטפל במודעות — בלי תיבת placeholder.
-const props = withDefaults(
-  defineProps<{
-    slotId: 'home-mid' | 'provider-mid' | 'monthly-mid'
-    format?: 'auto' | 'rectangle' | 'horizontal'
-  }>(),
-  { format: 'auto' },
-)
+// גובה קבוע כדי שמודעה שנטענת אחרי הציור הראשון לא תדחוף את העמוד.
+// Auto ads (הגדרה בחשבון AdSense) עדיין יכולות להזריק יחידות נוספות.
+const props = defineProps<{
+  slotId: 'home-mid' | 'provider-mid' | 'monthly-mid'
+}>()
 
 const { public: pub } = useRuntimeConfig()
 
@@ -35,16 +31,32 @@ onMounted(() => {
 <template>
   <div
     v-if="adUnitId && pub.adsenseEnabled && pub.adsensePublisherId"
-    class="my-6 flex min-h-[100px] items-center justify-center"
+    class="ad-slot my-6"
     :data-slot="slotId"
   >
     <ins
-      class="adsbygoogle block w-full"
-      :style="'display:block'"
+      class="adsbygoogle"
       :data-ad-client="pub.adsensePublisherId"
       :data-ad-slot="adUnitId"
-      :data-ad-format="format"
-      data-full-width-responsive="true"
+      data-ad-format="auto"
+      data-full-width-responsive="false"
     />
   </div>
 </template>
+
+<style scoped>
+/* Reserved before the ad arrives: a rectangle on a phone, a banner on a desktop. */
+.ad-slot,
+.ad-slot .adsbygoogle {
+  display: block;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .ad-slot,
+  .ad-slot .adsbygoogle {
+    height: 90px;
+  }
+}
+</style>

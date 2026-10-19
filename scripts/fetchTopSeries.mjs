@@ -579,13 +579,17 @@ function buildFaq(monthLabel, year, series = []) {
   return faq
 }
 
+function monthAiSummary(monthLabel, year) {
+  return `10 הסדרות שצוות הבינג'יונרים המוסמכים שלנו ממליץ עליהן בנטפליקס לחודש ${monthLabel} ${year} — עם טריילרים, דירוגים, ביקורת עורך וז'אנרים.`
+}
+
 function buildMarkdown({ slug, monthLabel, year, series, faq, editorsNote, isFallback }) {
   const frontmatter = {
     provider: 'netflix',
     slug,
     monthLabel,
     year,
-    aiSummary: `10 הסדרות שצוות הבינג'יונרים המוסמכים שלנו ממליץ עליהן בנטפליקס לחודש ${monthLabel} ${year} — עם טריילרים, דירוגים, ביקורת עורך וז'אנרים.`,
+    aiSummary: monthAiSummary(monthLabel, year),
     editorsNote,
     series,
     faq,
@@ -636,7 +640,7 @@ async function generateMonth({ year, monthIndex } = {}) {
   await writeFile(
     path.join(dataDir, `${slug}.json`),
     JSON.stringify(
-      { provider: 'netflix', slug, monthLabel, year: y, editorsNote, series, faq, isFallback: usingFallback },
+      { provider: 'netflix', slug, monthLabel, year: y, aiSummary: monthAiSummary(monthLabel, y), editorsNote, series, faq, isFallback: usingFallback },
       null,
       2,
     ),
