@@ -309,8 +309,6 @@ function starClass(i: number) {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  position: relative;
-  z-index: 1;
   flex: 1;
 }
 
@@ -408,7 +406,7 @@ function starClass(i: number) {
   content: "";
   position: absolute;
   inset: 0;
-  z-index: 2;
+  z-index: 6;
 }
 .card-open:focus {
   outline: none;

@@ -271,12 +271,12 @@ if (current.value) {
   position: absolute;
   left: 1rem;
   top: 50%;
-  width: min(16rem, 42vw);
-  height: 4.5rem;
+  width: min(18rem, 48vw);
+  height: 4.75rem;
   transform: translateY(-50%);
   pointer-events: none;
   opacity: 0.14;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 120'%3E%3Ctext x='0' y='100' font-family='Georgia,serif' font-size='108' font-weight='700' fill='%23E8A33D'%3ETOP10%3C/text%3E%3C/svg%3E") left center / contain no-repeat;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 520 120'%3E%3Ctext x='0' y='102' font-family='Arial Black, Impact, sans-serif' font-size='100' font-weight='900' fill='%23E8A33D'%3ETOP10%3C/text%3E%3C/svg%3E") left center / contain no-repeat;
 }
 
 /* ─── Archive CTA banner ───────────────────────────────────────── */
