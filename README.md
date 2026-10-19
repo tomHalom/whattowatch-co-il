@@ -45,11 +45,15 @@ npm run dev                # http://localhost:3000
       `NUXT_PUBLIC_SITE_URL=https://whattowatch.co.il`.
 - [ ] **חשבון Vercel** מקושר ל-GitHub repo (הדרך הפשוטה ביותר לדיפלוי
       אוטומטי — ראה "דיפלוי" למטה).
-- [ ] **Google AdSense** — הגשת בקשה לאישור האתר, ואז הגדרת
-      `NUXT_PUBLIC_ADSENSE_ENABLED=true` ו-`NUXT_PUBLIC_ADSENSE_PUBLISHER_ID`.
-      עם מזהה מופעל, נטען Auto ads ו-`ads.txt` נכתב בזמן `npm run generate`.
-      יחידות ידניות (`NUXT_PUBLIC_ADSENSE_SLOT_HOME` / `_PROVIDER` / `_MONTHLY`)
-      אופציונליות ורק אם המזהה מספרי. בלי מזהה אין תיבת מודעה על המסך.
+- [ ] **Google AdSense** — `NUXT_PUBLIC_ADSENSE_ENABLED=true` ו-
+      `NUXT_PUBLIC_ADSENSE_PUBLISHER_ID` טוענים את סקריפט `ca-pub-` (בדיקת האתר
+      של Google) וכותבים `ads.txt` ב-`npm run generate`. זה לא מצייר מודעה.
+      מודעה על המסך דורשת יחידה ידנית עם מזהה מספרי בלבד:
+      `NUXT_PUBLIC_ADSENSE_SLOT_HOME` (מתחת לבאנר הארכיון בדף הבית),
+      `NUXT_PUBLIC_ADSENSE_SLOT_PROVIDER` (מתחת לטופ 10 בעמוד ספק),
+      `NUXT_PUBLIC_ADSENSE_SLOT_MONTHLY` (מתחת לטופ 10 בעמוד חודש).
+      בלי מזהה מספרי אין תיבה. Auto ads נשארים כבויים בחשבון AdSense —
+      התצוגה המקדימה של Google מציגה רק אותם, לא את היחידות האלה.
 - [ ] **חשבונות Affiliate** (NordVPN, Amazon) — להוסיף מזהים ל-
       `NUXT_PUBLIC_AFFILIATE_NORDVPN_ID` / `NUXT_PUBLIC_AFFILIATE_AMAZON_TAG`.
       בלי מזהה מוגדר, `AffiliateLink.vue` פשוט לא מרנדר את הכפתור.
