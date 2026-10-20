@@ -9,8 +9,7 @@
         :aria-label="series.nameHe || series.name"
         @click.self="emit('close')"
       >
-        <div class="modal-panel" dir="rtl">
-          <!-- Close button -->
+        <div class="modal-frame">
           <button
             class="modal-close"
             aria-label="סגור"
@@ -19,7 +18,9 @@
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
               <path d="M15 5L5 15M5 5l10 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
             </svg>
+            <span class="modal-close-label">סגור</span>
           </button>
+        <div ref="panelEl" class="modal-panel" dir="rtl" @scroll="measureScroll">
 
           <!-- Backdrop image blur -->
           <div
@@ -28,7 +29,7 @@
             :style="{ backgroundImage: `url(${series.backdropPath})` }"
           />
 
-          <div class="modal-content">
+          <div ref="contentEl" class="modal-content">
             <!-- Left: Poster -->
             <div class="modal-poster-col">
               <div class="modal-poster-wrap">
@@ -37,7 +38,7 @@
                   :src="posterSrc(series.posterPath)"
                   :alt="series.nameHe || series.name"
                   class="modal-poster"
-                  loading="lazy"
+                  @load="measureScroll"
                 />
                 <div v-else class="modal-poster-placeholder">
                   <span>🎬</span>
@@ -130,6 +131,8 @@
             </div>
           </div>
         </div>
+        <p v-show="showScrollHint" class="modal-scroll-hint" aria-hidden="true">גלול להמשך ↓</p>
+        </div>
       </div>
     </Transition>
   </Teleport>
@@ -154,27 +157,60 @@ interface Series {
 const props = defineProps<{ series: Series | null }>()
 const emit = defineEmits<{ close: [] }>()
 
+const HASH = '#series'
+const route = useRoute()
+const router = useRouter()
+
 const showTrailer = ref(false)
+const panelEl = ref<HTMLElement | null>(null)
+const contentEl = ref<HTMLElement | null>(null)
+const showScrollHint = ref(false)
+
+function measureScroll() {
+  const el = panelEl.value
+  if (!el) {
+    showScrollHint.value = false
+    return
+  }
+  showScrollHint.value = el.scrollHeight - el.clientHeight - el.scrollTop > 16
+}
 
 watch(() => props.series, (val) => {
   showTrailer.value = false
-  if (import.meta.client) {
-    document.body.style.overflow = val ? 'hidden' : ''
+  if (!import.meta.client) return
+  document.body.style.overflow = val ? 'hidden' : ''
+  if (val) {
+    if (route.hash !== HASH) router.push({ hash: HASH })
+    nextTick(measureScroll)
+  } else if (route.hash === HASH) {
+    router.back()
   }
+})
+
+watch(() => route.hash, (hash) => {
+  if (hash !== HASH && props.series) emit('close')
+})
+
+function onKey(e: KeyboardEvent) {
+  if (e.key === 'Escape') emit('close')
+}
+
+onMounted(() => {
+  window.addEventListener('keydown', onKey)
+  if (route.hash === HASH && !props.series) router.replace({ hash: '' })
 })
 
 onUnmounted(() => {
-  if (import.meta.client) {
-    document.body.style.overflow = ''
-  }
+  window.removeEventListener('keydown', onKey)
+  if (import.meta.client) document.body.style.overflow = ''
 })
 
-onMounted(() => {
-  const onKey = (e: KeyboardEvent) => {
-    if (e.key === 'Escape') emit('close')
-  }
-  window.addEventListener('keydown', onKey)
-  onUnmounted(() => window.removeEventListener('keydown', onKey))
+watch(contentEl, (el, _, onCleanup) => {
+  if (!el) return
+  const observer = new ResizeObserver(() => measureScroll())
+  observer.observe(el)
+  measureScroll()
+  onCleanup(() => observer.disconnect())
 })
 
 const rankClass = computed(() => {
@@ -203,23 +239,54 @@ function starClass(i: number, score?: number) {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
+  padding: max(0.75rem, env(safe-area-inset-top)) 0.75rem max(0.75rem, env(safe-area-inset-bottom));
   backdrop-filter: blur(4px);
+}
+
+.modal-frame {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 900px;
+  min-height: 0;
+  max-height: 100%;
 }
 
 .modal-panel {
   position: relative;
+  z-index: 1;
   background: #141414;
   border: 1px solid rgba(255,255,255,0.08);
   border-radius: 1.25rem;
-  max-width: 900px;
   width: 100%;
-  max-height: 90vh;
+  min-height: 0;
+  max-height: 100%;
   overflow-y: auto;
   overflow-x: hidden;
+  overscroll-behavior: contain;
   box-shadow: 0 32px 80px rgba(0,0,0,0.8);
   scrollbar-width: thin;
-  scrollbar-color: rgba(255,255,255,0.1) transparent;
+  scrollbar-color: rgba(255,255,255,0.35) transparent;
+}
+
+.modal-scroll-hint {
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0.7rem;
+  z-index: 5;
+  width: max-content;
+  margin-inline: auto;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.22);
+  background: rgba(20,20,20,0.94);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #f2eee4;
+  pointer-events: none;
 }
 
 .modal-backdrop-img {
@@ -255,6 +322,26 @@ function starClass(i: number, score?: number) {
   color: #fff;
   border-color: rgba(255,255,255,0.3);
 }
+.modal-close-label { display: none; }
+
+@media (max-width: 700px) {
+  .modal-close {
+    width: auto;
+    height: 2.25rem;
+    padding-inline: 0.7rem 0.85rem;
+    gap: 0.35rem;
+    border-radius: 999px;
+  }
+  .modal-close-label {
+    display: inline;
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+  .modal-poster-wrap {
+    width: min(128px, 34vw);
+    margin-inline: auto;
+  }
+}
 
 .modal-content {
   display: grid;
@@ -265,8 +352,7 @@ function starClass(i: number, score?: number) {
 }
 
 @media (max-width: 700px) {
-  .modal-content { grid-template-columns: 1fr; gap: 1rem; }
-  .modal-poster { width: min(220px, 100%); margin-inline: auto; display: block; }
+  .modal-content { grid-template-columns: 1fr; gap: 0.85rem; padding-top: 3.4rem; }
 }
 
 .modal-poster-col { position: relative; }
