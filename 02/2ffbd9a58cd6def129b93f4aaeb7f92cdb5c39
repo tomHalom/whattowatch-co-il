@@ -1,0 +1,21 @@
+app/router.options.ts
+  s_02e82d86f8fef7::t_afc8b8c63f623d 1-13
+app/components/SeriesModal.vue
+  s_02e82d86f8fef7::t_afc8b8c63f623d 12,21,23,32,41,134-135,160-163,165-176,180-186,190-191,194-197,200-213,242,246-255,258,263-264,267,270-289,325-344,355
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "022ffbd9a58cd6def129b93f4aaeb7f92cdb5c39",
+  "prompts": {},
+  "sessions": {
+    "s_02e82d86f8fef7": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "4495003c-4f26-4430-a096-c2395e8e37ba",
+        "model": "grok-4.7"
+      },
+      "human_author": "toms <toms@spiralsolutions.com>"
+    }
+  }
+}
