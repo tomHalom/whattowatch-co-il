@@ -174,11 +174,15 @@ if (latestMonth.value) {
       </section>
     </template>
     <template v-else>
-      <h1 class="mt-4 font-display text-3xl font-bold text-milk-parchment">{{ provider.name }}</h1>
-      <p class="mt-2 text-mist-grey">{{ provider.seoDescription }}</p>
-      <p class="mt-6 rounded border border-dashed border-charcoal-line p-4 text-sm text-mist-grey">
-        המדריך החודשי לספק הזה בקרוב — הארכיטקטורה מוכנה, רק נדרשת הזנת תוכן.
-      </p>
+      <div class="mt-8 max-w-xl">
+        <p class="coming-soon-stamp">בקרוב</p>
+        <h1 class="mt-4 font-display text-3xl font-bold text-milk-parchment">{{ provider.name }}</h1>
+        <p class="mt-3 text-base leading-relaxed text-milk-parchment">
+          אנחנו עדיין צופים ובוחרים. בקרוב יופיע כאן המדריך החודשי: עשר הסדרות ששוות את הערב ב{{ provider.name }}, עם טריילר וביקורת קצרה לכל אחת.
+        </p>
+        <p class="mt-4 text-sm leading-relaxed text-mist-grey">עד שהמדריך יעלה, אפשר להתחיל כאן:</p>
+        <NuxtLink to="/providers/netflix" class="coming-soon-link">טופ 10 של נטפליקס</NuxtLink>
+      </div>
     </template>
   </div>
 </template>
@@ -202,5 +206,36 @@ if (latestMonth.value) {
 }
 .editor-note p {
   margin: 0;
+}
+.coming-soon-stamp {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3rem 0.75rem;
+  background: var(--clr-gold);
+  color: var(--clr-bg);
+  font-weight: 700;
+  font-size: 0.85rem;
+  line-height: 1.2;
+  border-radius: 2px;
+  border-inline-start: 1.5px dashed rgba(20, 19, 28, 0.45);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.55);
+  transform: rotate(-2deg);
+  transform-origin: center;
+}
+.coming-soon-link {
+  display: inline-flex;
+  margin-top: 0.75rem;
+  color: var(--clr-gold);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 0.22em;
+}
+.coming-soon-link:hover {
+  color: #f0c579;
+}
+.coming-soon-link:focus-visible {
+  outline: 2px solid var(--clr-gold);
+  outline-offset: 3px;
 }
 </style>
