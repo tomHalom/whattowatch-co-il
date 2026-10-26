@@ -105,7 +105,8 @@ export default defineNuxtConfig({
             key: 'adsbygoogle-lib',
             src: `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseClientId}`,
             async: true,
-            tagPosition: 'bodyClose',
+            // AdSense looks for this snippet between <head> and </head>.
+            tagPosition: 'head',
             crossorigin: 'anonymous',
           }]
         : [],
