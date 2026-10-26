@@ -1,0 +1,24 @@
+public/llms.txt
+  s_02e82d86f8fef7::t_d5461fc2f6179a 29
+app/pages/providers/[provider]/index.vue
+  s_02e82d86f8fef7::t_f4d2eaaabc6be4 225-240
+  s_02e82d86f8fef7::t_57dcf4c98cca96 183-184
+content/providers/disney-plus.json
+  s_02e82d86f8fef7::t_702c27113a3f96 3,8-9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "2c841e477d1105360af29d6fc41ab574b70679e9",
+  "prompts": {},
+  "sessions": {
+    "s_02e82d86f8fef7": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "4495003c-4f26-4430-a096-c2395e8e37ba",
+        "model": "grok-4.7"
+      },
+      "human_author": "toms <toms@spiralsolutions.com>"
+    }
+  }
+}
