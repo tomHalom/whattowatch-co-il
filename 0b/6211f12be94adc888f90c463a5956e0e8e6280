@@ -1,0 +1,19 @@
+nuxt.config.ts
+  s_02e82d86f8fef7::t_84e95f5699eca8 108-109
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "0b6211f12be94adc888f90c463a5956e0e8e6280",
+  "prompts": {},
+  "sessions": {
+    "s_02e82d86f8fef7": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "4495003c-4f26-4430-a096-c2395e8e37ba",
+        "model": "grok-4.7"
+      },
+      "human_author": "toms <toms@spiralsolutions.com>"
+    }
+  }
+}
