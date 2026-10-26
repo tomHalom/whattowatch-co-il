@@ -180,9 +180,8 @@ if (latestMonth.value) {
         <p class="mt-3 text-base leading-relaxed text-milk-parchment">
           אנחנו עדיין צופים ובוחרים. בקרוב יופיע כאן המדריך החודשי: עשר הסדרות ששוות את הערב ב{{ provider.name }}, עם טריילר וביקורת קצרה לכל אחת.
         </p>
-        <p class="mt-4 text-sm leading-relaxed text-mist-grey">
-          עד שהמדריך יעלה, אפשר להתחיל ב<NuxtLink to="/providers/netflix" class="link-quiet">טופ 10 של נטפליקס</NuxtLink>.
-        </p>
+        <p class="mt-4 text-sm leading-relaxed text-mist-grey">עד שהמדריך יעלה, אפשר להתחיל כאן:</p>
+        <NuxtLink to="/providers/netflix" class="coming-soon-link">טופ 10 של נטפליקס</NuxtLink>
       </div>
     </template>
   </div>
@@ -222,5 +221,21 @@ if (latestMonth.value) {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.55);
   transform: rotate(-2deg);
   transform-origin: center;
+}
+.coming-soon-link {
+  display: inline-flex;
+  margin-top: 0.75rem;
+  color: var(--clr-gold);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 0.22em;
+}
+.coming-soon-link:hover {
+  color: #f0c579;
+}
+.coming-soon-link:focus-visible {
+  outline: 2px solid var(--clr-gold);
+  outline-offset: 3px;
 }
 </style>
