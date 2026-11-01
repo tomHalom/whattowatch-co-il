@@ -3,87 +3,12 @@
   "series": [
     {
       "rank": 1,
-      "tmdbId": 66732,
-      "name": "Stranger Things",
-      "nameHe": "דברים מוזרים",
-      "overview": "כשילד נעלם, עיירה קטנה מוצאת את עצמה מול תעלומה הקשורה לניסויים סודיים, לכוחות על-טבעיים מבעיתים ולילדה מיוחדת ומוזרה.",
-      "posterPath": "https://image.tmdb.org/t/p/w500/x1hM8kj3oNkGLjnhajxWQdEtKoe.jpg",
-      "backdropPath": "https://image.tmdb.org/t/p/w1280/56v2KjBlU4XaOv9rVYEQypROD7P.jpg",
-      "voteAverage": 8.6,
-      "genres": [
-        "אקשן והרפתקאות",
-        "מסתורין",
-        "מדע בדיוני ופנטזיה"
-      ],
-      "firstAirDate": "2016-07-15",
-      "seasons": 5,
-      "trailerYoutubeId": "b9EkMc79ZSU",
-      "editorReview": "דברים מוזרים — בדיוק מה שצריך כשמחפשים משהו שלא מבקש מחשבה, רק ריקושטים."
-    },
-    {
-      "rank": 2,
-      "tmdbId": 63174,
-      "name": "Lucifer",
-      "nameHe": "לוציפר",
-      "overview": "לוציפר כוכב השחר הוא שליט הגיהנום המקורי, הכריזמתי, החתיך והמקסים. השיעמום וחוסר שביעות הרצון שלו מהגיהנום מובילים אותו לנטוש את תפקידו ולעבור ללוס אנג'לס, שם הוא משתמש בכשרונו על מנת להעניש עבריינים אך ככל שעובר הזמן בו הוא רחוק מהגיהנום ישנו סיכוי גדול יותר שהגרועים שבאנושות יוכלו לברוח.",
-      "posterPath": "https://image.tmdb.org/t/p/w500/2p0akhLwpjkW6bEn6a1gHBFZkSD.jpg",
-      "backdropPath": "https://image.tmdb.org/t/p/w1280/mAXOCbZzvmDa6PCh5dcIPOB51Qc.jpg",
-      "voteAverage": 8.4,
-      "genres": [
-        "פשע",
-        "מדע בדיוני ופנטזיה"
-      ],
-      "firstAirDate": "2016-01-25",
-      "seasons": 6,
-      "trailerYoutubeId": "X4bF_quwNtw",
-      "editorReview": "לוציפר — מהסוג שגורם לדבר בלחישה גם כשצופים לבד בבית."
-    },
-    {
-      "rank": 3,
-      "tmdbId": 278178,
-      "name": "I Will Find You",
-      "nameHe": "אני אמצא אותך",
-      "overview": "אב שנשפט ונכלא על לא עוול בכפו בגין רצח בנו מגלה שהוא כנראה עדיין בחיים, ויוצא למבצע חילוץ נואש.",
-      "posterPath": "https://image.tmdb.org/t/p/w500/urcY2TrcxKznKmIAuP6xnhececv.jpg",
-      "backdropPath": "https://image.tmdb.org/t/p/w1280/z0R6ToCsMMkLwuQXjzzdd1QCdJv.jpg",
-      "voteAverage": 8.2,
-      "genres": [
-        "דרמה",
-        "מסתורין",
-        "פשע"
-      ],
-      "firstAirDate": "2026-06-18",
-      "seasons": 1,
-      "trailerYoutubeId": "mObRUsA7dPY",
-      "editorReview": "אני אמצא אותך — מהדרמות שגורמות לשלוח הודעה לחבר בשעה מוזרה רק כדי לדבר עליה."
-    },
-    {
-      "rank": 4,
-      "tmdbId": 42009,
-      "name": "Black Mirror",
-      "nameHe": "מראה שחורה",
-      "overview": "אנתולוגיה מרתקת של סיפורים מצמררים, החושפת את תכונותיו המעוותות ביותר של המין האנושי לצד חידושיו הגדולים ביותר, ועוד.",
-      "posterPath": "https://image.tmdb.org/t/p/w500/vYGqegw5sDtVNLuW6EU8bSyKprL.jpg",
-      "backdropPath": "https://image.tmdb.org/t/p/w1280/dg3OindVAGZBjlT3xYKqIAdukPL.jpg",
-      "voteAverage": 8.3,
-      "genres": [
-        "מדע בדיוני ופנטזיה",
-        "דרמה",
-        "מסתורין"
-      ],
-      "firstAirDate": "2011-12-04",
-      "seasons": 7,
-      "trailerYoutubeId": "1iqra1ojEvM",
-      "editorReview": "מראה שחורה — ההשקעה בעולם ניכרת בכל פינה — עצרנו כמה פעמים רק להסתכל."
-    },
-    {
-      "rank": 5,
       "tmdbId": 78191,
       "name": "You",
       "nameHe": "את",
       "overview": "בחור מקסים להחריד ומסוכן בטירוף לא בוחל באמצעים כדי להיכנס לחייהן של הנשים שהוא אובססיבי כלפיהן.",
-      "posterPath": "https://image.tmdb.org/t/p/w500/25tJvflLhPYbC4zLrNCRcx6rTfc.jpg",
-      "backdropPath": "https://image.tmdb.org/t/p/w1280/gzOIymABxmetAECXtazEYCpMmfb.jpg",
+      "posterPath": "https://image.tmdb.org/t/p/w342/25tJvflLhPYbC4zLrNCRcx6rTfc.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/wY1US9I51xxkwDJXQp6ktmhfh2Z.jpg",
       "voteAverage": 8,
       "genres": [
         "מסתורין",
@@ -93,34 +18,127 @@
       "firstAirDate": "2018-09-09",
       "seasons": 5,
       "trailerYoutubeId": "v99ooSjCVhg",
-      "editorReview": "את — כל פרק מוסיף שאלה אחת חדשה על כל תשובה שהוא נותן."
+      "editorReview": "את — התאהבנו לחלוטין בסדרה המותחת והסוחפת הזו, שפשוט לא נותנת לנו לרגע לעזוב את המסך. עם משחק מבריק ועלילה מטלטלת מלאת הפתעות, מדובר בחוויית צפייה אדירה וממכרת ששווה כל רגע."
+    },
+    {
+      "rank": 2,
+      "tmdbId": 1424,
+      "name": "Orange Is the New Black",
+      "nameHe": "כתום זה השחור החדש",
+      "overview": "פייפר צ'פמן, אישה לבנה מהמעמד הבינוני-גבוה נשלחת לכלא למשך 15 חודשים בגלל פשע שביצעה לפני עשר שנים - הברחת מזוודה שמלאה בכסף מעסקאות סמים. המזוודה שייכת לאלכס - מבריחת סמים בינלאומית ובנוסף לכך בת זוגה לשעבר של פייפר. העלילה עוקבת אחר הדמויות השונות בכלא והתמודדות של פייפר מולן.",
+      "posterPath": "https://image.tmdb.org/t/p/w342/5zrjW4jB69Y4bdemOnnYXHBVWCi.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/zJiWhsEYCy5BkFCBONoMnUunyZQ.jpg",
+      "voteAverage": 7.6,
+      "genres": [
+        "דרמה",
+        "קומדיה",
+        "פשע"
+      ],
+      "firstAirDate": "2013-07-11",
+      "seasons": 7,
+      "trailerYoutubeId": "vY0qzXi5oJg",
+      "editorReview": "כתום זה השחור החדש — התאהבנו מיד מהרגע הראשון שפייपर נכנסה לכלא, ופשוט לא יכולנו להפסיק לצפות בסיפורים המרגשים והמרתקים של כל דמות ודמות. זו סדרה סוחפת שנוגעת ללב ונשארת איתנו הרבה אחרי שנגמר הפרק."
+    },
+    {
+      "rank": 3,
+      "tmdbId": 67744,
+      "name": "MINDHUNTER",
+      "nameHe": "מיינד האנטר",
+      "overview": "בשנות ה-70 המאוחרות, שני סוכני FBI מרחיבים את גבולות מדע הקרימינולוגיה באמצעות חקר המניעים הפסיכולוגיים לרצח, ומתקרבים יותר מדי למפלצות אמיתיות מדי.",
+      "posterPath": "https://image.tmdb.org/t/p/w342/6l1i3lxtsGGQ0jtWsawJmLo0c07.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/lpDVJuIro21gtMj9iXMFKHuroZN.jpg",
+      "voteAverage": 8.1,
+      "genres": [
+        "דרמה",
+        "פשע"
+      ],
+      "firstAirDate": "2017-10-13",
+      "seasons": 2,
+      "trailerYoutubeId": "evdxH50J3rs",
+      "editorReview": "מיינד האנטר — לא הכי \"קלילה\", אבל בהחלט הכי מדויקת שראינו הרבה זמן."
+    },
+    {
+      "rank": 4,
+      "tmdbId": 96677,
+      "name": "Lupin",
+      "nameHe": "לופן",
+      "overview": "הגנב הג'נטלמני אסאן דיופ שואב השראה מהרפתקאותיו של ארסן לופן, ויוצא להתנקם במשפחה העשירה שאחראית למות אביו.",
+      "posterPath": "https://image.tmdb.org/t/p/w342/yeDvmW387pW0Z0r4PZW6rkKHwXx.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/aY7zv2pfk9H0QxaaL3PBjvalbKQ.jpg",
+      "voteAverage": 7.7,
+      "genres": [
+        "פשע",
+        "דרמה",
+        "מסתורין"
+      ],
+      "firstAirDate": "2021-01-08",
+      "seasons": 3,
+      "trailerYoutubeId": "ga0iTWXCGa0",
+      "editorReview": "לופן — המתח לא נעלם אפילו כשכבר יודעים \"מי עשה את זה\"."
+    },
+    {
+      "rank": 5,
+      "tmdbId": 66732,
+      "name": "Stranger Things",
+      "nameHe": "דברים מוזרים",
+      "overview": "כשילד נעלם, עיירה קטנה מוצאת את עצמה מול תעלומה הקשורה לניסויים סודיים, לכוחות על-טבעיים מבעיתים ולילדה מיוחדת ומוזרה.",
+      "posterPath": "https://image.tmdb.org/t/p/w342/x1hM8kj3oNkGLjnhajxWQdEtKoe.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/9P4IIMYY3HifqeruZq0ZZ9g7YUi.jpg",
+      "voteAverage": 8.5,
+      "genres": [
+        "אקשן והרפתקאות",
+        "מסתורין",
+        "מדע בדיוני ופנטזיה"
+      ],
+      "firstAirDate": "2016-07-15",
+      "seasons": 5,
+      "trailerYoutubeId": "b9EkMc79ZSU",
+      "editorReview": "דברים מוזרים — התאהבנו מחדש בקסם של שנות השמונים, ובזכות צוות שחקנים צעיר ומופלא שגדל מול עינינו ופסקול מהפנט, כל פרק פשוט העביר בנו צמרמורת של עונג צרוף."
     },
     {
       "rank": 6,
-      "tmdbId": 76669,
-      "name": "Élite",
-      "nameHe": "אליטה",
-      "overview": "שלושה בני נוער ממעמד הפועלים נרשמים לבית הספר הפרטי האקסקלוסיבי ביותר בספרד. ההתנגשות בינם לבין התלמידים העשירים מובילה לרצח.",
-      "posterPath": "https://image.tmdb.org/t/p/w500/oJq8RSxa2e9aOu2IcGjx4IFeKXV.jpg",
-      "backdropPath": "https://image.tmdb.org/t/p/w1280/1qOA3kMtQO8bjnW8M2smjA8tp10.jpg",
-      "voteAverage": 8,
+      "tmdbId": 105248,
+      "name": "Cyberpunk: Edgerunners",
+      "overview": "במציאות דיסטופית עתירת שחיתות ושתלים קיברנטיים, ילד רחוב מוכשר אך פרוע שואף להפוך לשכיר חרב פורע חוק – אדג'ראנר.",
+      "posterPath": "https://image.tmdb.org/t/p/w342/loTADcLLX6Ls3TU3tWb4Y3VcYNE.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/w0lU7U89Fm4K8BQD4hJQpQthxu9.jpg",
+      "voteAverage": 8.5,
       "genres": [
-        "פשע",
-        "מסתורין",
-        "דרמה"
+        "אנימציה",
+        "אקשן והרפתקאות",
+        "מדע בדיוני ופנטזיה",
+        "פשע"
       ],
-      "firstAirDate": "2018-10-05",
-      "seasons": 8,
-      "trailerYoutubeId": "QNwhAdrdwp0",
-      "editorReview": "אליטה — ניסינו לפצח את התוכנית לפני הדמויות. הפסדנו."
+      "firstAirDate": "2022-09-13",
+      "seasons": 2,
+      "trailerYoutubeId": "JtqIas3bYhg",
+      "editorReview": "Cyberpunk: Edgerunners — צפינו ב-\"Cyberpunk: Edgerunners\" והתאהבנו לחלוטין במסע הסוחף, המרגש והנוקב שלו לתוך נייט סיטי. זו יצירת מופת ויזואלית ומרגשת שפשוט אי אפשר להפסיק לחשוב עליה."
     },
     {
       "rank": 7,
+      "tmdbId": 63174,
+      "name": "Lucifer",
+      "nameHe": "לוציפר",
+      "overview": "לוציפר כוכב השחר הוא שליט הגיהנום המקורי, הכריזמתי, החתיך והמקסים. השיעמום וחוסר שביעות הרצון שלו מהגיהנום מובילים אותו לנטוש את תפקידו ולעבור ללוס אנג'לס, שם הוא משתמש בכשרונו על מנת להעניש עבריינים אך ככל שעובר הזמן בו הוא רחוק מהגיהנום ישנו סיכוי גדול יותר שהגרועים שבאנושות יוכלו לברוח.",
+      "posterPath": "https://image.tmdb.org/t/p/w342/2p0akhLwpjkW6bEn6a1gHBFZkSD.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/ta5oblpMlEcIPIS2YGcq9XEkWK2.jpg",
+      "voteAverage": 8.4,
+      "genres": [
+        "פשע",
+        "מדע בדיוני ופנטזיה"
+      ],
+      "firstAirDate": "2016-01-25",
+      "seasons": 6,
+      "trailerYoutubeId": "X4bF_quwNtw",
+      "editorReview": "לוציפר — התחלנו לצפות בזה בקז'ואל ומצאנו את עצמנו מכורים קשות לעולם המופלא של מלך הגיהנום בלוס אנג'לס, עם קסם שאי אפשר לעמוד בפניו שלא נתן לנו לישון עד שסיימנו את כל העונות!"
+    },
+    {
+      "rank": 8,
       "tmdbId": 93405,
       "name": "오징어 게임",
       "nameHe": "משחק הדיונון",
       "overview": "מאות אנשים שנקלעו לקשיים כלכליים מקבלים הזמנה מוזרה לשחק בטורניר של משחקי ילדים. הפרס אומנם מפתה, אבל הסיכונים מצמררים.",
-      "posterPath": "https://image.tmdb.org/t/p/w500/uFKp7WzuGXqdToQsn0sUs0WgAhh.jpg",
+      "posterPath": "https://image.tmdb.org/t/p/w342/uFKp7WzuGXqdToQsn0sUs0WgAhh.jpg",
       "backdropPath": "https://image.tmdb.org/t/p/w1280/2meX1nMdScFOoV4370rqHWKmXhY.jpg",
       "voteAverage": 7.9,
       "genres": [
@@ -131,62 +149,45 @@
       "firstAirDate": "2021-09-17",
       "seasons": 3,
       "trailerYoutubeId": "oqxAJKy0ii4",
-      "editorReview": "משחק הדיונון — הפרק האחרון גרם לאחד מאיתנו לזרוק פופקורן על הקיר. שווה."
-    },
-    {
-      "rank": 8,
-      "tmdbId": 119051,
-      "name": "Wednesday",
-      "nameHe": "ונסדיי",
-      "overview": "ונסדיי אדמס היא ילדה חכמה, סרקסטית וקצת מתה מבפנים, שחוקרת תעלומות סבוכות ומתוודעת אל חברים ואויבים חדשים באקדמיית נוורמור.",
-      "posterPath": "https://image.tmdb.org/t/p/w500/8oxQRPhAxaoV8ovzGGfB7VpzfCn.jpg",
-      "backdropPath": "https://image.tmdb.org/t/p/w1280/iHSwvRVsRyxpX7FE7GbviaDvgGZ.jpg",
-      "voteAverage": 8.3,
-      "genres": [
-        "מדע בדיוני ופנטזיה",
-        "מסתורין",
-        "קומדיה"
-      ],
-      "firstAirDate": "2022-11-23",
-      "seasons": 3,
-      "trailerYoutubeId": "Qa5kFRxBkNw",
-      "editorReview": "ונסדיי — ההשקעה בעולם ניכרת בכל פינה — עצרנו כמה פעמים רק להסתכל."
+      "editorReview": "משחק הדיונון — צפינו בכל רגע במתח עוצר נשימה והתאהבנו מיד בסדרה מרתקת וסוחפת שפשוט קשה להפסיק לראות."
     },
     {
       "rank": 9,
-      "tmdbId": 127529,
-      "name": "사냥개들",
-      "nameHe": "כלבי ציד",
-      "overview": "שני מתאגרפים צעירים חוברים למלווה כספים טוב לב, ויחד הם מחליטים להפיל כריש הלוואות חסר רחמים שמנצל אנשים נואשים כלכלית.",
-      "posterPath": "https://image.tmdb.org/t/p/w500/aAO5623u08KdfiAQPbR3l5cEh13.jpg",
-      "backdropPath": "https://image.tmdb.org/t/p/w1280/zhsEnDNCQX5dlI2wbKzV90pV0B9.jpg",
-      "voteAverage": 8.5,
+      "tmdbId": 42009,
+      "name": "Black Mirror",
+      "nameHe": "מראה שחורה",
+      "overview": "אנתולוגיה מרתקת של סיפורים מצמררים, החושפת את תכונותיו המעוותות ביותר של המין האנושי לצד חידושיו הגדולים ביותר, ועוד.",
+      "posterPath": "https://image.tmdb.org/t/p/w342/vYGqegw5sDtVNLuW6EU8bSyKprL.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/dg3OindVAGZBjlT3xYKqIAdukPL.jpg",
+      "voteAverage": 8.3,
       "genres": [
+        "מדע בדיוני ופנטזיה",
         "דרמה",
-        "אקשן והרפתקאות",
-        "פשע"
+        "מסתורין"
       ],
-      "firstAirDate": "2023-06-09",
-      "seasons": 2,
-      "trailerYoutubeId": "eyiR8pO50JE",
-      "editorReview": "כלבי ציד — משהו באמת קרה לנו בפרק החמישי. לא נגלה מה, רק תגיעו לשם."
+      "firstAirDate": "2011-12-04",
+      "seasons": 7,
+      "trailerYoutubeId": "1iqra1ojEvM",
+      "editorReview": "מראה שחורה — התאהבנו מחדש בכל פרק ופרק של המסע המחשמל והגאוני הזה אל תוך העתיד האפל, ופשוט לא הצלחנו להוריד את העיניים מהמסך לרגע."
     },
     {
       "rank": 10,
-      "tmdbId": 74428,
-      "name": "Rosario Tijeras",
-      "overview": "תקציר יתעדכן בקרוב.",
-      "posterPath": "https://image.tmdb.org/t/p/w500/zY7jshpbPNs5U677HxRZUltb7gm.jpg",
-      "backdropPath": "https://image.tmdb.org/t/p/w1280/hsSw3DuG2ah2wgaZeDTwyv5FPh3.jpg",
-      "voteAverage": 7.8,
+      "tmdbId": 236235,
+      "name": "The Gentlemen",
+      "nameHe": "הג'נטלמנים",
+      "overview": "אדי האריסטוקרט יורש אחוזה משפחתית ומגלה שהיא כוללת גם אימפריית קנאביס ענקית – שבעליה לא מתכוונים ללכת לשום מקום.",
+      "posterPath": "https://image.tmdb.org/t/p/w342/qp5mNLAevWW2KNb9pURNlOyzxEG.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/yG1wltFmkX5c5ocACKfpX0tp3SY.jpg",
+      "voteAverage": 7.9,
       "genres": [
+        "קומדיה",
         "דרמה",
         "פשע"
       ],
-      "firstAirDate": "2016-10-30",
-      "seasons": 5,
-      "trailerYoutubeId": null,
-      "editorReview": "Rosario Tijeras — משהו באמת קרה לנו בפרק החמישי. לא נגלה מה, רק תגיעו לשם."
+      "firstAirDate": "2024-03-07",
+      "seasons": 2,
+      "trailerYoutubeId": "wyEOwHrpZH4",
+      "editorReview": "הג'נטלמנים — מושלמת. קומדיית פשע בריטית שנונה, מלוטשת ומלאת קסם, מהסדרות שאנחנו ממליצים עליהן בלי לחשוב פעמיים."
     }
   ]
 }
