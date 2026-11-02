@@ -1,0 +1,47 @@
+app/pages/providers/[provider]/index.vue
+  s_02e82d86f8fef7::t_8709b294de038d 125
+  s_02e82d86f8fef7::t_211079b7573919 135-136
+app/pages/providers/[provider]/series/[slug].vue
+  s_02e82d86f8fef7::t_1ba91b1fee12f9 118-125
+scripts/generateSitemap.mjs
+  s_02e82d86f8fef7::t_67a6ce98c5f665 25
+app/pages/index.vue
+  s_02e82d86f8fef7::t_08700d8a9b781b 139
+  s_02e82d86f8fef7::t_4c4f7074176af1 164
+app/components/MonthlyPicks.vue
+  s_02e82d86f8fef7::t_837b3da3d49269 1-50
+i18n/locales/he.json
+  s_02e82d86f8fef7::t_b445f7e5c250e3 29
+app/pages/about.vue
+  s_02e82d86f8fef7::t_649d100ca7df1a 32-33
+  s_02e82d86f8fef7::t_1ac44ae4d2e6ac 1-31,34-50
+public/sitemap.xml
+  s_02e82d86f8fef7::t_f15bb64c6ff782 24-27
+  s_02e82d86f8fef7::t_78f0eb0fcb5ef6 23
+app/pages/netflix/genre/[genre].vue
+  s_02e82d86f8fef7::t_f53f3aceb6ed2d 255-256
+  s_02e82d86f8fef7::t_ad65c13c592f64 90-96
+  s_02e82d86f8fef7::t_4ba63892225569 279,281
+  s_02e82d86f8fef7::t_c1d09a5e86c8a2 12,16-87
+app/layouts/default.vue
+  s_02e82d86f8fef7::t_07ef7a42556edf 149
+app/pages/netflix/[slug].vue
+  s_02e82d86f8fef7::t_a97e092ca4ea00 98-99
+  s_02e82d86f8fef7::t_9676fdfc6f91b9 88
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "7c44e19e24c5c739ef14eb62d182f62dbaca7a06",
+  "prompts": {},
+  "sessions": {
+    "s_02e82d86f8fef7": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "4495003c-4f26-4430-a096-c2395e8e37ba",
+        "model": "grok-4.7"
+      },
+      "human_author": "toms <toms@spiralsolutions.com>"
+    }
+  }
+}
