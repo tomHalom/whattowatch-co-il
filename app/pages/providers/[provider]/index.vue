@@ -73,7 +73,10 @@ const pageTitle = computed(() =>
 
 useHead({
   title: pageTitle.value,
-  meta: [{ name: 'description', content: provider.value.seoDescription }],
+  meta: [
+    { name: 'description', content: provider.value.seoDescription },
+    ...(!latestMonth.value ? [{ name: 'robots', content: 'noindex, follow' }] : []),
+  ],
   link: [{ rel: 'canonical', href: `${pub.siteUrl}/providers/${providerSlug}` }],
 })
 

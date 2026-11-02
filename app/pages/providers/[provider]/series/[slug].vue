@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { seriesIsIndexable } from '~/utils/seriesIndexable'
+
 const route = useRoute()
 const providerSlug = route.params.provider as string
 const seriesSlug = route.params.slug as string
@@ -16,9 +18,10 @@ const { data: months } = await useAsyncData(`provider-${providerSlug}-all-series
 
 const allSeries = computed(() => (months.value ?? []).flatMap((m) => m.series))
 
-const series = computed(() =>
-  allSeries.value.find((s) => slugify(s.name, s.tmdbId) === seriesSlug),
-)
+const series = computed(() => {
+  const matches = allSeries.value.filter((s) => slugify(s.name, s.tmdbId) === seriesSlug)
+  return matches.find((s) => seriesIsIndexable(s)) ?? matches[0]
+})
 
 if (!series.value) {
   throw createError({ statusCode: 404, statusMessage: 'הסדרה לא נמצאה' })
@@ -35,13 +38,17 @@ const similar = computed(() =>
     .slice(0, 3),
 )
 
+const displayName = computed(() => series.value?.nameHe || series.value?.name || '')
+const indexable = computed(() => seriesIsIndexable(series.value))
+
 useHead({
-  title: `${series.value.name} — טריילר, דירוג ותקציר`,
+  title: `${displayName.value} — המלצה, טריילר ותקציר`,
   meta: [
-    { name: 'description', content: series.value.overview },
-    { property: 'og:title', content: series.value.name },
-    { property: 'og:description', content: series.value.overview },
+    { name: 'description', content: series.value.editorReview || series.value.overview },
+    { property: 'og:title', content: displayName.value },
+    { property: 'og:description', content: series.value.editorReview || series.value.overview },
     { property: 'og:image', content: series.value.posterPath || undefined },
+    ...(!indexable.value ? [{ name: 'robots', content: 'noindex, follow' }] : []),
   ],
   link: [{ rel: 'canonical', href: `${pub.siteUrl}/providers/${providerSlug}/series/${seriesSlug}` }],
 })
@@ -50,8 +57,8 @@ useJsonLd(
   () => ({
     '@context': 'https://schema.org',
     '@type': 'TVSeries',
-    name: series.value!.name,
-    description: series.value!.overview,
+    name: series.value!.nameHe || series.value!.name,
+    description: series.value!.editorReview || series.value!.overview,
     image: series.value!.posterPath || undefined,
     genre: series.value!.genres,
     aggregateRating: {
@@ -72,11 +79,12 @@ useJsonLd(
       :items="[
         { label: 'בית', to: '/' },
         { label: provider!.name, to: `/providers/${providerSlug}` },
-        { label: series.name },
+        { label: displayName },
       ]"
     />
 
-    <h1 class="mt-4 font-display text-3xl font-bold text-milk-parchment">{{ series.name }}</h1>
+    <h1 class="mt-4 font-display text-3xl font-bold text-milk-parchment">{{ displayName }}</h1>
+    <p v-if="series.nameHe && series.name !== series.nameHe" class="mt-1 text-sm text-mist-grey" dir="ltr">{{ series.name }}</p>
 
     <div class="mt-4 aspect-video overflow-hidden rounded-xl bg-charcoal-deep">
       <iframe
@@ -98,12 +106,22 @@ useJsonLd(
 
     <div class="mt-4 flex flex-wrap items-center gap-2 text-sm text-mist-grey">
       <span class="font-utility text-sunset-gold">★ {{ series.voteAverage }}</span>
+      <span v-if="series.seasons">{{ series.seasons === 1 ? 'עונה אחת' : `${series.seasons} עונות` }}</span>
+      <span v-if="series.firstAirDate">{{ new Date(series.firstAirDate).getFullYear() }}</span>
       <span v-for="genre in series.genres" :key="genre" class="rounded-full bg-charcoal-line px-2 py-0.5">
         {{ genre }}
       </span>
     </div>
 
-    <p class="mt-4 text-milk-parchment">{{ series.overview }}</p>
+    <p class="mt-4 text-base leading-relaxed text-milk-parchment">{{ series.overview }}</p>
+
+    <div v-if="series.editorReview" class="editor-review">
+      <div class="editor-review-header">
+        <span aria-hidden="true">✍️</span>
+        <span class="editor-label">ביקורת הבינג'יונרים</span>
+      </div>
+      <blockquote class="editor-quote">{{ series.editorReview }}</blockquote>
+    </div>
 
     <AffiliateLink
       class="mt-6"
@@ -112,7 +130,7 @@ useJsonLd(
     />
 
     <section v-if="similar.length" class="mt-10">
-      <h2 class="font-display text-xl font-bold text-milk-parchment">סדרות בדומה ל-{{ series.name }}</h2>
+      <h2 class="font-display text-xl font-bold text-milk-parchment">סדרות בדומה ל{{ displayName }}</h2>
       <div class="mt-4 grid gap-4 sm:grid-cols-3">
         <SeriesCard
           v-for="item in similar"
@@ -132,3 +150,31 @@ useJsonLd(
     </section>
   </div>
 </template>
+
+<style scoped>
+.editor-review {
+  margin-top: 1.25rem;
+  background: linear-gradient(135deg, rgba(230, 60, 40, 0.06), rgba(255, 140, 0, 0.04));
+  border: 1px solid rgba(230, 60, 40, 0.2);
+  border-inline-start: 3px solid #e63c28;
+  border-radius: 0.5rem;
+  padding: 1rem 1.15rem;
+}
+.editor-review-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.6rem;
+}
+.editor-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #e63c28;
+}
+.editor-quote {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: rgba(242, 238, 228, 0.92);
+}
+</style>
