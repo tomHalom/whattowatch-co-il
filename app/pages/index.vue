@@ -136,6 +136,7 @@ if (current.value) {
         <span class="editor-note-icon">🌙</span>
         <p><strong>{{ current.editorsNote.label }}</strong> {{ current.editorsNote.body }}</p>
       </div>
+      <MonthlyPicks :series="current.series" />
     </div>
 
     <!-- ── Top 10 grid ─────────────────────────────────────────────── -->
@@ -160,7 +161,7 @@ if (current.value) {
     </div>
 
     <p v-else class="mx-auto max-w-5xl px-4 py-16 text-center text-mist-grey">
-      עדיין לא נוצר תוכן חודשי. הרץ <code class="text-sunset-gold">npm run fetch:netflix</code> כדי לייצר את הרשימה הראשונה.
+      המדריך החודשי עדיין לא פורסם. שווה לחזור בתחילת החודש.
     </p>
 
     <!-- ── Archive CTA — this is the whole point of the site: a fresh

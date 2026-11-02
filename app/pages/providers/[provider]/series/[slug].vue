@@ -115,6 +115,14 @@ useJsonLd(
 
     <p class="mt-4 text-base leading-relaxed text-milk-parchment">{{ series.overview }}</p>
 
+    <section v-if="series.seasons" class="mt-6">
+      <h2 class="font-display text-lg font-bold text-milk-parchment">לפני שמתחילים</h2>
+      <p class="mt-2 text-base leading-relaxed text-milk-parchment">
+        <template v-if="series.seasons === 1">יש כאן עונה אחת, בלי ארכיון ארוך.</template>
+        <template v-else>יש כאן {{ series.seasons }} עונות. שווה לתת לזה שני פרקים לפני שמחליטים אם להמשיך.</template>
+      </p>
+    </section>
+
     <div v-if="series.editorReview" class="editor-review">
       <div class="editor-review-header">
         <span aria-hidden="true">✍️</span>

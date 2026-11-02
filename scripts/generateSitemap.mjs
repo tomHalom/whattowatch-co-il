@@ -22,6 +22,7 @@ async function main() {
     urlEntry('/netflix', { changefreq: 'weekly', priority: '0.8' }),
     urlEntry('/privacy', { changefreq: 'yearly', priority: '0.1' }),
     urlEntry('/terms', { changefreq: 'yearly', priority: '0.1' }),
+    urlEntry('/about', { changefreq: 'yearly', priority: '0.4' }),
   ]
 
   const providersWithGuides = new Set(months.map((month) => month.provider))

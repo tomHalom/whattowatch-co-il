@@ -9,21 +9,91 @@ interface GenreMeta {
   labelEn: string
   description: string
   keywords: string
+  intro: [string, string]
 }
 
 const GENRE_META: Record<string, GenreMeta> = {
-  drama:       { label: 'דרמה',             labelEn: 'Drama',       description: 'הסדרות הדרמטיות הכי מומלצות בנטפליקס — דמויות עמוקות ועלילות מרגשות.',        keywords: 'סדרות דרמה בנטפליקס, דרמה נטפליקס' },
-  comedy:      { label: 'קומדיה',           labelEn: 'Comedy',      description: 'הסדרות הקומדיות הכי מצחיקות בנטפליקס — לצחוק ולהירגע.',                       keywords: 'סדרות קומדיה בנטפליקס, קומדיה נטפליקס' },
-  action:      { label: 'אקשן',             labelEn: 'Action',      description: 'הסדרות אקשן הכי מרתקות בנטפליקס — מלאות בפעולה ואדרנלין.',                    keywords: 'סדרות אקשן בנטפליקס, אקשן נטפליקס' },
-  thriller:    { label: 'מתח',              labelEn: 'Thriller',    description: 'סדרות מתח בנטפליקס שאסור להחמיץ — פיתולים ורגעי לחץ.',                       keywords: 'סדרות מתח בנטפליקס, thriller נטפליקס' },
-  romance:     { label: 'רומנטי',           labelEn: 'Romance',     description: 'הסדרות הרומנטיות הכי יפות בנטפליקס — אהבה ורגשות.',                           keywords: 'סדרות רומנטיות בנטפליקס, רומנסה נטפליקס' },
-  documentary: { label: 'דוקומנטרי',        labelEn: 'Documentary', description: 'הדוקומנטריים הכי מרתקים בנטפליקס — טבע, פשע ואנשים.',                        keywords: 'דוקומנטרי בנטפליקס, סרטי תיעוד נטפליקס' },
-  kids:        { label: 'ילדים',            labelEn: 'Kids',        description: 'הסדרות הכי טובות לילדים בנטפליקס — אנימציות והרפתקאות.',                       keywords: 'סדרות ילדים בנטפליקס, אנימציה ילדים' },
-  anime:       { label: 'אנימה',            labelEn: 'Anime',       description: 'הסדרות אנימה הכי טובות בנטפליקס — מיפן ומהעולם.',                            keywords: 'אנימה נטפליקס, anime netflix ישראל' },
-  israeli:     { label: 'סדרות ישראליות',  labelEn: 'Israeli',     description: 'סדרות ישראליות בנטפליקס — פאודה, שטיסל ועוד.',                              keywords: 'סדרות ישראליות בנטפליקס, פאודה נטפליקס, שטיסל נטפליקס' },
+  drama: {
+    label: 'דרמה', labelEn: 'Drama', keywords: 'סדרות דרמה בנטפליקס, דרמה נטפליקס',
+    description: 'דרמה בנטפליקס שנשארים איתה בגלל הדמויות, לא בגלל פיתול בכל פרק.',
+    intro: [
+      'דרמה טובה כאן היא לא סדרה עצובה. היא סדרה שנשארים איתה בגלל הדמויות. אם אתם מחפשים הפתעה בכל פרק, עדיף לעבור למתח.',
+      'הרשימה כוללת רק סדרות זמינות עכשיו. לכל כרטיס יש תקציר, טריילר ומשפט של הצוות: למה דווקא היא שווה ערב שלם.',
+    ],
+  },
+  comedy: {
+    label: 'קומדיה', labelEn: 'Comedy', keywords: 'סדרות קומדיה בנטפליקס, קומדיה נטפליקס',
+    description: 'קומדיות בנטפליקס לערב עייף, בלי כל מה שרק מתויג כמצחיק.',
+    intro: [
+      'קומדיה בנטפליקס מתפצלת לשניים: פרקים קצרים לערב עייף, וסדרות ארוכות שצוחקות גם כשכואב. לא כל מה שמתויג קומדיה באמת מצחיק.',
+      'הרשימה קצרה בכוונה. אם אתם צופים בעברית, שווה גם להציץ בסדרות הישראליות. השאר הוא מה שלא הרגיש מאולץ.',
+    ],
+  },
+  action: {
+    label: 'אקשן', labelEn: 'Action', keywords: 'סדרות אקשן בנטפליקס, אקשן נטפליקס',
+    description: 'סדרות אקשן בנטפליקס עם דמות שאפשר לעקוב אחריה, לא רק מרדפים.',
+    intro: [
+      'אקשן שווה צפייה כשיש דמות שאכפת לכם ממנה בין המרדפים. בלי זה נשאר רעש. כאן מעדיפים סדרות שאפשר לעקוב אחריהן יותר מעונה אחת.',
+      'לפני שמתחילים, בדקו כמה עונות יש בכרטיס. שש עונות הן התחייבות אחרת מעונה אחת.',
+    ],
+  },
+  thriller: {
+    label: 'מתח', labelEn: 'Thriller', keywords: 'סדרות מתח בנטפליקס, thriller נטפליקס',
+    description: 'סדרות מתח בנטפליקס שהפיתול שלהן מרגיש הוגן, לא תעלול של הפרק האחרון.',
+    intro: [
+      'מתח טוב שומר סוד בלי לרמות. אנחנו מחפשים סדרות שהפיתול מובן בדיעבד, לא כאלה שממציאות חוקים חדשים בפרק האחרון.',
+      'אם אתם רגישים לאלימות, קראו את התקציר לפני הטריילר. לא כל סדרה כאן מתאימה לצפייה משפחתית.',
+    ],
+  },
+  romance: {
+    label: 'רומנטי', labelEn: 'Romance', keywords: 'סדרות רומנטיות בנטפליקס, רומנסה נטפליקס',
+    description: 'סדרות רומנטיות בנטפליקס לפי מצב הרוח, לא רק לפי הדירוג.',
+    intro: [
+      'רומנטיקה כאן היא לא רק נשיקה בפרק האחרון. יש סדרות על זוגיות ארוכה, ויש כאלה על התחלה. בחרו לפי הערב, לא לפי המספר לבדו.',
+      'הדירוג של הצופים אומר אם הסדרה אהובה. המשפט של הצוות אומר אם היא שווה לשבת מולה, או רק נעימה ברקע.',
+    ],
+  },
+  documentary: {
+    label: 'דוקומנטרי', labelEn: 'Documentary', keywords: 'דוקומנטרי בנטפליקס, סרטי תיעוד נטפליקס',
+    description: 'דוקומנטריים בנטפליקס שמשאירים שאלה, לא רק עובדה.',
+    intro: [
+      'דוקומנטרי טוב משאיר שאלה, לא רק עובדה. בנטפליקס הז׳אנר רחב: פשע, אנשים וטבע באותה מדף, ולכן הרשימה לא מתיימרת להיות מכלול אחד.',
+      'לפעמים פרק אחד מספיק. אין חובה לסיים עונה שלמה כדי לקבל ערב טוב.',
+    ],
+  },
+  kids: {
+    label: 'ילדים', labelEn: 'Kids', keywords: 'סדרות ילדים בנטפליקס, אנימציה ילדים',
+    description: 'סדרות לילדים בנטפליקס שמחזיקות גם את המבוגר שיושב ליד.',
+    intro: [
+      'סדרה לילדים צריכה להחזיק גם את המבוגר שיושב ליד. מעדיפים הרפתקה ברורה וקצב שאפשר לעצור בין פרקים.',
+      'בדקו את גיל הצפייה בנטפליקס לפני שלוחצים play. הרשימה כאן היא המלצה, לא סיווג גיל.',
+    ],
+  },
+  anime: {
+    label: 'אנימה', labelEn: 'Anime', keywords: 'אנימה נטפליקס, anime netflix ישראל',
+    description: 'אנימה בנטפליקס למתחילים ולמי שכבר בפנים, עם השם העברי והמקורי.',
+    intro: [
+      'אנימה בנטפליקס היא לא מדף אחד. יש פעולה ארוכה ויש סיפור שקט. אם אתם חדשים בז׳אנר, התחילו במה שהצוות סימן כקל לכניסה, לא במה שהכי ארוך.',
+      'השם העברי והשם המקורי מופיעים יחד, כדי למצוא את הטריילר הנכון ולא סדרה אחרת עם שם דומה.',
+    ],
+  },
+  israeli: {
+    label: 'סדרות ישראליות', labelEn: 'Israeli', keywords: 'סדרות ישראליות בנטפליקס, פאודה נטפליקס, שטיסל נטפליקס',
+    description: 'סדרות ישראליות שבדקנו שהן זמינות בנטפליקס, לא רק שהן ישראליות.',
+    intro: [
+      'הסדרות הישראליות בנטפליקס הן לא תוספת בשוליים. פאודה ושטיסל כבר הראו שסיפור מכאן רץ בעולם, ועדיין יש סדרות שמדברים עליהן קודם בעברית.',
+      'בודקים שהסדרה זמינה בנטפליקס, לא רק שהיא ישראלית. רשימת שמות בלי זמינות לא עוזרת בערב שבת.',
+    ],
+  },
 }
 
-const FALLBACK_META: GenreMeta = { label: genre, labelEn: genre, description: `סדרות ${genre} בנטפליקס.`, keywords: `${genre} נטפליקס` }
+const FALLBACK_META: GenreMeta = {
+  label: genre,
+  labelEn: genre,
+  description: `סדרות ${genre} בנטפליקס.`,
+  keywords: `${genre} נטפליקס`,
+  intro: [`סדרות ${genre} שזמינות בנטפליקס, עם תקציר וטריילר לכל אחת.`, 'הרשימה מתעדכנת עם המדריך החודשי, ולא כוללת סדרה שאין עליה המלצה.'],
+}
 const meta = computed(() => GENRE_META[genre] ?? FALLBACK_META)
 
 // תוכן ייעודי לכל ז'אנר (content/genres/{slug}.json) — לא נגזר
@@ -182,13 +252,8 @@ const watermarkUrl = computed(() => {
             סדרות {{ meta.label }} בנטפליקס — המומלצות ביותר
           </template>
         </h1>
-        <p class="mt-3 max-w-xl text-mist-grey leading-relaxed">{{ meta.description }}</p>
-        <div
-          v-if="genre === 'israeli'"
-          class="mt-4 rounded-lg border border-sunset-gold/20 bg-sunset-gold/5 px-4 py-3 text-sm text-mist-grey"
-        >
-          <strong class="text-sunset-gold">נישת תוכן ישראלי:</strong>
-          פאודה, שטיסל ועוד — התוכן הישראלי שכובש את העולם דרך נטפליקס.
+        <div class="mt-4 max-w-2xl space-y-3 text-base leading-relaxed text-milk-parchment">
+          <p v-for="(paragraph, i) in meta.intro" :key="i">{{ paragraph }}</p>
         </div>
       </div>
     </section>
@@ -211,10 +276,9 @@ const watermarkUrl = computed(() => {
         />
       </div>
       <div v-else class="rounded-xl border border-charcoal-line bg-charcoal-deep px-6 py-12 text-center">
-        <p class="font-display text-2xl font-bold text-milk-parchment">עדיין לא הגיעו</p>
+        <p class="font-display text-2xl font-bold text-milk-parchment">הרשימה לז׳אנר הזה עדיין לא מוכנה</p>
         <p class="mt-2 text-mist-grey">
-          הרץ <code class="text-sunset-gold">npm run fetch:genres</code> כדי לייצר את הרשימה, או בקר
-          ב<NuxtLink to="/providers/netflix" class="link-quiet">נטפליקס</NuxtLink> לגלות את כל הסדרות.
+          בינתיים אפשר להתחיל ב<NuxtLink to="/providers/netflix" class="link-quiet">טופ 10 של נטפליקס</NuxtLink>.
         </p>
       </div>
     </div>

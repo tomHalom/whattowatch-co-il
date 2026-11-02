@@ -21,6 +21,11 @@
     <priority>0.1</priority>
   </url>
   <url>
+    <loc>https://whattowatch-co-il.vercel.app/about</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
     <loc>https://whattowatch-co-il.vercel.app/providers/netflix</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
