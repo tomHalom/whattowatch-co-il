@@ -85,7 +85,7 @@ useJsonLd(
     <MonthNav class="mt-5" :prev-month="prevMonth" :next-month="nextMonth" />
 
     <p v-if="page.isFallback" class="mt-4 rounded bg-charcoal-line px-3 py-2 text-xs text-mist-grey">
-      זהו תוכן דמו (fallback) — הרץ <code>npm run fetch:netflix</code> עם TMDB_READ_ACCESS_TOKEN מוגדר לנתונים אמיתיים.
+      זו רשימת הדגמה. המדריך החודשי המלא יחליף אותה כשהנתונים יעודכנו.
     </p>
 
     <ContentRenderer v-if="page" :value="page" class="prose prose-invert mt-6 max-w-none" />
@@ -94,6 +94,8 @@ useJsonLd(
       <span class="editor-note-icon">🌙</span>
       <p><strong>{{ page.editorsNote.label }}</strong> {{ page.editorsNote.body }}</p>
     </div>
+
+    <MonthlyPicks :series="page.series" />
 
     <div class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
       <SeriesCard

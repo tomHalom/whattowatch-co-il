@@ -3,6 +3,7 @@
 import { writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import { ROOT, readNetflixMonths, readProviders } from './lib/readContent.mjs'
+import { seriesIsIndexable } from './lib/seriesIndexable.mjs'
 import { slugify } from './lib/slugify.mjs'
 import { GENRE_DEFS } from './fetchTopSeries.mjs'
 
@@ -21,9 +22,12 @@ async function main() {
     urlEntry('/netflix', { changefreq: 'weekly', priority: '0.8' }),
     urlEntry('/privacy', { changefreq: 'yearly', priority: '0.1' }),
     urlEntry('/terms', { changefreq: 'yearly', priority: '0.1' }),
+    urlEntry('/about', { changefreq: 'yearly', priority: '0.4' }),
   ]
 
+  const providersWithGuides = new Set(months.map((month) => month.provider))
   for (const provider of providers) {
+    if (!providersWithGuides.has(provider.slug)) continue
     urls.push(urlEntry(`/providers/${provider.slug}`, { changefreq: 'weekly', priority: '0.8' }))
   }
 
@@ -35,6 +39,7 @@ async function main() {
   for (const month of months) {
     urls.push(urlEntry(`/netflix/${month.slug}`, { changefreq: 'monthly', priority: '0.9' }))
     for (const s of month.series) {
+      if (!seriesIsIndexable(s)) continue
       const slug = slugify(s.name, s.tmdbId)
       if (seenSeries.has(slug)) continue
       seenSeries.add(slug)

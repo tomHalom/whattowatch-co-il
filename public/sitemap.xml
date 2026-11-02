@@ -21,9 +21,9 @@
     <priority>0.1</priority>
   </url>
   <url>
-    <loc>https://whattowatch-co-il.vercel.app/providers/disney-plus</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://whattowatch-co-il.vercel.app/about</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://whattowatch-co-il.vercel.app/providers/netflix</loc>
@@ -196,11 +196,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://whattowatch-co-il.vercel.app/providers/netflix/series/the-amazing-digital-circus-261145</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://whattowatch-co-il.vercel.app/providers/netflix/series/ricky-gervais-alley-cats-300480</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -242,11 +237,6 @@
   </url>
   <url>
     <loc>https://whattowatch-co-il.vercel.app/providers/netflix/series/刃牙道-300054</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://whattowatch-co-il.vercel.app/providers/netflix/series/rosario-tijeras-74428</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
