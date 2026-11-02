@@ -1,0 +1,38 @@
+scripts/generateSitemap.mjs
+  s_02e82d86f8fef7::t_d3cd1b0fc4d4a4 41
+  s_02e82d86f8fef7::t_f13c3b5ebc3a9c 6
+  s_02e82d86f8fef7::t_5a10f6dd97bca6 27,29
+app/utils/seriesIndexable.ts
+  s_02e82d86f8fef7::t_5445c6bce414d0 1
+app/pages/providers/[provider]/index.vue
+  s_02e82d86f8fef7::t_af72b97e92b39f 76-79
+scripts/lib/seriesIndexable.mjs
+  s_02e82d86f8fef7::t_01a5bec6a3c76e 1-11
+app/pages/providers/[provider]/series/[slug].vue
+  s_02e82d86f8fef7::t_0853db7fb3e319 82,86-87
+  s_02e82d86f8fef7::t_ca6d4ca47dde3d 133
+  s_02e82d86f8fef7::t_56e63821887439 109-110,116-124
+  s_02e82d86f8fef7::t_800afb4fc70c7a 21-24
+  s_02e82d86f8fef7::t_b63e5d7b8784af 2-3
+  s_02e82d86f8fef7::t_42f03bf143bdd5 60-61
+  s_02e82d86f8fef7::t_3572a1fc06bf16 41-43,45,47-49,51
+  s_02e82d86f8fef7::t_8661c1a101d218 153-180
+tests/seriesIndexable.test.mjs
+  s_02e82d86f8fef7::t_efabb94e004932 1-25
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "1571feed0682b1cabc2da46ca6e07cd15e0001fb",
+  "prompts": {},
+  "sessions": {
+    "s_02e82d86f8fef7": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "4495003c-4f26-4430-a096-c2395e8e37ba",
+        "model": "grok-4.7"
+      },
+      "human_author": "toms <toms@spiralsolutions.com>"
+    }
+  }
+}
