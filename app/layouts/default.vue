@@ -13,6 +13,7 @@ const genres = [
   { slug: 'kids',        label: 'ילדים' },
   { slug: 'anime',       label: 'אנימה' },
   { slug: 'israeli',     label: '🇮🇱 ישראלי' },
+  { slug: 'halloween',   label: '🎃 האלווין' },
 ]
 </script>
 
@@ -81,7 +82,8 @@ const genres = [
                 v-for="g in genres"
                 :key="g.slug"
                 :to="`/netflix/genre/${g.slug}`"
-                class="block px-4 py-2 text-sm text-mist-grey hover:text-sunset-gold hover:bg-charcoal-line/40 first:rounded-t-lg last:rounded-b-lg transition-colors"
+                class="block px-4 py-2 text-sm hover:text-sunset-gold hover:bg-charcoal-line/40 first:rounded-t-lg last:rounded-b-lg transition-colors"
+                :class="g.slug === 'halloween' ? 'font-bold text-milk-parchment' : 'text-mist-grey'"
               >
                 {{ g.label }}
               </NuxtLink>
@@ -110,7 +112,8 @@ const genres = [
               v-for="g in genres"
               :key="g.slug"
               :to="`/netflix/genre/${g.slug}`"
-              class="text-xs text-mist-grey bg-charcoal-line rounded-full px-3 py-1"
+              class="rounded-full bg-charcoal-line px-3 py-1 text-xs"
+              :class="g.slug === 'halloween' ? 'font-bold text-milk-parchment' : 'text-mist-grey'"
               @click="mobileMenuOpen = false"
             >
               {{ g.label }}
@@ -140,6 +143,7 @@ const genres = [
                 :key="g.slug"
                 :to="`/netflix/genre/${g.slug}`"
                 class="link-quiet inline-flex min-h-6 items-center py-1 text-xs"
+                :class="g.slug === 'halloween' ? 'font-bold text-milk-parchment' : ''"
               >{{ g.label }}</NuxtLink>
             </div>
           </div>

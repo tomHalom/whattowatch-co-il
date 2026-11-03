@@ -85,6 +85,14 @@ const GENRE_META: Record<string, GenreMeta> = {
       'בודקים שהסדרה זמינה בנטפליקס, לא רק שהיא ישראלית. רשימת שמות בלי זמינות לא עוזרת בערב שבת.',
     ],
   },
+  halloween: {
+    label: 'האלווין', labelEn: 'Halloween', keywords: 'האלווין נטפליקס, סדרות אימה בנטפליקס, מה לראות בהאלווין',
+    description: 'עשר סדרות בנטפליקס לליל האלווין: רוחות, אימה וקומדיה שחורה, עם תקציר וטריילר.',
+    intro: [
+      'הלילה עבר, והמדף נשאר. עשר סדרות שאפשר לפתוח עכשיו בנטפליקס: חלקן מצמררות, חלקן מצחיקות בחושך, ואף אחת לא נבחרה רק כי יש בה דלעת.',
+      'אם אתם רגישים לאלימות, התחילו במלון הרוחות או בוונסדיי. סיפורו של אד גין יושב בסוף הרשימה בכוונה.',
+    ],
+  },
 }
 
 const FALLBACK_META: GenreMeta = {
@@ -115,11 +123,11 @@ const { data: allMonths } = await useAsyncData('genre-all-months-index', () =>
 )
 const validTmdbIds = computed(() => new Set((allMonths.value ?? []).flatMap((m) => m.series.map((s) => s.tmdbId))))
 
-const pageTitle = computed(() =>
-  genre === 'israeli'
-    ? 'סדרות ישראליות בנטפליקס — המדריך המלא'
-    : `סדרות ${meta.value.label} בנטפליקס — המומלצות ביותר`,
-)
+const pageTitle = computed(() => {
+  if (genre === 'israeli') return 'סדרות ישראליות בנטפליקס — המדריך המלא'
+  if (genre === 'halloween') return 'האלווין בנטפליקס — מה לשים בלילה'
+  return `סדרות ${meta.value.label} בנטפליקס — המומלצות ביותר`
+})
 
 useHead({
   title: pageTitle.value,
@@ -145,6 +153,26 @@ const faqItems = computed<Array<{ question: string; answer: string; link?: { to:
   const topLabel = top.value ? (top.value.nameHe || top.value.name) : null
   const count = series.value.length
 
+  if (genre === 'halloween') {
+    return [
+      {
+        question: 'מה לשים בנטפליקס בליל האלווין?',
+        answer: topLabel
+          ? `מתחילים ב"${topLabel}". אחר כך מלון הרוחות, אם רוצים לצחוק בחושך, או דברים מוזרים אם רוצים את הלילה הארוך.`
+          : 'ונסדיי, מלון הרוחות ודברים מוזרים מכסים את הלילה: גותי, מצחיק, ואז העיירה שלא נרדמת.',
+        link: topLink.value,
+      },
+      {
+        question: 'יש משהו שלא מפחיד מדי?',
+        answer: 'מלון הרוחות וונסדיי. הן בחושך, בלי להיות ערב שאי אפשר לישון אחריו. אד גין ומשאלות מוות כבר לא בצד הזה.',
+      },
+      {
+        question: 'כמה סדרות ברשימת האלווין?',
+        answer: `${count || 'עשר'} סדרות שזמינות בנטפליקס, לא רשימת אימה כללית מהאינטרנט.`,
+      },
+    ]
+  }
+
   if (genre === 'israeli') {
     return [
       {
@@ -156,7 +184,7 @@ const faqItems = computed<Array<{ question: string; answer: string; link?: { to:
       },
       {
         question: 'האם פאודה ושטיסל עדיין בנטפליקס?',
-        answer: 'שתיהן זמינות בנטפליקס נכון לעדכון האחרון של הרשימה שלנו — אימות אוטומטי מול נתוני נטפליקס האמיתיים, לא רק הנחה.',
+        answer: 'שתיהן זמינות בנטפליקס נכון לעדכון האחרון של הרשימה שלנו.',
       },
       {
         question: `כמה סדרות ישראליות מופיעות ברשימה שלנו?`,
@@ -164,7 +192,7 @@ const faqItems = computed<Array<{ question: string; answer: string; link?: { to:
       },
       {
         question: 'איך בוחרים אילו סדרות ישראליות להציג?',
-        answer: 'אנחנו מאמתים זמינות אמיתית בנטפליקס (לא רק שהסדרה ישראלית) ומדרגים לפי פופולריות — כך שלא תמצאו כאן סדרה שירדה מהשירות.',
+        answer: 'אנחנו בודקים שהסדרה באמת זמינה בנטפליקס, ואז בוחרים לפי מה ששווה את השעות. סדרה שירדה מהשירות לא נשארת ברשימה.',
       },
     ]
   }
@@ -218,6 +246,7 @@ const OTHER_GENRES = [
   { slug: 'kids',        label: 'ילדים' },
   { slug: 'anime',       label: 'אנימה' },
   { slug: 'israeli',     label: '🇮🇱 ישראלי' },
+  { slug: 'halloween',   label: '🎃 האלווין' },
 ]
 const otherGenres = computed(() => OTHER_GENRES.filter((g) => g.slug !== genre))
 
@@ -244,9 +273,13 @@ const watermarkUrl = computed(() => {
             { label: meta.label },
           ]"
         />
+        <p v-if="genre === 'halloween'" class="halloween-stamp mt-4"><span aria-hidden="true">🎃</span> האלווין</p>
         <h1 class="mt-4 font-display text-3xl font-black text-milk-parchment md:text-4xl">
           <template v-if="genre === 'israeli'">
             🇮🇱 סדרות ישראליות בנטפליקס — המדריך המלא
+          </template>
+          <template v-else-if="genre === 'halloween'">
+            האלווין בנטפליקס — מה לשים בלילה
           </template>
           <template v-else>
             סדרות {{ meta.label }} בנטפליקס — המומלצות ביותר
@@ -294,7 +327,10 @@ const watermarkUrl = computed(() => {
           v-for="g in otherGenres"
           :key="g.slug"
           :to="`/netflix/genre/${g.slug}`"
-          class="rounded-full border border-charcoal-line px-4 py-1.5 text-sm text-mist-grey hover:border-sunset-gold hover:text-sunset-gold transition-colors"
+          class="rounded-full border px-4 py-1.5 text-sm transition-colors"
+          :class="g.slug === 'halloween'
+            ? 'border-amber-ember font-bold text-milk-parchment hover:bg-amber-ember hover:text-charcoal-night'
+            : 'border-charcoal-line text-mist-grey hover:border-sunset-gold hover:text-sunset-gold'"
         >{{ g.label }}</NuxtLink>
       </div>
     </section>
@@ -302,6 +338,22 @@ const watermarkUrl = computed(() => {
 </template>
 
 <style scoped>
+.halloween-stamp {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.75rem;
+  background: #d64545;
+  color: #14131c;
+  font-weight: 800;
+  font-size: 0.85rem;
+  line-height: 1.2;
+  border-radius: 2px;
+  border-inline-start: 1.5px dashed rgba(20, 19, 28, 0.45);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.55);
+  transform: rotate(-2deg);
+  transform-origin: center;
+}
 .genre-watermark::before {
   content: "";
   position: absolute;

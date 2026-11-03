@@ -33,6 +33,7 @@ const genres = [
   { slug: 'kids',        label: 'ילדים',       icon: '🧒' },
   { slug: 'anime',       label: 'אנימה',       icon: '⚔️' },
   { slug: 'israeli',     label: 'ישראלי',      icon: '🇮🇱' },
+  { slug: 'halloween',   label: 'האלווין',     icon: '🎃' },
 ]
 
 useHead({
@@ -107,6 +108,13 @@ if (current.value) {
             class="inline-block rounded-full border border-charcoal-line px-6 py-2.5 text-sm text-mist-grey hover:border-sunset-gold hover:text-sunset-gold transition-colors"
           >
             🎭 חיפוש לפי ז'אנר
+          </NuxtLink>
+          <NuxtLink
+            to="/netflix/genre/halloween"
+            class="inline-flex items-center gap-1.5 rounded-full border border-amber-ember px-6 py-2.5 text-sm font-bold text-milk-parchment hover:bg-amber-ember hover:text-charcoal-night transition-colors"
+          >
+            <span aria-hidden="true">🎃</span>
+            האלווין
           </NuxtLink>
           <NuxtLink
             to="/netflix/genre/israeli"
@@ -200,9 +208,12 @@ if (current.value) {
           v-for="g in genres"
           :key="g.slug"
           :to="`/netflix/genre/${g.slug}`"
-          class="flex items-center gap-2 rounded-lg border border-charcoal-line bg-charcoal-deep px-4 py-2.5 text-sm text-mist-grey hover:border-sunset-gold hover:text-sunset-gold transition-all duration-200"
+          class="flex items-center gap-2 rounded-lg border bg-charcoal-deep px-4 py-2.5 text-sm transition-all duration-200"
+          :class="g.slug === 'halloween'
+            ? 'border-amber-ember font-bold text-milk-parchment hover:bg-amber-ember hover:text-charcoal-night'
+            : 'border-charcoal-line text-mist-grey hover:border-sunset-gold hover:text-sunset-gold'"
         >
-          <span>{{ g.icon }}</span>
+          <span aria-hidden="true">{{ g.icon }}</span>
           <span>{{ g.label }}</span>
         </NuxtLink>
       </div>
