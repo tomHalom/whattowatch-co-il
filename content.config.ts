@@ -15,6 +15,7 @@ const seriesEntry = z.object({
   genres: z.array(z.string()),
   firstAirDate: z.string().nullable().optional(),
   seasons: z.number().optional(),
+  newSeasonNumber: z.number().optional(),
   trailerYoutubeId: z.string().nullable(),
   editorReview: z.string().optional(),
 })
@@ -69,6 +70,20 @@ export default defineContentConfig({
     // נגזר מהרשימות החודשיות, כי לא כל ז'אנר בהכרח מופיע בטופ 10 של
     // חודש נתון (ולז'אנרים כמו "מתח"/"רומנטי" אין בכלל genre ID תואם
     // ב-TMDB ל-TV). ראה scripts/fetchGenreShowcases.mjs.
+    // מדפים שמתעדכנים עם המדריך החודשי: חדש על המדף, ועונות חדשות.
+    shelves: defineCollection({
+      type: 'data',
+      source: 'shelves/*.json',
+      schema: z.object({
+        slug: z.string(),
+        month: z.string(),
+        monthLabel: z.string(),
+        year: z.number(),
+        windowFrom: z.string(),
+        windowTo: z.string(),
+        series: z.array(seriesEntry),
+      }),
+    }),
     genreShowcases: defineCollection({
       type: 'data',
       source: 'genres/*.json',

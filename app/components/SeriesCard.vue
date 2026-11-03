@@ -43,8 +43,8 @@
         <span class="pill-star">★</span>
         <span class="pill-num">{{ voteAverage?.toFixed(1) }}</span>
       </div>
-      <span v-if="isNew === true" class="poster-new-badge" aria-hidden="true">
-        {{ $t('series.newThisMonth') }}
+      <span v-if="badge || isNew === true" class="poster-new-badge" aria-hidden="true">
+        {{ badge || $t('series.newThisMonth') }}
       </span>
     </div>
 
@@ -91,6 +91,7 @@ const props = defineProps<{
   trailerYoutubeId?: string | null
   editorReview?: string
   isNew?: boolean
+  badge?: string
 }>()
 
 defineEmits<{ openModal: [] }>()

@@ -11,6 +11,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://whattowatch-co-il.vercel.app/netflix/new</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://whattowatch-co-il.vercel.app/netflix/new-seasons</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://whattowatch-co-il.vercel.app/privacy</loc>
     <changefreq>yearly</changefreq>
     <priority>0.1</priority>

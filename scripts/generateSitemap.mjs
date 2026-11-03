@@ -20,6 +20,8 @@ async function main() {
   const urls = [
     urlEntry('/', { changefreq: 'daily', priority: '1.0' }),
     urlEntry('/netflix', { changefreq: 'weekly', priority: '0.8' }),
+    urlEntry('/netflix/new', { changefreq: 'monthly', priority: '0.8' }),
+    urlEntry('/netflix/new-seasons', { changefreq: 'monthly', priority: '0.8' }),
     urlEntry('/privacy', { changefreq: 'yearly', priority: '0.1' }),
     urlEntry('/terms', { changefreq: 'yearly', priority: '0.1' }),
     urlEntry('/about', { changefreq: 'yearly', priority: '0.4' }),

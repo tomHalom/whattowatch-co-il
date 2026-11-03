@@ -122,6 +122,18 @@ if (current.value) {
           >
             🇮🇱 סדרות ישראליות
           </NuxtLink>
+          <NuxtLink
+            to="/netflix/new"
+            class="inline-block rounded-full border border-sunset-gold px-6 py-2.5 text-sm font-bold text-sunset-gold hover:bg-sunset-gold hover:text-charcoal-night transition-colors"
+          >
+            חדש על המדף
+          </NuxtLink>
+          <NuxtLink
+            to="/netflix/new-seasons"
+            class="inline-block rounded-full border border-charcoal-line px-6 py-2.5 text-sm text-mist-grey hover:border-sunset-gold hover:text-sunset-gold transition-colors"
+          >
+            עונות חדשות
+          </NuxtLink>
         </div>
       </div>
     </section>

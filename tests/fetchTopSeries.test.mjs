@@ -10,6 +10,9 @@ import {
   candidateScore,
   selectBalancedTopTen,
   countAiredSeasons,
+  latestAiredSeason,
+  classifyShelfCandidate,
+  selectNewShelf,
   toneForScore,
 } from '../scripts/fetchTopSeries.mjs'
 
@@ -36,6 +39,33 @@ describe('monthly selection', () => {
       ],
     }
     expect(countAiredSeasons(details, today)).toBe(2)
+    expect(latestAiredSeason(details, '2026-10-14')?.season_number).toBe(2)
+  })
+
+  it('classifies a premiere as new, and a later season as a new season', () => {
+    const win = { gte: '2026-10-01', lte: '2026-10-31' }
+    expect(classifyShelfCandidate({ firstAirDate: '2026-10-09', seasonAirDate: '2026-10-09', seasonNumber: 1, ...win })).toBe('new')
+    expect(classifyShelfCandidate({ firstAirDate: '2024-03-07', seasonAirDate: '2026-10-03', seasonNumber: 2, ...win })).toBe('new-season')
+    expect(classifyShelfCandidate({ firstAirDate: '2022-01-01', seasonAirDate: '2026-08-01', seasonNumber: 4, ...win })).toBe(null)
+    expect(classifyShelfCandidate({ firstAirDate: null, seasonAirDate: '2026-10-03', seasonNumber: 1, ...win })).toBe(null)
+  })
+
+  it('keeps a high-buzz premiere on the new shelf when it has fewer than 20 ratings', () => {
+    const rated = Array.from({ length: 10 }, (_, i) => ({
+      id: i + 1,
+      vote_average: 7.5,
+      vote_count: 40,
+      popularity: 100 - i,
+    }))
+    const buzz = { id: 333533, vote_average: 7, vote_count: 11, popularity: 95 }
+    const quiet = { id: 50, vote_average: 8, vote_count: 5, popularity: 10 }
+    const disliked = { id: 51, vote_average: 4.2, vote_count: 6, popularity: 200 }
+    const picked = selectNewShelf([...rated, buzz, quiet, disliked], 10).map((item) => item.id)
+    expect(picked).toContain(333533)
+    expect(picked).not.toContain(10)
+    expect(picked).not.toContain(50)
+    expect(picked).not.toContain(51)
+    expect(picked[0]).toBe(1)
   })
 
   it('countAiredSeasons ignores announced seasons with a future air date', () => {
