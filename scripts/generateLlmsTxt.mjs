@@ -37,6 +37,8 @@ ${providerLinks}
 
 ## מידע נוסף
 
+- [חדש על המדף](${SITE_URL}/netflix/new): הסדרות החדשות שעלו לנטפליקס בחלון החודש.
+- [עונות חדשות](${SITE_URL}/netflix/new-seasons): סדרות שעונה חדשה שלהן עלתה בחלון החודש.
 - [מדיניות פרטיות](${SITE_URL}/privacy)
 - [תנאי שימוש](${SITE_URL}/terms)
 `

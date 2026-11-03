@@ -150,6 +150,8 @@ const genres = [
           <div>
             <p class="font-semibold text-milk-parchment/80 mb-2 text-xs uppercase tracking-wider">מידע</p>
             <div class="flex flex-col gap-2">
+              <NuxtLink to="/netflix/new" class="link-quiet inline-flex min-h-6 items-center text-xs">חדש על המדף</NuxtLink>
+              <NuxtLink to="/netflix/new-seasons" class="link-quiet inline-flex min-h-6 items-center text-xs">עונות חדשות</NuxtLink>
               <NuxtLink to="/about" class="link-quiet inline-flex min-h-6 items-center text-xs">{{ $t('footer.about') }}</NuxtLink>
               <NuxtLink to="/privacy" class="link-quiet inline-flex min-h-6 items-center text-xs">{{ $t('footer.privacy') }}</NuxtLink>
               <NuxtLink to="/terms" class="link-quiet inline-flex min-h-6 items-center text-xs">{{ $t('footer.terms') }}</NuxtLink>

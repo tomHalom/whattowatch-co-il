@@ -1,0 +1,186 @@
+{
+  "slug": "new",
+  "month": "2026-11",
+  "monthLabel": "נובמבר",
+  "year": 2026,
+  "windowFrom": "2026-09-17",
+  "windowTo": "2026-11-03",
+  "series": [
+    {
+      "rank": 1,
+      "tmdbId": 289517,
+      "name": "꿀알바",
+      "nameHe": "מלכודת דבש",
+      "overview": "בחור ששקוע בחובות לוקח עבודות זמניות ומשתלמות מסוכנות מסתורית – אבל המרדף שלו אחרי עוד כסף הופך לסיוט.",
+      "posterPath": "https://image.tmdb.org/t/p/w342/yyA9CI8BLNg6LtVRvmVxki4xiGb.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/cyH2fZUjIJjLmgpF3tgA5CSGz4L.jpg",
+      "voteAverage": 7.5,
+      "genres": [
+        "מסתורין"
+      ],
+      "firstAirDate": "2026-10-30",
+      "seasons": 1,
+      "trailerYoutubeId": "Sn2ZCxOxsN0",
+      "editorReview": "מלכודת דבש — מהתעלומות שבאמת משתלמות לפענוח בסוף, לא רק \"טוויסט בשביל טוויסט\"."
+    },
+    {
+      "rank": 2,
+      "tmdbId": 243555,
+      "name": "அக்கா",
+      "nameHe": "מטרוניות",
+      "overview": "בממלכה הנשלטת בידי נשים, המנהיגה באוואני ניצבת מול האיום הגדול ביותר על שלטונה: רודרה, מורדת חסרת רחמים שלוטשת עיניים אל אדמתה ומורשתה.",
+      "posterPath": "https://image.tmdb.org/t/p/w342/tdnHaR0vlKMQbjmaCs2V3LDmzSd.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/cVUKFfws4upCB4ytz5uGIONIiRc.jpg",
+      "voteAverage": 6.5,
+      "genres": [
+        "דרמה",
+        "פשע"
+      ],
+      "firstAirDate": "2026-10-30",
+      "seasons": 1,
+      "trailerYoutubeId": "NwJhml1_D54",
+      "editorReview": "מטרוניות — הכימיה בין הדמויות כאן היא הסיפור בעצמו."
+    },
+    {
+      "rank": 3,
+      "tmdbId": 285322,
+      "name": "Below",
+      "nameHe": "במעמקים",
+      "overview": "יצור ימי מסתורי מטיל אימה על עיירה קטנה בניופאונדלנד. דייג קשוח ומשפחתו נלחמים להגן על קהילתם המגובשת.",
+      "posterPath": "https://image.tmdb.org/t/p/w342/vgLqqhMUbljp585qPp1EFCyJtcz.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/cn0feYcDvVzVjUDoXa1O8sRgzz.jpg",
+      "voteAverage": 7.2,
+      "genres": [
+        "דרמה",
+        "מסתורין"
+      ],
+      "firstAirDate": "2026-10-08",
+      "seasons": 1,
+      "trailerYoutubeId": "U57CNxSgoss",
+      "editorReview": "במעמקים — יצור בים, עיירה קטנה, דייג ומשפחה. נשמע מוכר, עד שהמסך מחשיך ואין עם מי לדבר על מה שראינו."
+    },
+    {
+      "rank": 4,
+      "tmdbId": 289423,
+      "name": "나를 충전해줘",
+      "nameHe": "הטענה הדדית",
+      "overview": "יורש עשיר עם לב מלאכותי פוגש אישה עם אנרגיה מחשמלת, והעסקה שהם סוגרים ביניהם מאיצה את פעימות ליבו – ביותר ממובן אחד.",
+      "posterPath": "https://image.tmdb.org/t/p/w342/p5UJ0xS2NVmqtUfy9i0DMIJ1Lf3.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/cnb3SelfQKewpo0bw4HCNRHjwY4.jpg",
+      "voteAverage": 8.8,
+      "genres": [
+        "מדע בדיוני ופנטזיה",
+        "קומדיה",
+        "דרמה"
+      ],
+      "firstAirDate": "2026-10-09",
+      "seasons": 1,
+      "trailerYoutubeId": "z_D5uXaDsVU",
+      "editorReview": "הטענה הדדית — יורש עם לב מלאכותי ואישה שהאנרגיה שלה מאיצה לו את הדופק. נשמע כמו רעיון שאי אפשר להסביר, ובדיוק ככה ישבנו מולה בפה פעור."
+    },
+    {
+      "rank": 5,
+      "tmdbId": 299939,
+      "name": "Monster: The Lizzie Borden Story",
+      "nameHe": "מפלצת: הסיפור של ליזי בורדן",
+      "overview": "ליזי בורדן, הלכודה בבית אכזרי בתקופה הוויקטוריאנית, הורגת את הוריה בגרזן, והרצח העקוב מדם מזעזע את האומה כולה.",
+      "posterPath": "https://image.tmdb.org/t/p/w342/aiw7SkhqYjxsyIHZ9hu7GF4cRuQ.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/gaew60NXUxok3Vmls7gkAT7lYW0.jpg",
+      "voteAverage": 7.1,
+      "genres": [
+        "דרמה",
+        "פשע"
+      ],
+      "firstAirDate": "2026-09-17",
+      "seasons": 1,
+      "trailerYoutubeId": "gYTzF1vna40",
+      "editorReview": "מפלצת: הסיפור של ליזי בורדן — נשארנו ערים עד שלוש בגלל ליזי בורדן המשוגעת הזו. הופתענו מהחופש היצירתי שהם לקחו, אבל המשחק דווקא החזיק אותנו מרותקים."
+    },
+    {
+      "rank": 6,
+      "tmdbId": 258165,
+      "name": "East of Eden",
+      "nameHe": "קדמת עדן",
+      "overview": "בראשית המאה ה-20, אישה עצמאית ודעתנית גורמת לקרע בין שני אחים. כך מתחילה סאגה שתלווה את המשפחה במשך שני דורות.",
+      "posterPath": "https://image.tmdb.org/t/p/w342/onAK2jDjHmAEpe5LS9leK5WLytH.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/70RZX7kNjA0Qjn6HigB1oMvFJ8R.jpg",
+      "voteAverage": 8,
+      "genres": [
+        "דרמה"
+      ],
+      "firstAirDate": "2026-10-01",
+      "seasons": 1,
+      "trailerYoutubeId": "M9NWvGZViCg",
+      "editorReview": "קדמת עדן — אישה אחת פותחת קרע בין שני אחים, והמשפחה משלמת על זה שני דורות. לא דרמה שצועקת. היא נשארת אחרי שהמסך נכבה."
+    },
+    {
+      "rank": 7,
+      "tmdbId": 313699,
+      "name": "Balaraw",
+      "nameHe": "בלראו: אי הסכין",
+      "overview": "אישה שיוצאת לחפש את אימה הנעדרת מגיעה לאי אפוף מסתורין וסודות אפלים ונאלצת להילחם על חייה ועל זהותה.",
+      "posterPath": "https://image.tmdb.org/t/p/w342/s1A6UOu8IOmw0kJXohlitMRiwQb.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/dLFyQRJqL2zyP5wmRztUKVQV6Hw.jpg",
+      "voteAverage": 7.2,
+      "genres": [
+        "מסתורין",
+        "דרמה"
+      ],
+      "firstAirDate": "2026-10-29",
+      "seasons": 1,
+      "trailerYoutubeId": null,
+      "editorReview": "בלראו: אי הסכין — מהתעלומות שבאמת משתלמות לפענוח בסוף, לא רק \"טוויסט בשביל טוויסט\"."
+    },
+    {
+      "rank": 8,
+      "tmdbId": 321221,
+      "name": "Minimum Wage",
+      "nameHe": "שכר מינימום",
+      "overview": "בני נוער מנסים לנהל פיצרייה מקומית ולנווט בין הלימודים, הבוס המוטרף שלהם ושכר המינימום. סדרה שמבוססת על סרטונים קצרים ופופולריים מהרשתות החברתיות.",
+      "posterPath": "https://image.tmdb.org/t/p/w342/iTVhDUbzUFUJ18jrcYM4rw7qGk.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/tJSM9kwCWHXgoYbrfmJ2vwiizWq.jpg",
+      "voteAverage": 7.2,
+      "genres": [
+        "קומדיה"
+      ],
+      "firstAirDate": "2026-10-26",
+      "seasons": 1,
+      "trailerYoutubeId": "SO4CU9P8--8",
+      "editorReview": "שכר מינימום — התרופה המושלמת לערב שדורש כלום מלבד לצחוק."
+    },
+    {
+      "rank": 9,
+      "tmdbId": 275102,
+      "name": "스캔들",
+      "nameHe": "הסקנדל",
+      "overview": "הצעה סודית בג'וסון מציתה תשוקות חבויות בין אצילה מחוננת, מאהב מפורסם וגברת תמימה שנקלעה למשחק המסוכן שלהם.",
+      "posterPath": "https://image.tmdb.org/t/p/w342/dCnKX2MFFhAfMXWJketaRaPbUXe.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/uc1p1PEbEMpdIHqnU9TESNC6Jhp.jpg",
+      "voteAverage": 7.3,
+      "genres": [
+        "דרמה"
+      ],
+      "firstAirDate": "2026-09-18",
+      "seasons": 1,
+      "trailerYoutubeId": "FeISX5E1uJc",
+      "editorReview": "הסקנדל — הצעה סודית, אצילה, מאהב, וגברת תמימה במשחק מסוכן. תקופתי וצפוי בצורתו."
+    },
+    {
+      "rank": 10,
+      "tmdbId": 333533,
+      "name": "The One About Matthew Perry",
+      "nameHe": "העניין עם מת'יו פרי",
+      "overview": "סדרה תיעודית המסקרת את ההצלחה ההוליוודית של כוכב \"חברים\" מת'יו פרי, את פעילותו הציבורית ואת מותו הטרגי, כפי שמספרים מקורביו.",
+      "posterPath": "https://image.tmdb.org/t/p/w342/zDSjGvywwyWUqnMIpYYwFDyA7Az.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/3nJL65FgsUpmBEIMXc0kt0h5uay.jpg",
+      "voteAverage": 7,
+      "genres": [
+        "דוקומנטרי"
+      ],
+      "firstAirDate": "2026-10-27",
+      "seasons": 1,
+      "trailerYoutubeId": "_iM1AOFxoDI",
+      "editorReview": "העניין עם מת'יו פרי — עוד אחת שנכנסה לרשימה שלנו בלי שהתכוונו, ונשארה בה."
+    }
+  ]
+}

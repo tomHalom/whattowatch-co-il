@@ -159,6 +159,20 @@ if (latestMonth.value) {
       <section id="genres" class="mt-10">
         <h2 class="font-display text-xl font-bold text-milk-parchment">חפש לפי ז'אנר</h2>
         <div class="mt-4 flex flex-wrap gap-3">
+          <template v-if="providerSlug === 'netflix'">
+            <NuxtLink
+              to="/netflix/new"
+              class="flex items-center gap-2 rounded-lg border border-sunset-gold bg-charcoal-deep px-4 py-2.5 text-sm font-bold text-sunset-gold transition-all duration-200 hover:bg-sunset-gold hover:text-charcoal-night"
+            >
+              חדש על המדף
+            </NuxtLink>
+            <NuxtLink
+              to="/netflix/new-seasons"
+              class="flex items-center gap-2 rounded-lg border border-charcoal-line bg-charcoal-deep px-4 py-2.5 text-sm text-mist-grey transition-all duration-200 hover:border-sunset-gold hover:text-sunset-gold"
+            >
+              עונות חדשות
+            </NuxtLink>
+          </template>
           <NuxtLink
             v-for="g in GENRE_LINKS"
             :key="g.slug"

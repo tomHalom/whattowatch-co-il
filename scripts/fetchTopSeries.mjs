@@ -13,7 +13,7 @@
  * יעבדו תמיד. TODO: הגדר TMDB_READ_ACCESS_TOKEN (ראה .env.example).
  */
 import 'dotenv/config'
-import { readFileSync } from 'node:fs'
+import { readFileSync, readdirSync } from 'node:fs'
 import { mkdir, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import { stringify as toYaml } from 'yaml'
@@ -292,6 +292,42 @@ function countAiredSeasons(details, today = new Date()) {
   if (!seasons.length) return details?.number_of_seasons ?? undefined
   const aired = seasons.filter((s) => (s.episode_count ?? 0) > 0 && s.air_date && s.air_date <= todayIso)
   return aired.length || undefined
+}
+
+// העונה האחרונה שכבר שודרה. עונה 0 היא ספיישל, ועונה בלי תאריך או בלי
+// פרקים היא placeholder עתידי — שתיהן לא נספרות.
+function latestAiredSeason(details, throughIso) {
+  const seasons = (details?.seasons ?? [])
+    .filter((s) => s.season_number > 0 && (s.episode_count ?? 0) > 0 && s.air_date && s.air_date <= throughIso)
+    .sort((a, b) => a.air_date.localeCompare(b.air_date) || a.season_number - b.season_number)
+  return seasons.at(-1) ?? null
+}
+
+// 'new' = הפרק הראשון עלה בחלון. 'new-season' = עונה 2 ומעלה עלתה
+// בחלון, והסדרה עצמה ישנה יותר. פרק שבועי של עונה שכבר רצה לא נכנס.
+function classifyShelfCandidate({ firstAirDate, seasonAirDate, seasonNumber, gte, lte }) {
+  const inWindow = (day) => typeof day === 'string' && day >= gte && day <= lte
+  if (inWindow(firstAirDate)) return 'new'
+  if ((seasonNumber ?? 0) >= 2 && inWindow(seasonAirDate)) return 'new-season'
+  return null
+}
+
+// "חדש על המדף" מודד באז, לא ציון מבוסס. רצפת 20 המדרגים נשארת
+// לכותר שקט: כותר עם מעט מדרגים נכנס רק אם הפופולריות שלו גבוהה לפחות
+// כמו הכותר החלש בעשירייה שכבר עמדה ברף. ציון מתחת ל-6.5 לא נכנס
+// גם אם כולם מדברים עליו.
+function selectNewShelf(candidates, count = 10) {
+  const eligible = candidates.filter(
+    (item) => (item.vote_average ?? 0) >= 6.5 && !OVERRIDES.exclude.has(item.id),
+  )
+  const rated = eligible
+    .filter((item) => (item.vote_count ?? 0) >= 20)
+    .sort((a, b) => (b.popularity ?? 0) - (a.popularity ?? 0))
+  const floor = rated.length ? (rated[Math.min(count, rated.length) - 1].popularity ?? 0) : 0
+  return eligible
+    .filter((item) => (item.vote_count ?? 0) >= 20 || (item.popularity ?? 0) >= floor)
+    .sort((a, b) => (b.popularity ?? 0) - (a.popularity ?? 0) || (b.vote_count ?? 0) - (a.vote_count ?? 0))
+    .slice(0, count)
 }
 
 // הופך פריט גולמי מ-TMDB (discover/search) לצורת ה-series entry
@@ -652,6 +688,161 @@ async function generateMonth({ year, monthIndex } = {}) {
   return { slug, usingFallback, series }
 }
 
+const SHELF_SIZE = 10
+
+function dayBefore(iso) {
+  const d = new Date(`${iso}T00:00:00Z`)
+  d.setUTCDate(d.getUTCDate() - 1)
+  return isoDay(d)
+}
+
+// אותו חלון כמו המדריך החודשי: ב-1 לחודש כמעט אין שידורים, אז מרחיבים
+// אחורה עד שיש מספיק מועמדים.
+async function resolveShelfWindow(year, monthIndex) {
+  let win = monthWindow(year, monthIndex, 0)
+  for (let ext = 0; ext <= WINDOW_MAX_EXTENSIONS; ext++) {
+    win = monthWindow(year, monthIndex, ext)
+    const data = await tmdbGet('/discover/tv', {
+      ...MONTHLY_FILTERS,
+      'air_date.gte': win.gte,
+      'air_date.lte': win.lte,
+      sort_by: 'popularity.desc',
+      page: 1,
+    })
+    const count = (data.results ?? []).filter((c) => !OVERRIDES.exclude.has(c.id)).length
+    if (count >= 14) break
+  }
+  return win
+}
+
+async function discoverShelf(win, extra) {
+  const seen = new Map()
+  const params = { ...MONTHLY_FILTERS, ...extra.params, sort_by: 'popularity.desc' }
+  if (extra.dropVoteFloor) delete params['vote_count.gte']
+  for (let page = 1; page <= extra.pages; page++) {
+    const data = await tmdbGet('/discover/tv', {
+      ...params,
+      page,
+    })
+    for (const item of data.results ?? []) seen.set(item.id, item)
+    if (page >= (data.total_pages ?? 1)) break
+  }
+  return [...seen.values()]
+    .filter((c) => !OVERRIDES.exclude.has(c.id))
+    .sort((a, b) => candidateScore(b) - candidateScore(a))
+}
+
+function knownSeriesById() {
+  const dir = path.join(ROOT, 'public', 'data', 'netflix')
+  let files = []
+  try {
+    files = readdirSync(dir).filter((f) => f.endsWith('.json')).sort()
+  } catch {
+    return new Map()
+  }
+  const map = new Map()
+  for (const file of files) {
+    const data = JSON.parse(readFileSync(path.join(dir, file), 'utf-8'))
+    for (const series of data.series ?? []) {
+      if (series?.tmdbId) map.set(series.tmdbId, series)
+    }
+  }
+  return map
+}
+
+// ביקורת שכבר נכתבה לסדרה הזו במדריך חודשי נשארת. מדף חדש לא מחליף אותה
+// בתבנית.
+function keepKnownReview(entry, known) {
+  const prev = known.get(entry.tmdbId)
+  if (prev?.editorReview) entry.editorReview = prev.editorReview
+  if (prev?.nameHe && !entry.nameHe) entry.nameHe = prev.nameHe
+  return entry
+}
+
+async function writeShelf({ slug, month, monthLabel, year, windowFrom, windowTo, series }) {
+  const dir = path.join(ROOT, 'content', 'shelves')
+  await mkdir(dir, { recursive: true })
+  await writeFile(
+    path.join(dir, `${slug}.json`),
+    JSON.stringify({ slug, month, monthLabel, year, windowFrom, windowTo, series }, null, 2),
+    'utf-8',
+  )
+  console.log(`[fetchShelves] נוצר content/shelves/${slug}.json (${series.length} סדרות, ${month})`)
+}
+
+// שני מדפים שמתעדכנים עם המדריך החודשי:
+//   new          — סדרות שהפרק הראשון שלהן עלה בחלון.
+//   new-seasons  — סדרות ישנות שעונה חדשה (2+) שלהן עלתה בחלון.
+// בלי טוקן TMDB לא דורסים קובץ קיים.
+async function generateShelves({ year, monthIndex, only } = {}) {
+  if (!HAS_TMDB_AUTH) {
+    console.warn('[fetchShelves] אין TMDB_READ_ACCESS_TOKEN — המדפים לא עודכנו.')
+    return []
+  }
+
+  const now = new Date()
+  const y = year ?? now.getFullYear()
+  const m = monthIndex ?? now.getMonth()
+  const monthLabel = HEBREW_MONTHS[m]
+  const month = `${y}-${String(m + 1).padStart(2, '0')}`
+  const win = await resolveShelfWindow(y, m)
+  console.log(`[fetchShelves] חלון ${month}: ${win.gte}..${win.lte}`)
+
+  const known = knownSeriesById()
+  let newSeries = []
+  if (only !== 'new-seasons') {
+    const premieres = await discoverShelf(win, {
+      pages: 3,
+      dropVoteFloor: true,
+      params: { 'first_air_date.gte': win.gte, 'first_air_date.lte': win.lte },
+    })
+    newSeries = await Promise.all(
+      selectNewShelf(premieres, SHELF_SIZE).map(async (item, index) =>
+        keepKnownReview(await buildSeriesEntryFromTmdbItem(item, index + 1), known),
+      ),
+    )
+    await writeShelf({ slug: 'new', month, monthLabel, year: y, windowFrom: win.gte, windowTo: win.lte, series: newSeries })
+  }
+
+  let newSeasons = []
+  if (only !== 'new') {
+    const airing = await discoverShelf(win, {
+      pages: 6,
+      params: {
+        'air_date.gte': win.gte,
+        'air_date.lte': win.lte,
+        'first_air_date.lte': dayBefore(win.gte),
+      },
+    })
+    const returning = []
+    for (const item of airing) {
+      if (returning.length >= SHELF_SIZE) break
+      const details = await fetchSeriesDetails(item.id).catch(() => null)
+      const season = latestAiredSeason(details, win.lte)
+      const kind = classifyShelfCandidate({
+        firstAirDate: item.first_air_date,
+        seasonAirDate: season?.air_date,
+        seasonNumber: season?.season_number,
+        gte: win.gte,
+        lte: win.lte,
+      })
+      if (kind !== 'new-season') continue
+      returning.push({ item, seasonNumber: season.season_number })
+    }
+    for (let i = 0; i < returning.length; i++) {
+      const entry = keepKnownReview(await buildSeriesEntryFromTmdbItem(returning[i].item, i + 1), known)
+      entry.newSeasonNumber = returning[i].seasonNumber
+      newSeasons.push(entry)
+    }
+
+    await writeShelf({ slug: 'new-seasons', month, monthLabel, year: y, windowFrom: win.gte, windowTo: win.lte, series: newSeasons })
+  }
+  return [
+    { slug: 'new', count: newSeries.length },
+    { slug: 'new-seasons', count: newSeasons.length },
+  ]
+}
+
 // ─── תצוגות ז'אנר (content/genres/{slug}.json) ───────────────────────
 // לא כל ז'אנר קיים כ-genre ID אמיתי ב-TMDB ל-TV (אין "Thriller"/
 // "Romance" נפרדים!), ולא כל ז'אנר בהכרח הופיע בטופ 10 של חודש נתון
@@ -820,6 +1011,7 @@ async function generateAllGenreShowcases() {
 
 async function main() {
   await generateMonth()
+  await generateShelves()
 }
 
 export {
@@ -834,6 +1026,10 @@ export {
   candidateScore,
   selectBalancedTopTen,
   countAiredSeasons,
+  latestAiredSeason,
+  classifyShelfCandidate,
+  selectNewShelf,
+  generateShelves,
   toneForScore,
   generateGenreShowcase,
   generateAllGenreShowcases,

@@ -32,5 +32,7 @@
 
 ## מידע נוסף
 
+- [חדש על המדף](https://whattowatch-co-il.vercel.app/netflix/new): הסדרות החדשות שעלו לנטפליקס בחלון החודש.
+- [עונות חדשות](https://whattowatch-co-il.vercel.app/netflix/new-seasons): סדרות שעונה חדשה שלהן עלתה בחלון החודש.
 - [מדיניות פרטיות](https://whattowatch-co-il.vercel.app/privacy)
 - [תנאי שימוש](https://whattowatch-co-il.vercel.app/terms)

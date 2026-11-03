@@ -1,0 +1,203 @@
+{
+  "slug": "new-seasons",
+  "month": "2026-11",
+  "monthLabel": "נובמבר",
+  "year": 2026,
+  "series": [
+    {
+      "rank": 1,
+      "tmdbId": 96677,
+      "name": "Lupin",
+      "nameHe": "לופן",
+      "overview": "הגנב הג'נטלמני אסאן דיופ שואב השראה מהרפתקאותיו של ארסן לופן, ויוצא להתנקם במשפחה העשירה שאחראית למות אביו.",
+      "posterPath": "https://image.tmdb.org/t/p/w342/yeDvmW387pW0Z0r4PZW6rkKHwXx.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/aY7zv2pfk9H0QxaaL3PBjvalbKQ.jpg",
+      "voteAverage": 7.7,
+      "genres": [
+        "פשע",
+        "דרמה",
+        "מסתורין"
+      ],
+      "firstAirDate": "2021-01-08",
+      "seasons": 3,
+      "trailerYoutubeId": "ga0iTWXCGa0",
+      "editorReview": "לופן — חשבנו שננחש את הגניבה הבאה. אסאן, ששואב מארסן לופן ויוצא אחרי המשפחה שלקחה לו את האב, סגר לנו את הפה בכל פעם.",
+      "newSeasonNumber": 3
+    },
+    {
+      "rank": 2,
+      "tmdbId": 105248,
+      "name": "Cyberpunk: Edgerunners",
+      "overview": "במציאות דיסטופית עתירת שחיתות ושתלים קיברנטיים, ילד רחוב מוכשר אך פרוע שואף להפוך לשכיר חרב פורע חוק – אדג'ראנר.",
+      "posterPath": "https://image.tmdb.org/t/p/w342/loTADcLLX6Ls3TU3tWb4Y3VcYNE.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/bknKZO7DWVYKeByuJMnGI46PFZg.jpg",
+      "voteAverage": 8.5,
+      "genres": [
+        "אנימציה",
+        "אקשן והרפתקאות",
+        "מדע בדיוני ופנטזיה",
+        "פשע"
+      ],
+      "firstAirDate": "2022-09-13",
+      "seasons": 2,
+      "trailerYoutubeId": "JtqIas3bYhg",
+      "editorReview": "Cyberpunk: Edgerunners — ילד רחוב, שתלים, ורצון להיות אדג'ראנר. צפינו עד שהשחר עלה. הוויזואליה והכאב לא דומים לשום דבר אחר שראינו השנה.",
+      "newSeasonNumber": 2
+    },
+    {
+      "rank": 3,
+      "tmdbId": 203857,
+      "name": "The Diplomat",
+      "nameHe": "הדיפלומטית",
+      "overview": "בעיצומו של משבר בינלאומי, דיפלומטית אמריקאית מנסה לתמרן בין תפקידה החשוב כשגרירת ארה\"ב בבריטניה לבין נישואיה הטעונים לכוכב פוליטי.",
+      "posterPath": "https://image.tmdb.org/t/p/w342/eaBSRVOJ99keuhYBYN2I2NMwX40.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/hzznrBI07C2chXivlLYvEmQESP7.jpg",
+      "voteAverage": 7.7,
+      "genres": [
+        "דרמה",
+        "מלחמה ופוליטיקה"
+      ],
+      "firstAirDate": "2023-04-20",
+      "seasons": 4,
+      "trailerYoutubeId": "lV6sJlBbhPs",
+      "editorReview": "הדיפלומטית — משבר בינלאומי ונישואים שמתפרקים באותו חדר. לא ציפינו שדיפלומטיה תשאיר אותנו ערים. נשארנו.",
+      "newSeasonNumber": 4
+    },
+    {
+      "rank": 4,
+      "tmdbId": 250923,
+      "name": "Nobody Wants This",
+      "nameHe": "רק לא זה",
+      "overview": "מנחת פודקאסט אתאיסטית ורב שבדיוק נפרד מבת זוגו מתאהבים. האם הקשר ביניהם יחזיק מעמד למרות הפערים הרבים ביניהם והמשפחות שלהם, שלא מפסיקות לדחוף את האף?",
+      "posterPath": "https://image.tmdb.org/t/p/w342/52gLcnMhp7KDd1GLHsxcKgeaavZ.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/77sozyYenyY1JraK6YzLfDlTMpp.jpg",
+      "voteAverage": 7.3,
+      "genres": [
+        "קומדיה",
+        "דרמה"
+      ],
+      "firstAirDate": "2024-09-26",
+      "seasons": 3,
+      "trailerYoutubeId": "Xn2PsXD8m4A",
+      "editorReview": "רק לא זה — מנחת פודקאסט ורב שנפרד, והמשפחות לא מפסיקות לדחוף אף. צחקנו בשלוש בלילה, ואז שתקנו, כי הפערים ביניהם לא בדיחה.",
+      "newSeasonNumber": 3
+    },
+    {
+      "rank": 5,
+      "tmdbId": 255752,
+      "name": "Haunted Hotel",
+      "nameHe": "מלון הרוחות",
+      "overview": "אם יחידנית שירשה מלון מאחיה המנוח עוברת אליו וחיה לצד רוח הרפאים טובת המזג שלו – ועוד אורחים תובעניים שלא יעזבו אף פעם.",
+      "posterPath": "https://image.tmdb.org/t/p/w342/yNSEsEhLbqAoivJAyzovwZbh1qe.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/lqsufP0yMhQ04SZx3ZlXTay4whw.jpg",
+      "voteAverage": 8.2,
+      "genres": [
+        "אנימציה",
+        "קומדיה",
+        "מדע בדיוני ופנטזיה",
+        "אקשן והרפתקאות"
+      ],
+      "firstAirDate": "2025-09-19",
+      "seasons": 2,
+      "trailerYoutubeId": "UxEza8wLcS0",
+      "editorReview": "מלון הרוחות — אמא יחידנית, אח שהוא רוח, ואורחים שלא יעזבו. חשבנו שזו קומדיה קלה. המלון הזה לא שחרר אותנו.",
+      "newSeasonNumber": 2
+    },
+    {
+      "rank": 6,
+      "tmdbId": 224263,
+      "name": "Stranger Things: Tales from '85",
+      "nameHe": "דברים מוזרים: סיפורים מ-1985",
+      "overview": "חורף. הוקינס. 1985. ברוכים השבים לעיירה שורצת סודות, שבה הגיבורים האהובים מתמודדים עם תעלומות חדשות – ועם זן חדש של מוזרוּת.",
+      "posterPath": "https://image.tmdb.org/t/p/w342/tppSZQueDvgJ7AiDOuVTlHD8bDR.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/ulBGaxq9GmJexyEOi4Xci74g6Vt.jpg",
+      "voteAverage": 7.6,
+      "genres": [
+        "אנימציה",
+        "מדע בדיוני ופנטזיה",
+        "מסתורין",
+        "אקשן והרפתקאות"
+      ],
+      "firstAirDate": "2026-04-23",
+      "seasons": 2,
+      "trailerYoutubeId": "kajCUhg36R0",
+      "editorReview": "דברים מוזרים: סיפורים מ-1985 — חזרה להוקינס בחורף, עם מוזרות חדשה. טוב למי שכבר בפנים. פחות מכה למי שמגיע קר.",
+      "newSeasonNumber": 2
+    },
+    {
+      "rank": 7,
+      "tmdbId": 92408,
+      "name": "深夜食堂: Tokyo Stories",
+      "nameHe": "מסעדת חצות: סיפורי טוקיו",
+      "overview": "לקוחות של מסעדה יפנית רגילה לכל הדעות יוצרים קשרים פשוטים אך עמוקים זה עם זה על בסיס חיבתם המשותפת למנה מסוימת.",
+      "posterPath": "https://image.tmdb.org/t/p/w342/90vOo0UYXCMFpFNp6OEO6J583x.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/ok21yy5ftfRDtP0d5c6CXKQTTVy.jpg",
+      "voteAverage": 7.9,
+      "genres": [
+        "דרמה"
+      ],
+      "firstAirDate": "2016-10-21",
+      "seasons": 3,
+      "trailerYoutubeId": "OCGDVHjPX0c",
+      "editorReview": "מסעדת חצות: סיפורי טוקיו — מהדרמות שגורמות לשלוח הודעה לחבר בשעה מוזרה רק כדי לדבר עליה.",
+      "newSeasonNumber": 3
+    },
+    {
+      "rank": 8,
+      "tmdbId": 284792,
+      "name": "Medusa",
+      "nameHe": "מדוזה",
+      "overview": "מישהו רוצה להרוג את המנכ\"לית ברברה הידאלגו. האם היא תצליח למצוא אותו על רקע המזימות של בני משפחתה – שנלחמים באכזריות על השליטה באימפריה העסקית שלהם בקולומביה?",
+      "posterPath": "https://image.tmdb.org/t/p/w342/mFsjwJdNBKDRYLqPdBFaoVCKXLq.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/gm7OMY4t99UpiMpIShNOKvKLQwO.jpg",
+      "voteAverage": 7.4,
+      "genres": [
+        "דרמה"
+      ],
+      "firstAirDate": "2025-03-05",
+      "seasons": 2,
+      "trailerYoutubeId": null,
+      "editorReview": "מדוזה — לא ממהרת לשום מקום, ודווקא זו הסיבה שקשה לעזוב אותה.",
+      "newSeasonNumber": 2
+    },
+    {
+      "rank": 9,
+      "tmdbId": 252747,
+      "name": "Matki Pingwinów",
+      "nameHe": "אימהות של פינגווינים",
+      "overview": "לוחמת MMA שבנה בן השבע עובר לבית ספר חדש מגלה שהקרב הקשה מכולם לא צפוי לה בזירה, אלא בהורות.",
+      "posterPath": "https://image.tmdb.org/t/p/w342/jyKdKPeNYu4uV9mhd8Yyjb0yOan.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/aGbsulAQ4pHf2ErFKXvr01KWqYP.jpg",
+      "voteAverage": 7.2,
+      "genres": [
+        "דרמה",
+        "קומדיה"
+      ],
+      "firstAirDate": "2024-11-13",
+      "seasons": 2,
+      "trailerYoutubeId": null,
+      "editorReview": "אימהות של פינגווינים — מהסוג שממשיכה איתך גם למחרת בבוקר, בין כוס קפה לכוס קפה.",
+      "newSeasonNumber": 2
+    },
+    {
+      "rank": 10,
+      "tmdbId": 255650,
+      "name": "Maschi veri",
+      "nameHe": "גברים אמיתיים",
+      "overview": "ארבעה חברים ותיקים – מאסימו, מטיה, לואיג'י וריקרדו – מנסים לתמרן בין קשרים, קריירות ודייטינג בעולם מודרני שלא עושה לגברים חיים קלים.",
+      "posterPath": "https://image.tmdb.org/t/p/w342/4exzw8qEqw7kYXjPdeXrTp1Emz1.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/y70oo98ILJfDP5SStaaByel7qnc.jpg",
+      "voteAverage": 6.6,
+      "genres": [
+        "קומדיה"
+      ],
+      "firstAirDate": "2025-05-21",
+      "seasons": 2,
+      "trailerYoutubeId": "-YEzdvgDeJY",
+      "editorReview": "גברים אמיתיים — ארבעה חברים בין קריירה לדייטינג בעולם שלא מקל עליהם. שיחה של ערב, לא לילה לבן.",
+      "newSeasonNumber": 2
+    }
+  ],
+  "windowFrom": "2026-09-17",
+  "windowTo": "2026-11-03"
+}
