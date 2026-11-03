@@ -1,0 +1,167 @@
+scripts/fetchTopSeries.mjs
+  s_02e82d86f8fef7::t_72f1f742c3b310 690-704
+  s_02e82d86f8fef7::t_88f9db1b80e1cf 155-161
+  s_02e82d86f8fef7::t_2e7d4b333c2e25 169
+public/data/netflix/2026-10.json
+  s_02e82d86f8fef7::t_a7113fc3487a40 28,47,65,82,99,117,137,155,173,190
+content/netflix/2026-09.he.md
+  s_02e82d86f8fef7::t_a7113fc3487a40 30,51,66,82,98,113,131,148,163,179
+public/data/netflix/2026-04.json
+  s_02e82d86f8fef7::t_a7113fc3487a40 28,46,66,84,102,122,139,157,177,194
+app/pages/netflix/genre/[genre].vue
+  s_02e82d86f8fef7::t_6f9dff62df6245 156-175
+  s_02e82d86f8fef7::t_802e73ac72c214 187
+  s_02e82d86f8fef7::t_48e4baaec239ac 341-343,345-347,349-356
+  s_02e82d86f8fef7::t_67e7633b2d8546 195
+  s_02e82d86f8fef7::t_4e125b23371602 281-282
+  s_02e82d86f8fef7::t_e1688beb5d00d3 88-95
+  s_02e82d86f8fef7::t_00351596316adb 249
+  s_02e82d86f8fef7::t_587989de204e0e 276
+  s_02e82d86f8fef7::t_eb8435096b933c 330-333
+  s_02e82d86f8fef7::t_4f6010c1f078cd 344,348
+  s_02e82d86f8fef7::t_a5f0260dca2c3b 126-130
+  s_02e82d86f8fef7::t_da25b1a5756592 283
+content/genres/kids.json
+  s_02e82d86f8fef7::t_a7113fc3487a40 20,40,59,79,100,121,140,160,181,201
+content/genres/israeli.json
+  s_02e82d86f8fef7::t_a7113fc3487a40 20,36,52,69,86,102,119,137,155,171
+.claude/skills/binge-editor/SKILL.md
+  s_02e82d86f8fef7::t_7a6e8927528235 1-24,26
+  s_02e82d86f8fef7::t_3464b04d6fa43e 25
+content/genres/anime.json
+  s_02e82d86f8fef7::t_a7113fc3487a40 39,59,79,98,118,137,156,175,194
+  s_02e82d86f8fef7::t_5d710e4efb28a4 21
+content/netflix/2025-09.he.md
+  s_02e82d86f8fef7::t_a7113fc3487a40 30,45,62,78,110,126,142,158,172
+content/genres/thriller.json
+  s_02e82d86f8fef7::t_1ffbeb8f11ef3a 115
+  s_02e82d86f8fef7::t_a7113fc3487a40 21,40,58,96,133,152,171,190
+  s_02e82d86f8fef7::t_2516c7452401d8 77
+content/netflix/2026-04.he.md
+  s_02e82d86f8fef7::t_a7113fc3487a40 30,46,65,81,97,115,130,146,164,180
+content/genres/comedy.json
+  s_02e82d86f8fef7::t_a7113fc3487a40 21,40,58,78,96,115,134,153,170,189
+content/netflix/2026-08.he.md
+  s_02e82d86f8fef7::t_a7113fc3487a40 29,45,60,76,109,126,141,155,172
+public/data/netflix/2025-10.json
+  s_02e82d86f8fef7::t_a7113fc3487a40 28,47,65,83,100,117,135,154,173,191
+public/data/netflix/2026-03.json
+  s_02e82d86f8fef7::t_a7113fc3487a40 28,46,63,83,120,139,158,177,196
+public/data/netflix/2026-05.json
+  s_02e82d86f8fef7::t_a7113fc3487a40 29,48,67,85,105,122,139,158,177,195
+public/sitemap.xml
+  s_02e82d86f8fef7::t_d586b791912ffa 79-82
+  s_02e82d86f8fef7::t_282e5079b5e755 78
+content/netflix/2026-02.he.md
+  s_02e82d86f8fef7::t_a7113fc3487a40 27,43,60,76,93,109,125,142,159,177
+content/netflix/2026-06.he.md
+  s_02e82d86f8fef7::t_a7113fc3487a40 30,48,67,84,116,132,161,179
+content/genres/documentary.json
+  s_02e82d86f8fef7::t_a7113fc3487a40 21,38,56,74,92,110,128,145,164,181
+public/data/netflix/2026-09.json
+  s_02e82d86f8fef7::t_a7113fc3487a40 28,47,64,82,100,117,137,156,174,192
+content/genres/romance.json
+  s_02e82d86f8fef7::t_0c7bcb503c6e46 145
+  s_02e82d86f8fef7::t_a7113fc3487a40 19,37,54,72,90,109,127,162
+public/data/netflix/2026-02.json
+  s_02e82d86f8fef7::t_a7113fc3487a40 26,44,63,81,100,118,136,154,173,192
+public/data/netflix/2026-07.json
+  s_02e82d86f8fef7::t_a7113fc3487a40 29,48,86,104,140,159,179,197
+content/genres/drama.json
+  s_02e82d86f8fef7::t_1aad75e1f09fd8 113
+  s_02e82d86f8fef7::t_a7113fc3487a40 21,40,59,76,94,132,169,186
+  s_02e82d86f8fef7::t_a606a8c2fab2d2 150
+public/data/netflix/2025-12.json
+  s_02e82d86f8fef7::t_a7113fc3487a40 28,46,85,102,120,138,156,175,193
+public/data/netflix/2026-11.json
+  s_02e82d86f8fef7::t_b56f1671b1848d 139
+  s_02e82d86f8fef7::t_b3704af94fa6c6 195
+  s_02e82d86f8fef7::t_0e077ed1fa8d8c 121
+  s_02e82d86f8fef7::t_6b2d805daaf5e5 157
+  s_02e82d86f8fef7::t_646889a24175b8 29
+  s_02e82d86f8fef7::t_ea68c8f7aecf74 104
+  s_02e82d86f8fef7::t_497883f2ff6918 85
+  s_02e82d86f8fef7::t_95e2f10feb2441 177
+  s_02e82d86f8fef7::t_970085b5e07823 67
+  s_02e82d86f8fef7::t_d16a98a77c23c7 48
+content/netflix/2025-12.he.md
+  s_02e82d86f8fef7::t_a7113fc3487a40 30,46,80,95,111,127,143,160,176
+content/netflix/2026-01.he.md
+  s_02e82d86f8fef7::t_a7113fc3487a40 30,44,60,94,110,125,142,158,175
+.claude/agents/binge-editor.md
+  s_02e82d86f8fef7::t_5e99b60ef87aac 13
+  s_02e82d86f8fef7::t_a0faf8aa7316ea 1-12,14-23
+public/data/netflix/2025-09.json
+  s_02e82d86f8fef7::t_a7113fc3487a40 28,45,64,82,119,137,155,173,189
+public/data/netflix/2025-11.json
+  s_02e82d86f8fef7::t_a7113fc3487a40 28,48,66,85,103,121,139,156,175,192
+public/data/netflix/2026-01.json
+  s_02e82d86f8fef7::t_a7113fc3487a40 28,45,63,101,119,136,155,173,192
+content/netflix/2026-10.he.md
+  s_02e82d86f8fef7::t_a7113fc3487a40 30,51,67,82,97,113,131,146,162,177
+content/genres/halloween.json
+  s_02e82d86f8fef7::t_a7bfbd0eddbc3d 1-192
+app/pages/index.vue
+  s_02e82d86f8fef7::t_26c445dc9e0d54 36
+  s_02e82d86f8fef7::t_8eca18ea5c9e8d 114,116
+  s_02e82d86f8fef7::t_536a7565680678 211-214,216
+  s_02e82d86f8fef7::t_d99eecc9cd1a4a 113,115,117-118
+  s_02e82d86f8fef7::t_53e1f643ba19f5 112
+app/pages/providers/[provider]/index.vue
+  s_02e82d86f8fef7::t_0032980ee532a6 37
+  s_02e82d86f8fef7::t_bc280b512e7a32 166-169,171
+content/netflix/2026-03.he.md
+  s_02e82d86f8fef7::t_a7113fc3487a40 34,53,68,86,124,141,159,177,194
+app/layouts/default.vue
+  s_02e82d86f8fef7::t_0a6681b335cd5a 115-116
+  s_02e82d86f8fef7::t_9b888f0a4b03dc 146
+  s_02e82d86f8fef7::t_a575549176bc3e 16
+  s_02e82d86f8fef7::t_5a75d3c44c911f 85-86
+content/netflix/2025-08.he.md
+  s_02e82d86f8fef7::t_a7113fc3487a40 30,62,81,97,113,130,147,162,179
+content/netflix/2025-10.he.md
+  s_02e82d86f8fef7::t_a7113fc3487a40 30,47,63,79,94,109,126,143,160,176
+content/netflix/2025-11.he.md
+  s_02e82d86f8fef7::t_a7113fc3487a40 30,48,64,81,97,113,129,144,161,176
+content/netflix/2026-07.he.md
+  s_02e82d86f8fef7::t_a7113fc3487a40 32,49,82,98,129,147,165,181
+content/netflix/2026-11.he.md
+  s_02e82d86f8fef7::t_d15a087a79e67e 182
+  s_02e82d86f8fef7::t_34819064015ab4 116
+  s_02e82d86f8fef7::t_539f07729a9933 84
+  s_02e82d86f8fef7::t_3bd1faecdd47fe 101
+  s_02e82d86f8fef7::t_90081350028ff2 68
+  s_02e82d86f8fef7::t_9ddab23ed9698d 34
+  s_02e82d86f8fef7::t_a40cf440096814 149
+  s_02e82d86f8fef7::t_7a8e9259b4c475 51
+  s_02e82d86f8fef7::t_04dd3281a44e23 133
+  s_02e82d86f8fef7::t_2cc75869791610 167
+content/genres/action.json
+  s_02e82d86f8fef7::t_49eedb27506e7d 78
+  s_02e82d86f8fef7::t_a7113fc3487a40 21,59,97,116,135,153,172,191
+  s_02e82d86f8fef7::t_593a3aec95e3c5 40
+public/data/netflix/2025-08.json
+  s_02e82d86f8fef7::t_a7113fc3487a40 28,65,84,102,120,139,158,175,193
+content/netflix/2026-05.he.md
+  s_02e82d86f8fef7::t_a7113fc3487a40 32,49,67,83,101,116,131,148,165,182
+public/data/netflix/2026-06.json
+  s_02e82d86f8fef7::t_a7113fc3487a40 28,48,68,87,124,142,176,195
+public/data/netflix/2026-08.json
+  s_02e82d86f8fef7::t_a7113fc3487a40 27,45,62,80,118,137,154,170,189
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "0123c96039715ef634a6c5ae01a5d90c20a3c1b2",
+  "prompts": {},
+  "sessions": {
+    "s_02e82d86f8fef7": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "4495003c-4f26-4430-a096-c2395e8e37ba",
+        "model": "grok-4.7"
+      },
+      "human_author": "toms <toms@spiralsolutions.com>"
+    }
+  }
+}
