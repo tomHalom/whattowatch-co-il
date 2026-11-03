@@ -76,6 +76,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://whattowatch-co-il.vercel.app/netflix/genre/halloween</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://whattowatch-co-il.vercel.app/netflix/2026-11</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>

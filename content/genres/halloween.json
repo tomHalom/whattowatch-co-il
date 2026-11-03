@@ -1,0 +1,192 @@
+{
+  "slug": "halloween",
+  "series": [
+    {
+      "rank": 1,
+      "tmdbId": 119051,
+      "name": "Wednesday",
+      "nameHe": "ונסדיי",
+      "overview": "ונסדיי אדמס היא ילדה חכמה, סרקסטית וקצת מתה מבפנים, שחוקרת תעלומות סבוכות ומתוודעת אל חברים ואויבים חדשים באקדמיית נוורמור.",
+      "posterPath": "https://image.tmdb.org/t/p/w342/8oxQRPhAxaoV8ovzGGfB7VpzfCn.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/iHSwvRVsRyxpX7FE7GbviaDvgGZ.jpg",
+      "voteAverage": 8.3,
+      "genres": [
+        "מדע בדיוני ופנטזיה",
+        "מסתורין",
+        "קומדיה"
+      ],
+      "firstAirDate": "2022-11-23",
+      "seasons": 2,
+      "trailerYoutubeId": "Qa5kFRxBkNw",
+      "editorReview": "ונסדיי — ילדה סרקסטית וקצת מתה מבפנים, באקדמיה מלאה תעלומות. העולם חד גם כשהשם מוכר, ונשארנו בנוורמור."
+    },
+    {
+      "rank": 2,
+      "tmdbId": 255752,
+      "name": "Haunted Hotel",
+      "nameHe": "מלון הרוחות",
+      "overview": "אם יחידנית שירשה מלון מאחיה המנוח עוברת אליו וחיה לצד רוח הרפאים טובת המזג שלו – ועוד אורחים תובעניים שלא יעזבו אף פעם.",
+      "posterPath": "https://image.tmdb.org/t/p/w342/yNSEsEhLbqAoivJAyzovwZbh1qe.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/lqsufP0yMhQ04SZx3ZlXTay4whw.jpg",
+      "voteAverage": 8.2,
+      "genres": [
+        "אנימציה",
+        "קומדיה",
+        "מדע בדיוני ופנטזיה",
+        "אקשן והרפתקאות"
+      ],
+      "firstAirDate": "2025-09-19",
+      "seasons": 2,
+      "trailerYoutubeId": "UxEza8wLcS0",
+      "editorReview": "מלון הרוחות — אמא יחידנית, אח שהוא רוח, ואורחים שלא יעזבו. חשבנו שזו קומדיה קלה. המלון הזה לא שחרר אותנו."
+    },
+    {
+      "rank": 3,
+      "tmdbId": 66732,
+      "name": "Stranger Things",
+      "nameHe": "דברים מוזרים",
+      "overview": "כשילד נעלם, עיירה קטנה מוצאת את עצמה מול תעלומה הקשורה לניסויים סודיים, לכוחות על-טבעיים מבעיתים ולילדה מיוחדת ומוזרה.",
+      "posterPath": "https://image.tmdb.org/t/p/w342/x1hM8kj3oNkGLjnhajxWQdEtKoe.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/9P4IIMYY3HifqeruZq0ZZ9g7YUi.jpg",
+      "voteAverage": 8.5,
+      "genres": [
+        "אקשן והרפתקאות",
+        "מסתורין",
+        "מדע בדיוני ופנטזיה"
+      ],
+      "firstAirDate": "2016-07-15",
+      "seasons": 5,
+      "trailerYoutubeId": "b9EkMc79ZSU",
+      "editorReview": "דברים מוזרים — ילד נעלם, ניסויים סודיים, וילדה מוזרה. העיירה הקטנה הזו עדיין סוגרת את הפה, גם אחרי כמה עונות."
+    },
+    {
+      "rank": 4,
+      "tmdbId": 285838,
+      "name": "기리고",
+      "nameHe": "משאלות מוות",
+      "overview": "אפליקציה מסתורית מבטיחה להגשים משאלות – ואז מתחילה הספירה לאחור למוות. חבורה של בני נוער מסתבכת בסיפור, ועליהם לקטוע את השרשרת הקטלנית כדי לשרוד.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/udlyLlOwUDjc9TKp5rDNurNA7uo.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/5BzfcAW5ZI2m7QypeJBbYNjBuR0.jpg",
+      "voteAverage": 8,
+      "genres": [
+        "מסתורין",
+        "דרמה"
+      ],
+      "firstAirDate": "2026-04-24",
+      "seasons": 1,
+      "trailerYoutubeId": "OJsERPNI3D0",
+      "editorReview": "משאלות מוות — אפליקציה שמגשימה משאלה ומתחילה ספירה לאחור. בני נוער צריכים לקטוע את השרשרת. הרעיון תפס בגרון."
+    },
+    {
+      "rank": 5,
+      "tmdbId": 224941,
+      "name": "The Boroughs",
+      "nameHe": "הבורוז",
+      "overview": "כוח על-טבעי מאיים על קהילת גמלאים מושלמת לכאורה. קבוצה מפתיעה של גמלאים אמיצים יוצאת להילחם בו כדי שלא יגנוב מהם את המשאב היחיד שחסר להם: זמן.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/7imEyrhkwuUfMcAzLdcYNWgq0B9.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/iftYIh1OjJb99EOTHIrDcx59zWb.jpg",
+      "voteAverage": 7.2,
+      "genres": [
+        "מדע בדיוני ופנטזיה",
+        "מסתורין"
+      ],
+      "firstAirDate": "2026-05-21",
+      "seasons": 1,
+      "trailerYoutubeId": "PsvUvqXoTpE",
+      "editorReview": "הבורוז — כוח מאיים על קהילת גמלאים, והם יוצאים להילחם על הזמן שנשאר להם. הרעיון הזה לבדו שווה את הלילה."
+    },
+    {
+      "rank": 6,
+      "tmdbId": 279323,
+      "name": "동궁",
+      "nameHe": "הארמון המזרחי",
+      "overview": "גבר שמסוגל להלך בעולם הרוחות ואשת חצר ששומעת את המתים נכנסים לארמון המזרחי בהוראת המלך — האם הם יצליחו לחשוף את סודותיו האפלים של הארמון?",
+      "posterPath": "https://image.tmdb.org/t/p/w500/1s4CWl5oa8iex4xXx0sq35qeiVg.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/8PHBAdPyfIwS5W6cfKLhItEb875.jpg",
+      "voteAverage": 8.1,
+      "genres": [
+        "מסתורין",
+        "אקשן והרפתקאות",
+        "מדע בדיוני ופנטזיה",
+        "דרמה"
+      ],
+      "firstAirDate": "2026-07-17",
+      "seasons": 1,
+      "trailerYoutubeId": "wBUkNE1l9DU",
+      "editorReview": "הארמון המזרחי — מי שהולך בין רוחות ומי ששומעת מתים נכנסים לארמון בשביל המלך. הסודות שם לא מהעולם הזה. ישבנו קדימה."
+    },
+    {
+      "rank": 7,
+      "tmdbId": 127865,
+      "name": "Kastanjemanden",
+      "nameHe": "‏איש הערמונים",
+      "overview": "‏בזירת רצח מחרידה ניצבת בובה קטנה עשויה מערמונים. שני בלשים מסתמכים עליה כרמז קלוש בניסיונם למצוא רוצח שקשור להיעלמות בתה של פוליטיקאית מקומית.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/fJFzzEtdcQd16hEdqSox6rSYcjD.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/fIXTetAsXkPO6UUUw85IU4oactf.jpg",
+      "voteAverage": 7.5,
+      "genres": [
+        "דרמה",
+        "פשע",
+        "מסתורין"
+      ],
+      "firstAirDate": "2021-09-29",
+      "seasons": 2,
+      "trailerYoutubeId": "LE0jZnMuAQE",
+      "editorReview": "‏איש הערמונים — בובה מערמונים בזירת רצח, ובת של פוליטיקאית שנעלמה. הרמז הקטן עשה לילה ארוך."
+    },
+    {
+      "rank": 8,
+      "tmdbId": 285322,
+      "name": "Below",
+      "nameHe": "במעמקים",
+      "overview": "יצור ימי מסתורי מטיל אימה על עיירה קטנה בניופאונדלנד. דייג קשוח ומשפחתו נלחמים להגן על קהילתם המגובשת.",
+      "posterPath": "https://image.tmdb.org/t/p/w342/vgLqqhMUbljp585qPp1EFCyJtcz.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/cn0feYcDvVzVjUDoXa1O8sRgzz.jpg",
+      "voteAverage": 7.2,
+      "genres": [
+        "דרמה",
+        "מסתורין"
+      ],
+      "firstAirDate": "2026-10-08",
+      "seasons": 1,
+      "trailerYoutubeId": "U57CNxSgoss",
+      "editorReview": "במעמקים — יצור בים, עיירה קטנה, דייג ומשפחה. נשמע מוכר, עד שהמסך מחשיך ואין עם מי לדבר על מה שראינו."
+    },
+    {
+      "rank": 9,
+      "tmdbId": 253960,
+      "name": "ガス人間",
+      "nameHe": "הקיטור האנושי",
+      "overview": "מוות בשידור חי. פושע שהופך לגז. פרויקט חשאי שניצל אנשים פגיעים ואז נפטר מהם. בלש אחד מנסה לחשוף את האמת האפלה.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/9WuNAFEhULqVB6uSNpmpA6mLmXS.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/tDjLCYMaJK27PEZHiAtCYujXdRo.jpg",
+      "voteAverage": 7.4,
+      "genres": [
+        "מדע בדיוני ופנטזיה",
+        "פשע"
+      ],
+      "firstAirDate": "2026-07-02",
+      "seasons": 1,
+      "trailerYoutubeId": "7xe6dRKVAb8",
+      "editorReview": "הקיטור האנושי — מוות בשידור, פושע שהופך לגז, ופרויקט שנפטר מאנשים. לא ראינו את זה קודם. נשארנו עם המסך דולק."
+    },
+    {
+      "rank": 10,
+      "tmdbId": 286801,
+      "name": "Monster: The Ed Gein Story",
+      "nameHe": "מפלצת: סיפורו של אד גין",
+      "overview": "סיפורו המדהים והאמיתי של אד גין, רוצח נודע לשמצה ושודד קברים שהיה השראה לכמה מהרוצחים הבדיוניים המפורסמים ביותר של הוליווד.",
+      "posterPath": "https://image.tmdb.org/t/p/w500/e3eMsNbThhOTngiOOgn3W6g8ogC.jpg",
+      "backdropPath": "https://image.tmdb.org/t/p/w1280/cm2oUAPiTE1ERoYYOzzgloQw4YZ.jpg",
+      "voteAverage": 7.3,
+      "genres": [
+        "פשע",
+        "דרמה"
+      ],
+      "firstAirDate": "2025-10-03",
+      "seasons": 1,
+      "trailerYoutubeId": "EDBmpfbnLGk",
+      "editorReview": "מפלצת: סיפורו של אד גין — רוצח ושודד קברים, וההשראה למפלצות של הוליווד. קשה, אמיתי, ולא ערב שצוחקים בו."
+    }
+  ]
+}

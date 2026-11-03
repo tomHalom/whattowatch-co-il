@@ -152,12 +152,13 @@ ${joined}
 
 ${scoreLine}
 
-כתוב משפט אחד או שניים בעברית, בגוף ראשון-רבים ("אנחנו", "צפינו",
-"התאהבנו" וכו'), בנימה אישית וכיפית, שמשקף את הקונצנזוס של הביקורות
-ולא ביקורת בודדת חריגה (חיובי או שלילי — תהיה נאמן לתחושה האמיתית). אל
-תצטט מילה-במילה, אל תזכיר "ביקורת" או "מבקר" או "האינטרנט" או
-"אוטומטי" — כתוב כאילו זו התגובה האישית והספונטנית של הצוות. החזר
-רק את המשפט/השניים, בלי מרכאות ובלי הקדמות.`
+כתוב משפט אחד או שניים בעברית, בגוף ראשון רבים, כצוות שנשאר ער
+כדי לדרג סדרות. הקול הוא של מי שצפה, לא של סיכום. משפטים קצרים.
+מותר לילה לבן, הודעה בשלוש, פה שנפער.
+תן את החום לסדרה מקורית או מפתיעה. לסדרה צפויה כתוב שורה קרירה וכנה.
+הישאר נאמן לחומר למטה: אל תמציא סצנה, דמות או מספר פרק שלא מופיעים בו.
+אל תכתוב "ביקורת", "מבקר", "האינטרנט" או "אוטומטי".
+החזר רק את המשפטים, בלי שם הסדרה ובלי מרכאות.`
 
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_API_KEY}`
   const res = await fetch(url, {
@@ -165,7 +166,7 @@ ${scoreLine}
     headers: { 'content-type': 'application/json' },
     body: JSON.stringify({
       contents: [{ parts: [{ text: prompt }] }],
-      generationConfig: { maxOutputTokens: 200 },
+      generationConfig: { maxOutputTokens: 280 },
     }),
   })
 
@@ -685,6 +686,21 @@ const GENRE_DEFS = {
     // בשפת מקור לא-עברית (אנגלית וכו') — לכן language-discover בלבד
     // לא מוצא אותו; מוסיפים חיפוש שם ידוע כתוסף.
     supplementalTitles: ['Hit & Run', 'The Spy', 'Losing Alice', 'Kupp', 'The Beauty Queen of Jerusalem'],
+  },
+  halloween: {
+    kind: 'curated',
+    titles: [
+      'Wednesday',
+      'Haunted Hotel',
+      'Stranger Things',
+      'The Boroughs',
+      'Below',
+      'Black Mirror',
+      'The Chestnut Man',
+      'Monster: The Ed Gein Story',
+      'משאלות מוות',
+      'הארמון המזרחי',
+    ],
   },
 }
 
