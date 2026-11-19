@@ -1,0 +1,19 @@
+app/layouts/default.vue
+  s_0cc930bd680915::t_792494f457afe6 25,45-55
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "5e0451a6f601dadaf5dbfc683f0c5b7b43d9dc26",
+  "prompts": {},
+  "sessions": {
+    "s_0cc930bd680915": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "e289c2f0-abaa-45ce-8572-36c1b2f5e41b",
+        "model": "grok-4.7"
+      },
+      "human_author": "toms <toms@spiralsolutions.com>"
+    }
+  }
+}
