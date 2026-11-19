@@ -1,0 +1,72 @@
+public/manifest.webmanifest
+  s_9662273dbd9aa6::t_e4d7551df4c2dc 1-16
+scripts/buildCatalogIndex.mjs
+  s_9662273dbd9aa6::t_022469e830a585 1-26
+server/api/recommend.post.ts
+  s_9662273dbd9aa6::t_abb7a6e19494bc 2-14
+  s_9662273dbd9aa6::t_11026a8ad9cc19 1
+app/composables/useSavedTasteLists.ts
+  s_9662273dbd9aa6::t_80a22641e97741 1-61
+api/recommend.mjs
+  s_9662273dbd9aa6::t_128a65ba7835af 2-16
+  s_9662273dbd9aa6::t_0ba8e2019592f3 1
+nuxt.config.ts
+  s_9662273dbd9aa6::t_bd2736cdddb55c 103-111
+app/plugins/pwa.client.ts
+  s_9662273dbd9aa6::t_cfb3c983b0fa50 1-7
+app/components/TasteCard.vue
+  s_9662273dbd9aa6::t_17d6815d2aa3d8 1-133
+app/components/TasteFinder.vue
+  s_9662273dbd9aa6::t_5524cd063aa950 1-37,40-54,62-265,269,280-281,283-322
+  s_9662273dbd9aa6::t_d2c9db59b20bc0 266-268,270-279,282
+  s_9662273dbd9aa6::t_4544d32a970ab1 55-61
+  s_9662273dbd9aa6::t_9ab47cb9979324 38-39
+public/data/catalog-index.json
+  s_9662273dbd9aa6::t_f3e97819885515 1-646
+tests/tasteRecommend.test.mjs
+  s_9662273dbd9aa6::t_ce0ca509910d33 2
+  s_9662273dbd9aa6::t_5548c5e7d415e8 1,3-39
+app/layouts/default.vue
+  s_9662273dbd9aa6::t_c374ae0e48edae 164
+  s_9662273dbd9aa6::t_6e45227813578f 76-81
+  s_0cc930bd680915::t_fdf866a2e9fbe2 25,45-55
+  s_9662273dbd9aa6::t_5bb0be9fbe2078 118
+server/utils/tasteRecommend.mjs
+  s_9662273dbd9aa6::t_b571f1514f6459 139
+  s_9662273dbd9aa6::t_0bdd0b1a8bc90f 167-173
+  s_9662273dbd9aa6::t_502c16883eb666 136-138
+  s_9662273dbd9aa6::t_8fab3155955b25 140-142,164-166
+  s_9662273dbd9aa6::t_d4ec512b7319d9 174-176
+  s_9662273dbd9aa6::t_e3c2707071de04 1-135,143-163,177-215
+public/sw.js
+  s_9662273dbd9aa6::t_5eb7e5b5c759a4 1-9
+package.json
+  s_9662273dbd9aa6::t_b65790159a7539 9
+app/pages/index.vue
+  s_9662273dbd9aa6::t_ef016ea5895145 142
+  s_9662273dbd9aa6::t_e88fde3601c0dd 141
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "02867a85100774aed1dc40673e3cdca56f719621",
+  "prompts": {},
+  "sessions": {
+    "s_0cc930bd680915": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "e289c2f0-abaa-45ce-8572-36c1b2f5e41b",
+        "model": "grok-4.7"
+      },
+      "human_author": "toms <toms@spiralsolutions.com>"
+    },
+    "s_9662273dbd9aa6": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "fb1e376e-c6c9-417f-8272-534101d1e127",
+        "model": "grok-4.7"
+      },
+      "human_author": "toms <toms@spiralsolutions.com>"
+    }
+  }
+}
