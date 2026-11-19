@@ -1,0 +1,19 @@
+public/favicon.svg
+  s_0cc930bd680915::t_ecb37f5d372e06 3-11
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "77ec32a0ba93bef5abe0c932caa0ed04616626ae",
+  "prompts": {},
+  "sessions": {
+    "s_0cc930bd680915": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "e289c2f0-abaa-45ce-8572-36c1b2f5e41b",
+        "model": "grok-4.7"
+      },
+      "human_author": "toms <toms@spiralsolutions.com>"
+    }
+  }
+}
