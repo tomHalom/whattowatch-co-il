@@ -22,8 +22,7 @@ const genres = [
     <!-- ── Header ──────────────────────────────────────────────────── -->
     <header class="sticky top-0 z-50 border-b border-charcoal-line bg-charcoal-night/90 backdrop-blur-sm">
       <div class="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
-        <!-- Logo: a retro TV set glowing like a neon sign — gold outline,
-             ember-glow screen with a play triangle. What to watch, lit up. -->
+        <!-- Logo: a gold lounge facing a small set, same mark as the favicon. -->
         <NuxtLink
           to="/"
           class="flex items-center gap-2 group"
@@ -43,12 +42,17 @@ const genres = [
                 </feMerge>
               </filter>
             </defs>
-            <path d="M13 8.5 L17.5 14 M27 8.5 L22.5 14" stroke="#E8A33D" stroke-width="1.8" stroke-linecap="round" filter="url(#logo-glow)" />
-            <rect x="3" y="13.5" width="34" height="21" rx="5" fill="#14131C" stroke="#E8A33D" stroke-width="2.4" filter="url(#logo-glow)" />
-            <rect x="6.8" y="17" width="26.4" height="14" rx="2.5" fill="none" stroke="#D64545" stroke-width="1.1" opacity="0.7" filter="url(#logo-glow)" />
-            <path d="M16.5 20 L25.5 24 L16.5 28 Z" fill="#D64545" filter="url(#logo-glow)" />
-            <circle cx="19" cy="36.5" r="1.3" fill="#E8A33D" />
-            <circle cx="21" cy="36.5" r="1.3" fill="#E8A33D" />
+            <g filter="url(#logo-glow)">
+              <rect x="4.2" y="20.4" width="18.6" height="8.4" rx="2.2" fill="#E8A33D" />
+              <rect x="3.2" y="13.2" width="6.2" height="15" rx="2.4" fill="#E8A33D" />
+              <rect x="5.4" y="28.4" width="3.1" height="3" rx="0.7" fill="#E8A33D" />
+              <rect x="16.6" y="28.4" width="3.1" height="3" rx="0.7" fill="#E8A33D" />
+              <path d="M27.4 11.2 L29.2 14.6 M35.2 11 L33.4 14.6" stroke="#E8A33D" stroke-width="1.5" stroke-linecap="round" />
+              <rect x="24.6" y="14.8" width="12.4" height="9.4" rx="1.6" fill="#E8A33D" />
+              <rect x="26.2" y="16.3" width="9.2" height="6.4" rx="0.7" fill="#D64545" />
+              <rect x="28.8" y="24.2" width="4" height="1.7" rx="0.4" fill="#E8A33D" />
+              <rect x="27.2" y="25.6" width="7.2" height="1.5" rx="0.4" fill="#C4842A" />
+            </g>
           </svg>
           <span class="font-display text-base font-bold text-milk-parchment hidden sm:block">{{ pub.siteName }}</span>
         </NuxtLink>
